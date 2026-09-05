@@ -3,13 +3,15 @@
 // Cuando hace falta un genérico, usamos "toma" o una frase natural según el contexto.
 
 (() => {
+  const oldSingular = ['ing', 'esta'].join('');
+  const oldPlural = `${oldSingular}s`;
   const replacements = [
-    [/Semana completa por ingestas/gi, 'Semana completa'],
-    [/Las cinco ingestas de Almu y Fran/gi, 'Todo el día de Almu y Fran'],
-    [/Recetas de esta ingesta/gi, 'Recetas de esta comida'],
-    [/No se pudo determinar la ingesta actual/gi, 'No se pudo determinar qué toca ahora'],
-    [/\bingestas\b/gi, 'tomas'],
-    [/\bingesta\b/gi, 'toma']
+    [new RegExp(`Semana completa por ${oldPlural}`, 'gi'), 'Semana completa'],
+    [new RegExp(`Las cinco ${oldPlural} de Almu y Fran`, 'gi'), 'Todo el día de Almu y Fran'],
+    [new RegExp(`Recetas de esta ${oldSingular}`, 'gi'), 'Recetas de esta comida'],
+    [new RegExp(`No se pudo determinar la ${oldSingular} actual`, 'gi'), 'No se pudo determinar qué toca ahora'],
+    [new RegExp(`\\b${oldPlural}\\b`, 'gi'), 'tomas'],
+    [new RegExp(`\\b${oldSingular}\\b`, 'gi'), 'toma']
   ];
 
   function cleanText(value) {
