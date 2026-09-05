@@ -25,12 +25,21 @@
         position: static !important; top: auto !important; z-index: auto !important;
         background: transparent !important;
       }
+      .cuadro-ingredients { margin-top: 8px; }
+      .cuadro-ingredients summary {
+        cursor: pointer;
+        color: #387a55;
+        font-size: .78rem;
+        font-weight: 800;
+        list-style-position: inside;
+      }
+      .cuadro-ingredients[open] summary { margin-bottom: 4px; }
     }
   </style>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
   <script src="app.js?v=20260905-1205" defer></script>
-  <script src="mobile-cuadros.js?v=20260905-1448" defer></script>
+  <script src="mobile-cuadros.js?v=20260905-1455" defer></script>
 </head>
 <body>
   <main id="app" class="app-shell" aria-live="polite"></main>
