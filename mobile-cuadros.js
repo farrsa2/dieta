@@ -1,6 +1,6 @@
 // Vistas mobile-first para Cuadro 01 y Cuadro 02.
 // En escritorio se conserva el Markdown/tablas originales.
-// En móvil los ingredientes quedan plegados por defecto.
+// En móvil los ingredientes y las recetas quedan plegados por defecto.
 
 (() => {
   if (typeof routes === 'undefined') return;
@@ -46,6 +46,63 @@
     </details>`;
   }
 
+  function normalized(value = '') {
+    return String(value)
+      .replace(/<br\s*\/?\s*>/gi, ' ')
+      .replace(/\*\*/g, ' ')
+      .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+      .toLowerCase()
+      .replace(/[^a-z0-9ñ]+/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim();
+  }
+
+  function recipeAlias(name) {
+    return normalized(name)
+      .replace(/\ba la plancha\b/g, '')
+      .replace(/\bplancha\b/g, '')
+      .replace(/\bde aceite de oliva\b/g, '')
+      .replace(/\bint\b/g, '')
+      .replace(/\btostadas\b/g, 'tostada')
+      .replace(/\bcalabacines\b/g, 'calabacin')
+      .replace(/\bmuslos\b/g, 'muslo')
+      .replace(/\bmozarela\b/g, 'mozzarella')
+      .replace(/\bjamon\b/g, 'jamon')
+      .replace(/\s+/g, ' ')
+      .trim();
+  }
+
+  function recipesFor(content = '') {
+    if (!window.DIET_RECIPES) return [];
+    const haystack = recipeAlias(content);
+    const found = [];
+
+    for (const [name, recipe] of Object.entries(window.DIET_RECIPES)) {
+      const key = recipeAlias(name);
+      let match = key && haystack.includes(key);
+
+      if (!match) {
+        const words = key.split(' ').filter(w => w.length > 3 && !['aceite','oliva','fresca','fresco','similar'].includes(w));
+        if (words.length >= 2) match = words.slice(0, 2).every(w => haystack.includes(w));
+      }
+
+      if (match && !found.some(item => item.recipe === recipe)) found.push({ name, recipe });
+    }
+
+    return found;
+  }
+
+  function recipeDetails(content = '') {
+    const recipes = recipesFor(content);
+    if (!recipes.length) return '';
+    return `<details class="cuadro-recipe">
+      <summary>👩‍🍳 Ver receta</summary>
+      <div class="cuadro-recipe-body">
+        ${recipes.map(item => `<div class="cuadro-recipe-item"><strong>${escapeHtml(item.name)}</strong><p>${escapeHtml(item.recipe)}</p></div>`).join('')}
+      </div>
+    </details>`;
+  }
+
   function splitMd(line) {
     return line.replace(/^\|/, '').replace(/\|$/, '').split('|').map(v => v.trim());
   }
@@ -78,10 +135,12 @@
   }
 
   function personCard(label, title, detail) {
+    const full = `${title} ${detail}`;
     return `<article class="cuadro-person-card">
       <span class="cuadro-person-label">${label}</span>
       <div class="cuadro-title">${rich(title)}</div>
       ${ingredientDetails(detail)}
+      ${recipeDetails(full)}
     </article>`;
   }
 
@@ -137,10 +196,12 @@
 
   function meal02Person(label, value) {
     const parts = splitMealEntry(value || '');
+    const full = `${parts.title} ${parts.detail}`;
     return `<article>
       <span class="cuadro-person-label">${label}</span>
       <div class="cuadro-title">${rich(parts.title)}</div>
       ${ingredientDetails(parts.detail)}
+      ${recipeDetails(full)}
     </article>`;
   }
 
