@@ -22,7 +22,8 @@
       },
       "compra": {
         "dias": ["L", "M", "X"],
-        "titulo": "Lunes · Martes · Miércoles"
+        "titulo": "Lunes · Martes · Miércoles",
+        "usos": "data/20260907_SEMANA01_COMPRA_USOS.json"
       }
     }
   ]
