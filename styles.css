@@ -3,9 +3,13 @@
   color: #1f2421;
   background: #f7f7f5;
   font-synthesis: none;
+  --accent: #387a55;
+  --accent-soft: #e8f1eb;
+  --ink-soft: #707772;
 }
 
 * { box-sizing: border-box; }
+[hidden] { display: none !important; }
 html { background: #f7f7f5; }
 body { margin: 0; min-height: 100vh; background: #f7f7f5; }
 button, input { font: inherit; }
@@ -150,44 +154,229 @@ button { -webkit-tap-highlight-color: transparent; }
 .meal-nav-button strong { display: block; font-size: .98rem; }
 .meal-nav-button:disabled { opacity: .38; cursor: default; }
 
-.shopping-toolbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  margin-bottom: 12px;
+/* Lista de compra */
+.shopping-summary {
+  position: sticky;
+  top: 67px;
+  z-index: 4;
+  padding: 16px;
+  border: 1px solid rgba(56, 122, 85, .12);
 }
-.reset-button {
-  border: 0;
+.shopping-summary-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  align-items: center;
+}
+.shopping-eyebrow {
+  margin: 0 0 3px;
+  color: var(--accent);
+  font-size: .76rem;
+  font-weight: 850;
+  letter-spacing: .08em;
+}
+.shopping-summary h2 {
+  margin: 0;
+  font-size: 1.35rem;
+}
+.shopping-percent {
+  display: grid;
+  place-items: center;
+  min-width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-weight: 850;
+}
+.shopping-progress {
+  height: 8px;
+  margin-top: 13px;
+  overflow: hidden;
   border-radius: 999px;
-  padding: 9px 12px;
-  background: #ecefec;
+  background: #edf0ed;
+}
+.shopping-progress span {
+  display: block;
+  width: 0;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--accent);
+  transition: width .2s ease;
+}
+.shopping-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 12px;
+}
+.soft-button {
+  border: 0;
+  border-radius: 13px;
+  padding: 10px 12px;
+  background: #f0f2f0;
+  color: #38403b;
+  font-size: .86rem;
+  font-weight: 700;
   cursor: pointer;
+}
+.soft-button.active-soft {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+.danger-soft { color: #8a4a45; }
+
+.shopping-day-filter {
+  position: sticky;
+  top: 204px;
+  z-index: 3;
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 2px 0 12px;
+  margin-bottom: 4px;
+  background: rgba(247, 247, 245, .95);
+  scrollbar-width: none;
+}
+.shopping-day-filter::-webkit-scrollbar { display: none; }
+.day-chip {
+  flex: 0 0 auto;
+  min-width: 46px;
+  border: 1px solid #dfe4e0;
+  border-radius: 999px;
+  padding: 8px 13px;
+  background: #fff;
+  color: #5f6661;
+  font-weight: 750;
+  cursor: pointer;
+}
+.day-chip.active {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: #fff;
+}
+
+.shopping-groups { display: grid; gap: 18px; }
+.shopping-group { min-width: 0; }
+.shopping-category-head {
+  display: grid;
+  grid-template-columns: 30px 1fr auto;
+  align-items: center;
+  gap: 8px;
+  margin: 3px 2px 8px;
+}
+.shopping-category-icon {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 3px 10px rgba(31,36,33,.06);
+}
+.shopping-category-head h2 {
+  margin: 0;
+  font-size: .92rem;
+  letter-spacing: .02em;
+}
+.shopping-category-count {
+  min-width: 26px;
+  padding: 3px 7px;
+  border-radius: 999px;
+  background: #ecefec;
+  color: #737a75;
+  text-align: center;
+  font-size: .75rem;
+  font-weight: 750;
 }
 .shopping-list { display: grid; gap: 9px; }
 .shopping-item {
   display: grid;
-  grid-template-columns: 28px 1fr;
-  gap: 10px;
+  grid-template-columns: 30px 1fr;
+  gap: 11px;
   align-items: start;
-  padding: 13px 14px;
-  border-radius: 16px;
+  padding: 14px;
+  border: 1px solid rgba(31,36,33,.04);
+  border-radius: 17px;
   background: #fff;
-  box-shadow: 0 5px 16px rgba(31, 36, 33, .06);
+  box-shadow: 0 5px 16px rgba(31, 36, 33, .055);
+  transition: opacity .16s ease, transform .16s ease, background .16s ease;
 }
-.shopping-item input { width: 22px; height: 22px; margin-top: 1px; }
-.shopping-item.checked .shopping-text { opacity: .46; text-decoration: line-through; }
-.shopping-text strong { display: block; }
-.shopping-meta { color: #707772; font-size: .9rem; margin-top: 3px; }
-.category-title {
-  margin: 18px 2px 7px;
-  font-size: .82rem;
-  letter-spacing: .08em;
+.shopping-item:active { transform: scale(.995); }
+.shopping-item input {
+  width: 23px;
+  height: 23px;
+  margin: 1px 0 0;
+  accent-color: var(--accent);
+}
+.shopping-item.checked {
+  background: #f3f6f3;
+  box-shadow: none;
+}
+.shopping-item.checked .shopping-text { opacity: .48; }
+.shopping-item.checked .shopping-name-row strong { text-decoration: line-through; }
+.shopping-text { min-width: 0; }
+.shopping-name-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+}
+.shopping-name-row strong {
+  min-width: 0;
+  font-size: 1rem;
+  line-height: 1.25;
+}
+.shopping-days {
+  display: flex;
+  flex: 0 0 auto;
+  gap: 4px;
+}
+.day-badge {
+  display: grid;
+  place-items: center;
+  min-width: 22px;
+  height: 22px;
+  padding: 0 5px;
+  border-radius: 7px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: .7rem;
+  font-weight: 850;
+}
+.shopping-buy {
+  display: block;
+  margin-top: 6px;
+  color: #37413a;
+  font-size: .9rem;
+  font-weight: 650;
+  line-height: 1.3;
+}
+.shopping-dose {
+  display: block;
+  margin-top: 3px;
+  color: #818782;
+  font-size: .78rem;
+  line-height: 1.3;
+}
+.shopping-empty {
+  padding: 22px 16px;
+  border-radius: 17px;
+  background: #fff;
   color: #707772;
+  text-align: center;
+}
+
+@media (max-width: 430px) {
+  .shopping-summary { top: 64px; }
+  .shopping-day-filter { top: 201px; }
 }
 
 @media (min-width: 700px) {
   .home-grid { grid-template-columns: 1fr 1fr; }
   .home-button { min-height: 130px; }
   .people-grid { grid-template-columns: 1fr 1fr; }
+  .shopping-groups { grid-template-columns: 1fr 1fr; align-items: start; }
+  .shopping-summary { top: 70px; }
+  .shopping-day-filter { top: 210px; }
 }
