@@ -2,11 +2,12 @@
   "timezone": "Europe/Madrid",
   "vigente": "20260907_SEMANA01",
   "horarios": {
-    "Desayuno": null,
-    "Media mañana": null,
-    "Comida": null,
-    "Merienda": null,
-    "Cena": null
+    "Desayuno": "00:00",
+    "Media mañana": "08:00",
+    "Comida": "11:00",
+    "Merienda": "16:00",
+    "Cena": "18:00",
+    "Fin cena": "21:30"
   },
   "semanas": [
     {
