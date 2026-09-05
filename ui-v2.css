@@ -42,6 +42,26 @@
   display: none !important;
 }
 
+/* Botón de receta uniforme en toda la web. */
+.cuadro-recipe-button {
+  width: 100%;
+  margin-top: 8px;
+  border: 0;
+  border-radius: 10px;
+  padding: 9px 10px;
+  background: var(--color-bg-muted, #F0E6D8);
+  color: var(--color-primary-dark, #8F3D29);
+  font-size: .8rem;
+  font-weight: 800;
+  text-align: left;
+  cursor: pointer;
+}
+
+.cuadro-recipe-button:hover {
+  background: var(--color-primary-light, #E2876E);
+  color: var(--color-surface, #FFFFFF);
+}
+
 /* Próxima comida: Almu + Fran y total a ancho completo. */
 .next-card .people-grid {
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
