@@ -1,6 +1,6 @@
 // Vistas mobile-first para Cuadro 01 y Cuadro 02.
 // En escritorio se conserva el Markdown/tablas originales.
-// En móvil los ingredientes y las recetas quedan plegados por defecto.
+// En móvil los ingredientes quedan plegados por defecto y las recetas se abren en modal.
 
 (() => {
   if (typeof routes === 'undefined') return;
@@ -9,6 +9,8 @@
   const MEALS = ['Desayuno', 'Media mañana', 'Comida', 'Merienda', 'Cena'];
   let cuadro01Day = null;
   let cuadro02Day = null;
+  let recipeSeq = 0;
+  const recipeRegistry = new Map();
 
   const isMobile = () => window.matchMedia('(max-width: 699px)').matches;
 
@@ -67,7 +69,6 @@
       .replace(/\bcalabacines\b/g, 'calabacin')
       .replace(/\bmuslos\b/g, 'muslo')
       .replace(/\bmozarela\b/g, 'mozzarella')
-      .replace(/\bjamon\b/g, 'jamon')
       .replace(/\s+/g, ' ')
       .trim();
   }
@@ -92,16 +93,65 @@
     return found;
   }
 
-  function recipeDetails(content = '') {
+  function recipeButton(content = '', context = '') {
     const recipes = recipesFor(content);
     if (!recipes.length) return '';
-    return `<details class="cuadro-recipe">
-      <summary>👩‍🍳 Ver receta</summary>
-      <div class="cuadro-recipe-body">
-        ${recipes.map(item => `<div class="cuadro-recipe-item"><strong>${escapeHtml(item.name)}</strong><p>${escapeHtml(item.recipe)}</p></div>`).join('')}
-      </div>
-    </details>`;
+    const id = `recipe-${++recipeSeq}`;
+    recipeRegistry.set(id, { recipes, context });
+    return `<button type="button" class="cuadro-recipe-button" onclick="openDietRecipe('${id}')">👩‍🍳 Ver receta</button>`;
   }
+
+  function ensureRecipeModal() {
+    let modal = document.querySelector('#diet-recipe-modal');
+    if (modal) return modal;
+    modal = document.createElement('div');
+    modal.id = 'diet-recipe-modal';
+    modal.className = 'recipe-modal';
+    modal.hidden = true;
+    modal.innerHTML = `
+      <div class="recipe-modal-backdrop" data-close-recipe></div>
+      <section class="recipe-modal-panel" role="dialog" aria-modal="true" aria-labelledby="recipe-modal-title">
+        <div class="recipe-modal-head">
+          <div>
+            <span class="recipe-modal-kicker">👩‍🍳 RECETA DEL NUTRICIONISTA</span>
+            <h2 id="recipe-modal-title">Receta</h2>
+            <p id="recipe-modal-context"></p>
+          </div>
+          <button type="button" class="recipe-modal-close" data-close-recipe aria-label="Cerrar receta">×</button>
+        </div>
+        <div id="recipe-modal-body" class="recipe-modal-body"></div>
+      </section>`;
+    document.body.appendChild(modal);
+    modal.querySelectorAll('[data-close-recipe]').forEach(el => el.addEventListener('click', closeDietRecipe));
+    return modal;
+  }
+
+  window.openDietRecipe = function(id) {
+    const entry = recipeRegistry.get(id);
+    if (!entry) return;
+    const modal = ensureRecipeModal();
+    const title = entry.recipes.length === 1 ? entry.recipes[0].name : 'Recetas de esta ingesta';
+    modal.querySelector('#recipe-modal-title').textContent = title;
+    modal.querySelector('#recipe-modal-context').textContent = entry.context || '';
+    modal.querySelector('#recipe-modal-body').innerHTML = entry.recipes.map(item => `
+      <article class="recipe-modal-item">
+        ${entry.recipes.length > 1 ? `<h3>${escapeHtml(item.name)}</h3>` : ''}
+        <p>${escapeHtml(item.recipe)}</p>
+      </article>`).join('');
+    modal.hidden = false;
+    document.body.classList.add('recipe-modal-open');
+  };
+
+  window.closeDietRecipe = function() {
+    const modal = document.querySelector('#diet-recipe-modal');
+    if (!modal) return;
+    modal.hidden = true;
+    document.body.classList.remove('recipe-modal-open');
+  };
+
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape') closeDietRecipe();
+  });
 
   function splitMd(line) {
     return line.replace(/^\|/, '').replace(/\|$/, '').split('|').map(v => v.trim());
@@ -134,13 +184,13 @@
     return data;
   }
 
-  function personCard(label, title, detail) {
+  function personCard(label, title, detail, context) {
     const full = `${title} ${detail}`;
     return `<article class="cuadro-person-card">
       <span class="cuadro-person-label">${label}</span>
       <div class="cuadro-title">${rich(title)}</div>
       ${ingredientDetails(detail)}
-      ${recipeDetails(full)}
+      ${recipeButton(full, context)}
     </article>`;
   }
 
@@ -152,12 +202,12 @@
     </article>`;
   }
 
-  function meal01(label, meal) {
+  function meal01(label, meal, day) {
     return `<section class="cuadro-meal-block">
       <h2>${label === 'Comida' ? '🍽️' : '🌙'} ${label}</h2>
       <div class="cuadro-two-cols">
-        ${personCard('ALMU', meal.almuTitle, meal.almuDetail)}
-        ${personCard('FRAN', meal.franTitle, meal.franDetail)}
+        ${personCard('ALMU', meal.almuTitle, meal.almuDetail, `${day} · ${label} · Almu`)}
+        ${personCard('FRAN', meal.franTitle, meal.franDetail, `${day} · ${label} · Fran`)}
       </div>
       ${totalCard(meal.totalTitle, meal.totalDetail)}
     </section>`;
@@ -167,6 +217,7 @@
     const week = activeWeek();
     if (!week) return void (app.innerHTML = pageHeader('Cuadro 01') + '<div class="status">No hay una semana configurada.</div>');
     cuadro01Day ||= defaultDay();
+    recipeRegistry.clear();
     app.innerHTML = '<div class="status">Cargando Cuadro 01…</div>';
     try {
       const data = parseCuadro01(await fetchText(week.archivos.cuadro01));
@@ -176,8 +227,8 @@
         <section class="cuadro-mobile-view">
           <div class="cuadro-mobile-top"><span>🍽️ CUADRO 01</span><h1>${cuadro01Day}</h1><p>Comidas, cenas y preparación total</p></div>
           ${daySelector(cuadro01Day, 'selectCuadro01Day')}
-          ${meal01('Comida', d.comida)}
-          ${meal01('Cena', d.cena)}
+          ${meal01('Comida', d.comida, cuadro01Day)}
+          ${meal01('Cena', d.cena, cuadro01Day)}
           ${dayNav(cuadro01Day, 'selectCuadro01Day')}
         </section>
         ${pageHeader('Cuadro 01', week.id)}`;
@@ -194,23 +245,23 @@
     return { title: lines[0], detail: lines.slice(1).join('<br>') };
   }
 
-  function meal02Person(label, value) {
+  function meal02Person(label, value, context) {
     const parts = splitMealEntry(value || '');
     const full = `${parts.title} ${parts.detail}`;
     return `<article>
       <span class="cuadro-person-label">${label}</span>
       <div class="cuadro-title">${rich(parts.title)}</div>
       ${ingredientDetails(parts.detail)}
-      ${recipeDetails(full)}
+      ${recipeButton(full, context)}
     </article>`;
   }
 
-  function meal02Card(meal, entry) {
+  function meal02Card(meal, entry, day) {
     return `<section class="cuadro02-meal-card">
       <h2>${meal}</h2>
       <div class="cuadro-two-cols">
-        ${meal02Person('ALMU', entry?.almu || '')}
-        ${meal02Person('FRAN', entry?.fran || '')}
+        ${meal02Person('ALMU', entry?.almu || '', `${day} · ${meal} · Almu`)}
+        ${meal02Person('FRAN', entry?.fran || '', `${day} · ${meal} · Fran`)}
       </div>
     </section>`;
   }
@@ -219,6 +270,7 @@
     const week = activeWeek();
     if (!week) return void (app.innerHTML = pageHeader('Cuadro 02') + '<div class="status">No hay una semana configurada.</div>');
     cuadro02Day ||= defaultDay();
+    recipeRegistry.clear();
     app.innerHTML = '<div class="status">Cargando Cuadro 02…</div>';
     try {
       const data = parseCuadro02(await fetchText(week.archivos.cuadro02));
@@ -227,7 +279,7 @@
         <section class="cuadro-mobile-view">
           <div class="cuadro-mobile-top"><span>📋 CUADRO 02</span><h1>${cuadro02Day}</h1><p>Las cinco ingestas de Almu y Fran</p></div>
           ${daySelector(cuadro02Day, 'selectCuadro02Day')}
-          <div class="cuadro02-meals">${MEALS.map(meal => meal02Card(meal, data[cuadro02Day]?.[meal])).join('')}</div>
+          <div class="cuadro02-meals">${MEALS.map(meal => meal02Card(meal, data[cuadro02Day]?.[meal], cuadro02Day)).join('')}</div>
           ${dayNav(cuadro02Day, 'selectCuadro02Day')}
         </section>
         ${pageHeader('Cuadro 02', week.id)}`;
@@ -240,6 +292,6 @@
   routes.cuadro01 = () => isMobile() ? renderCuadro01Mobile() : renderMarkdownPage('Cuadro 01', 'cuadro01');
   routes.cuadro02 = () => isMobile() ? renderCuadro02Mobile() : renderMarkdownPage('Cuadro 02', 'cuadro02');
 
-  window.selectCuadro01Day = day => { cuadro01Day = day; renderCuadro01Mobile(); };
-  window.selectCuadro02Day = day => { cuadro02Day = day; renderCuadro02Mobile(); };
+  window.selectCuadro01Day = day => { cuadro01Day = day; closeDietRecipe(); renderCuadro01Mobile(); };
+  window.selectCuadro02Day = day => { cuadro02Day = day; closeDietRecipe(); renderCuadro02Mobile(); };
 })();
