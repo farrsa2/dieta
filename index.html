@@ -25,21 +25,42 @@
         position: static !important; top: auto !important; z-index: auto !important;
         background: transparent !important;
       }
-      .cuadro-ingredients { margin-top: 8px; }
-      .cuadro-ingredients summary {
+      .cuadro-ingredients,
+      .cuadro-recipe { margin-top: 8px; }
+      .cuadro-ingredients summary,
+      .cuadro-recipe summary {
         cursor: pointer;
         color: #387a55;
         font-size: .78rem;
         font-weight: 800;
         list-style-position: inside;
       }
-      .cuadro-ingredients[open] summary { margin-bottom: 4px; }
+      .cuadro-ingredients[open] summary,
+      .cuadro-recipe[open] summary { margin-bottom: 6px; }
+      .cuadro-recipe-body {
+        padding: 8px 0 0;
+        color: #59615c;
+        font-size: .79rem;
+        line-height: 1.45;
+      }
+      .cuadro-recipe-item + .cuadro-recipe-item {
+        margin-top: 10px;
+        padding-top: 10px;
+        border-top: 1px solid #e2e6e3;
+      }
+      .cuadro-recipe-item strong {
+        display: block;
+        margin-bottom: 4px;
+        color: #37413a;
+      }
+      .cuadro-recipe-item p { margin: 0; }
     }
   </style>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
   <script src="app.js?v=20260905-1205" defer></script>
-  <script src="mobile-cuadros.js?v=20260905-1455" defer></script>
+  <script src="recipes-week01.js?v=20260905-1502" defer></script>
+  <script src="mobile-cuadros.js?v=20260905-1502" defer></script>
 </head>
 <body>
   <main id="app" class="app-shell" aria-live="polite"></main>
