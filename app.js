@@ -1,5 +1,7 @@
 const app = document.querySelector('#app');
 let config = null;
+let lastRoute = null;
+let mealOffset = 0;
 
 const routes = {
   inicio: renderHome,
@@ -26,6 +28,8 @@ async function init() {
 
 function route() {
   const key = location.hash.replace('#', '') || 'inicio';
+  if (key === 'proxima' && lastRoute !== 'proxima') mealOffset = 0;
+  lastRoute = key;
   (routes[key] || routes.inicio)();
 }
 
@@ -101,35 +105,94 @@ async function renderNextMeal() {
     return;
   }
 
-  const schedule = config.horarios || {};
-  const defined = Object.values(schedule).every(Boolean);
-  if (!defined) {
-    app.innerHTML = pageHeader('Próxima comida', `${now.weekday} · ${now.time}`) + `
-      <div class="status">
-        La lógica ya está preparada, pero faltan por definir los horarios de Desayuno, Media mañana, Comida, Merienda y Cena en <strong>semanas.json</strong>.
-      </div>`;
-    return;
-  }
-
   try {
     const md = await fetchText(week.archivos.cuadro02);
     const data = parseCuadro02(md);
-    const next = computeNextMeal(data, now, schedule);
-    if (!next) throw new Error('No se pudo determinar la próxima ingesta');
+    const sequence = buildMealSequence(data);
+    const baseIndex = computeCurrentMealIndex(sequence, now, config.horarios || {});
 
-    app.innerHTML = pageHeader('Próxima comida', `${next.day} · ${next.time}`) + `
+    if (baseIndex < 0) throw new Error('No se pudo determinar la ingesta actual');
+
+    const displayIndex = Math.max(0, Math.min(sequence.length - 1, baseIndex + mealOffset));
+    mealOffset = displayIndex - baseIndex;
+    const current = sequence[displayIndex];
+    const previous = sequence[displayIndex - 1] || null;
+    const next = sequence[displayIndex + 1] || null;
+
+    app.innerHTML = pageHeader('Próxima comida', `${current.day} · ${now.time}`) + `
       <section class="card next-card">
-        <h2>Próxima ingesta</h2>
-        <p class="meal-name">${escapeHtml(next.meal)}</p>
+        <p class="meal-kicker">${mealOffset === 0 ? 'Según la hora actual' : 'Vista manual'}</p>
+        <p class="meal-name">${escapeHtml(current.meal)}</p>
         <div class="people-grid">
-          <article class="person"><h3>ALMU</h3><p>${formatMealCell(next.almu)}</p></article>
-          <article class="person"><h3>FRAN</h3><p>${formatMealCell(next.fran)}</p></article>
+          <article class="person"><h3>ALMU</h3><p>${formatMealCell(current.almu)}</p></article>
+          <article class="person"><h3>FRAN</h3><p>${formatMealCell(current.fran)}</p></article>
+        </div>
+        <div class="meal-nav">
+          <button class="meal-nav-button" type="button" ${previous ? '' : 'disabled'} onclick="shiftMeal(-1)">
+            <span>← Anterior</span>
+            <strong>${previous ? escapeHtml(previous.meal) : '—'}</strong>
+          </button>
+          <button class="meal-nav-button" type="button" ${next ? '' : 'disabled'} onclick="shiftMeal(1)">
+            <span>Posterior →</span>
+            <strong>${next ? escapeHtml(next.meal) : '—'}</strong>
+          </button>
         </div>
       </section>`;
   } catch (error) {
     console.error(error);
     app.innerHTML = pageHeader('Próxima comida') + missingFileMessage(week.archivos.cuadro02);
   }
+}
+
+window.shiftMeal = function(delta) {
+  mealOffset += delta;
+  renderNextMeal();
+};
+
+function buildMealSequence(data) {
+  const weekOrder = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'];
+  const meals = ['Desayuno', 'Media mañana', 'Comida', 'Merienda', 'Cena'];
+  const result = [];
+  for (const day of weekOrder) {
+    for (const meal of meals) {
+      const entry = data[day]?.[meal];
+      if (!entry) continue;
+      result.push({
+        day,
+        meal,
+        almu: entry.almu || '',
+        fran: entry.fran || ''
+      });
+    }
+  }
+  return result;
+}
+
+function computeCurrentMealIndex(sequence, now, schedule) {
+  const weekOrder = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'];
+  const dayPos = weekOrder.indexOf(now.weekday);
+  if (dayPos < 0) return -1;
+
+  let meal;
+  let targetDay = now.weekday;
+
+  if (now.time < (schedule['Media mañana'] || '08:00')) {
+    meal = 'Desayuno';
+  } else if (now.time < (schedule['Comida'] || '11:00')) {
+    meal = 'Media mañana';
+  } else if (now.time < (schedule['Merienda'] || '16:00')) {
+    meal = 'Comida';
+  } else if (now.time < (schedule['Cena'] || '18:00')) {
+    meal = 'Merienda';
+  } else if (now.time < (schedule['Fin cena'] || '21:30')) {
+    meal = 'Cena';
+  } else {
+    meal = 'Desayuno';
+    targetDay = weekOrder[dayPos + 1] || null;
+  }
+
+  if (!targetDay) return sequence.length - 1;
+  return sequence.findIndex(item => item.day === targetDay && item.meal === meal);
 }
 
 async function renderShopping() {
@@ -226,32 +289,6 @@ function parseCuadro02(md) {
     }
   }
   return data;
-}
-
-function computeNextMeal(data, now, schedule) {
-  const meals = ['Desayuno', 'Media mañana', 'Comida', 'Merienda', 'Cena'];
-  const weekOrder = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'];
-  const dayPosition = weekOrder.indexOf(now.weekday);
-
-  if (dayPosition >= 0) {
-    for (const meal of meals) {
-      if (now.time < schedule[meal] && data[now.weekday]?.[meal]) {
-        return buildNext(now.weekday, meal, schedule[meal], data[now.weekday][meal]);
-      }
-    }
-    for (let offset = 1; offset <= 7; offset++) {
-      const day = weekOrder[(dayPosition + offset) % 7];
-      if (data[day]?.Desayuno) return buildNext(day, 'Desayuno', schedule['Desayuno'], data[day].Desayuno);
-    }
-  }
-
-  const firstDay = weekOrder.find(day => data[day]?.Desayuno);
-  if (firstDay) return buildNext(firstDay, 'Desayuno', schedule['Desayuno'], data[firstDay].Desayuno);
-  return null;
-}
-
-function buildNext(day, meal, time, entry) {
-  return { day, meal, time, almu: entry.almu || '', fran: entry.fran || '' };
 }
 
 function parseShoppingMarkdown(md) {
