@@ -131,7 +131,7 @@
     const entry = recipeRegistry.get(id);
     if (!entry) return;
     const modal = ensureRecipeModal();
-    const title = entry.recipes.length === 1 ? entry.recipes[0].name : 'Recetas de esta ingesta';
+    const title = entry.recipes.length === 1 ? entry.recipes[0].name : 'Recetas de esta comida';
     modal.querySelector('#recipe-modal-title').textContent = title;
     modal.querySelector('#recipe-modal-context').textContent = entry.context || '';
     modal.querySelector('#recipe-modal-body').innerHTML = entry.recipes.map(item => `
@@ -157,7 +157,6 @@
   function splitMd(line) {
     return line.replace(/^\|/, '').replace(/\|$/, '').split('|').map(v => v.trim());
   }
-
   function parseCuadro01(md) {
     const lines = md.split(/\r?\n/).map(x => x.trim()).filter(Boolean);
     const start = lines.findIndex(line => line.startsWith('|') && /Comida Almu/i.test(line) && /Cena total/i.test(line));
@@ -279,7 +278,7 @@
       if (!data[cuadro02Day]) cuadro02Day = DAYS.find(day => data[day]) || 'Lunes';
       app.innerHTML = `
         <section class="cuadro-mobile-view">
-          <div class="cuadro-mobile-top"><span>📋 CUADRO 02</span><h1>${cuadro02Day}</h1><p>Las cinco ingestas de Almu y Fran</p></div>
+          <div class="cuadro-mobile-top"><span>📋 CUADRO 02</span><h1>${cuadro02Day}</h1><p>Todo el día de Almu y Fran</p></div>
           ${daySelector(cuadro02Day, 'selectCuadro02Day')}
           <div class="cuadro02-meals">${MEALS.map(meal => meal02Card(meal, data[cuadro02Day]?.[meal], cuadro02Day)).join('')}</div>
           ${dayNav(cuadro02Day, 'selectCuadro02Day')}
