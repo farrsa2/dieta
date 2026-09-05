@@ -25,42 +25,111 @@
         position: static !important; top: auto !important; z-index: auto !important;
         background: transparent !important;
       }
-      .cuadro-ingredients,
-      .cuadro-recipe { margin-top: 8px; }
-      .cuadro-ingredients summary,
-      .cuadro-recipe summary {
+      .cuadro-ingredients { margin-top: 8px; }
+      .cuadro-ingredients summary {
         cursor: pointer;
         color: #387a55;
         font-size: .78rem;
         font-weight: 800;
         list-style-position: inside;
       }
-      .cuadro-ingredients[open] summary,
-      .cuadro-recipe[open] summary { margin-bottom: 6px; }
-      .cuadro-recipe-body {
-        padding: 8px 0 0;
-        color: #59615c;
-        font-size: .79rem;
-        line-height: 1.45;
+      .cuadro-ingredients[open] summary { margin-bottom: 6px; }
+      .cuadro-recipe-button {
+        width: 100%;
+        margin-top: 8px;
+        border: 0;
+        border-radius: 10px;
+        padding: 8px 10px;
+        background: #e8f1eb;
+        color: #387a55;
+        font-size: .78rem;
+        font-weight: 800;
+        text-align: left;
       }
-      .cuadro-recipe-item + .cuadro-recipe-item {
-        margin-top: 10px;
-        padding-top: 10px;
-        border-top: 1px solid #e2e6e3;
-      }
-      .cuadro-recipe-item strong {
-        display: block;
-        margin-bottom: 4px;
-        color: #37413a;
-      }
-      .cuadro-recipe-item p { margin: 0; }
+    }
+
+    .recipe-modal[hidden] { display: none !important; }
+    .recipe-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 1000;
+      display: grid;
+      align-items: end;
+    }
+    .recipe-modal-backdrop {
+      position: absolute;
+      inset: 0;
+      background: rgba(20, 24, 21, .48);
+      backdrop-filter: blur(3px);
+    }
+    .recipe-modal-panel {
+      position: relative;
+      z-index: 1;
+      width: min(100%, 620px);
+      max-height: min(84vh, 760px);
+      margin: 0 auto;
+      overflow-y: auto;
+      border-radius: 24px 24px 0 0;
+      padding: 18px 18px max(22px, env(safe-area-inset-bottom));
+      background: #fff;
+      box-shadow: 0 -10px 40px rgba(31,36,33,.18);
+    }
+    .recipe-modal-head {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 14px;
+      align-items: start;
+      margin-bottom: 14px;
+    }
+    .recipe-modal-kicker {
+      color: #387a55;
+      font-size: .7rem;
+      font-weight: 900;
+      letter-spacing: .08em;
+    }
+    .recipe-modal-head h2 {
+      margin: 4px 0 2px;
+      font-size: 1.3rem;
+    }
+    .recipe-modal-head p {
+      margin: 0;
+      color: #707772;
+      font-size: .84rem;
+    }
+    .recipe-modal-close {
+      width: 38px;
+      height: 38px;
+      border: 0;
+      border-radius: 50%;
+      background: #f0f2f0;
+      color: #37413a;
+      font-size: 1.6rem;
+      line-height: 1;
+    }
+    .recipe-modal-body {
+      color: #454d47;
+      font-size: .94rem;
+      line-height: 1.55;
+    }
+    .recipe-modal-item + .recipe-modal-item {
+      margin-top: 18px;
+      padding-top: 16px;
+      border-top: 1px solid #e3e6e4;
+    }
+    .recipe-modal-item h3 { margin: 0 0 7px; }
+    .recipe-modal-item p { margin: 0; white-space: pre-line; }
+    body.recipe-modal-open { overflow: hidden; }
+
+    @media (min-width: 700px) {
+      .recipe-modal { align-items: center; padding: 24px; }
+      .recipe-modal-panel { border-radius: 24px; }
     }
   </style>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
   <script src="app.js?v=20260905-1205" defer></script>
   <script src="recipes-week01.js?v=20260905-1502" defer></script>
-  <script src="mobile-cuadros.js?v=20260905-1502" defer></script>
+  <script src="mobile-cuadros.js?v=20260905-1510" defer></script>
 </head>
 <body>
   <main id="app" class="app-shell" aria-live="polite"></main>
