@@ -1,0 +1,24 @@
+{
+  "timezone": "Europe/Madrid",
+  "vigente": "20260907_SEMANA01",
+  "horarios": {
+    "Desayuno": null,
+    "Media mañana": null,
+    "Comida": null,
+    "Merienda": null,
+    "Cena": null
+  },
+  "semanas": [
+    {
+      "id": "20260907_SEMANA01",
+      "inicio": "2026-09-07",
+      "fin": "2026-09-13",
+      "archivos": {
+        "historico": "data/20260907_SEMANA01.md",
+        "cuadro01": "data/20260907_SEMANA01_CUADRO01_APROBADO.md",
+        "cuadro02": "data/20260907_SEMANA01_CUADRO02_APROBADO.md",
+        "compra": "data/20260907_SEMANA01_COMPRA_APROBADA.md"
+      }
+    }
+  ]
+}
