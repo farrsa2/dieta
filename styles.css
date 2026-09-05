@@ -117,11 +117,38 @@ button { -webkit-tap-highlight-color: transparent; }
 }
 
 .next-card h2 { margin: 0 0 6px; font-size: 1.05rem; color: #707772; }
-.next-card .meal-name { margin: 0 0 14px; font-size: 1.5rem; }
+.meal-kicker { margin: 0 0 5px; color: #707772; font-size: .9rem; }
+.next-card .meal-name { margin: 0 0 14px; font-size: 1.7rem; font-weight: 800; }
 .people-grid { display: grid; gap: 12px; }
 .person { padding: 14px; border-radius: 16px; background: #f6f7f5; }
 .person h3 { margin: 0 0 8px; font-size: .95rem; letter-spacing: .02em; }
 .person p { margin: 0; line-height: 1.45; }
+
+.meal-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 14px;
+}
+.meal-nav-button {
+  min-height: 70px;
+  border: 0;
+  border-radius: 16px;
+  padding: 12px;
+  background: #ecefec;
+  color: #1f2421;
+  cursor: pointer;
+  text-align: left;
+}
+.meal-nav-button:last-child { text-align: right; }
+.meal-nav-button span {
+  display: block;
+  margin-bottom: 3px;
+  color: #707772;
+  font-size: .8rem;
+}
+.meal-nav-button strong { display: block; font-size: .98rem; }
+.meal-nav-button:disabled { opacity: .38; cursor: default; }
 
 .shopping-toolbar {
   display: flex;
