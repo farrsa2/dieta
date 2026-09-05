@@ -46,6 +46,12 @@
         font-weight: 800;
         text-align: left;
       }
+      /* En Cuadro 02 las recetas solo se ofrecen en Comida y Cena. */
+      .cuadro02-meal-card:nth-child(1) .cuadro-recipe-button,
+      .cuadro02-meal-card:nth-child(2) .cuadro-recipe-button,
+      .cuadro02-meal-card:nth-child(4) .cuadro-recipe-button {
+        display: none !important;
+      }
     }
 
     .recipe-modal[hidden] { display: none !important; }
