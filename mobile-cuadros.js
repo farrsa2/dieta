@@ -1,6 +1,7 @@
 // Vistas mobile-first para Cuadro 01 y Cuadro 02.
 // En escritorio se conserva el Markdown/tablas originales.
 // En móvil los ingredientes quedan plegados por defecto y las recetas se abren en modal.
+// Las recetas solo se ofrecen en Comida y Cena.
 
 (() => {
   if (typeof routes === 'undefined') return;
@@ -245,23 +246,24 @@
     return { title: lines[0], detail: lines.slice(1).join('<br>') };
   }
 
-  function meal02Person(label, value, context) {
+  function meal02Person(label, value, context, showRecipe) {
     const parts = splitMealEntry(value || '');
     const full = `${parts.title} ${parts.detail}`;
     return `<article>
       <span class="cuadro-person-label">${label}</span>
       <div class="cuadro-title">${rich(parts.title)}</div>
       ${ingredientDetails(parts.detail)}
-      ${recipeButton(full, context)}
+      ${showRecipe ? recipeButton(full, context) : ''}
     </article>`;
   }
 
   function meal02Card(meal, entry, day) {
+    const showRecipe = meal === 'Comida' || meal === 'Cena';
     return `<section class="cuadro02-meal-card">
       <h2>${meal}</h2>
       <div class="cuadro-two-cols">
-        ${meal02Person('ALMU', entry?.almu || '', `${day} · ${meal} · Almu`)}
-        ${meal02Person('FRAN', entry?.fran || '', `${day} · ${meal} · Fran`)}
+        ${meal02Person('ALMU', entry?.almu || '', `${day} · ${meal} · Almu`, showRecipe)}
+        ${meal02Person('FRAN', entry?.fran || '', `${day} · ${meal} · Fran`, showRecipe)}
       </div>
     </section>`;
   }
