@@ -1,0 +1,275 @@
+:root {
+  /* Terracota Warmth */
+  --color-primary: #C2593F;
+  --color-primary-dark: #8F3D29;
+  --color-primary-light: #E2876E;
+  --color-bg-main: #FAF6F0;
+  --color-surface: #FFFFFF;
+  --color-bg-muted: #F0E6D8;
+  --color-text-main: #2C2523;
+  --color-text-muted: #6E625F;
+  --color-accent: #5B6E58;
+
+  /* Compatibilidad con estilos existentes */
+  --accent: var(--color-primary);
+  --accent-soft: #F8E9E4;
+  --ink-soft: var(--color-text-muted);
+}
+
+html,
+body {
+  background: var(--color-bg-main);
+  color: var(--color-text-main);
+}
+
+body,
+button,
+input {
+  color: var(--color-text-main);
+}
+
+/* Superficies: priorizar blanco para máxima lectura */
+.home-button,
+.card,
+.status,
+.back-button,
+.md-view table,
+.shopping-summary,
+.shopping-category-icon,
+.shopping-item,
+.shopping-empty,
+.cuadro-meal-block,
+.cuadro02-meal-card,
+.recipe-modal-panel {
+  background: var(--color-surface);
+}
+
+.home-button {
+  border: 1px solid rgba(194, 89, 63, .10);
+  color: var(--color-text-main);
+  box-shadow: 0 10px 28px rgba(44, 37, 35, .07);
+}
+.home-button:hover,
+.home-button:focus-visible {
+  border-color: var(--color-primary-light);
+  box-shadow: 0 12px 30px rgba(143, 61, 41, .12);
+}
+.home-button:active {
+  background: #FFFDFC;
+  border-color: var(--color-primary);
+}
+.home-button span,
+.page-subtitle,
+.next-card h2,
+.meal-kicker,
+.shopping-dose,
+.cuadro-mobile-top p,
+.muted {
+  color: var(--color-text-muted);
+}
+
+.page-title,
+.next-card .meal-name,
+.shopping-summary h2,
+.shopping-category-head h2,
+.cuadro-mobile-top h1,
+.cuadro-meal-block > h2,
+.cuadro02-meal-card > h2,
+.recipe-modal-head h2 {
+  color: var(--color-text-main);
+}
+
+.page-header {
+  background: rgba(250, 246, 240, .94);
+}
+
+/* Markdown / escritorio */
+.md-view th {
+  background: var(--color-bg-muted);
+  color: var(--color-text-main);
+}
+.md-view th,
+.md-view td {
+  border-color: #E8DDD2;
+}
+.md-view h1,
+.md-view h2 {
+  color: var(--color-primary-dark);
+}
+.md-view h3 {
+  color: var(--color-primary);
+}
+
+/* Próxima comida */
+.person {
+  background: var(--color-surface);
+  border: 1px solid #EEE3D9;
+}
+.meal-nav-button,
+.soft-button,
+.cuadro-day-nav button {
+  background: var(--color-bg-muted);
+  color: var(--color-text-main);
+}
+.meal-nav-button:hover,
+.soft-button:hover,
+.cuadro-day-nav button:hover {
+  background: #E9DCCB;
+}
+
+/* Compra */
+.shopping-summary {
+  border-color: rgba(194, 89, 63, .20);
+}
+.shopping-eyebrow,
+.cuadro-mobile-top > span,
+.cuadro-person-label,
+.cuadro-total-label {
+  color: var(--color-primary);
+}
+.shopping-percent {
+  background: #F8E9E4;
+  color: var(--color-primary-dark);
+}
+.shopping-progress {
+  background: #EFE4D9;
+}
+.shopping-progress span {
+  background: var(--color-primary);
+}
+.soft-button.active-soft {
+  background: #F8E9E4;
+  color: var(--color-primary-dark);
+}
+.danger-soft {
+  color: var(--color-primary-dark);
+}
+.shopping-day-filter {
+  background: rgba(250, 246, 240, .96);
+}
+.day-chip,
+.cuadro-day-chip {
+  background: var(--color-surface);
+  border-color: #E4D7CC;
+  color: var(--color-text-muted);
+}
+.day-chip.active,
+.cuadro-day-chip.active {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-surface);
+}
+.day-chip:hover,
+.cuadro-day-chip:hover {
+  border-color: var(--color-primary-light);
+}
+.shopping-category-count {
+  background: var(--color-bg-muted);
+  color: var(--color-text-muted);
+}
+.shopping-item {
+  border-color: rgba(194, 89, 63, .08);
+  box-shadow: 0 5px 16px rgba(44, 37, 35, .05);
+}
+.shopping-item input {
+  accent-color: var(--color-primary);
+}
+.shopping-item.checked {
+  background: #F7F3EE;
+}
+.day-badge {
+  background: #F8E9E4;
+  color: var(--color-primary-dark);
+}
+.shopping-buy {
+  color: var(--color-text-main);
+}
+.shopping-empty {
+  color: var(--color-text-muted);
+}
+
+/* Cuadros móvil */
+.cuadro-person-card,
+.cuadro02-meal-card article {
+  background: var(--color-surface);
+  border: 1px solid #EEE3D9;
+}
+.cuadro-meal-block,
+.cuadro02-meal-card {
+  box-shadow: 0 6px 18px rgba(44, 37, 35, .055);
+}
+.cuadro-detail {
+  border-top-color: #E9DDD2;
+  color: var(--color-text-muted);
+}
+.cuadro-total-card {
+  background: var(--color-bg-muted);
+  border-color: rgba(194, 89, 63, .18);
+}
+.cuadro-total-card .cuadro-detail {
+  border-top-color: rgba(143, 61, 41, .16);
+  color: var(--color-text-muted);
+}
+.cuadro-ingredients summary {
+  color: var(--color-primary-dark) !important;
+}
+.cuadro-recipe-button {
+  background: #F8E9E4 !important;
+  color: var(--color-primary-dark) !important;
+  border: 1px solid rgba(194, 89, 63, .12) !important;
+}
+.cuadro-recipe-button:hover,
+.cuadro-recipe-button:active {
+  background: #F4DDD5 !important;
+}
+
+/* Modal de recetas */
+.recipe-modal-backdrop {
+  background: rgba(44, 37, 35, .46);
+}
+.recipe-modal-kicker {
+  color: var(--color-primary) !important;
+}
+.recipe-modal-head p,
+.recipe-modal-body {
+  color: var(--color-text-muted);
+}
+.recipe-modal-close {
+  background: var(--color-bg-muted);
+  color: var(--color-text-main);
+}
+.recipe-modal-item + .recipe-modal-item {
+  border-top-color: #E8DDD2;
+}
+
+/* Estados de sincronización: conservar verde orgánico para éxito */
+.shopping-sync-status,
+.sync-ok,
+[data-sync-state="ok"] {
+  color: var(--color-accent);
+}
+
+/* Accesibilidad de teclado */
+button:focus-visible,
+input:focus-visible,
+summary:focus-visible {
+  outline: 3px solid rgba(194, 89, 63, .30);
+  outline-offset: 2px;
+}
+
+@media (max-width: 699px) {
+  /* Mucho blanco en las superficies; arena solo como fondo general */
+  .cuadro-meal-block,
+  .cuadro02-meal-card,
+  .shopping-item {
+    background: var(--color-surface);
+  }
+
+  .page-header {
+    background: transparent !important;
+  }
+
+  .shopping-day-filter {
+    background: transparent !important;
+  }
+}
