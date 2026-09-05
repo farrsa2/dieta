@@ -1,0 +1,111 @@
+/* Ajustes de interfaz mobile-first: inicio, navegación y Próxima comida. */
+
+.home-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-align: center;
+}
+
+.home-button .home-icon {
+  display: block;
+  margin: 0;
+  color: inherit;
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.home-button .home-title {
+  display: block;
+  color: var(--color-text-main, #2C2523);
+  font-size: 1.16rem;
+  line-height: 1.15;
+  font-weight: 800;
+}
+
+.back-button {
+  display: grid;
+  place-items: center;
+  min-width: 44px;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+/* En las cabeceras mobile de menú no mostramos una línea descriptiva bajo el día. */
+.cuadro-mobile-top p {
+  display: none !important;
+}
+
+/* Próxima comida: Almu + Fran y total a ancho completo. */
+.next-card .people-grid {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+}
+
+.next-card .person {
+  min-width: 0;
+  background: var(--color-surface, #FFFFFF);
+  border: 1px solid rgba(194, 89, 63, .12);
+}
+
+.next-card .next-total {
+  grid-column: 1 / -1;
+  background: var(--color-bg-muted, #F0E6D8);
+  border-color: rgba(194, 89, 63, .20);
+}
+
+.next-card .person h3 {
+  color: var(--color-primary-dark, #8F3D29);
+}
+
+.next-card .next-total h3 {
+  color: var(--color-primary, #C2593F);
+}
+
+.next-total-title {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--color-text-main, #2C2523);
+  font-weight: 800;
+}
+
+.next-total-detail {
+  display: block;
+  color: var(--color-text-muted, #6E625F);
+  font-size: .9rem;
+  line-height: 1.4;
+}
+
+.next-card .cuadro-recipe-button {
+  margin-top: 10px;
+}
+
+@media (max-width: 430px) {
+  .home-button {
+    min-height: 104px;
+    padding: 16px 12px;
+  }
+
+  .home-button .home-icon {
+    font-size: 1.85rem;
+  }
+
+  .home-button .home-title {
+    font-size: 1.06rem;
+  }
+}
+
+@media (min-width: 700px) {
+  .next-card .people-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .next-card .next-total {
+    grid-column: auto;
+  }
+}
