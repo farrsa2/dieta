@@ -55,7 +55,7 @@ function pageHeader(title, subtitle = '') {
 function renderHome() {
   app.innerHTML = `<section class="home" aria-label="Inicio"><div class="home-grid">
     <button class="home-button" onclick="location.hash='cuadro01'">🍽️ Cuadro 01<span>Comidas, cenas y totales</span></button>
-    <button class="home-button" onclick="location.hash='cuadro02'">📋 Cuadro 02<span>Semana completa por ingestas</span></button>
+    <button class="home-button" onclick="location.hash='cuadro02'">📋 Cuadro 02<span>Semana completa</span></button>
     <button class="home-button" onclick="location.hash='proxima'">⏱️ Próxima comida<span>Según día y hora</span></button>
     <button class="home-button" onclick="location.hash='compra'">🛒 Lista de la compra<span>Sincronizada entre móviles</span></button>
   </div></section>`;
@@ -101,7 +101,7 @@ async function renderNextMeal() {
     const data = parseCuadro02(await fetchText(week.archivos.cuadro02));
     const sequence = buildMealSequence(data);
     const baseIndex = computeCurrentMealIndex(sequence, now, config.horarios || {});
-    if (baseIndex < 0) throw new Error('No se pudo determinar la ingesta actual');
+    if (baseIndex < 0) throw new Error('No se pudo determinar qué toca ahora');
     const displayIndex = Math.max(0, Math.min(sequence.length - 1, baseIndex + mealOffset));
     mealOffset = displayIndex - baseIndex;
     const current = sequence[displayIndex];
