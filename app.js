@@ -2,6 +2,8 @@ const app = document.querySelector('#app');
 let config = null;
 let lastRoute = null;
 let mealOffset = 0;
+let shoppingDayFilter = 'TODOS';
+let shoppingHideBought = false;
 
 const routes = {
   inicio: renderHome,
@@ -29,6 +31,10 @@ async function init() {
 function route() {
   const key = location.hash.replace('#', '') || 'inicio';
   if (key === 'proxima' && lastRoute !== 'proxima') mealOffset = 0;
+  if (key === 'compra' && lastRoute !== 'compra') {
+    shoppingDayFilter = 'TODOS';
+    shoppingHideBought = false;
+  }
   lastRoute = key;
   (routes[key] || routes.inicio)();
 }
@@ -157,12 +163,7 @@ function buildMealSequence(data) {
     for (const meal of meals) {
       const entry = data[day]?.[meal];
       if (!entry) continue;
-      result.push({
-        day,
-        meal,
-        almu: entry.almu || '',
-        fran: entry.fran || ''
-      });
+      result.push({ day, meal, almu: entry.almu || '', fran: entry.fran || '' });
     }
   }
   return result;
@@ -202,66 +203,266 @@ async function renderShopping() {
     return;
   }
 
-  app.innerHTML = pageHeader('Lista de la compra', week.id) + '<div class="status">Cargando…</div>';
+  const periodTitle = week.compra?.titulo || week.id;
+  app.innerHTML = pageHeader('Lista de la compra', periodTitle) + '<div class="status">Preparando la lista…</div>';
+
   try {
-    const md = await fetchText(week.archivos.compra);
-    const items = parseShoppingMarkdown(md);
+    const source = await fetchText(week.archivos.compra);
+    const items = week.archivos.compra.toLowerCase().endsWith('.csv')
+      ? parseShoppingCsv(source)
+      : parseShoppingMarkdown(source);
+
     if (!items.length) throw new Error('No se encontraron productos');
-    const storageKey = `compra_${week.id}`;
+
+    const storageKey = `compra_${week.id}_${(week.compra?.dias || []).join('') || 'todo'}`;
     const checked = JSON.parse(localStorage.getItem(storageKey) || '{}');
+    const availableDays = week.compra?.dias?.length ? week.compra.dias : collectShoppingDays(items);
+    const grouped = groupShoppingItems(items);
+    const totalProducts = items.length;
 
-    const itemHtml = items.map((item, index) => {
-      if (item.category) return `<h2 class="category-title">${escapeHtml(item.category)}</h2>`;
-      const id = `item-${index}`;
-      const isChecked = Boolean(checked[id]);
-      return `
-        <label class="shopping-item ${isChecked ? 'checked' : ''}" data-id="${id}">
-          <input type="checkbox" ${isChecked ? 'checked' : ''} />
-          <span class="shopping-text">
-            <strong>${escapeHtml(item.name)}</strong>
-            <span class="shopping-meta">${escapeHtml([item.amount, item.equivalence, item.days].filter(Boolean).join(' · '))}</span>
-          </span>
-        </label>`;
-    }).join('');
+    const chips = ['TODOS', ...availableDays].map(day => `
+      <button class="day-chip ${shoppingDayFilter === day ? 'active' : ''}" type="button" data-shopping-day="${day}">
+        ${day === 'TODOS' ? 'Todos' : escapeHtml(day)}
+      </button>`).join('');
 
-    const totalProducts = items.filter(i => !i.category).length;
-    app.innerHTML = pageHeader('Lista de la compra', week.id) + `
-      <section>
-        <div class="shopping-toolbar">
-          <strong id="shopping-count"></strong>
-          <button class="reset-button" type="button" id="reset-shopping">Desmarcar todo</button>
+    const groupHtml = grouped.map(group => `
+      <section class="shopping-group" data-shopping-group>
+        <div class="shopping-category-head">
+          <span class="shopping-category-icon">${group.icon}</span>
+          <h2>${escapeHtml(group.label)}</h2>
+          <span class="shopping-category-count">${group.items.length}</span>
         </div>
-        <div class="shopping-list">${itemHtml}</div>
-      </section>`;
+        <div class="shopping-list">
+          ${group.items.map(item => shoppingItemHtml(item, checked)).join('')}
+        </div>
+      </section>`).join('');
 
-    const refreshCount = () => {
-      const boxes = [...app.querySelectorAll('.shopping-item input')];
-      const done = boxes.filter(b => b.checked).length;
-      app.querySelector('#shopping-count').textContent = `${done} / ${totalProducts} comprados`;
-    };
+    app.innerHTML = pageHeader('Lista de la compra', periodTitle) + `
+      <section class="shopping-summary card">
+        <div class="shopping-summary-top">
+          <div>
+            <p class="shopping-eyebrow">🛒 COMPRA ${availableDays.join(' · ')}</p>
+            <h2><span id="shopping-count-done">0</span> de ${totalProducts} listos</h2>
+          </div>
+          <div class="shopping-percent" id="shopping-percent">0%</div>
+        </div>
+        <div class="shopping-progress" aria-hidden="true"><span id="shopping-progress-bar"></span></div>
+        <div class="shopping-actions">
+          <button class="soft-button" id="toggle-bought" type="button">Ocultar comprados</button>
+          <button class="soft-button danger-soft" id="reset-shopping" type="button">Desmarcar todo</button>
+        </div>
+      </section>
+
+      <nav class="shopping-day-filter" aria-label="Filtrar por día">${chips}</nav>
+
+      <div class="shopping-groups">${groupHtml}</div>
+      <div class="shopping-empty" id="shopping-empty" hidden>No hay productos para este filtro.</div>`;
+
+    const save = () => localStorage.setItem(storageKey, JSON.stringify(checked));
 
     app.querySelectorAll('.shopping-item input').forEach(input => {
       input.addEventListener('change', event => {
         const label = event.target.closest('.shopping-item');
-        const id = label.dataset.id;
-        checked[id] = event.target.checked;
+        checked[label.dataset.id] = event.target.checked;
         label.classList.toggle('checked', event.target.checked);
-        localStorage.setItem(storageKey, JSON.stringify(checked));
-        refreshCount();
+        save();
+        refreshShoppingSummary();
+        applyShoppingFilters();
       });
+    });
+
+    app.querySelectorAll('[data-shopping-day]').forEach(button => {
+      button.addEventListener('click', () => {
+        shoppingDayFilter = button.dataset.shoppingDay;
+        app.querySelectorAll('[data-shopping-day]').forEach(b => b.classList.toggle('active', b === button));
+        applyShoppingFilters();
+      });
+    });
+
+    app.querySelector('#toggle-bought').addEventListener('click', event => {
+      shoppingHideBought = !shoppingHideBought;
+      event.currentTarget.textContent = shoppingHideBought ? 'Mostrar comprados' : 'Ocultar comprados';
+      event.currentTarget.classList.toggle('active-soft', shoppingHideBought);
+      applyShoppingFilters();
     });
 
     app.querySelector('#reset-shopping').addEventListener('click', () => {
       localStorage.removeItem(storageKey);
-      renderShopping();
+      Object.keys(checked).forEach(key => delete checked[key]);
+      app.querySelectorAll('.shopping-item input').forEach(input => { input.checked = false; });
+      app.querySelectorAll('.shopping-item').forEach(item => item.classList.remove('checked'));
+      refreshShoppingSummary();
+      applyShoppingFilters();
     });
-    refreshCount();
+
+    function refreshShoppingSummary() {
+      const boxes = [...app.querySelectorAll('.shopping-item input')];
+      const done = boxes.filter(box => box.checked).length;
+      const percent = totalProducts ? Math.round((done / totalProducts) * 100) : 0;
+      app.querySelector('#shopping-count-done').textContent = done;
+      app.querySelector('#shopping-percent').textContent = `${percent}%`;
+      app.querySelector('#shopping-progress-bar').style.width = `${percent}%`;
+    }
+
+    function applyShoppingFilters() {
+      let visibleCount = 0;
+      app.querySelectorAll('.shopping-item').forEach(item => {
+        const itemDays = (item.dataset.days || '').split(' ').filter(Boolean);
+        const matchesDay = shoppingDayFilter === 'TODOS' || itemDays.includes(shoppingDayFilter);
+        const isBought = item.querySelector('input').checked;
+        const visible = matchesDay && !(shoppingHideBought && isBought);
+        item.hidden = !visible;
+        if (visible) visibleCount += 1;
+      });
+
+      app.querySelectorAll('[data-shopping-group]').forEach(group => {
+        const hasVisible = [...group.querySelectorAll('.shopping-item')].some(item => !item.hidden);
+        group.hidden = !hasVisible;
+      });
+
+      app.querySelector('#shopping-empty').hidden = visibleCount !== 0;
+    }
+
+    refreshShoppingSummary();
+    applyShoppingFilters();
   } catch (error) {
     console.error(error);
-    app.innerHTML = pageHeader('Lista de la compra', week.id) + `
-      ${missingFileMessage(week.archivos.compra)}
-      <div class="status" style="margin-top:12px">La vista y los checks ya están implementados. Se activará al publicar el Markdown aprobado de compra.</div>`;
+    app.innerHTML = pageHeader('Lista de la compra', periodTitle) + missingFileMessage(week.archivos.compra);
   }
+}
+
+function shoppingItemHtml(item, checked) {
+  const id = shoppingItemId(item.name);
+  const isChecked = Boolean(checked[id]);
+  const badges = item.days.map(day => `<span class="day-badge">${escapeHtml(day)}</span>`).join('');
+  return `
+    <label class="shopping-item ${isChecked ? 'checked' : ''}" data-id="${id}" data-days="${escapeHtml(item.days.join(' '))}">
+      <input type="checkbox" ${isChecked ? 'checked' : ''} aria-label="Marcar ${escapeHtml(item.name)} como comprado" />
+      <span class="shopping-text">
+        <span class="shopping-name-row">
+          <strong>${escapeHtml(item.name)}</strong>
+          <span class="shopping-days">${badges}</span>
+        </span>
+        ${item.equivalence ? `<span class="shopping-buy">${escapeHtml(item.equivalence)}</span>` : ''}
+        ${item.amount ? `<span class="shopping-dose">Referencia dieta: ${escapeHtml(item.amount)}</span>` : ''}
+      </span>
+    </label>`;
+}
+
+function parseShoppingCsv(text) {
+  const rows = [];
+  const clean = text.replace(/^\uFEFF/, '');
+  for (const rawLine of clean.split(/\r?\n/)) {
+    const line = rawLine.trim();
+    if (!line) continue;
+    const separator = line.indexOf(';');
+    if (separator < 0) continue;
+    const left = line.slice(0, separator).trim();
+    const dayText = line.slice(separator + 1).trim();
+    const parts = left.split(' | ').map(value => value.trim()).filter(Boolean);
+    if (!parts.length) continue;
+
+    const name = parts[0];
+    let equivalence = '';
+    let amount = '';
+    if (parts.length >= 3) {
+      equivalence = parts.slice(1, -1).join(' | ');
+      amount = parts[parts.length - 1];
+    } else if (parts.length === 2) {
+      amount = parts[1];
+    }
+
+    rows.push({
+      name,
+      equivalence,
+      amount,
+      days: dayText.split(/\s+/).filter(Boolean)
+    });
+  }
+  return rows;
+}
+
+function parseShoppingMarkdown(md) {
+  const rows = [];
+  let currentCategory = '';
+  for (const rawLine of md.split(/\r?\n/)) {
+    const line = rawLine.trim();
+    if (!line.startsWith('|')) continue;
+    const cells = splitMarkdownRow(line).map(cleanMarkdownText);
+    if (cells.length < 4) continue;
+    if (/^Alimento$/i.test(cells[0]) || /^-+$/.test(cells[0])) continue;
+    const [name, amount, equivalence, days] = cells;
+    if (!name) continue;
+    if (name === name.toUpperCase() && !amount && !equivalence && !days) {
+      currentCategory = name;
+      continue;
+    }
+    rows.push({
+      name,
+      amount,
+      equivalence,
+      days: String(days || '').split(/\s+/).filter(Boolean),
+      category: currentCategory
+    });
+  }
+  return rows;
+}
+
+function groupShoppingItems(items) {
+  const definitions = [
+    { key: 'FRUTA Y VERDURA', label: 'Fruta y verdura', icon: '🥬' },
+    { key: 'CARNE', label: 'Carne y fiambre', icon: '🥩' },
+    { key: 'PESCADO', label: 'Pescado', icon: '🐟' },
+    { key: 'HUEVOS', label: 'Huevos', icon: '🥚' },
+    { key: 'LACTEOS', label: 'Lácteos', icon: '🧀' },
+    { key: 'PAN CEREALES', label: 'Pan, pasta y cereales', icon: '🍞' },
+    { key: 'CONSERVAS', label: 'Conservas y similares', icon: '🥫' },
+    { key: 'OTROS', label: 'Otros', icon: '🧺' }
+  ];
+
+  const buckets = Object.fromEntries(definitions.map(def => [def.key, []]));
+  items.forEach(item => {
+    const key = item.category ? categoryKeyFromLabel(item.category) : categoryForItem(item.name);
+    (buckets[key] || buckets.OTROS).push(item);
+  });
+
+  return definitions
+    .map(def => ({ ...def, items: buckets[def.key] }))
+    .filter(group => group.items.length);
+}
+
+function categoryForItem(name) {
+  const n = normalizeKey(name);
+  if (n.includes('salsa de tomate') || n.includes('atun en lata') || n.includes('aceituna')) return 'CONSERVAS';
+  if (/(jamon|fiambre|lomo fresco|pechuga de pollo|pechuga de pavo)/.test(n)) return 'CARNE';
+  if (/(salmon|merluza|rape|sepia|bacalao|almeja|mejillon)/.test(n)) return 'PESCADO';
+  if (n === 'huevo' || n.includes('huevos')) return 'HUEVOS';
+  if (/(queso|yogur)/.test(n)) return 'LACTEOS';
+  if (/(pan integral|tortitas|macarrones|corn flakes|copos de avena|quinoa|arroz|pasta|cereal)/.test(n)) return 'PAN CEREALES';
+  if (/(fruta|tomate fresco|patata|guisante|zanahoria|cebolla|pimiento|cebolleta|lechuga|rabano|calabaza|apio|puerro|pepino|calabacin)/.test(n)) return 'FRUTA Y VERDURA';
+  return 'OTROS';
+}
+
+function categoryKeyFromLabel(label) {
+  const n = normalizeKey(label);
+  if (n.includes('fruta') || n.includes('verdura')) return 'FRUTA Y VERDURA';
+  if (n.includes('carne')) return 'CARNE';
+  if (n.includes('pescado')) return 'PESCADO';
+  if (n.includes('huevo')) return 'HUEVOS';
+  if (n.includes('lacteo')) return 'LACTEOS';
+  if (n.includes('pan') || n.includes('cereal') || n.includes('pasta')) return 'PAN CEREALES';
+  if (n.includes('legumbre') || n.includes('conserva')) return 'CONSERVAS';
+  return 'OTROS';
+}
+
+function collectShoppingDays(items) {
+  const order = ['L', 'M', 'X', 'J', 'V', 'S', 'D'];
+  const found = new Set(items.flatMap(item => item.days));
+  return order.filter(day => found.has(day));
+}
+
+function shoppingItemId(name) {
+  return `item-${normalizeKey(name).replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}`;
 }
 
 function parseCuadro02(md) {
@@ -291,25 +492,6 @@ function parseCuadro02(md) {
   return data;
 }
 
-function parseShoppingMarkdown(md) {
-  const rows = [];
-  for (const rawLine of md.split(/\r?\n/)) {
-    const line = rawLine.trim();
-    if (!line.startsWith('|')) continue;
-    const cells = splitMarkdownRow(line).map(cleanMarkdownText);
-    if (cells.length < 4) continue;
-    if (/^Alimento$/i.test(cells[0]) || /^-+$/.test(cells[0])) continue;
-    const [name, amount, equivalence, days] = cells;
-    if (!name) continue;
-    if (name === name.toUpperCase() && !amount && !equivalence && !days) {
-      rows.push({ category: name });
-    } else {
-      rows.push({ name, amount, equivalence, days });
-    }
-  }
-  return rows;
-}
-
 function splitMarkdownRow(line) {
   return line.replace(/^\|/, '').replace(/\|$/, '').split('|').map(c => c.trim());
 }
@@ -336,6 +518,10 @@ async function fetchText(path) {
 
 function missingFileMessage(path) {
   return `<div class="status">Todavía no está publicado <strong>${escapeHtml(path)}</strong> en el repositorio.</div>`;
+}
+
+function normalizeKey(value = '') {
+  return String(value).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
 }
 
 function capitalize(value = '') {
