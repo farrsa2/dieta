@@ -1,5 +1,6 @@
 // Vistas mobile-first para Cuadro 01 y Cuadro 02.
 // En escritorio se conserva el Markdown/tablas originales.
+// En móvil los ingredientes quedan plegados por defecto.
 
 (() => {
   if (typeof routes === 'undefined') return;
@@ -37,6 +38,14 @@
     return window.marked ? marked.parseInline(value) : escapeHtml(cleanMarkdownText(value));
   }
 
+  function ingredientDetails(detail) {
+    if (!detail) return '';
+    return `<details class="cuadro-ingredients">
+      <summary>Ver ingredientes</summary>
+      <div class="cuadro-detail">${rich(detail)}</div>
+    </details>`;
+  }
+
   function splitMd(line) {
     return line.replace(/^\|/, '').replace(/\|$/, '').split('|').map(v => v.trim());
   }
@@ -72,7 +81,7 @@
     return `<article class="cuadro-person-card">
       <span class="cuadro-person-label">${label}</span>
       <div class="cuadro-title">${rich(title)}</div>
-      ${detail ? `<div class="cuadro-detail">${rich(detail)}</div>` : ''}
+      ${ingredientDetails(detail)}
     </article>`;
   }
 
@@ -80,7 +89,7 @@
     return `<article class="cuadro-total-card">
       <span class="cuadro-total-label">TOTAL PREPARACIÓN</span>
       <div class="cuadro-title">${rich(title)}</div>
-      ${detail ? `<div class="cuadro-detail">${rich(detail)}</div>` : ''}
+      ${ingredientDetails(detail)}
     </article>`;
   }
 
@@ -119,12 +128,28 @@
     }
   }
 
+  function splitMealEntry(value = '') {
+    if (!value) return { title: '', detail: '' };
+    const lines = String(value).split(/<br\s*\/?\s*>/i).map(x => x.trim()).filter(Boolean);
+    if (lines.length <= 1) return { title: value, detail: '' };
+    return { title: lines[0], detail: lines.slice(1).join('<br>') };
+  }
+
+  function meal02Person(label, value) {
+    const parts = splitMealEntry(value || '');
+    return `<article>
+      <span class="cuadro-person-label">${label}</span>
+      <div class="cuadro-title">${rich(parts.title)}</div>
+      ${ingredientDetails(parts.detail)}
+    </article>`;
+  }
+
   function meal02Card(meal, entry) {
     return `<section class="cuadro02-meal-card">
       <h2>${meal}</h2>
       <div class="cuadro-two-cols">
-        <article><span class="cuadro-person-label">ALMU</span><div>${rich(entry?.almu || '')}</div></article>
-        <article><span class="cuadro-person-label">FRAN</span><div>${rich(entry?.fran || '')}</div></article>
+        ${meal02Person('ALMU', entry?.almu || '')}
+        ${meal02Person('FRAN', entry?.fran || '')}
       </div>
     </section>`;
   }
