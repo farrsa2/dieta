@@ -10,45 +10,26 @@
   <title>Dieta · Almu y Fran</title>
   <link rel="stylesheet" href="styles.css?v=20260905-1155" />
   <style>
-    /* En móvil no dejamos controles fijos ocupando pantalla.
-       La cabecera va al final y el resumen de compra queda también abajo. */
     @media (max-width: 699px) {
-      .app-shell {
-        display: flex;
-        flex-direction: column;
-      }
-
+      .app-shell { display: flex; flex-direction: column; }
       .page-header {
-        position: static !important;
-        top: auto !important;
-        z-index: auto !important;
-        order: 20;
-        margin-top: 24px;
-        padding: 14px 0 0 !important;
-        background: transparent !important;
-        backdrop-filter: none !important;
+        position: static !important; top: auto !important; z-index: auto !important;
+        order: 20; margin-top: 24px; padding: 14px 0 0 !important;
+        background: transparent !important; backdrop-filter: none !important;
       }
-
       .shopping-summary {
-        position: static !important;
-        top: auto !important;
-        z-index: auto !important;
-        order: 10;
-        margin-top: 22px;
-        margin-bottom: 0;
+        position: static !important; top: auto !important; z-index: auto !important;
+        order: 10; margin-top: 22px; margin-bottom: 0;
       }
-
       .shopping-day-filter {
-        position: static !important;
-        top: auto !important;
-        z-index: auto !important;
+        position: static !important; top: auto !important; z-index: auto !important;
         background: transparent !important;
       }
     }
   </style>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" defer></script>
-  <script src="app.js?v=20260905-1146" defer></script>
-  <script src="shopping-overrides.js?v=20260905-1200" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+  <script src="app.js?v=20260905-1205" defer></script>
 </head>
 <body>
   <main id="app" class="app-shell" aria-live="polite"></main>
