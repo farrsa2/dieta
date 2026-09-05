@@ -18,10 +18,13 @@
 
   function patchCuadroTop(title, icon) {
     const top = document.querySelector('.cuadro-mobile-top');
-    if (!top) return;
-    const label = top.querySelector('span');
-    if (label) label.textContent = `${icon} ${title.toUpperCase()}`;
-    top.querySelector('p')?.remove();
+    if (top) {
+      const label = top.querySelector('span');
+      if (label) label.textContent = `${icon} ${title.toUpperCase()}`;
+      top.querySelector('p')?.remove();
+    }
+    const markdownTitle = document.querySelector('.md-view h1');
+    if (markdownTitle) markdownTitle.textContent = title;
   }
 
   function renderHomeV2() {
