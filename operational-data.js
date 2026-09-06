@@ -1,17 +1,14 @@
-// Fuente operativa única de la web: data/menu_14_dias.json
-// Adapta el JSON a las vistas existentes y resuelve las consultas por fecha.
+// Fuente operativa única: data/menu_14_dias.json
 (() => {
   if (typeof init !== 'function' || typeof route !== 'function') return;
 
-  // Evita que app.js cargue el antiguo semanas.json.
   window.removeEventListener('DOMContentLoaded', init);
 
   const MEALS = ['Desayuno', 'Media mañana', 'Comida', 'Merienda', 'Cena'];
   const menuCache = new Map();
   let selectedDate = null;
 
-  const dataUrl = (mime, text = '') =>
-    `data:${mime};charset=utf-8,${encodeURIComponent(String(text))}`;
+  const dataUrl = (mime, text = '') => `data:${mime};charset=utf-8,${encodeURIComponent(String(text))}`;
 
   const addDays = (iso, days) => {
     const d = new Date(`${iso}T00:00:00Z`);
@@ -30,6 +27,37 @@
   const monthShort = iso => new Intl.DateTimeFormat('es-ES', {
     month: 'short', timeZone: 'UTC'
   }).format(new Date(`${iso}T12:00:00Z`)).replace('.', '');
+
+  // Acepta tanto "Lunes Almu" como "Lunes · Almu".
+  parseCuadro02 = function(md) {
+    const data = {};
+    let headers = null;
+    for (const rawLine of md.split(/\r?\n/)) {
+      const line = rawLine.trim();
+      if (!line.startsWith('|')) continue;
+      const cells = splitMarkdownRow(line);
+      const cleaned = cells.slice(1).map(cleanMarkdownText);
+      const hasAlmu = cleaned.some(c => /\bAlmu$/i.test(c));
+      const hasFran = cleaned.some(c => /\bFran$/i.test(c));
+      if (hasAlmu && hasFran && cleaned.some(c => /^(Lunes|Martes|Miércoles|Jueves|Viernes|Sábado|Domingo)/i.test(c))) {
+        headers = cleaned;
+        continue;
+      }
+      if (!headers || cells.length < 3) continue;
+      const meal = cleanMarkdownText(cells[0]);
+      if (!MEALS.includes(meal)) continue;
+      for (let i = 0; i < headers.length && i + 1 < cells.length; i++) {
+        const match = headers[i].match(/^(Lunes|Martes|Miércoles|Jueves|Viernes|Sábado|Domingo)\s*(?:·\s*)?(Almu|Fran)$/i);
+        if (!match) continue;
+        const day = capitalize(match[1]);
+        const person = match[2].toLowerCase();
+        data[day] ||= {};
+        data[day][meal] ||= {};
+        data[day][meal][person] = cells[i + 1].trim();
+      }
+    }
+    return data;
+  };
 
   function loadedWeeks() {
     return [...(config?.semanas || [])].sort((a, b) => a.inicio.localeCompare(b.inicio));
@@ -63,13 +91,10 @@
   function mealCard(meal, entry) {
     const almu = splitMeal(entry?.almu || '');
     const fran = splitMeal(entry?.fran || '');
-    return `<section class="cuadro02-meal-card">
-      <h2>${meal}</h2>
-      <div class="cuadro-two-cols">
-        <article><span class="cuadro-person-label">ALMU</span><div class="cuadro-title">${rich(almu.title)}</div>${details(almu.detail)}</article>
-        <article><span class="cuadro-person-label">FRAN</span><div class="cuadro-title">${rich(fran.title)}</div>${details(fran.detail)}</article>
-      </div>
-    </section>`;
+    return `<section class="cuadro02-meal-card"><h2>${meal}</h2><div class="cuadro-two-cols">
+      <article><span class="cuadro-person-label">ALMU</span><div class="cuadro-title">${rich(almu.title)}</div>${details(almu.detail)}</article>
+      <article><span class="cuadro-person-label">FRAN</span><div class="cuadro-title">${rich(fran.title)}</div>${details(fran.detail)}</article>
+    </div></section>`;
   }
 
   function rollingDates() {
@@ -89,10 +114,7 @@
     const today = madridNowParts().date;
     return `<nav class="cuadro-day-selector rolling-day-selector" aria-label="Seleccionar fecha">${rollingDates().map(iso => {
       const loaded = Boolean(weekForDate(iso));
-      return `<button type="button" class="cuadro-day-chip rolling-day-chip ${iso === selected ? 'active' : ''} ${iso === today ? 'today' : ''} ${loaded ? '' : 'empty'}" onclick="selectRollingDate('${iso}')">
-        <span class="rolling-day-name">${escapeHtml(chipCaption(iso))}</span>
-        <span class="rolling-day-date">${Number(iso.slice(8, 10))} ${escapeHtml(monthShort(iso))}</span>
-      </button>`;
+      return `<button type="button" class="cuadro-day-chip rolling-day-chip ${iso === selected ? 'active' : ''} ${iso === today ? 'today' : ''} ${loaded ? '' : 'empty'}" onclick="selectRollingDate('${iso}')"><span class="rolling-day-name">${escapeHtml(chipCaption(iso))}</span><span class="rolling-day-date">${Number(iso.slice(8, 10))} ${escapeHtml(monthShort(iso))}</span></button>`;
     }).join('')}</nav>`;
   }
 
@@ -101,10 +123,7 @@
     const i = dates.indexOf(selected);
     const prev = i > 0 ? dates[i - 1] : null;
     const next = i >= 0 && i < dates.length - 1 ? dates[i + 1] : null;
-    return `<div class="cuadro-day-nav">
-      <button type="button" ${prev ? `onclick="selectRollingDate('${prev}')"` : 'disabled'}>← ${prev ? dayName(prev) : '—'}</button>
-      <button type="button" ${next ? `onclick="selectRollingDate('${next}')"` : 'disabled'}>${next ? dayName(next) : '—'} →</button>
-    </div>`;
+    return `<div class="cuadro-day-nav"><button type="button" ${prev ? `onclick="selectRollingDate('${prev}')"` : 'disabled'}>← ${prev ? dayName(prev) : '—'}</button><button type="button" ${next ? `onclick="selectRollingDate('${next}')"` : 'disabled'}>${next ? dayName(next) : '—'} →</button></div>`;
   }
 
   async function renderRollingMenu() {
@@ -114,7 +133,6 @@
     const iso = selectedDate;
     const week = weekForDate(iso);
     app.innerHTML = '<div class="status">Cargando menú…</div>';
-
     let body = '';
     if (!week) {
       body = `<section class="rolling-empty card"><strong>${escapeHtml(longDate(iso))}</strong><p>Dieta aún no cargada para este día.</p></section>`;
@@ -122,32 +140,16 @@
       try {
         const data = await menuForWeek(week);
         const entry = data[dayName(iso)];
-        body = entry
-          ? `<div class="cuadro02-meals">${MEALS.map(meal => mealCard(meal, entry[meal])).join('')}</div>`
-          : `<section class="rolling-empty card"><strong>${escapeHtml(longDate(iso))}</strong><p>No hay datos de dieta para este día.</p></section>`;
+        body = entry ? `<div class="cuadro02-meals">${MEALS.map(meal => mealCard(meal, entry[meal])).join('')}</div>` : `<section class="rolling-empty card"><strong>${escapeHtml(longDate(iso))}</strong><p>No hay datos de dieta para este día.</p></section>`;
       } catch (error) {
         console.error(error);
-        body = missingFileMessage(week.archivos.cuadro02);
+        body = '<div class="status">No se pudo leer el menú de este día.</div>';
       }
     }
-
-    app.innerHTML = `${pageHeader('Menú · 8 días', 'Ayer · hoy · +6 días')}
-      <section class="cuadro-mobile-view rolling-menu-view">
-        <div class="cuadro-mobile-top"><span>📋 MENÚ · 8 DÍAS</span><h1>${escapeHtml(longDate(iso))}</h1><p>Ayer, hoy y los seis días siguientes</p></div>
-        ${dateSelector(iso)}${body}${dateNav(iso)}
-      </section>`;
-
-    document.querySelectorAll('.back-button').forEach(button => {
-      button.textContent = '🏠';
-      button.setAttribute('aria-label', 'Inicio');
-      button.setAttribute('title', 'Inicio');
-    });
+    app.innerHTML = `${pageHeader('Menú · 8 días', 'Ayer · hoy · +6 días')}<section class="cuadro-mobile-view rolling-menu-view"><div class="cuadro-mobile-top"><span>📋 MENÚ · 8 DÍAS</span><h1>${escapeHtml(longDate(iso))}</h1><p>Ayer, hoy y los seis días siguientes</p></div>${dateSelector(iso)}${body}${dateNav(iso)}</section>`;
   }
 
-  window.selectRollingDate = iso => {
-    selectedDate = iso;
-    renderRollingMenu();
-  };
+  window.selectRollingDate = iso => { selectedDate = iso; renderRollingMenu(); };
 
   async function operationalMealSequence() {
     const result = [];
@@ -183,35 +185,19 @@
       let baseIndex = sequence.findIndex(item => item.date === target.date && item.meal === target.meal);
       if (baseIndex < 0) baseIndex = sequence.findIndex(item => item.date >= target.date);
       if (baseIndex < 0) baseIndex = sequence.length - 1;
-
       const displayIndex = Math.max(0, Math.min(sequence.length - 1, baseIndex + mealOffset));
       mealOffset = displayIndex - baseIndex;
       const current = sequence[displayIndex];
       const previous = sequence[displayIndex - 1] || null;
       const next = sequence[displayIndex + 1] || null;
-
-      app.innerHTML = pageHeader('Próxima comida', `${longDate(current.date)} · ${now.time}`) + `<section class="card next-card">
-        <p class="meal-kicker">${mealOffset === 0 ? 'Según la hora actual' : 'Vista manual'}</p>
-        <p class="meal-name">${escapeHtml(current.meal)}</p>
-        <div class="people-grid">
-          <article class="person"><h3>ALMU</h3><p>${formatMealCell(current.almu)}</p></article>
-          <article class="person"><h3>FRAN</h3><p>${formatMealCell(current.fran)}</p></article>
-        </div>
-        <div class="meal-nav">
-          <button class="meal-nav-button" type="button" ${previous ? '' : 'disabled'} onclick="shiftMeal(-1)"><span>← Anterior</span><strong>${previous ? escapeHtml(previous.meal) : '—'}</strong></button>
-          <button class="meal-nav-button" type="button" ${next ? '' : 'disabled'} onclick="shiftMeal(1)"><span>Posterior →</span><strong>${next ? escapeHtml(next.meal) : '—'}</strong></button>
-        </div>
-      </section>`;
+      app.innerHTML = pageHeader('Próxima comida', `${longDate(current.date)} · ${now.time}`) + `<section class="card next-card"><p class="meal-kicker">${mealOffset === 0 ? 'Según la hora actual' : 'Vista manual'}</p><p class="meal-name">${escapeHtml(current.meal)}</p><div class="people-grid"><article class="person"><h3>ALMU</h3><p>${formatMealCell(current.almu)}</p></article><article class="person"><h3>FRAN</h3><p>${formatMealCell(current.fran)}</p></article></div><div class="meal-nav"><button class="meal-nav-button" type="button" ${previous ? '' : 'disabled'} onclick="shiftMeal(-1)"><span>← Anterior</span><strong>${previous ? escapeHtml(previous.meal) : '—'}</strong></button><button class="meal-nav-button" type="button" ${next ? '' : 'disabled'} onclick="shiftMeal(1)"><span>Posterior →</span><strong>${next ? escapeHtml(next.meal) : '—'}</strong></button></div></section>`;
     } catch (error) {
       console.error(error);
       app.innerHTML = pageHeader('Próxima comida') + '<div class="status">No hay una próxima comida disponible en la ventana cargada.</div>';
     }
   }
 
-  window.shiftMeal = delta => {
-    mealOffset += delta;
-    renderNextMealOperational();
-  };
+  window.shiftMeal = delta => { mealOffset += delta; renderNextMealOperational(); };
 
   async function initOperationalData() {
     try {
@@ -225,20 +211,10 @@
         const text = await new Response(stream).text();
         data = JSON.parse(text);
       }
-
-      if (!Array.isArray(data.weeks) || data.weeks.length < 1 || data.weeks.length > 2) {
-        throw new Error('menu_14_dias.json debe contener una o dos semanas operativas');
-      }
-      if (!data.documents || !data.shopping) {
-        throw new Error('menu_14_dias.json no contiene la estructura operativa requerida');
-      }
+      if (!Array.isArray(data.weeks) || !data.documents || !data.shopping) throw new Error('Estructura operativa inválida');
 
       window.DIET_OPERATIONAL = data;
       window.DIET_RECIPES = data.recipes || {};
-
-      const shopping = data.shopping || {};
-      const shoppingCsv = dataUrl('text/csv', shopping.csv || '');
-      const shoppingUses = dataUrl('application/json', JSON.stringify(shopping.uses || {}));
 
       config = {
         timezone: data.timezone || 'Europe/Madrid',
@@ -254,12 +230,12 @@
               historico: week.historico || '',
               cuadro01: dataUrl('text/markdown', document.main_markdown || ''),
               cuadro02: dataUrl('text/markdown', document.menu_markdown || ''),
-              compra: shoppingCsv
+              compra: 'data/20260907_SEMANA01_COMPRA_LMX.csv'
             },
             compra: {
-              dias: shopping.dias || [],
-              titulo: shopping.titulo || 'Lista única',
-              usos: shoppingUses
+              dias: data.shopping?.dias || ['L','M','X'],
+              titulo: data.shopping?.titulo || 'Lunes · Martes · Miércoles',
+              usos: dataUrl('application/json', JSON.stringify(data.shopping?.uses || {}))
             }
           };
         })
@@ -269,10 +245,9 @@
       const current = config.semanas.find(week => now.date >= week.inicio && now.date <= week.fin);
       config.vigente = current?.id || config.semanas[config.semanas.length - 1]?.id || null;
 
-      // Estas dos vistas deben cruzar semanas por fecha; se definen después de ui-v4.js.
       routes.cuadro02 = renderRollingMenu;
       routes.proxima = renderNextMealOperational;
-
+      routes.compra = renderShopping;
       route();
     } catch (error) {
       console.error(error);
