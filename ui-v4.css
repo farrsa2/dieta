@@ -33,3 +33,85 @@
 .shopping-name-row .shopping-days-v4 {
   margin-left: 0;
 }
+
+/* Cabecera compacta y fija para todas las vistas. */
+.page-header {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 950 !important;
+  order: -100 !important;
+  min-height: 48px !important;
+  margin: 0 !important;
+  padding: 6px 10px !important;
+  display: grid !important;
+  grid-template-columns: 38px minmax(0, 1fr) !important;
+  gap: 9px !important;
+  align-items: center !important;
+  background: rgba(250, 246, 240, .96) !important;
+  border-bottom: 1px solid rgba(65, 56, 52, .10) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+}
+
+.page-header .back-button {
+  width: 36px !important;
+  height: 36px !important;
+  min-width: 36px !important;
+  min-height: 36px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border-radius: 50% !important;
+  display: grid !important;
+  place-items: center !important;
+  font-size: 1.05rem !important;
+  line-height: 1 !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+}
+
+.page-header > div {
+  min-width: 0 !important;
+}
+
+.page-header .page-title {
+  margin: 0 !important;
+  font-size: 1rem !important;
+  line-height: 1.1 !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+.page-header .page-subtitle {
+  margin: 2px 0 0 !important;
+  font-size: .68rem !important;
+  line-height: 1.05 !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+/* El título principal vive en la franja fija. En la cabecera móvil interna
+   se conserva solo el día/fecha y el texto descriptivo. */
+.cuadro-mobile-top > span:first-child {
+  display: none !important;
+}
+
+.cuadro-mobile-top {
+  padding-top: 10px !important;
+}
+
+@media (max-width: 699px) {
+  .page-header {
+    position: sticky !important;
+    top: 0 !important;
+    order: -100 !important;
+    margin: 0 !important;
+    padding: 5px 8px !important;
+    min-height: 46px !important;
+    background: rgba(250, 246, 240, .97) !important;
+  }
+  .page-header .page-title { font-size: .96rem !important; }
+  .page-header .page-subtitle { font-size: .64rem !important; }
+  .cuadro-mobile-top h1 { margin-top: 0 !important; }
+}
