@@ -59,7 +59,26 @@ Se conserva el aspecto validado por el usuario:
 
 El movimiento final de filtros y resumen utiliza un `MutationObserver` acotado que se desconecta **antes** de modificar el DOM. No usa bucles de mutación ni temporizadores de reintento.
 
-## Pruebas ejecutadas
+## Corrección de auditoría · recetas
+
+Durante la revisión previa a consolidar se detectó que la fuente histórica `05_WEB_Y_GITHUB_20260906_111726.md` contenía reglas de receta que no se habían trasladado con suficiente detalle a las instrucciones consolidadas.
+
+Se corrige de la siguiente forma:
+
+- `05_WEB_Y_GITHUB` vuelve a ser una fuente permanente independiente;
+- la instrucción vigente del usuario limita las recetas emergentes a **Menú · 8 días** y **Próxima comida**;
+- en ambas vistas solo pueden aparecer para **Comida** o **Cena**;
+- en Menú · 8 días el botón pertenece a la tarjeta concreta cuya preparación tenga receta archivada;
+- en Próxima comida ALMU y FRAN no muestran receta: el botón aparece únicamente en **TOTAL**;
+- Desayuno, Media mañana y Merienda nunca muestran receta;
+- la receta se abre en modal y procede exclusivamente de `data/menu_14_dias.json` / fuente archivada del nutricionista;
+- si no existe receta respaldada, no se muestra botón;
+- se añade `recipe-runtime.js` como capa operativa cargada después de `operational-data.js`;
+- esta capa usa un `MutationObserver` acotado que se desconecta antes de modificar el DOM para no autoactivarse.
+
+La nueva fuente privada vigente es `05_WEB_Y_GITHUB_20260906_141218.md`.
+
+## Pruebas ejecutadas antes de la corrección de recetas
 
 Chromium, dos tamaños:
 
@@ -79,6 +98,16 @@ Comprobaciones superadas:
 - título móvil no duplicado;
 - 0 peticiones a `semanas.json`;
 - 0 peticiones al CSV semanal eliminado.
+
+## Validaciones específicas de la corrección de recetas
+
+- `recipe-runtime.js` pasa validación sintáctica de JavaScript;
+- el JSON operativo conserva la receta archivada `Tabouleh de quinoa`;
+- el menú operativo de miércoles contiene Tabouleh en Almu y Fran;
+- el Cuadro 01 operativo de miércoles contiene `Tabouleh de quinoa` como Comida total;
+- no se ha modificado `data/menu_14_dias.json` para introducir recetas inventadas.
+
+La ejecución integral en navegador de esta corrección se verificará antes de promover la rama a `main`.
 
 ## Capas heredadas conservadas
 
