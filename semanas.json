@@ -11,6 +11,22 @@
   },
   "semanas": [
     {
+      "id": "20260906_TRANSICION",
+      "inicio": "2026-09-06",
+      "fin": "2026-09-06",
+      "archivos": {
+        "historico": "data/20260907_SEMANA01.md",
+        "cuadro01": "data/20260907_SEMANA01_CUADRO01_APROBADO.md",
+        "cuadro02": "data/20260907_SEMANA01_CUADRO02_APROBADO.md",
+        "compra": "data/20260907_SEMANA01_COMPRA_LMX.csv"
+      },
+      "compra": {
+        "dias": ["L", "M", "X"],
+        "titulo": "Lunes · Martes · Miércoles",
+        "usos": "data/20260907_SEMANA01_COMPRA_USOS.json"
+      }
+    },
+    {
       "id": "20260907_SEMANA01",
       "inicio": "2026-09-07",
       "fin": "2026-09-13",
