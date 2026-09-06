@@ -76,10 +76,17 @@
     });
   }
 
+  function moveShoppingSummaryToBottom() {
+    const summary = document.querySelector('.shopping-summary');
+    if (!summary || !app?.contains(summary)) return;
+    app.appendChild(summary);
+  }
+
   routes.compra = async () => {
     await previousCompra();
     const uses = await loadShoppingUses();
     decorateShoppingCards(uses);
+    moveShoppingSummaryToBottom();
   };
 })();
 // Vista por fechas: ayer, hoy y seis días siguientes.
