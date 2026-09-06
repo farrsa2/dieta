@@ -1,51 +1,123 @@
 # INSTRUCCIONES DEL PROYECTO · DIETAS ALMU Y FRAN
 
-Este proyecto gestiona las dietas semanales de Almudena y Fran y publica una web de consulta.
+Este repositorio publica la web de consulta de las dietas de Almu y Fran. La prioridad absoluta es conservar la fidelidad de las fuentes, la trazabilidad de las versiones y el funcionamiento estable de la versión publicada.
 
-## FUENTES PERMANENTES
+## 1. FUENTES MAESTRAS
 
-Aplica siempre las reglas y formatos de:
-- 01_REGLAS_Y_PREFERENCIAS.md
-- 02_PLANTILLAS.md
-- 03_EQUIVALENCIAS_Y_CRITERIOS.md
-- 04_PRODUCTOS_HABITUALES.md
+Las reglas permanentes del proyecto viven en los archivos lógicos:
 
-Los PDF del nutricionista tienen prioridad al incorporar una semana nueva. No mezcles personas ni cantidades.
+- `01_REGLAS_Y_PREFERENCIAS`
+- `02_PLANTILLAS`
+- `03_EQUIVALENCIAS_Y_CRITERIOS`
+- `04_PRODUCTOS_HABITUALES`
 
-## COMANDO «PREPARA LA SEMANA»
+Siempre se usa **la versión con timestamp más reciente** de cada archivo. No se mezclan fragmentos de versiones antiguas salvo que una regla vigente remita expresamente a ellos.
+
+Los PDF del nutricionista son la fuente primaria al incorporar una semana nueva. No se corrigen por intuición ni se mezclan personas, cantidades, alternativas u observaciones.
+
+## 2. VERSIONADO Y NOMBRES
+
+Formato general:
+
+`nombreArchivo_YYYYMMDD_HHMMSS.ext`
+
+Zona horaria: `Europe/Madrid`.
+
+No usar `(1)`, `(2)`, `copy`, `final2` ni variantes equivalentes.
+
+Histórico semanal:
+
+`SEMANAxx_YYYYMMDD_HISTORICO_YYYYMMDD_HHMMSS.md`
+
+Cuadros aprobados/revisados:
+
+- `SEMANAxx_YYYYMMDD_CUADRO01_APROBADO_YYYYMMDD_HHMMSS.md`
+- `SEMANAxx_YYYYMMDD_CUADRO02_REVISADO_YYYYMMDD_HHMMSS.md`
+
+Lista de compra, cuando se exporte:
+
+`SEMANAxx_YYYYMMDD_COMPRA_<DIAS>_YYYYMMDD_HHMMSS.csv`
+
+La semana 31/08/2026–06/09/2026 es `SEMANA00`; la semana 07/09/2026–13/09/2026 es `SEMANA01`.
+
+## 3. PROCESO DE UNA SEMANA NUEVA
 
 Cuando el usuario diga «Prepara la semana»:
 
-1. Revisa los dos PDF completos e identifica correctamente Almu y Fran.
-2. Valida los siete días, las cinco ingestas, cantidades, alternativas y observaciones. No inventes datos.
-3. Genera el Markdown histórico semanal `YYYYMMDD_SEMANAxx.md` y guárdalo en `data/historico/`.
-4. Conserva los históricos anteriores en `data/historico/`; no son la fuente que consulta la web.
-5. Mantén como máximo dos semanas operativas. Tras recibir el menú del miércoles serán normalmente la semana en curso y la siguiente. Al llegar el lunes, hasta recibir el nuevo menú del miércoles, pueden permanecer temporalmente la semana anterior y la semana en curso para que la vista de ocho días conserve «ayer».
-6. Regenera **por completo** `data/menu_14_dias.json`. Este archivo es la única fuente operativa de dietas para la web y debe contener:
-   - zona horaria y horarios de ingestas;
-   - identificación, inicio y fin de las dos semanas;
-   - menú completo de Almu y Fran para cada semana, con cantidades e ingredientes;
-   - datos de comidas/cenas conjuntas y totales cuando existan;
-   - la lista de la compra única vigente, con cantidades, equivalencias, días y usos;
-   - recetas necesarias para las dos semanas, cuando se utilicen en la interfaz.
-7. La web trabaja por fecha, no por «semana actual/siguiente». Su vista de menú debe mostrar siempre **ayer, hoy y seis días más**. Si una fecha futura todavía no está cargada, se muestra como vacía.
-8. La lista de la compra de la web es siempre una única lista conjunta para Almu + Fran.
-9. Actualiza la web/repositorio para que siga leyendo únicamente `data/menu_14_dias.json`; no hagas que la interfaz seleccione archivos Markdown/CSV semanales.
-10. Verifica que el JSON es válido y que las vistas «Comidas y cenas», «Menú · 8 días», «Próxima comida» y «Lista de la compra» funcionan con él.
-11. Después de comprobar el Markdown histórico y el JSON operativo, pregunta expresamente si el usuario quiere borrar los PDF originales. No los borres sin confirmación.
+1. Leer completos los dos PDF e identificar correctamente Almu y Fran.
+2. Validar los siete días, las cinco ingestas, cantidades, alternativas y observaciones. No inventar datos.
+3. Preparar y validar Cuadro 01 y Cuadro 02 conforme a las reglas maestras.
+4. Para la compra, seguir obligatoriamente la revisión **día a día**: mostrar Almu + Fran, ingredientes/cantidades y equivalencias; esperar validación del usuario; marcar el día como validado; solo entonces pasar al siguiente.
+5. Consolidar la compra únicamente después de validar todos los días seleccionados. Crear CSV solo si el usuario lo solicita.
+6. Crear el histórico semanal con el nombre vigente y guardarlo en `data/historico/`.
+7. Regenerar por completo `data/menu_14_dias.json`.
+8. Verificar las cuatro vistas: «Comidas y cenas», «Menú · 8 días», «Próxima comida» y «Lista de la compra».
+9. Solo después de validar histórico y JSON, preguntar si se desean borrar los PDF originales. **Nunca borrar PDF sin confirmación expresa.**
 
-## REGLAS DE ARCHIVO
+## 4. FUENTE OPERATIVA ÚNICA DE LA WEB
 
-- `data/historico/`: semanas cerradas y artefactos históricos.
-- `data/menu_14_dias.json`: única fuente operativa de la web.
-- La llegada de una semana nueva desplaza la ventana. El miércoles, al incorporar el nuevo menú, el JSON queda normalmente con semana en curso + semana siguiente.
-- Entre el lunes y la nueva entrega del miércoles puede conservar semana anterior + semana en curso para que «ayer» siga disponible.
-- No acumules más de dos semanas dentro del JSON operativo.
-- No elimines históricos por el desplazamiento de la ventana.
+La web consulta como fuente de dieta únicamente:
 
-## FUNCIONAMIENTO GENERAL
+`data/menu_14_dias.json`
 
-- Si el usuario dice «como siempre», aplica las plantillas maestras vigentes.
-- Si cambia una preferencia permanente, actualiza el archivo permanente correspondiente.
-- No inventes equivalencias; si son estimadas, márcalas como orientativas.
-- Mantén las respuestas claras, breves y cómodas para móvil.
+Este JSON debe contener como máximo dos semanas operativas e incluir:
+
+- zona horaria y horarios de ingestas;
+- identificador, inicio y fin de cada semana;
+- menús completos de Almu y Fran;
+- Cuadro 01 / comidas y cenas conjuntas y totales cuando existan;
+- una única lista conjunta de compra vigente, con cantidades, equivalencias, días y usos;
+- recetas necesarias para la interfaz.
+
+Los Markdown históricos y los CSV semanales **no son fuentes de ejecución de la web**. Pueden existir como artefactos históricos, pero la aplicación no debe depender de ellos para funcionar.
+
+La capa de compatibilidad de la lista puede mantener internamente el formato CSV que espera el parser, pero los bytes de esa lista deben proceder del campo de compra incluido en `data/menu_14_dias.json`; no debe existir una segunda fuente semanal independiente.
+
+## 5. VENTANA OPERATIVA
+
+La interfaz trabaja por fecha, no por etiquetas «actual/siguiente».
+
+La vista de menú muestra siempre:
+
+**ayer + hoy + seis días siguientes**.
+
+Tras recibir el menú nuevo, las dos semanas serán normalmente semana en curso + semana siguiente. Entre el lunes y la nueva entrega del miércoles puede mantenerse temporalmente semana anterior + semana en curso para conservar «ayer».
+
+Nunca acumular más de dos semanas en el JSON operativo.
+
+## 6. HISTÓRICO
+
+`data/historico/` contiene semanas cerradas y artefactos históricos válidos.
+
+- No se usa como fuente de ejecución.
+- No se elimina un histórico porque salga de la ventana operativa.
+- No deben coexistir copias mal numeradas o con convenciones de nombre obsoletas cuando ya exista el histórico vigente y más completo.
+
+## 7. COMPRA
+
+Exclusiones permanentes de la lista de compra:
+
+- café;
+- cualquier leche;
+- AOVE / aceite;
+- sal.
+
+Las equivalencias estimadas se marcan como orientativas. No se inventan formatos de supermercado que no estén respaldados por las reglas o por una estimación explícitamente indicada.
+
+## 8. PROTECCIÓN DE LA VERSIÓN PUBLICADA
+
+Antes de una modificación estructural del repositorio o de la interfaz:
+
+1. identificar el commit de producción aceptado;
+2. conservar una rama estable apuntando exactamente a ese commit;
+3. realizar la refactorización en una rama separada;
+4. probar móvil y escritorio, navegación, errores JavaScript y fuentes de datos;
+5. promover a `main` solo una versión que mantenga el comportamiento validado.
+
+No introducir observadores, temporizadores o reordenamientos de DOM que puedan reactivarse a sí mismos. Si se usa `MutationObserver`, debe ser acotado y desconectarse antes de modificar el DOM que observa.
+
+## 9. CAMBIOS DE INTERFAZ
+
+Un cambio visual no debe modificar los datos de dieta ni crear una fuente operativa nueva. La cabecera, iconos, filtros y disposición de tarjetas son presentación; el contenido dietético sigue procediendo del JSON operativo.
+
+La versión aceptada de referencia antes de esta consolidación está preservada en la rama `stable-20260906-1326`.
