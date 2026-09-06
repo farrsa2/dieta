@@ -210,49 +210,37 @@
     if (grid) grid.insertAdjacentHTML('beforeend', totalHtml);
   }
 
-  function afterNextRender(test, decorate) {
+  async function decorateCurrentView() {
+    if (document.querySelector('.rolling-menu-view')) decorateRollingMenu();
+    if (document.querySelector('.next-card')) await decorateNextMeal();
+  }
+
+  function startRecipeDecorator() {
     let observer = null;
-    const run = () => {
-      if (!test()) return false;
-      observer?.disconnect();
-      Promise.resolve(decorate()).catch(console.error);
-      return true;
+    let running = false;
+
+    const observe = () => {
+      observer.observe(app, { childList: true, subtree: true });
     };
-    if (run()) return;
-    observer = new MutationObserver(() => run());
-    observer.observe(app, { childList: true, subtree: true });
+
+    const run = async () => {
+      if (running) return;
+      running = true;
+      observer.disconnect();
+      try {
+        await decorateCurrentView();
+      } catch (error) {
+        console.error('No se pudieron decorar las recetas operativas:', error);
+      } finally {
+        running = false;
+        observe();
+      }
+    };
+
+    observer = new MutationObserver(() => { void run(); });
+    observe();
+    void run();
   }
 
-  const menuRoute = routes.cuadro02;
-  routes.cuadro02 = async (...args) => {
-    const value = await menuRoute(...args);
-    decorateRollingMenu();
-    return value;
-  };
-
-  const nextRoute = routes.proxima;
-  routes.proxima = async (...args) => {
-    const value = await nextRoute(...args);
-    await decorateNextMeal();
-    return value;
-  };
-
-  if (typeof window.selectRollingDate === 'function') {
-    const selectRollingDate = window.selectRollingDate;
-    window.selectRollingDate = iso => {
-      selectRollingDate(iso);
-      afterNextRender(
-        () => document.querySelector('.rolling-day-chip.active')?.getAttribute('onclick')?.includes(iso) && Boolean(document.querySelector('.rolling-menu-view .cuadro02-meal-card')),
-        decorateRollingMenu
-      );
-    };
-  }
-
-  if (typeof window.shiftMeal === 'function') {
-    const shiftMeal = window.shiftMeal;
-    window.shiftMeal = delta => {
-      shiftMeal(delta);
-      afterNextRender(() => Boolean(document.querySelector('.next-card')), decorateNextMeal);
-    };
-  }
+  window.addEventListener('DOMContentLoaded', startRecipeDecorator);
 })();
