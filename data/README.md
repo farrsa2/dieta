@@ -2,31 +2,47 @@
 
 ## Fuente operativa única
 
-La aplicación consulta exclusivamente:
+La aplicación obtiene los datos de dieta exclusivamente de:
 
 `menu_14_dias.json`
 
-El JSON contiene como máximo dos semanas operativas, la configuración horaria, los datos necesarios para los cuadros, las recetas utilizadas y una única lista de la compra conjunta.
+El JSON contiene como máximo dos semanas operativas, horarios, documentos embebidos para los cuadros, recetas y una única lista conjunta de la compra.
 
-Tras recibir el menú del miércoles, las dos semanas serán normalmente **semana en curso + semana siguiente**. Entre el lunes y la nueva entrega del miércoles pueden permanecer temporalmente **semana anterior + semana en curso** para que la vista móvil conserve «ayer». Nunca se acumulan más de dos semanas.
+La lista de compra puede ser interpretada internamente con formato CSV por compatibilidad con el renderizador, pero su contenido procede del propio JSON. No debe existir un CSV semanal independiente necesario para que la web funcione.
 
-La interfaz trabaja por fechas y muestra una ventana móvil de **ayer + hoy + seis días**. Si todavía no existe dieta para una fecha futura, esa fecha aparece vacía.
+## Ventana por fechas
+
+La interfaz trabaja por fechas y muestra:
+
+**ayer + hoy + seis días**.
+
+Tras recibir el menú del miércoles, las dos semanas serán normalmente semana en curso + semana siguiente. Entre el lunes y la nueva entrega pueden permanecer temporalmente semana anterior + semana en curso para conservar «ayer».
+
+Nunca se acumulan más de dos semanas operativas.
 
 ## Histórico
 
-Los archivos semanales consolidados viven en:
+Los históricos válidos viven en:
 
 `historico/`
 
-La web no los consulta en tiempo de ejecución. Se conservan para archivo y consultas históricas.
+Nomenclatura:
+
+`SEMANAxx_YYYYMMDD_HISTORICO_YYYYMMDD_HHMMSS.md`
+
+La web no consulta estos archivos en tiempo de ejecución. Se conservan para trazabilidad y consultas históricas.
+
+No deben mantenerse copias con numeración antigua cuando ya exista el histórico vigente y más completo.
 
 ## Flujo de actualización
 
-Al llegar los dos PDF de una nueva semana:
-1. se validan Almu y Fran;
-2. se crea `historico/YYYYMMDD_SEMANAxx.md`;
-3. se determinan las dos semanas que deben quedar en la ventana operativa;
-4. se regenera por completo `menu_14_dias.json`;
-5. se comprueba la web.
+Al incorporar una dieta nueva:
 
-No se mantienen archivos semanales separados como fuentes operativas de la interfaz.
+1. validar los PDF de Almu y Fran;
+2. generar los cuadros y validar la compra según las reglas del proyecto;
+3. guardar el histórico semanal versionado;
+4. determinar las dos semanas que forman la ventana operativa;
+5. regenerar por completo `menu_14_dias.json`;
+6. comprobar «Comidas y cenas», «Menú · 8 días», «Próxima comida» y «Lista de la compra».
+
+Los PDF originales no se eliminan sin confirmación expresa del usuario.
