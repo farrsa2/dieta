@@ -9,11 +9,25 @@
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
   <title>Dieta · Almu y Fran</title>
-  <link rel="icon" href="icon.svg?v=20260905-1830" type="image/svg+xml" />
-  <link rel="apple-touch-icon" href="icon.svg?v=20260905-1830" />
-  <link rel="manifest" href="manifest.webmanifest?v=20260905-1830" />
+  <link rel="icon" href="icon.svg?v=20260906-1253" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="icon.svg?v=20260906-1253" />
+  <link rel="manifest" href="manifest.webmanifest?v=20260906-1253" />
   <link rel="stylesheet" href="styles.css?v=20260905-1448" />
   <style>
+    .back-button {
+      width: 46px !important;
+      min-width: 46px !important;
+      height: 46px !important;
+      padding: 0 !important;
+      display: inline-grid !important;
+      place-items: center !important;
+      border-radius: 50% !important;
+      font-size: 1.45rem !important;
+      line-height: 1 !important;
+      white-space: nowrap !important;
+      overflow: hidden !important;
+    }
+
     @media (max-width: 699px) {
       .app-shell { display: flex; flex-direction: column; }
       .page-header {
@@ -145,5 +159,18 @@
 </head>
 <body>
   <main id="app" class="app-shell" aria-live="polite"></main>
+  <script>
+    (() => {
+      const normalizeHomeButtons = () => {
+        document.querySelectorAll('.back-button').forEach(button => {
+          button.textContent = '🏠';
+          button.setAttribute('aria-label', 'Inicio');
+          button.setAttribute('title', 'Inicio');
+        });
+      };
+      new MutationObserver(normalizeHomeButtons).observe(document.querySelector('#app'), { childList: true, subtree: true });
+      document.addEventListener('DOMContentLoaded', normalizeHomeButtons);
+    })();
+  </script>
 </body>
 </html>
