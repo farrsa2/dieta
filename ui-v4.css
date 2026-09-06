@@ -34,6 +34,19 @@
   margin-left: 0;
 }
 
+/* La tarjeta de progreso de compra debe estar al final de la página,
+   nunca pegada arriba aunque styles.css la defina como sticky. */
+.shopping-summary {
+  position: static !important;
+  top: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  right: auto !important;
+  z-index: auto !important;
+  margin-top: 22px !important;
+  margin-bottom: 0 !important;
+}
+
 /* Cabecera global: fija, compacta y sin JavaScript.
    Título a la izquierda y botón de inicio a la derecha. */
 .page-header {
@@ -134,4 +147,5 @@
   .page-header .page-title { font-size: .96rem !important; }
   .page-header .page-subtitle { font-size: .63rem !important; }
   .app-shell:has(.page-header) { padding-top: calc(50px + env(safe-area-inset-top)) !important; }
+  .shopping-summary { margin-top: 18px !important; }
 }
