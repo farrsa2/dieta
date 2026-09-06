@@ -18,26 +18,41 @@
   line-height: 1.35;
 }
 
-.shopping-use-line-v4 { display: block; font-weight: 400; }
-.shopping-days-v4 { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 10px; }
-.shopping-name-row .shopping-days-v4 { margin-left: 0; }
+.shopping-use-line-v4 {
+  display: block;
+  font-weight: 400;
+}
 
-/* Cabecera única, compacta y fija. El DOM conserva botón + título,
-   pero visualmente el título queda a la izquierda y la casa a la derecha. */
+.shopping-days-v4 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.shopping-name-row .shopping-days-v4 {
+  margin-left: 0;
+}
+
+/* Cabecera global: fija, compacta y sin JavaScript.
+   Título a la izquierda y botón de inicio a la derecha. */
 .page-header {
-  position: sticky !important;
+  position: fixed !important;
   top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
   z-index: 950 !important;
-  min-height: 46px !important;
+  min-height: 48px !important;
   margin: 0 !important;
-  padding: 5px 8px !important;
+  padding: 6px max(10px, env(safe-area-inset-right)) 6px max(10px, env(safe-area-inset-left)) !important;
   display: grid !important;
   grid-template-columns: minmax(0, 1fr) 36px !important;
   grid-template-rows: auto !important;
-  gap: 8px !important;
+  gap: 10px !important;
   align-items: center !important;
   background: rgba(250, 246, 240, .97) !important;
   border-bottom: 1px solid rgba(65, 56, 52, .10) !important;
+  box-shadow: 0 2px 10px rgba(31, 36, 33, .05) !important;
   backdrop-filter: blur(12px) !important;
   -webkit-backdrop-filter: blur(12px) !important;
 }
@@ -51,31 +66,32 @@
 .page-header .back-button {
   grid-column: 2 !important;
   grid-row: 1 !important;
+  justify-self: end !important;
   width: 36px !important;
-  height: 36px !important;
   min-width: 36px !important;
+  height: 36px !important;
   min-height: 36px !important;
-  padding: 0 !important;
   margin: 0 !important;
-  border-radius: 50% !important;
+  padding: 0 !important;
   display: grid !important;
   place-items: center !important;
-  font-size: 0 !important;
-  line-height: 1 !important;
+  border-radius: 50% !important;
   overflow: hidden !important;
   white-space: nowrap !important;
+  font-size: 0 !important;
+  line-height: 1 !important;
 }
 
 .page-header .back-button::before {
   content: '🏠';
-  font-size: 1.05rem;
+  font-size: 1.08rem;
   line-height: 1;
 }
 
 .page-header .page-title {
   margin: 0 !important;
-  font-size: .96rem !important;
-  line-height: 1.1 !important;
+  font-size: 1rem !important;
+  line-height: 1.12 !important;
   white-space: nowrap !important;
   overflow: hidden !important;
   text-overflow: ellipsis !important;
@@ -83,14 +99,39 @@
 
 .page-header .page-subtitle {
   margin: 2px 0 0 !important;
-  font-size: .64rem !important;
-  line-height: 1.05 !important;
+  font-size: .66rem !important;
+  line-height: 1.08 !important;
   white-space: nowrap !important;
   overflow: hidden !important;
   text-overflow: ellipsis !important;
 }
 
-/* El nombre de la vista ya está en la franja fija: no se duplica en la cabecera móvil interna. */
-.cuadro-mobile-top > span:first-child { display: none !important; }
-.cuadro-mobile-top { padding-top: 10px !important; }
-.cuadro-mobile-top h1 { margin-top: 0 !important; }
+/* Reserva espacio solo cuando existe cabecera. No afecta a Inicio. */
+.app-shell:has(.page-header) {
+  padding-top: 52px !important;
+}
+
+/* El título de la vista vive en la franja fija. Dentro de la vista móvil
+   se conserva únicamente el día/fecha y la descripción. */
+.cuadro-mobile-top > span:first-child {
+  display: none !important;
+}
+
+.cuadro-mobile-top {
+  padding-top: 8px !important;
+}
+
+.cuadro-mobile-top h1 {
+  margin-top: 0 !important;
+}
+
+@media (max-width: 699px) {
+  .page-header {
+    min-height: 46px !important;
+    padding-top: max(5px, env(safe-area-inset-top)) !important;
+    padding-bottom: 5px !important;
+  }
+  .page-header .page-title { font-size: .96rem !important; }
+  .page-header .page-subtitle { font-size: .63rem !important; }
+  .app-shell:has(.page-header) { padding-top: calc(50px + env(safe-area-inset-top)) !important; }
+}
