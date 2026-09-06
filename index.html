@@ -9,40 +9,22 @@
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
   <title>Dieta · Almu y Fran</title>
+
   <link rel="icon" href="icon.svg?v=20260906-1253" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="icon.svg?v=20260906-1253" />
   <link rel="manifest" href="manifest.webmanifest?v=20260906-1253" />
-  <link rel="stylesheet" href="styles.css?v=20260905-1448" />
-  <style>
-    .back-button {
-      width: 46px !important;
-      min-width: 46px !important;
-      height: 46px !important;
-      padding: 0 !important;
-      display: inline-grid !important;
-      place-items: center !important;
-      border-radius: 50% !important;
-      font-size: 1.45rem !important;
-      line-height: 1 !important;
-      white-space: nowrap !important;
-      overflow: hidden !important;
-    }
 
+  <link rel="stylesheet" href="styles.css?v=20260905-1448" />
+  <link rel="stylesheet" href="theme-terracota.css?v=20260905-1745" />
+  <link rel="stylesheet" href="ui-v2.css?v=20260905-1808" />
+  <link rel="stylesheet" href="ui-v3.css?v=20260905-1818" />
+  <link rel="stylesheet" href="ui-v4.css?v=20260906-1305" />
+
+  <style>
     @media (max-width: 699px) {
-      .app-shell { display: flex; flex-direction: column; }
-      .page-header {
-        position: static !important; top: auto !important; z-index: auto !important;
-        order: 20; margin-top: 24px; padding: 14px 0 0 !important;
-        background: transparent !important; backdrop-filter: none !important;
-      }
-      .shopping-summary {
-        position: static !important; top: auto !important; z-index: auto !important;
-        order: 10; margin-top: 22px; margin-bottom: 0;
-      }
-      .shopping-day-filter {
-        position: static !important; top: auto !important; z-index: auto !important;
-        background: transparent !important;
-      }
+      .app-shell { display: block; }
+      .shopping-summary { margin-top: 14px; }
+      .shopping-day-filter { background: transparent !important; }
       .cuadro-ingredients { margin-top: 8px; }
       .cuadro-ingredients summary {
         cursor: pointer;
@@ -105,15 +87,8 @@
       font-weight: 900;
       letter-spacing: .08em;
     }
-    .recipe-modal-head h2 {
-      margin: 4px 0 2px;
-      font-size: 1.3rem;
-    }
-    .recipe-modal-head p {
-      margin: 0;
-      color: #707772;
-      font-size: .84rem;
-    }
+    .recipe-modal-head h2 { margin: 4px 0 2px; font-size: 1.3rem; }
+    .recipe-modal-head p { margin: 0; color: #707772; font-size: .84rem; }
     .recipe-modal-close {
       width: 38px;
       height: 38px;
@@ -124,11 +99,7 @@
       font-size: 1.6rem;
       line-height: 1;
     }
-    .recipe-modal-body {
-      color: #454d47;
-      font-size: .94rem;
-      line-height: 1.55;
-    }
+    .recipe-modal-body { color: #454d47; font-size: .94rem; line-height: 1.55; }
     .recipe-modal-item + .recipe-modal-item {
       margin-top: 18px;
       padding-top: 16px;
@@ -143,13 +114,10 @@
       .recipe-modal-panel { border-radius: 24px; }
     }
   </style>
-  <link rel="stylesheet" href="theme-terracota.css?v=20260905-1745" />
-  <link rel="stylesheet" href="ui-v2.css?v=20260905-1808" />
-  <link rel="stylesheet" href="ui-v3.css?v=20260905-1818" />
-  <link rel="stylesheet" href="ui-v4.css?v=20260906-1258" />
+
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
-  <script src="app.js?v=20260905-1754" defer></script>
+  <script src="app.js?v=20260906-1305" defer></script>
   <script src="mobile-cuadros.js?v=20260905-1754" defer></script>
   <script src="terminology.js?v=20260905-1754" defer></script>
   <script src="ui-v2.js?v=20260905-1808" defer></script>
@@ -159,18 +127,5 @@
 </head>
 <body>
   <main id="app" class="app-shell" aria-live="polite"></main>
-  <script>
-    (() => {
-      const normalizeHomeButtons = () => {
-        document.querySelectorAll('.back-button').forEach(button => {
-          button.textContent = '🏠';
-          button.setAttribute('aria-label', 'Inicio');
-          button.setAttribute('title', 'Inicio');
-        });
-      };
-      new MutationObserver(normalizeHomeButtons).observe(document.querySelector('#app'), { childList: true, subtree: true });
-      document.addEventListener('DOMContentLoaded', normalizeHomeButtons);
-    })();
-  </script>
 </body>
 </html>
