@@ -2,6 +2,7 @@
 (() => {
   if (typeof init !== 'function' || typeof route !== 'function') return;
 
+  // Impide que el init legado de app.js llegue a cargar semanas.json.
   window.removeEventListener('DOMContentLoaded', init);
 
   const MEALS = ['Desayuno', 'Media mañana', 'Comida', 'Merienda', 'Cena'];
@@ -9,6 +10,7 @@
   let selectedDate = null;
 
   const dataUrl = (mime, text = '') => `data:${mime};charset=utf-8,${encodeURIComponent(String(text))}`;
+  const csvDataUrl = text => `${dataUrl('text/csv', text)}#shopping.csv`;
 
   const addDays = (iso, days) => {
     const d = new Date(`${iso}T00:00:00Z`);
@@ -140,7 +142,9 @@
       try {
         const data = await menuForWeek(week);
         const entry = data[dayName(iso)];
-        body = entry ? `<div class="cuadro02-meals">${MEALS.map(meal => mealCard(meal, entry[meal])).join('')}</div>` : `<section class="rolling-empty card"><strong>${escapeHtml(longDate(iso))}</strong><p>No hay datos de dieta para este día.</p></section>`;
+        body = entry
+          ? `<div class="cuadro02-meals">${MEALS.map(meal => mealCard(meal, entry[meal])).join('')}</div>`
+          : `<section class="rolling-empty card"><strong>${escapeHtml(longDate(iso))}</strong><p>No hay datos de dieta para este día.</p></section>`;
       } catch (error) {
         console.error(error);
         body = '<div class="status">No se pudo leer el menú de este día.</div>';
@@ -203,18 +207,16 @@
     try {
       const response = await fetch('data/menu_14_dias.json', { cache: 'no-store' });
       if (!response.ok) throw new Error(`${response.status} data/menu_14_dias.json`);
-      const envelope = await response.json();
-      let data = envelope;
-      if (envelope?.encoding === 'gzip+base64' && envelope.payload) {
-        const binary = Uint8Array.from(atob(envelope.payload), char => char.charCodeAt(0));
-        const stream = new Blob([binary]).stream().pipeThrough(new DecompressionStream('gzip'));
-        const text = await new Response(stream).text();
-        data = JSON.parse(text);
+      const data = await response.json();
+      if (!Array.isArray(data.weeks) || !data.documents || !data.shopping) {
+        throw new Error('Estructura operativa inválida');
       }
-      if (!Array.isArray(data.weeks) || !data.documents || !data.shopping) throw new Error('Estructura operativa inválida');
 
       window.DIET_OPERATIONAL = data;
       window.DIET_RECIPES = data.recipes || {};
+
+      const shoppingCsv = csvDataUrl(data.shopping.csv || '');
+      const shoppingUses = dataUrl('application/json', JSON.stringify(data.shopping.uses || {}));
 
       config = {
         timezone: data.timezone || 'Europe/Madrid',
@@ -230,12 +232,12 @@
               historico: week.historico || '',
               cuadro01: dataUrl('text/markdown', document.main_markdown || ''),
               cuadro02: dataUrl('text/markdown', document.menu_markdown || ''),
-              compra: 'data/20260907_SEMANA01_COMPRA_LMX.csv'
+              compra: shoppingCsv
             },
             compra: {
-              dias: data.shopping?.dias || ['L','M','X'],
-              titulo: data.shopping?.titulo || 'Lunes · Martes · Miércoles',
-              usos: dataUrl('application/json', JSON.stringify(data.shopping?.uses || {}))
+              dias: data.shopping.dias || [],
+              titulo: data.shopping.titulo || 'Compra validada',
+              usos: shoppingUses
             }
           };
         })
