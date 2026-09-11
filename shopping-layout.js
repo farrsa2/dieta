@@ -104,7 +104,7 @@
     if (/(pan integral|tortitas|macarrones|corn flakes|special k|copos de avena|quinoa|arroz|pasta|cereal)/.test(n)) return 'PAN_CEREALES';
     if (/(atun en lata|tomate frito|salsa de tomate|aceituna)/.test(n)) return 'CONSERVAS';
 
-    if (/(tomate fresco|patata|guisante|zanahoria|cebolla|cebolleta|pimiento|lechuga|rabano|rabano|calabaza|apio|puerro|pepino|calabacin)/.test(n)) return 'VERDURA';
+    if (/(tomate fresco|patata|guisante|zanahoria|cebolla|cebolleta|pimiento|lechuga|rabano|calabaza|apio|puerro|pepino|calabacin)/.test(n)) return 'VERDURA';
 
     return 'OTROS';
   }
