@@ -6,17 +6,59 @@
   const LEGACY_SHOPPING_PATH = 'data/20260907_SEMANA01_COMPRA_LMX.csv';
   const MANUAL_SOY_MILK = 'Leche de soja | 6 × 1 L | 6 litros;J V S D';
 
-  // Compatibilidad con renderShopping: conserva la extensión .csv que usa el parser,
-  // pero evita cualquier petición al fichero semanal. La fuente base real es el JSON operativo.
-  // La leche de soja es una adición manual de compra solicitada expresamente por el usuario.
+  // Contexto culinario de la compra validada J-V-S-D de SEMANA01.
+  // Se usa como respaldo visual cuando el JSON operativo aún no trae los usos completos.
+  const CURRENT_RECIPE_USES = {
+    'Fruta de temporada': ['J · Varias tomas', 'V · Varias tomas', 'S · Varias tomas', 'D · Varias tomas'],
+    'Tomate fresco': ['J · Pan con tomate · Ensalada griega', 'V · Pan con tomate · Ensalada de jamón y mozzarella', 'S · Verduras asadas', 'D · Empedrado de alubias · Ensalada mixta II'],
+    'Cebolla': ['J · Guisantes con jamón · Ensalada griega', 'S · Verduras asadas · Muslo de pavo con frutos secos · Bacalao marinera'],
+    'Pimiento': ['S · Verduras asadas', 'D · Empedrado de alubias · Ensalada mixta II'],
+    'Lechuga': ['J · Sándwich de pavo', 'V · Sándwich de pavo', 'S · Sándwich de pavo', 'D · Ensalada mixta II'],
+    'Calabacín': ['S · Calabacines con orégano'],
+    'Apio': ['D · Ensalada mixta II'],
+    'Pepino': ['D · Ensalada mixta II'],
+    'Ajo': ['S · Calabacines con orégano · Bacalao marinera'],
+    'Guisantes': ['J · Guisantes con jamón'],
+    'Jamón serrano': ['J · Guisantes con jamón', 'V · Ensalada de jamón y mozzarella', 'D · Pan con jamón serrano'],
+    'Jamón York': ['V · Tostadas con jamón York', 'S · Tostadas con jamón York'],
+    'Fiambre pechuga de pavo': ['J · Sándwich de pavo', 'V · Sándwich de pavo', 'S · Sándwich de pavo'],
+    'Lomo embuchado': ['J · Tostada con lomo'],
+    'Pechuga de pollo': ['J · Guisantes con jamón + pollo', 'D · Empedrado de alubias'],
+    'Muslo de pavo': ['S · Muslo de pavo con frutos secos'],
+    'Salmón': ['V · Tabuleh de quinoa + salmón'],
+    'Bacalao': ['S · Bacalao marinera'],
+    'Almejas': ['S · Bacalao marinera'],
+    'Mejillones': ['S · Bacalao marinera'],
+    'Merluza': ['D · Parrillada de pescado'],
+    'Rape': ['D · Parrillada de pescado'],
+    'Sepia': ['D · Parrillada de pescado'],
+    'Huevo': ['J · Arroz a la cubana · Tortilla'],
+    'Queso de Burgos': ['J · Media mañana · Ensalada griega', 'V · Merienda', 'S · Merienda', 'D · Merienda'],
+    'Mozzarella': ['V · Ensalada de jamón y mozzarella'],
+    'Yogur': ['J · Cena', 'V · Cena', 'S · Cena', 'D · Cena'],
+    'Pan integral': ['J · Tostada · Pan con tomate · Sándwich de pavo', 'V · Pan con tomate · Tostadas con jamón York · Sándwich de pavo', 'S · Tostadas con jamón York · Sándwich de pavo', 'D · Tostada · Pan con jamón serrano · Merienda con atún'],
+    'Arroz': ['J · Arroz a la cubana'],
+    'Corn Flakes': ['V · Desayuno', 'S · Desayuno'],
+    'Special K': ['S · Media mañana', 'D · Media mañana'],
+    'Copos de avena': ['S · Desayuno · Media mañana', 'D · Media mañana'],
+    'Alubias secas': ['D · Empedrado de alubias'],
+    'Atún en lata': ['J · Tostadas con atún', 'D · Empedrado de alubias · Merienda'],
+    'Aceitunas negras': ['J · Ensalada griega'],
+    'Piñones': ['S · Muslo de pavo con frutos secos'],
+    'Pasas': ['S · Muslo de pavo con frutos secos'],
+    'Ciruelas secas': ['S · Muslo de pavo con frutos secos'],
+    'Salsa de tomate': ['J · Arroz a la cubana'],
+    'Tomate triturado': ['S · Bacalao marinera'],
+    'Caldo vegetal': ['S · Bacalao marinera'],
+    'Leche de soja': ['Compra manual · 6 litros']
+  };
+
   if (typeof fetchText === 'function') {
     const fetchTextBase = fetchText;
     fetchText = async path => {
       if (path === LEGACY_SHOPPING_PATH && window.DIET_OPERATIONAL?.shopping?.csv) {
         let csv = window.DIET_OPERATIONAL.shopping.csv;
-        if (!/(^|\n)Leche de soja\s*\|/i.test(csv)) {
-          csv = `${csv.trimEnd()}\n${MANUAL_SOY_MILK}\n`;
-        }
+        if (!/(^|\n)Leche de soja\s*\|/i.test(csv)) csv = `${csv.trimEnd()}\n${MANUAL_SOY_MILK}\n`;
         return csv;
       }
       return fetchTextBase(path);
@@ -27,12 +69,16 @@
     .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
     .toLowerCase().trim();
 
-  function lookupUses(name) {
-    const uses = window.DIET_OPERATIONAL?.shopping?.uses || {};
-    if (Array.isArray(uses[name])) return uses[name];
+  function findUses(source, name) {
+    if (Array.isArray(source?.[name])) return source[name];
     const key = normalizedKey(name);
-    const match = Object.keys(uses).find(candidate => normalizedKey(candidate) === key);
-    return match ? uses[match] : [];
+    const match = Object.keys(source || {}).find(candidate => normalizedKey(candidate) === key);
+    return match ? source[match] : [];
+  }
+
+  function lookupUses(name) {
+    const operational = findUses(window.DIET_OPERATIONAL?.shopping?.uses || {}, name);
+    return operational.length ? operational : findUses(CURRENT_RECIPE_USES, name);
   }
 
   function decorateShoppingCards() {
@@ -49,7 +95,6 @@
       const equivalence = equivalenceNode?.textContent?.trim() || '';
       const amount = (doseNode?.textContent || '').replace(/^Referencia dieta:\s*/i, '').trim();
 
-      // Idempotencia: si ya está decorada, solo aseguramos que los días permanezcan abajo.
       if (item.dataset.cardV4 === '1') {
         if (days && days.parentElement !== text) text.appendChild(days);
         return;
@@ -89,21 +134,14 @@
   }
 
   let observer = null;
-
-  function stopObserver() {
-    observer?.disconnect();
-    observer = null;
-  }
+  function stopObserver() { observer?.disconnect(); observer = null; }
 
   function arrangeShoppingLayout() {
     if ((location.hash.replace('#', '') || 'inicio') !== 'compra') return false;
     decorateShoppingCards();
-
     const filter = document.querySelector('.shopping-day-filter');
     const summary = document.querySelector('.shopping-summary');
     if (!filter || !summary || typeof app === 'undefined' || !app.contains(filter) || !app.contains(summary)) return false;
-
-    // Los controles van al final, pero las tarjetas permanecen en sus grupos.
     app.appendChild(filter);
     app.appendChild(summary);
     return Boolean(document.querySelector('.shopping-item'));
@@ -112,9 +150,6 @@
   function armShoppingLayout() {
     stopObserver();
     if ((location.hash.replace('#', '') || 'inicio') !== 'compra') return;
-
-    // El JSON operativo se carga de forma asíncrona. Observamos hasta que renderShopping
-    // haya creado las tarjetas; así no dependemos del orden de inicialización de routes.compra.
     observer = new MutationObserver(() => {
       if (arrangeShoppingLayout()) stopObserver();
     });
