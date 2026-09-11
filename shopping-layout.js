@@ -1,11 +1,13 @@
 // Consolidación estable de la lista de compra.
 // 1) La compra se sirve desde data/menu_14_dias.json mediante el CSV embebido.
-// 2) Las tarjetas muestran cantidad compacta, usos culinarios y días al final.
+// 2) Las tarjetas muestran cantidad compacta, usos culinarios validados y días al final.
 // 3) Filtros y resumen se colocan juntos al final sin alterar sincronización.
 (() => {
   const LEGACY_SHOPPING_PATH = 'data/20260907_SEMANA01_COMPRA_LMX.csv';
   const MANUAL_SOY_MILK = 'Leche de soja | 6 × 1 L | 6 litros;J V S D';
 
+  // Respaldo transitorio de SEMANA01. Las semanas nuevas deben traer estos datos
+  // en DIET_OPERATIONAL.shopping.uses, generados durante la validación día a día.
   const CURRENT_RECIPE_USES = {
     'Fruta de temporada': ['J · Varias tomas', 'V · Varias tomas', 'S · Varias tomas', 'D · Varias tomas'],
     'Tomate fresco': ['J · Pan con tomate · Ensalada griega', 'V · Pan con tomate · Ensalada de jamón y mozzarella', 'S · Verduras asadas', 'D · Empedrado de alubias · Ensalada mixta II'],
@@ -99,6 +101,15 @@
   ]);
 
   function cleanUseLine(use) {
+    // Formato nuevo y preferido del JSON: { day: 'S', dish: 'Muslo de pavo con frutos secos' }
+    if (use && typeof use === 'object' && !Array.isArray(use)) {
+      const day = /^[LMXJVSD]$/i.test(String(use.day || '').trim()) ? String(use.day).trim().toUpperCase() : '';
+      const dish = String(use.dish || '').trim();
+      if (!dish || GENERIC_USE_PARTS.has(normalizedKey(dish))) return '';
+      return day ? `${day} · ${dish}` : dish;
+    }
+
+    // Compatibilidad temporal con las cadenas antiguas de SEMANA01.
     const parts = String(use || '').split('·').map(part => part.trim()).filter(Boolean);
     if (!parts.length) return '';
 
