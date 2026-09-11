@@ -209,15 +209,32 @@ Cada tarjeta muestra, en este orden:
 
 No mostrar como uso textos genéricos de ingesta. Si un producto no tiene un uso culinario útil validado, la tarjeta no muestra bloque de usos.
 
-## 9. PROTECCIÓN DE LA VERSIÓN PUBLICADA
+## 9. RAMAS, VALIDACIÓN Y PUBLICACIÓN
+
+Ramas operativas:
+
+- `desarrollo`: única rama para cambios ordinarios, pruebas y ajustes.
+- `desplegada`: versión aprobada para producción.
+- `main`: rama de compatibilidad/default; solo interviene mientras GitHub Pages publique desde ella.
+
+Flujo obligatorio:
+
+1. trabajar y probar en `desarrollo`;
+2. cuando el usuario apruebe el cambio, promover el contenido validado a `desplegada`;
+3. comprobar que `desplegada` contiene exactamente los archivos aprobados y que no se han arrastrado cambios ajenos;
+4. **si GitHub Pages sigue publicando desde `main`**, sincronizar `main` con `desplegada` después de la validación;
+5. **si Pages pasa explícitamente a publicar desde `desplegada`**, `main` deja de intervenir en las publicaciones ordinarias.
+
+No realizar cambios ordinarios directamente en `desplegada` ni en `main`. Si las ramas han divergido, no forzar ni reescribir historia: integrar conservando los commits previos y verificando después que los árboles publicados no tengan diferencias de contenido.
 
 Antes de una modificación estructural del repositorio o de la interfaz:
 
 1. identificar el commit de producción aceptado;
-2. conservar una rama estable apuntando exactamente a ese commit;
-3. realizar la refactorización en una rama separada;
-4. probar móvil y escritorio, navegación, recetas, errores JavaScript y fuentes de datos;
-5. promover a `main` solo una versión que mantenga el comportamiento validado.
+2. conservar una referencia estable cuando sea necesario;
+3. realizar la modificación en `desarrollo`;
+4. probar móvil y escritorio, navegación, recetas, lista de compra, sincronización, errores JavaScript y fuentes de datos;
+5. promover a `desplegada` solo una versión validada;
+6. sincronizar `main` únicamente conforme a la regla de GitHub Pages indicada arriba.
 
 No introducir observadores, temporizadores o reordenamientos de DOM que puedan reactivarse a sí mismos. Si se usa `MutationObserver`, debe ser acotado y desconectarse antes de modificar el DOM que observa.
 
