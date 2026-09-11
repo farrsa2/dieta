@@ -6,8 +6,6 @@
   const LEGACY_SHOPPING_PATH = 'data/20260907_SEMANA01_COMPRA_LMX.csv';
   const MANUAL_SOY_MILK = 'Leche de soja | 6 × 1 L | 6 litros;J V S D';
 
-  // Contexto culinario de la compra validada J-V-S-D de SEMANA01.
-  // Se usa como respaldo visual cuando el JSON operativo aún no trae los usos completos.
   const CURRENT_RECIPE_USES = {
     'Fruta de temporada': ['J · Varias tomas', 'V · Varias tomas', 'S · Varias tomas', 'D · Varias tomas'],
     'Tomate fresco': ['J · Pan con tomate · Ensalada griega', 'V · Pan con tomate · Ensalada de jamón y mozzarella', 'S · Verduras asadas', 'D · Empedrado de alubias · Ensalada mixta II'],
@@ -69,10 +67,29 @@
     .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
     .toLowerCase().trim();
 
+  function comparableKey(value = '') {
+    return normalizedKey(value)
+      .replace(/\bfresco\b/g, '')
+      .replace(/\bfresca\b/g, '')
+      .replace(/\bfrescos\b/g, '')
+      .replace(/\bfrescas\b/g, '')
+      .replace(/\s*\/\s*/g, ' ')
+      .replace(/[^a-z0-9áéíóúüñ ]+/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim();
+  }
+
+  function aliasesForName(name) {
+    const key = comparableKey(name);
+    if (key.includes('tomate frito') && key.includes('salsa de tomate')) return ['salsa de tomate'];
+    if (key.includes('muslo de pavo')) return ['muslo de pavo'];
+    return [key];
+  }
+
   function findUses(source, name) {
     if (Array.isArray(source?.[name])) return source[name];
-    const key = normalizedKey(name);
-    const match = Object.keys(source || {}).find(candidate => normalizedKey(candidate) === key);
+    const aliases = aliasesForName(name);
+    const match = Object.keys(source || {}).find(candidate => aliases.includes(comparableKey(candidate)));
     return match ? source[match] : [];
   }
 
