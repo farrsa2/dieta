@@ -10,6 +10,37 @@ El JSON contiene como máximo dos semanas operativas, horarios, documentos embeb
 
 La lista de compra puede ser interpretada internamente con formato CSV por compatibilidad con el renderizador, pero su contenido procede del propio JSON. No debe existir un CSV semanal independiente necesario para que la web funcione.
 
+## Compra y usos culinarios
+
+La compra operativa debe conservar no solo nombre, cantidad, equivalencia y días, sino también el **plato o preparación para el que se usa cada producto**, siempre que aporte información útil.
+
+Esos usos se validan durante la revisión diaria de compra, al mismo tiempo que el producto y la cantidad. No se reconstruyen después a partir del nombre del ingrediente.
+
+Formato recomendado dentro de `shopping`:
+
+```json
+"shopping": {
+  "csv": "...",
+  "uses": {
+    "Muslo de pavo fresco": [
+      { "day": "S", "dish": "Muslo de pavo con frutos secos" }
+    ],
+    "Tomate frito / salsa de tomate": [
+      { "day": "J", "dish": "Arroz a la cubana" }
+    ]
+  }
+}
+```
+
+Reglas:
+
+- `day` usa únicamente `L`, `M`, `X`, `J`, `V`, `S`, `D`;
+- `dish` contiene el nombre útil del plato o preparación validado;
+- no se guardan como uso `Desayuno`, `Media mañana`, `Comida`, `Merienda`, `Cena`, `Varias tomas` u otros textos genéricos;
+- si un ingrediente participa en varios platos, se conservan todos los usos aprobados;
+- el nombre de la clave debe ser exactamente el nombre canónico del producto consolidado;
+- la web presenta esos usos debajo de la cantidad y antes de los badges de días.
+
 ## Ventana por fechas
 
 La interfaz trabaja por fechas y muestra:
@@ -39,10 +70,12 @@ No deben mantenerse copias con numeración antigua cuando ya exista el históric
 Al incorporar una dieta nueva:
 
 1. validar los PDF de Almu y Fran;
-2. generar los cuadros y validar la compra según las reglas del proyecto;
-3. guardar el histórico semanal versionado;
-4. determinar las dos semanas que forman la ventana operativa;
-5. regenerar por completo `menu_14_dias.json`;
-6. comprobar «Comidas y cenas», «Menú · 8 días», «Próxima comida» y «Lista de la compra».
+2. generar los cuadros;
+3. revisar la compra **día a día**, validando para cada producto cantidad, interpretación, equivalencia y uso culinario cuando corresponda;
+4. consolidar únicamente días validados, conservando los usos aprobados;
+5. guardar el histórico semanal versionado;
+6. determinar las dos semanas que forman la ventana operativa;
+7. regenerar por completo `menu_14_dias.json`, incluido `shopping.uses`;
+8. comprobar «Comidas y cenas», «Menú · 8 días», «Próxima comida» y «Lista de la compra».
 
 Los PDF originales no se eliminan sin confirmación expresa del usuario.
