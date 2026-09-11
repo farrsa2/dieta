@@ -76,9 +76,29 @@
     return match ? source[match] : [];
   }
 
+  const GENERIC_USE_PARTS = new Set([
+    'desayuno', 'media manana', 'comida', 'merienda', 'cena',
+    'varias tomas', 'compra manual'
+  ]);
+
+  function cleanUseLine(use) {
+    const parts = String(use || '').split('·').map(part => part.trim()).filter(Boolean);
+    if (!parts.length) return '';
+
+    const first = parts[0];
+    const hasDayPrefix = /^[LMXJVSD]$/i.test(first);
+    const day = hasDayPrefix ? first.toUpperCase() : '';
+    const content = (hasDayPrefix ? parts.slice(1) : parts)
+      .filter(part => !GENERIC_USE_PARTS.has(normalizedKey(part)));
+
+    if (!content.length) return '';
+    return day ? `${day} · ${content.join(' · ')}` : content.join(' · ');
+  }
+
   function lookupUses(name) {
     const operational = findUses(window.DIET_OPERATIONAL?.shopping?.uses || {}, name);
-    return operational.length ? operational : findUses(CURRENT_RECIPE_USES, name);
+    const raw = operational.length ? operational : findUses(CURRENT_RECIPE_USES, name);
+    return raw.map(cleanUseLine).filter(Boolean);
   }
 
   function decorateShoppingCards() {
