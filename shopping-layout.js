@@ -92,19 +92,19 @@
   function categoryForProduct(name) {
     const n = normalizedKey(name);
 
-    if (/\bfruta\b/.test(n)) return 'FRUTA';
+    if (/(fruta de temporada|\bfruta\b|kiwi|platano|aguacate)/.test(n)) return 'FRUTA';
 
-    if (/(jamon serrano|jamon york|fiambre|lomo embuchado)/.test(n)) return 'FIAMBRE';
+    if (/(jamon serrano|jamon york|fiambre|lomo embuchado|lomo curado)/.test(n)) return 'FIAMBRE';
 
-    if (/(muslo de pavo|pechuga de pavo|pavo fresco|pechuga de pollo|pollo fresco|lomo fresco)/.test(n)) return 'CARNE';
+    if (/(muslo de pavo|pechuga de pavo|pavo fresco|pechuga de pollo|pollo fresco|lomo fresco|lomo de cerdo|hamburguesa)/.test(n)) return 'CARNE';
 
     if (/(salmon|merluza|rape|sepia|bacalao|almeja|mejillon)/.test(n)) return 'PESCADO';
     if (n === 'huevo' || /\bhuevos?\b/.test(n)) return 'HUEVOS';
-    if (/(queso|yogur)/.test(n)) return 'LACTEOS';
-    if (/(pan integral|tortitas|macarrones|corn flakes|special k|copos de avena|quinoa|arroz|pasta|cereal)/.test(n)) return 'PAN_CEREALES';
-    if (/(atun en lata|tomate frito|salsa de tomate|aceituna)/.test(n)) return 'CONSERVAS';
+    if (/(queso|yogur|arroz con leche|mantequilla|cheddar)/.test(n)) return 'LACTEOS';
+    if (/(pan integral|pan sin gluten|tortitas|tortas de maiz|macarrones|gnocchi|cuscus|cous cous|corn flakes|special k|copos de avena|quinoa|arroz|pasta|cereal)/.test(n)) return 'PAN_CEREALES';
+    if (/(atun en lata|atun en conserva|anchoas? en conserva|tomate frito|salsa de tomate|aceituna)/.test(n)) return 'CONSERVAS';
 
-    if (/(tomate fresco|patata|guisante|zanahoria|cebolla|cebolleta|pimiento|lechuga|rabano|calabaza|apio|puerro|pepino|calabacin)/.test(n)) return 'VERDURA';
+    if (/(tomate fresco|patata|guisante|judias verdes|zanahoria|cebolla|cebolleta|pimiento|lechuga|cogollo|champinon|ajo|rabano|calabaza|apio|puerro|pepino|calabacin)/.test(n)) return 'VERDURA';
 
     return 'OTROS';
   }
