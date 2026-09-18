@@ -2,6 +2,7 @@
 (() => {
   if (typeof init !== 'function' || typeof route !== 'function') return;
 
+  // Impide que el init legado de app.js llegue a cargar semanas.json.
   window.removeEventListener('DOMContentLoaded', init);
 
   const MEALS = ['Desayuno', 'Media mañana', 'Comida', 'Merienda', 'Cena'];
@@ -9,6 +10,7 @@
   let selectedDate = null;
 
   const dataUrl = (mime, text = '') => `data:${mime};charset=utf-8,${encodeURIComponent(String(text))}`;
+  const csvDataUrl = text => `${dataUrl('text/csv', text)}#shopping.csv`;
 
   const addDays = (iso, days) => {
     const d = new Date(`${iso}T00:00:00Z`);
@@ -140,7 +142,9 @@
       try {
         const data = await menuForWeek(week);
         const entry = data[dayName(iso)];
-        body = entry ? `<div class="cuadro02-meals">${MEALS.map(meal => mealCard(meal, entry[meal])).join('')}</div>` : `<section class="rolling-empty card"><strong>${escapeHtml(longDate(iso))}</strong><p>No hay datos de dieta para este día.</p></section>`;
+        body = entry
+          ? `<div class="cuadro02-meals">${MEALS.map(meal => mealCard(meal, entry[meal])).join('')}</div>`
+          : `<section class="rolling-empty card"><strong>${escapeHtml(longDate(iso))}</strong><p>No hay datos de dieta para este día.</p></section>`;
       } catch (error) {
         console.error(error);
         body = '<div class="status">No se pudo leer el menú de este día.</div>';
@@ -166,6 +170,65 @@
     return result;
   }
 
+  // PRUEBA 18-19/09: medidas domésticas en Próxima comida.
+  // No modifica el Cuadro 02 ni las cantidades prescritas; solo cambia su presentación.
+  const NEXT_MEAL_MEASURE_TEST = {
+    '2026-09-18': {
+      'Desayuno': {
+        almu: '**1 vaso de leche de soja (200 g)** + **1 bol pequeño de Corn Flakes (30 g)**<br>**2 cucharadas soperas de avena (20 g)**<br>**1 kiwi pequeño (60 g)**',
+        fran: '**1 vaso de leche de soja (200 g)** + **1 bol pequeño de Corn Flakes (30 g)**<br>**1 café pequeño (100 g, opcional)**<br>**1 pieza de fruta pequeña (100 g)**'
+      },
+      'Media mañana': {
+        almu: '**1 rebanada grande de pan integral (40 g)**<br>**1 cucharadita de tomate (5 g)**<br>**3–4 lonchas de jamón serrano (30 g)**',
+        fran: '**1 bocadillo pequeño-mediano de pan integral (85 g)**<br>**2–3 lonchas de jamón York (35 g)**<br>**2–3 rodajas de tomate (35 g)**'
+      },
+      'Comida': {
+        almu: '**1 aguacate pequeño (125 g)**<br>**¼ de cebolla pequeña (25 g)**<br>**½ lata pequeña de atún escurrido (25 g)**<br>**1 puñado grande de lechuga (25 g)**<br>**1 filete mediano de lomo (80 g)**<br>**½ patata pequeña (35 g)**<br>**½ tomate pequeño (35 g)**',
+        fran: '**1 aguacate pequeño (125 g)**<br>**¼ de cebolla pequeña (25 g)**<br>**½ lata pequeña de atún escurrido (25 g)**<br>**1 puñado grande de lechuga (25 g)**<br>**1 filete grande de lomo (110 g)**<br>**½ patata pequeña (45 g)**<br>**½ tomate pequeño (45 g)**<br>**1 pieza de fruta mediana (150 g)**',
+        total: '**2 aguacates pequeños (250 g)**<br>**½ cebolla pequeña (50 g)**<br>**1 lata pequeña de atún escurrido (50 g)**<br>**2 puñados de lechuga (50 g)**<br>**2 filetes de lomo (190 g)**<br>**1 patata pequeña-mediana (80 g)**<br>**1 tomate pequeño (80 g)**'
+      },
+      'Merienda': {
+        almu: '**1 pieza de fruta mediana (150 g)**<br>**1 yogur individual (125 g)**',
+        fran: '**4 tortas de maíz aprox. (30 g)**<br>**½ plátano mediano (60 g)**'
+      },
+      'Cena': {
+        almu: '**1 huevo grande (70 g)**<br>**½ tomate mediano (60 g)**<br>**1 patata pequeña (55 g)**<br>**⅔ de lata pequeña de atún escurrido (35 g)**<br>**1 puñado de judías verdes (35 g)**<br>**¼ de pimiento pequeño (25 g)**<br>**1 puñado de lechuga (25 g)**<br>**6–7 aceitunas negras (20 g)**<br>**4 anchoas aprox. (15 g)**',
+        fran: '**1 huevo XL aprox. (80 g)**<br>**½ tomate mediano (70 g)**<br>**1 patata pequeña (65 g)**<br>**1 lata pequeña de atún casi completa (45 g)**<br>**1 puñado grande de judías verdes (45 g)**<br>**¼ de pimiento pequeño (30 g)**<br>**1 puñado de lechuga (30 g)**<br>**7–8 aceitunas negras (25 g)**<br>**5 anchoas aprox. (20 g)**<br>**1 pieza de fruta pequeña (100 g)**<br>**1 yogur individual (125 g)**',
+        total: '**2 huevos grandes aprox. (150 g)**<br>**1 tomate mediano (130 g)**<br>**1 patata mediana (120 g)**<br>**1½ latas pequeñas de atún aprox. (80 g)**<br>**2 puñados de judías verdes (80 g)**<br>**½ pimiento pequeño (55 g)**<br>**2 puñados de lechuga (55 g)**<br>**12–15 aceitunas negras (45 g)**<br>**8–9 anchoas aprox. (35 g)**'
+      }
+    },
+    '2026-09-19': {
+      'Desayuno': {
+        almu: '**1 vaso de leche de soja (200 g)** + **1 bol pequeño de Corn Flakes (30 g)**<br>**2 cucharadas soperas de avena (20 g)**<br>**1 kiwi pequeño (60 g)**',
+        fran: '**1 vaso de leche de soja (200 g)** + **1 bol pequeño de Corn Flakes (30 g)**<br>**5 cucharadas soperas de avena aprox. (50 g)**<br>**1 café pequeño (100 g, opcional)**'
+      },
+      'Media mañana': {
+        almu: '**1 rebanada de pan integral tostado (30 g)**<br>**2 lonchas de jamón York (30 g)**',
+        fran: '**1 vasito de arroz con leche (120 g)**<br>**1 pieza grande o 2 pequeñas de fruta (200 g)**'
+      },
+      'Comida': {
+        almu: '**1 bol mediano de cuscús con pollo al curry (250 g)**',
+        fran: '**1 bol grande de cuscús con pollo al curry (350 g)**<br>**1 pieza de fruta mediana (150 g)**',
+        total: '**2 boles de cuscús con pollo al curry, uno mediano y uno grande (600 g de preparación)**'
+      },
+      'Merienda': {
+        almu: '**1 pieza de fruta mediana (150 g)**<br>**1 yogur individual (125 g)**',
+        fran: '**4 tortas de maíz aprox. (30 g)**<br>**1 pieza de fruta mediana (150 g)**'
+      },
+      'Cena': {
+        almu: '**1 bol pequeño de crema de calabaza y zanahoria (195 g: 130 g + 65 g)**<br>**1 hamburguesa grande (180 g)**',
+        fran: '**1 bol pequeño de crema de calabaza y zanahoria (195 g: 130 g + 65 g)**<br>**1 panecillo tipo baguette (90 g)**<br>**1 hamburguesa pequeña (80 g)**<br>**1 loncha de cheddar (25 g)**',
+        total: '**2 boles pequeños de crema (390 g: 260 g de calabaza + 130 g de zanahoria)**<br>**2 hamburguesas, una grande y una pequeña (260 g en total)**'
+      }
+    }
+  };
+
+  function nextMealMeasureDisplay(item, person) {
+    return NEXT_MEAL_MEASURE_TEST[item?.date]?.[item?.meal]?.[person] || item?.[person] || '';
+  }
+
+  window.nextMealMeasureDisplay = nextMealMeasureDisplay;
+
   function baseMealTarget(now, schedule) {
     if (now.time < (schedule['Media mañana'] || '08:00')) return { date: now.date, meal: 'Desayuno' };
     if (now.time < (schedule['Comida'] || '11:00')) return { date: now.date, meal: 'Media mañana' };
@@ -190,7 +253,7 @@
       const current = sequence[displayIndex];
       const previous = sequence[displayIndex - 1] || null;
       const next = sequence[displayIndex + 1] || null;
-      app.innerHTML = pageHeader('Próxima comida', `${longDate(current.date)} · ${now.time}`) + `<section class="card next-card"><p class="meal-kicker">${mealOffset === 0 ? 'Según la hora actual' : 'Vista manual'}</p><p class="meal-name">${escapeHtml(current.meal)}</p><div class="people-grid"><article class="person"><h3>ALMU</h3><p>${formatMealCell(current.almu)}</p></article><article class="person"><h3>FRAN</h3><p>${formatMealCell(current.fran)}</p></article></div><div class="meal-nav"><button class="meal-nav-button" type="button" ${previous ? '' : 'disabled'} onclick="shiftMeal(-1)"><span>← Anterior</span><strong>${previous ? escapeHtml(previous.meal) : '—'}</strong></button><button class="meal-nav-button" type="button" ${next ? '' : 'disabled'} onclick="shiftMeal(1)"><span>Posterior →</span><strong>${next ? escapeHtml(next.meal) : '—'}</strong></button></div></section>`;
+      app.innerHTML = pageHeader('Próxima comida', `${longDate(current.date)} · ${now.time}`) + `<section class="card next-card"><p class="meal-kicker">${mealOffset === 0 ? 'Según la hora actual' : 'Vista manual'}</p><p class="meal-name">${escapeHtml(current.meal)}</p><div class="people-grid"><article class="person"><h3>ALMU</h3><p>${formatMealCell(nextMealMeasureDisplay(current, 'almu'))}</p></article><article class="person"><h3>FRAN</h3><p>${formatMealCell(nextMealMeasureDisplay(current, 'fran'))}</p></article></div><div class="meal-nav"><button class="meal-nav-button" type="button" ${previous ? '' : 'disabled'} onclick="shiftMeal(-1)"><span>← Anterior</span><strong>${previous ? escapeHtml(previous.meal) : '—'}</strong></button><button class="meal-nav-button" type="button" ${next ? '' : 'disabled'} onclick="shiftMeal(1)"><span>Posterior →</span><strong>${next ? escapeHtml(next.meal) : '—'}</strong></button></div></section>`;
     } catch (error) {
       console.error(error);
       app.innerHTML = pageHeader('Próxima comida') + '<div class="status">No hay una próxima comida disponible en la ventana cargada.</div>';
@@ -203,18 +266,16 @@
     try {
       const response = await fetch('data/menu_14_dias.json', { cache: 'no-store' });
       if (!response.ok) throw new Error(`${response.status} data/menu_14_dias.json`);
-      const envelope = await response.json();
-      let data = envelope;
-      if (envelope?.encoding === 'gzip+base64' && envelope.payload) {
-        const binary = Uint8Array.from(atob(envelope.payload), char => char.charCodeAt(0));
-        const stream = new Blob([binary]).stream().pipeThrough(new DecompressionStream('gzip'));
-        const text = await new Response(stream).text();
-        data = JSON.parse(text);
+      const data = await response.json();
+      if (!Array.isArray(data.weeks) || !data.documents || !data.shopping) {
+        throw new Error('Estructura operativa inválida');
       }
-      if (!Array.isArray(data.weeks) || !data.documents || !data.shopping) throw new Error('Estructura operativa inválida');
 
       window.DIET_OPERATIONAL = data;
       window.DIET_RECIPES = data.recipes || {};
+
+      const shoppingCsv = csvDataUrl(data.shopping.csv || '');
+      const shoppingUses = dataUrl('application/json', JSON.stringify(data.shopping.uses || {}));
 
       config = {
         timezone: data.timezone || 'Europe/Madrid',
@@ -230,12 +291,12 @@
               historico: week.historico || '',
               cuadro01: dataUrl('text/markdown', document.main_markdown || ''),
               cuadro02: dataUrl('text/markdown', document.menu_markdown || ''),
-              compra: 'data/20260907_SEMANA01_COMPRA_LMX.csv'
+              compra: shoppingCsv
             },
             compra: {
-              dias: data.shopping?.dias || ['L','M','X'],
-              titulo: data.shopping?.titulo || 'Lunes · Martes · Miércoles',
-              usos: dataUrl('application/json', JSON.stringify(data.shopping?.uses || {}))
+              dias: data.shopping.dias || [],
+              titulo: data.shopping.titulo || 'Compra validada',
+              usos: shoppingUses
             }
           };
         })
