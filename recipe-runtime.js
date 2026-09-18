@@ -205,7 +205,10 @@
     if (!total) return;
 
     const recipes = recipeEntriesFor(`${current.almu} ${current.fran} ${total.title} ${total.detail}`);
-    const totalHtml = `<article class="person next-total"><h3>TOTAL</h3><span class="next-total-title">${formatMealCell(total.title)}</span><span class="next-total-detail">${formatMealCell(total.detail)}</span>${recipeButton(recipes, `${current.day} · ${current.meal} · Total`)}</article>`;
+    const testTotal = typeof window.nextMealMeasureDisplay === 'function' ? window.nextMealMeasureDisplay(current, 'total') : '';
+    const totalHtml = testTotal
+      ? `<article class="person next-total"><h3>TOTAL</h3><span class="next-total-detail">${formatMealCell(testTotal)}</span>${recipeButton(recipes, `${current.day} · ${current.meal} · Total`)}</article>`
+      : `<article class="person next-total"><h3>TOTAL</h3><span class="next-total-title">${formatMealCell(total.title)}</span><span class="next-total-detail">${formatMealCell(total.detail)}</span>${recipeButton(recipes, `${current.day} · ${current.meal} · Total`)}</article>`;
     const grid = card.querySelector('.people-grid');
     if (grid) grid.insertAdjacentHTML('beforeend', totalHtml);
   }
