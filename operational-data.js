@@ -192,9 +192,9 @@
         fran: '**4 tortas de maíz aprox. (30 g)**<br>**½ plátano mediano (60 g)**'
       },
       'Cena': {
-        almu: '**1 huevo grande (70 g)**<br>**½ tomate mediano (60 g)**<br>**1 patata pequeña (55 g)**<br>**⅔ de lata pequeña de atún escurrido (35 g)**<br>**1 puñado de judías verdes (35 g)**<br>**¼ de pimiento pequeño (25 g)**<br>**1 puñado de lechuga (25 g)**<br>**6–7 aceitunas negras (20 g)**<br>**4 anchoas aprox. (15 g)**',
-        fran: '**1 huevo XL aprox. (80 g)**<br>**½ tomate mediano (70 g)**<br>**1 patata pequeña (65 g)**<br>**1 lata pequeña de atún casi completa (45 g)**<br>**1 puñado grande de judías verdes (45 g)**<br>**¼ de pimiento pequeño (30 g)**<br>**1 puñado de lechuga (30 g)**<br>**7–8 aceitunas negras (25 g)**<br>**5 anchoas aprox. (20 g)**<br>**1 pieza de fruta pequeña (100 g)**<br>**1 yogur individual (125 g)**',
-        total: '**2 huevos grandes aprox. (150 g)**<br>**1 tomate mediano (130 g)**<br>**1 patata mediana (120 g)**<br>**1½ latas pequeñas de atún aprox. (80 g)**<br>**2 puñados de judías verdes (80 g)**<br>**½ pimiento pequeño (55 g)**<br>**2 puñados de lechuga (55 g)**<br>**12–15 aceitunas negras (45 g)**<br>**8–9 anchoas aprox. (35 g)**'
+        almu: '**1 bol pequeño de crema de calabaza y zanahoria (195 g: 130 g + 65 g)**<br>**1 hamburguesa grande (180 g)**',
+        fran: '**1 bol pequeño de crema de calabaza y zanahoria (195 g: 130 g + 65 g)**<br>**1 panecillo tipo baguette (90 g)**<br>**1 hamburguesa pequeña (80 g)**<br>**1 loncha de cheddar (25 g)**',
+        total: '**2 boles pequeños de crema (390 g: 260 g de calabaza + 130 g de zanahoria)**<br>**2 hamburguesas, una grande y una pequeña (260 g en total)**'
       }
     },
     '2026-09-19': {
@@ -216,9 +216,9 @@
         fran: '**4 tortas de maíz aprox. (30 g)**<br>**1 pieza de fruta mediana (150 g)**'
       },
       'Cena': {
-        almu: '**1 bol pequeño de crema de calabaza y zanahoria (195 g: 130 g + 65 g)**<br>**1 hamburguesa grande (180 g)**',
-        fran: '**1 bol pequeño de crema de calabaza y zanahoria (195 g: 130 g + 65 g)**<br>**1 panecillo tipo baguette (90 g)**<br>**1 hamburguesa pequeña (80 g)**<br>**1 loncha de cheddar (25 g)**',
-        total: '**2 boles pequeños de crema (390 g: 260 g de calabaza + 130 g de zanahoria)**<br>**2 hamburguesas, una grande y una pequeña (260 g en total)**'
+        almu: '**1 huevo grande (70 g)**<br>**½ tomate mediano (60 g)**<br>**1 patata pequeña (55 g)**<br>**⅔ de lata pequeña de atún escurrido (35 g)**<br>**1 puñado de judías verdes (35 g)**<br>**¼ de pimiento pequeño (25 g)**<br>**1 puñado de lechuga (25 g)**<br>**6–7 aceitunas negras (20 g)**<br>**4 anchoas aprox. (15 g)**',
+        fran: '**1 huevo XL aprox. (80 g)**<br>**½ tomate mediano (70 g)**<br>**1 patata pequeña (65 g)**<br>**1 lata pequeña de atún casi completa (45 g)**<br>**1 puñado grande de judías verdes (45 g)**<br>**¼ de pimiento pequeño (30 g)**<br>**1 puñado de lechuga (30 g)**<br>**7–8 aceitunas negras (25 g)**<br>**5 anchoas aprox. (20 g)**<br>**1 pieza de fruta pequeña (100 g)**<br>**1 yogur individual (125 g)**',
+        total: '**2 huevos grandes aprox. (150 g)**<br>**1 tomate mediano (130 g)**<br>**1 patata mediana (120 g)**<br>**1½ latas pequeñas de atún aprox. (80 g)**<br>**2 puñados de judías verdes (80 g)**<br>**½ pimiento pequeño (55 g)**<br>**2 puñados de lechuga (55 g)**<br>**12–15 aceitunas negras (45 g)**<br>**8–9 anchoas aprox. (35 g)**'
       }
     }
   };
