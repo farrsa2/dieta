@@ -86,7 +86,25 @@
     const operational = findUses(window.DIET_OPERATIONAL?.shopping?.uses || {}, name);
     const supplemental = findUses(SUPPLEMENTAL_USES, name);
     const raw = operational.length ? operational : supplemental;
-    return raw.map(cleanUseLine).filter(Boolean);
+    const cleaned = raw.map(cleanUseLine).filter(Boolean);
+
+    // Compacta usos repetidos: si la misma receta/destino aparece varios días,
+    // se muestra una sola vez con ×N (p. ej., "Desayuno Almu ×4").
+    const grouped = new Map();
+    for (const line of cleaned) {
+      const parts = line.split('·').map(part => part.trim()).filter(Boolean);
+      const hasDay = parts.length > 1 && /^[LMXJVSD]$/i.test(parts[0]);
+      const dish = hasDay ? parts.slice(1).join(' · ') : line;
+      const key = normalizedKey(dish);
+      if (!grouped.has(key)) grouped.set(key, { dish, count: 0, unique: [] });
+      const entry = grouped.get(key);
+      entry.count += 1;
+      if (entry.count === 1) entry.unique.push(line);
+    }
+
+    return [...grouped.values()].map(entry =>
+      entry.count > 1 ? `${entry.dish} ×${entry.count}` : entry.unique[0]
+    );
   }
 
   function categoryForProduct(name) {
