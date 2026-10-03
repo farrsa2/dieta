@@ -5,6 +5,9 @@
 
   const MEALS = ['Desayuno', 'Media mañana', 'Comida', 'Merienda', 'Cena'];
   const RECIPE_MEALS = new Set(['Comida', 'Cena']);
+  const SPECIAL_RECIPE_MEALS = new Map([
+    ['Merienda', new Set(['palmera_hojaldre_chocolate'])]
+  ]);
   const registry = new Map();
   let seq = 0;
 
@@ -49,6 +52,9 @@
       parts.push(`<ul>${recipe.ingredientes.map(item => `<li>${escapeHtml(item)}</li>`).join('')}</ul>`);
     }
     if (recipe.elaboracion) parts.push(`<p>${escapeHtml(recipe.elaboracion)}</p>`);
+    if (Array.isArray(recipe.pasos) && recipe.pasos.length) {
+      parts.push(`<ol>${recipe.pasos.map(item => `<li>${escapeHtml(item)}</li>`).join('')}</ol>`);
+    }
     if (recipe.nota) parts.push(`<p>${escapeHtml(recipe.nota)}</p>`);
     return parts.join('') || '<p>Receta archivada sin detalle adicional.</p>';
   }
@@ -93,6 +99,11 @@
     if (!entry) return;
     const modal = ensureModal();
     modal.querySelector('#operational-recipe-title').textContent = entry.recipes.length === 1 ? entry.recipes[0].name : 'Recetas de esta comida';
+    const kicker = modal.querySelector('.recipe-modal-kicker');
+    if (kicker) {
+      const userRecipe = entry.recipes.length === 1 && entry.recipes[0].recipe?.fuente === 'Receta añadida por el usuario';
+      kicker.textContent = userRecipe ? '👩‍🍳 RECETA GUARDADA' : '👩‍🍳 RECETA DEL NUTRICIONISTA';
+    }
     modal.querySelector('#operational-recipe-context').textContent = entry.context || '';
     modal.querySelector('#operational-recipe-body').innerHTML = entry.recipes.map(item => `
       <article class="recipe-modal-item">
@@ -109,11 +120,14 @@
     view.querySelectorAll('.cuadro02-meal-card').forEach(card => {
       const meal = card.querySelector('h2')?.textContent?.trim() || '';
       card.querySelectorAll('[data-recipe-action]').forEach(node => node.remove());
-      if (!RECIPE_MEALS.has(meal)) return;
       card.querySelectorAll('.cuadro-two-cols article').forEach(article => {
         const person = article.querySelector('.cuadro-person-label')?.textContent?.trim() || '';
         const content = `${article.querySelector('.cuadro-title')?.textContent || ''} ${article.querySelector('.cuadro-detail')?.textContent || ''}`;
-        const recipes = recipeEntriesFor(content);
+        let recipes = recipeEntriesFor(content);
+        if (!RECIPE_MEALS.has(meal)) {
+          const allowed = SPECIAL_RECIPE_MEALS.get(meal);
+          recipes = allowed ? recipes.filter(item => allowed.has(item.id)) : [];
+        }
         if (!recipes.length) return;
         article.insertAdjacentHTML('beforeend', recipeButton(recipes, `${meal} · ${person}`));
       });
@@ -198,7 +212,20 @@
     if (!card) return;
     card.querySelectorAll('.next-total').forEach(node => node.remove());
     const current = await resolveDisplayedMeal();
-    if (!current || !RECIPE_MEALS.has(current.meal)) return;
+    if (!current) return;
+
+    if (!RECIPE_MEALS.has(current.meal)) {
+      const allowed = SPECIAL_RECIPE_MEALS.get(current.meal);
+      if (!allowed) return;
+      const recipes = recipeEntriesFor(`${current.almu} ${current.fran}`).filter(item => allowed.has(item.id));
+      if (!recipes.length) return;
+      card.querySelectorAll('.people-grid .person').forEach(article => {
+        const person = article.querySelector('h3')?.textContent?.trim() || '';
+        article.querySelectorAll('[data-recipe-action]').forEach(node => node.remove());
+        article.insertAdjacentHTML('beforeend', recipeButton(recipes, `${current.day} · ${current.meal} · ${person}`));
+      });
+      return;
+    }
 
     const totals = parseCuadro01Totals(await fetchText(current.week.archivos.cuadro01));
     const total = totals[current.day]?.[current.meal];
