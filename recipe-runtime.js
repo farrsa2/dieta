@@ -26,6 +26,23 @@
     .replace(/\s+/g, ' ')
     .trim();
 
+  function specialRecipesForMeal(meal, content = '') {
+    const allowed = SPECIAL_RECIPE_MEALS.get(meal);
+    if (!allowed) return [];
+    const normalized = normalize(content);
+    const source = window.DIET_RECIPES || {};
+    const found = [];
+    if (meal === 'Merienda' && normalized.includes('palmera')) {
+      for (const id of allowed) {
+        const raw = source[id];
+        if (!raw) continue;
+        const recipe = typeof raw === 'string' ? { nombre: id, elaboracion: raw } : raw;
+        found.push({ id, name: recipe.nombre || id.replace(/_/g, ' '), recipe });
+      }
+    }
+    return found;
+  }
+
   function recipeEntriesFor(content = '') {
     const source = window.DIET_RECIPES || {};
     const haystack = recipeKey(content);
@@ -127,6 +144,7 @@
         if (!RECIPE_MEALS.has(meal)) {
           const allowed = SPECIAL_RECIPE_MEALS.get(meal);
           recipes = allowed ? recipes.filter(item => allowed.has(item.id)) : [];
+          if (!recipes.length) recipes = specialRecipesForMeal(meal, content);
         }
         if (!recipes.length) return;
         article.insertAdjacentHTML('beforeend', recipeButton(recipes, `${meal} · ${person}`));
@@ -217,7 +235,9 @@
     if (!RECIPE_MEALS.has(current.meal)) {
       const allowed = SPECIAL_RECIPE_MEALS.get(current.meal);
       if (!allowed) return;
-      const recipes = recipeEntriesFor(`${current.almu} ${current.fran}`).filter(item => allowed.has(item.id));
+      const content = `${current.almu} ${current.fran}`;
+      let recipes = recipeEntriesFor(content).filter(item => allowed.has(item.id));
+      if (!recipes.length) recipes = specialRecipesForMeal(current.meal, content);
       if (!recipes.length) return;
       card.querySelectorAll('.people-grid .person').forEach(article => {
         const person = article.querySelector('h3')?.textContent?.trim() || '';
