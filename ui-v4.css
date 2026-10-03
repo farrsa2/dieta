@@ -59,7 +59,7 @@
   margin: 0 !important;
   padding: 6px max(10px, env(safe-area-inset-right)) 6px max(10px, env(safe-area-inset-left)) !important;
   display: grid !important;
-  grid-template-columns: minmax(0, 1fr) 36px !important;
+  grid-template-columns: minmax(0, 1fr) auto !important;
   grid-template-rows: auto !important;
   gap: 10px !important;
   align-items: center !important;
@@ -76,10 +76,17 @@
   min-width: 0 !important;
 }
 
-.page-header .back-button {
+.page-header-actions {
   grid-column: 2 !important;
   grid-row: 1 !important;
   justify-self: end !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+}
+
+.page-header .back-button,
+.page-header .refresh-button {
   width: 36px !important;
   min-width: 36px !important;
   height: 36px !important;
@@ -99,6 +106,19 @@
   content: '🏠';
   font-size: 1.08rem;
   line-height: 1;
+}
+
+.page-header .refresh-button {
+  font-size: 1.3rem !important;
+  color: #387a55 !important;
+}
+
+.page-header .refresh-button.refreshing {
+  animation: refresh-spin .65s linear infinite;
+}
+
+@keyframes refresh-spin {
+  to { transform: rotate(360deg); }
 }
 
 .page-header .page-title {
