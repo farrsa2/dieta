@@ -120,7 +120,7 @@
 
     if (/(salmon|merluza|rape|sepia|bacalao|almeja|mejillon)/.test(n)) return 'PESCADO';
     if (n === 'huevo' || /\bhuevos?\b/.test(n)) return 'HUEVOS';
-    if (/(queso|yogur|arroz con leche|mantequilla|cheddar|leche desnatada)/.test(n)) return 'LACTEOS';
+    if (/(queso|yogur|arroz con leche|mantequilla|cheddar|leche desnatada|leche de soja)/.test(n)) return 'LACTEOS';
     if (/(lentejas?|garbanzos?|alubias?)/.test(n)) return 'LEGUMBRES';
     if (/(masa de hojaldre|chocolate negro|eritritol)/.test(n)) return 'REPOSTERIA';
     if (/(pan integral|pan sin gluten|tortitas|tortas de maiz|macarrones|gnocchi|cuscus|cous cous|corn flakes|special k|copos de avena|quinoa|arroz|pasta|cereal|harina)/.test(n)) return 'PAN_CEREALES';
