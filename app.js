@@ -385,13 +385,13 @@ function groupShoppingItems(items) {
 
 function categoryForItem(name) {
   const n = normalizeKey(name);
-  if (n.includes('salsa de tomate') || n.includes('atun en lata') || n.includes('aceituna')) return 'CONSERVAS';
-  if (/(jamon|fiambre|lomo fresco|pechuga de pollo|pechuga de pavo)/.test(n)) return 'CARNE';
+  if (/(salsa de tomate|atun en (lata|conserva)|aceituna|lenteja|garbanzo)/.test(n)) return 'CONSERVAS';
+  if (/(jamon|fiambre|lomo fresco|pechuga de pollo|pechuga de pavo|bacon)/.test(n)) return 'CARNE';
   if (/(salmon|merluza|rape|sepia|bacalao|almeja|mejillon)/.test(n)) return 'PESCADO';
   if (n === 'huevo' || n.includes('huevos')) return 'HUEVOS';
-  if (/(queso|yogur)/.test(n)) return 'LACTEOS';
-  if (/(pan integral|tortitas|macarrones|corn flakes|copos de avena|quinoa|arroz|pasta|cereal)/.test(n)) return 'PAN CEREALES';
-  if (/(fruta|tomate fresco|patata|guisante|zanahoria|cebolla|pimiento|cebolleta|lechuga|rabano|calabaza|apio|puerro|pepino|calabacin)/.test(n)) return 'FRUTA Y VERDURA';
+  if (/(queso|yogur|leche)/.test(n)) return 'LACTEOS';
+  if (/(pan integral|pan sin gluten|tortitas|tortas de maiz|macarrones|espagueti|harina|corn flakes|copos de avena|quinoa|arroz|pasta|cereal)/.test(n)) return 'PAN CEREALES';
+  if (/(fruta|kiwi|ciruela|platano|manzana|limon|tomate fresco|patata|guisante|zanahoria|cebolla|pimiento|cebolleta|lechuga|rabano|calabaza|apio|puerro|pepino|calabacin|champinon|brocoli|brecol|espinaca|menta fresca)/.test(n)) return 'FRUTA Y VERDURA';
   return 'OTROS';
 }
 
