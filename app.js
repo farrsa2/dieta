@@ -47,10 +47,34 @@ function route() {
 
 function pageHeader(title, subtitle = '') {
   return `<header class="page-header">
-    <button class="back-button" type="button" onclick="location.hash='inicio'">← Inicio</button>
     <div><h1 class="page-title">${escapeHtml(title)}</h1>${subtitle ? `<p class="page-subtitle">${escapeHtml(subtitle)}</p>` : ''}</div>
+    <div class="page-header-actions">
+      <button class="refresh-button" type="button" onclick="refreshAppData()" aria-label="Actualizar datos" title="Actualizar datos">↻</button>
+      <button class="back-button" type="button" onclick="location.hash='inicio'" aria-label="Inicio" title="Inicio">← Inicio</button>
+    </div>
   </header>`;
 }
+
+async function refreshAppData() {
+  const button = document.querySelector('.refresh-button');
+  if (button) {
+    button.disabled = true;
+    button.classList.add('refreshing');
+  }
+  try {
+    if ('caches' in window) {
+      const keys = await caches.keys();
+      await Promise.all(keys.map(key => caches.delete(key)));
+    }
+  } catch (error) {
+    console.warn('No se pudo vaciar la caché gestionada:', error);
+  }
+  const url = new URL(window.location.href);
+  url.searchParams.set('_refresh', Date.now().toString());
+  window.location.replace(url.toString());
+}
+
+window.refreshAppData = refreshAppData;
 
 function renderHome() {
   app.innerHTML = `<section class="home" aria-label="Inicio"><div class="home-grid">
