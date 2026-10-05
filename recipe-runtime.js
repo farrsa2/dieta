@@ -50,11 +50,14 @@
     for (const [id, raw] of Object.entries(source)) {
       const recipe = typeof raw === 'string' ? { nombre: id, elaboracion: raw } : (raw || {});
       const name = recipe.nombre || id.replace(/_/g, ' ');
-      const key = recipeKey(name);
-      let match = Boolean(key && haystack.includes(key));
+      const aliases = Array.isArray(recipe.aliases) ? recipe.aliases : [];
+      const keys = [name, ...aliases].map(recipeKey).filter(Boolean);
+      let match = keys.some(key => haystack.includes(key));
       if (!match) {
-        const words = key.split(' ').filter(word => word.length > 3 && !['aceite','oliva','fresca','fresco','similar'].includes(word));
-        if (words.length >= 2) match = words.slice(0, 2).every(word => haystack.includes(word));
+        match = keys.some(key => {
+          const words = key.split(' ').filter(word => word.length > 3 && !['aceite','oliva','fresca','fresco','similar'].includes(word));
+          return words.length >= 2 && words.slice(0, 2).every(word => haystack.includes(word));
+        });
       }
       if (match && !found.some(item => item.id === id)) found.push({ id, name, recipe });
     }
@@ -166,8 +169,9 @@
       if (!lines[i].startsWith('|')) break;
       const row = splitMd(lines[i]);
       if (row.length < 7) continue;
-      const day = cleanMarkdownText(row[0]).replace(/\*\*/g, '');
-      if (!days.includes(day)) continue;
+      const dayLabel = cleanMarkdownText(row[0]).replace(/\*\*/g, '').trim();
+      const day = days.find(candidate => dayLabel === candidate || dayLabel.startsWith(`${candidate} `));
+      if (!day) continue;
       const detail = lines[i + 1]?.startsWith('|') ? splitMd(lines[i + 1]) : [];
       data[day] = {
         Comida: { title: row[3] || '', detail: detail[3] || '' },
