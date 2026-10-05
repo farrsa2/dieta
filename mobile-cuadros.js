@@ -166,8 +166,9 @@
       if (!lines[i].startsWith('|')) break;
       const row = splitMd(lines[i]);
       if (row.length < 7) continue;
-      const day = cleanMarkdownText(row[0]).replace(/\*\*/g, '');
-      if (!DAYS.includes(day)) continue;
+      const dayLabel = cleanMarkdownText(row[0]).replace(/\*\*/g, '').trim();
+      const day = DAYS.find(candidate => dayLabel === candidate || dayLabel.startsWith(`${candidate} `));
+      if (!day) continue;
       const detail = (lines[i + 1]?.startsWith('|')) ? splitMd(lines[i + 1]) : [];
       data[day] = {
         comida: {
