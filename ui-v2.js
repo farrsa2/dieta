@@ -188,9 +188,11 @@
       const total = showRecipe ? totals[current.day]?.[current.meal] : null;
 
       nextRecipeRegistry.clear();
-      const almuRecipe = showRecipe ? recipeButton(current.almu, `${current.day} · ${current.meal} · Almu`) : '';
-      const franRecipe = showRecipe ? recipeButton(current.fran, `${current.day} · ${current.meal} · Fran`) : '';
-      const totalRecipe = showRecipe && total ? recipeButton(`${current.almu} ${current.fran}`, `${current.day} · ${current.meal} · Total`) : '';
+      // Las recetas de Próxima comida las gestiona exclusivamente recipe-runtime.js.
+      // Evita duplicados y coincidencias amplias del sistema legado.
+      const almuRecipe = '';
+      const franRecipe = '';
+      const totalRecipe = '';
 
       app.innerHTML = pageHeader('Próxima comida', `${current.day} · ${now.time}`) + `<section class="card next-card">
         <p class="meal-name">${escapeHtml(current.meal)}</p>
