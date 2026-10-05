@@ -64,6 +64,24 @@
     return found;
   }
 
+  function singleRecipeForMeal(content = '') {
+    const source = window.DIET_RECIPES || {};
+    const haystack = recipeKey(content);
+    const candidates = [];
+    for (const [id, raw] of Object.entries(source)) {
+      const recipe = typeof raw === 'string' ? { nombre: id, elaboracion: raw } : (raw || {});
+      const name = recipe.nombre || id.replace(/_/g, ' ');
+      const aliases = Array.isArray(recipe.aliases) ? recipe.aliases : [];
+      for (const label of [name, ...aliases]) {
+        const key = recipeKey(label);
+        if (!key || !haystack.includes(key)) continue;
+        candidates.push({ id, name, recipe, score: key.length });
+      }
+    }
+    candidates.sort((a, b) => b.score - a.score);
+    return candidates.length ? [candidates[0]] : [];
+  }
+
   function recipeBody(recipe) {
     if (typeof recipe === 'string') return `<p>${escapeHtml(recipe)}</p>`;
     const parts = [];
@@ -233,6 +251,7 @@
     const card = document.querySelector('.next-card');
     if (!card) return;
     card.querySelectorAll('.next-total').forEach(node => node.remove());
+    card.querySelectorAll('.cuadro-recipe-button').forEach(node => node.remove());
     const current = await resolveDisplayedMeal();
     if (!current) return;
 
@@ -255,7 +274,7 @@
     const total = totals[current.day]?.[current.meal];
     if (!total) return;
 
-    const recipes = recipeEntriesFor(`${current.almu} ${current.fran} ${total.title} ${total.detail}`);
+    const recipes = singleRecipeForMeal(`${current.almu} ${current.fran} ${total.title}`);
     const testTotal = typeof window.nextMealMeasureDisplay === 'function' ? window.nextMealMeasureDisplay(current, 'total') : '';
     const totalHtml = testTotal
       ? `<article class="person next-total"><h3>TOTAL</h3><span class="next-total-detail">${formatMealCell(testTotal)}</span>${recipeButton(recipes, `${current.day} · ${current.meal} · Total`)}</article>`
