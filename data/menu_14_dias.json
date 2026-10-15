@@ -1,6 +1,6 @@
 {
   "schema_version": 4,
-  "generated_at": "2026-10-15T18:18:28+02:00",
+  "generated_at": "2026-10-15T18:35:00+02:00",
   "timezone": "Europe/Madrid",
   "window": {
     "inicio": "2026-10-16",
@@ -41,7 +41,288 @@
       "X"
     ],
     "csv": "Fruta de temporada | ≈ 3,9 kg | 3.900 g; V S D L M X\nKiwi | ≈ 5 uds. | 300 g; S D L M X\nCiruelas | ≈ 5 uds. pequeñas | 150 g; S D L M X\nTomate fresco | ≈ 645 g | 645 g; V S D L M X\nPatata | ≈ 600 g | 595 g; V D M\nPimiento | ≈ 375 g | 375 g; V S D X\nZanahoria | ≈ 470 g | 470 g; D L M X\nCebolla | ≈ 355 g | 355 g; D L M X\nChampiñones | 1 bandeja | 270 g; S L\nGuisantes | 1 bolsa | 390 g; S M\nCalabaza | 1 trozo mediano | 365 g; L\nCalabacín | 1 pequeño | 120 g; D\nLechuga | 1 bolsa/cogollo | 150 g; S X\nApio | — | 60 g + cantidad sin especificar para lentejas; S X\nPepino | 1 pequeño | 60 g; S\nAjo | 1 cabeza | 30 g + cantidad sin especificar para tortellini; S L\nPuerro | 1 ud. pequeña | cantidad sin especificar; X\nPerejil | 1 manojo pequeño | cantidad sin especificar; X\nJamón York | 1 paquete grande | 205 g; S D L M\nJamón serrano | 1 paquete | 120 g; L M X\nHamburguesa | ≈ 400 g | 400 g; S\nLomo de cerdo | 2-3 filetes | 245 g; S\nTernera para bistec | 2 filetes grandes | 340 g; D\nPechuga de pollo | 1 bandeja pequeña | 355 g; L X\nSepia | ≈ 2 raciones | 380 g; D\nMerluza | ≈ 2 lomos grandes | 390 g; M\nSalmón ahumado | 1 paquete grande | 140 g; X\nHuevo | ≈ 3 uds. | 130 g; V\nQueso de Burgos | 1 envase | 160 g; S D M\nQueso rallado | 1 bolsa pequeña | 45 g; L\nYogur | ≈ 6 uds. de 125 g | 750 g opcional; V S D L M X\nPan integral | ≈ 1 paquete/pan grande | 525 g; S D L M X\nTortas de maíz | ≈ 1 paquete | 120 g; V S D L M X\nCorn Flakes | — | 210 g; S D L M X\nCopos de avena | — | 200 g; S D L M X\nTortellini frescos | 1 paquete | 300 g; L\nGnocchi | 1 paquete | 400 g; M\nArroz | — | 165 g; X\nTortillas de trigo | 1 paquete | 220 g; X\nAtún en conserva | ≈ 3-4 latas | 205 g; V M\nLentejas | — | 325 g; X\nOrégano seco | 1 bote pequeño | 10 g; M",
-    "uses": {}
+    "uses": {
+      "Tomate fresco": [
+        {
+          "day": "V",
+          "dish": "Picadillo de patatas con atún"
+        },
+        {
+          "day": "S",
+          "dish": "Ensalada mixta II"
+        },
+        {
+          "day": "D",
+          "dish": "Puré de verduras"
+        },
+        {
+          "day": "D",
+          "dish": "Verduras asadas"
+        },
+        {
+          "day": "M",
+          "dish": "Gnocchi con atún"
+        }
+      ],
+      "Patata": [
+        {
+          "day": "V",
+          "dish": "Picadillo de patatas con atún"
+        },
+        {
+          "day": "D",
+          "dish": "Puré de verduras"
+        },
+        {
+          "day": "M",
+          "dish": "Verduras a la jardinera"
+        }
+      ],
+      "Pimiento": [
+        {
+          "day": "V",
+          "dish": "Picadillo de patatas con atún"
+        },
+        {
+          "day": "S",
+          "dish": "Ensalada mixta II"
+        },
+        {
+          "day": "D",
+          "dish": "Verduras asadas"
+        },
+        {
+          "day": "X",
+          "dish": "Tacos de salmón"
+        }
+      ],
+      "Zanahoria": [
+        {
+          "day": "D",
+          "dish": "Puré de verduras"
+        },
+        {
+          "day": "L",
+          "dish": "Crema naranja"
+        },
+        {
+          "day": "M",
+          "dish": "Verduras a la jardinera"
+        },
+        {
+          "day": "X",
+          "dish": "Lentejas con arroz"
+        }
+      ],
+      "Cebolla": [
+        {
+          "day": "D",
+          "dish": "Verduras asadas"
+        },
+        {
+          "day": "L",
+          "dish": "Tortellini con champiñones"
+        },
+        {
+          "day": "M",
+          "dish": "Verduras a la jardinera"
+        },
+        {
+          "day": "X",
+          "dish": "Lentejas con arroz"
+        },
+        {
+          "day": "X",
+          "dish": "Tacos de salmón"
+        }
+      ],
+      "Champiñones": [
+        {
+          "day": "S",
+          "dish": "Guisantes con champiñones"
+        },
+        {
+          "day": "L",
+          "dish": "Tortellini con champiñones"
+        }
+      ],
+      "Guisantes": [
+        {
+          "day": "S",
+          "dish": "Guisantes con champiñones"
+        },
+        {
+          "day": "M",
+          "dish": "Verduras a la jardinera"
+        }
+      ],
+      "Calabaza": [
+        {
+          "day": "L",
+          "dish": "Crema naranja"
+        }
+      ],
+      "Calabacín": [
+        {
+          "day": "D",
+          "dish": "Puré de verduras"
+        }
+      ],
+      "Lechuga": [
+        {
+          "day": "S",
+          "dish": "Ensalada mixta II"
+        },
+        {
+          "day": "X",
+          "dish": "Tacos de salmón"
+        }
+      ],
+      "Apio": [
+        {
+          "day": "S",
+          "dish": "Ensalada mixta II"
+        },
+        {
+          "day": "X",
+          "dish": "Lentejas con arroz"
+        }
+      ],
+      "Pepino": [
+        {
+          "day": "S",
+          "dish": "Ensalada mixta II"
+        }
+      ],
+      "Ajo": [
+        {
+          "day": "S",
+          "dish": "Guisantes con champiñones"
+        },
+        {
+          "day": "L",
+          "dish": "Tortellini con champiñones"
+        }
+      ],
+      "Puerro": [
+        {
+          "day": "X",
+          "dish": "Lentejas con arroz"
+        }
+      ],
+      "Perejil": [
+        {
+          "day": "X",
+          "dish": "Lentejas con arroz"
+        }
+      ],
+      "Jamón York": [
+        {
+          "day": "L",
+          "dish": "Tortellini con champiñones"
+        }
+      ],
+      "Hamburguesa": [
+        {
+          "day": "S",
+          "dish": "Ensalada mixta II + hamburguesa"
+        }
+      ],
+      "Lomo de cerdo": [
+        {
+          "day": "S",
+          "dish": "Guisantes con champiñones + lomo"
+        }
+      ],
+      "Ternera para bistec": [
+        {
+          "day": "D",
+          "dish": "Puré de verduras + bistec"
+        }
+      ],
+      "Pechuga de pollo": [
+        {
+          "day": "L",
+          "dish": "Crema naranja + pechuga de pollo"
+        }
+      ],
+      "Sepia": [
+        {
+          "day": "D",
+          "dish": "Verduras asadas + sepia"
+        }
+      ],
+      "Merluza": [
+        {
+          "day": "M",
+          "dish": "Verduras a la jardinera + merluza"
+        }
+      ],
+      "Salmón ahumado": [
+        {
+          "day": "X",
+          "dish": "Tacos de salmón"
+        }
+      ],
+      "Huevo": [
+        {
+          "day": "V",
+          "dish": "Picadillo de patatas con atún"
+        }
+      ],
+      "Queso rallado": [
+        {
+          "day": "L",
+          "dish": "Tortellini con champiñones"
+        }
+      ],
+      "Tortellini frescos": [
+        {
+          "day": "L",
+          "dish": "Tortellini con champiñones"
+        }
+      ],
+      "Gnocchi": [
+        {
+          "day": "M",
+          "dish": "Gnocchi con atún"
+        }
+      ],
+      "Arroz": [
+        {
+          "day": "X",
+          "dish": "Lentejas con arroz"
+        }
+      ],
+      "Tortillas de trigo": [
+        {
+          "day": "X",
+          "dish": "Tacos de salmón"
+        }
+      ],
+      "Atún en conserva": [
+        {
+          "day": "V",
+          "dish": "Picadillo de patatas con atún"
+        },
+        {
+          "day": "M",
+          "dish": "Gnocchi con atún"
+        }
+      ],
+      "Lentejas": [
+        {
+          "day": "X",
+          "dish": "Lentejas con arroz"
+        }
+      ],
+      "Orégano seco": [
+        {
+          "day": "M",
+          "dish": "Gnocchi con atún"
+        }
+      ]
+    }
   },
   "recipes": {
     "ensalada_patatas_atun": {
