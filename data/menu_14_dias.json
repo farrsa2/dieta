@@ -1,6 +1,6 @@
 {
   "schema_version": 4,
-  "generated_at": "2026-10-23T06:49:14+02:00",
+  "generated_at": "2026-10-23T06:57:46+02:00",
   "timezone": "Europe/Madrid",
   "window": {
     "inicio": "2026-10-16",
@@ -31,7 +31,7 @@
     }
   },
   "shopping": {
-    "titulo": "Compra nueva · pendiente de validar · V 23 cena a X 28 comida",
+    "titulo": "Compra VALIDADA · V 23 cena – X 28 comida",
     "dias": [
       "V",
       "S",
@@ -40,8 +40,565 @@
       "M",
       "X"
     ],
-    "csv": "",
-    "uses": {}
+    "csv": "Fruta de temporada | ≈ 3,3 kg | 3300 g; S D L M X\nKiwi | ≈ 5 uds. | 300 g; S D L M X\nCiruelas | ≈ 5 uds. pequeñas | 150 g; S D L M X\nTomate fresco | ≈ 650 g | 645 g; V S D L M X\nPatata | ≈ 600 g | 595 g; V S M\nPimiento | ≈ 300 g | 290 g; V S D\nZanahoria | ≈ 500 g | 470 g; S L M X\nCebolla | ≈ 310 g | 305 g; D L M X\nChampiñones | ≈ 1 bandeja grande | 270 g; D L\nGuisantes | ≈ 1 bolsa | 390 g; D M\nCalabaza | ≈ 1 trozo mediano | 365 g; L\nCalabacín | ≈ 1 pequeño | 120 g; S\nLechuga | ≈ 1 bolsa/cogollo | 95 g; S X\nApio | 1 manojo pequeño | 60 g + sin cantidad indicada; S X\nPepino | ≈ 1 pequeño | 60 g; S\nAjo | ≈ 1 cabeza | 30 g + sin cantidad indicada; D L\nPuerro | 1 pequeño | cantidad no indicada en la receta; X\nPerejil | 1 manojo | cantidad no indicada en la receta; X\nJamón York | ≈ 1 paquete grande | 205 g; S D L M\nJamón serrano | ≈ 1 paquete | 120 g; L M X\nHamburguesa | ≈ 2 × 200 g | 400 g; S\nLomo de cerdo | ≈ 2-3 filetes | 245 g; D\nTernera para bistec | ≈ 2 filetes grandes | 340 g; S\nPechuga de pollo | ≈ 1 bandeja pequeña | 355 g; L X\nSepia | ≈ 2 raciones | 380 g; D\nMerluza | ≈ 2 lomos grandes | 390 g; M\nHuevo | ≈ 3 uds. | 130 g; V\nQueso de Burgos | ≈ 1 envase | 160 g; S D M\nQueso rallado | ≈ 1 bolsa pequeña | 45 g; L\nYogur | ≈ 5 uds. de 125 g, opcionales | 5 tomas opcionales (cantidad no indicada); V S D L M\nPan integral | ≈ 1 envase de 500-600 g | 525 g; S D L M X\nTortas de maíz | ≈ 1 paquete | 120 g; S D L M\nCorn Flakes | ≈ 1 paquete | 210 g; S D L M X\nCopos de avena | ≈ 1 paquete | 200 g; S D L M X\nTortellini frescos | ≈ 1 paquete | 300 g; L\nGnocchi | ≈ 1 paquete | 400 g; M\nArroz | ≈ 165 g | 165 g; X\nAtún en conserva | ≈ 3-4 latas según formato | 205 g; V M\nLentejas | ≈ 325 g | 325 g; X\nOrégano seco | 1 bote si no hay | 10 g; M",
+    "uses": {
+      "Fruta de temporada": [
+        {
+          "day": "S",
+          "dish": "Media mañana"
+        },
+        {
+          "day": "S",
+          "dish": "Puré de verduras + bistec"
+        },
+        {
+          "day": "S",
+          "dish": "Merienda"
+        },
+        {
+          "day": "S",
+          "dish": "Ensalada mixta II + hamburguesa"
+        },
+        {
+          "day": "D",
+          "dish": "Media mañana"
+        },
+        {
+          "day": "D",
+          "dish": "Guisantes con champiñones + lomo"
+        },
+        {
+          "day": "D",
+          "dish": "Merienda"
+        },
+        {
+          "day": "L",
+          "dish": "Media mañana"
+        },
+        {
+          "day": "L",
+          "dish": "Tortellini con champiñones"
+        },
+        {
+          "day": "L",
+          "dish": "Merienda"
+        },
+        {
+          "day": "M",
+          "dish": "Media mañana"
+        },
+        {
+          "day": "M",
+          "dish": "Gnocchi con atún"
+        },
+        {
+          "day": "M",
+          "dish": "Merienda"
+        },
+        {
+          "day": "M",
+          "dish": "Verduras a la jardinera + merluza"
+        },
+        {
+          "day": "X",
+          "dish": "Media mañana"
+        },
+        {
+          "day": "X",
+          "dish": "Lentejas con arroz"
+        }
+      ],
+      "Kiwi": [
+        {
+          "day": "S",
+          "dish": "Desayuno"
+        },
+        {
+          "day": "D",
+          "dish": "Desayuno"
+        },
+        {
+          "day": "L",
+          "dish": "Desayuno"
+        },
+        {
+          "day": "M",
+          "dish": "Desayuno"
+        },
+        {
+          "day": "X",
+          "dish": "Desayuno"
+        }
+      ],
+      "Ciruelas": [
+        {
+          "day": "S",
+          "dish": "Desayuno"
+        },
+        {
+          "day": "D",
+          "dish": "Desayuno"
+        },
+        {
+          "day": "L",
+          "dish": "Desayuno"
+        },
+        {
+          "day": "M",
+          "dish": "Desayuno"
+        },
+        {
+          "day": "X",
+          "dish": "Desayuno"
+        }
+      ],
+      "Tomate fresco": [
+        {
+          "day": "V",
+          "dish": "Picadillo de patatas con atún"
+        },
+        {
+          "day": "S",
+          "dish": "Puré de verduras + bistec"
+        },
+        {
+          "day": "S",
+          "dish": "Ensalada mixta II + hamburguesa"
+        },
+        {
+          "day": "D",
+          "dish": "Desayuno"
+        },
+        {
+          "day": "D",
+          "dish": "Verduras asadas + sepia"
+        },
+        {
+          "day": "L",
+          "dish": "Media mañana"
+        },
+        {
+          "day": "M",
+          "dish": "Media mañana"
+        },
+        {
+          "day": "M",
+          "dish": "Gnocchi con atún"
+        },
+        {
+          "day": "X",
+          "dish": "Desayuno"
+        },
+        {
+          "day": "X",
+          "dish": "Media mañana"
+        }
+      ],
+      "Patata": [
+        {
+          "day": "V",
+          "dish": "Picadillo de patatas con atún"
+        },
+        {
+          "day": "S",
+          "dish": "Puré de verduras + bistec"
+        },
+        {
+          "day": "M",
+          "dish": "Verduras a la jardinera + merluza"
+        }
+      ],
+      "Pimiento": [
+        {
+          "day": "V",
+          "dish": "Picadillo de patatas con atún"
+        },
+        {
+          "day": "S",
+          "dish": "Ensalada mixta II + hamburguesa"
+        },
+        {
+          "day": "D",
+          "dish": "Verduras asadas + sepia"
+        }
+      ],
+      "Zanahoria": [
+        {
+          "day": "S",
+          "dish": "Puré de verduras + bistec"
+        },
+        {
+          "day": "L",
+          "dish": "Crema naranja + pollo"
+        },
+        {
+          "day": "M",
+          "dish": "Verduras a la jardinera + merluza"
+        },
+        {
+          "day": "X",
+          "dish": "Lentejas con arroz"
+        }
+      ],
+      "Cebolla": [
+        {
+          "day": "D",
+          "dish": "Verduras asadas + sepia"
+        },
+        {
+          "day": "L",
+          "dish": "Tortellini con champiñones"
+        },
+        {
+          "day": "M",
+          "dish": "Verduras a la jardinera + merluza"
+        },
+        {
+          "day": "X",
+          "dish": "Lentejas con arroz"
+        }
+      ],
+      "Champiñones": [
+        {
+          "day": "D",
+          "dish": "Guisantes con champiñones + lomo"
+        },
+        {
+          "day": "L",
+          "dish": "Tortellini con champiñones"
+        }
+      ],
+      "Guisantes": [
+        {
+          "day": "D",
+          "dish": "Guisantes con champiñones + lomo"
+        },
+        {
+          "day": "M",
+          "dish": "Verduras a la jardinera + merluza"
+        }
+      ],
+      "Calabaza": [
+        {
+          "day": "L",
+          "dish": "Crema naranja + pollo"
+        }
+      ],
+      "Calabacín": [
+        {
+          "day": "S",
+          "dish": "Puré de verduras + bistec"
+        }
+      ],
+      "Lechuga": [
+        {
+          "day": "S",
+          "dish": "Ensalada mixta II + hamburguesa"
+        },
+        {
+          "day": "X",
+          "dish": "Media mañana"
+        }
+      ],
+      "Apio": [
+        {
+          "day": "S",
+          "dish": "Ensalada mixta II + hamburguesa"
+        },
+        {
+          "day": "X",
+          "dish": "Lentejas con arroz"
+        }
+      ],
+      "Pepino": [
+        {
+          "day": "S",
+          "dish": "Ensalada mixta II + hamburguesa"
+        }
+      ],
+      "Ajo": [
+        {
+          "day": "D",
+          "dish": "Guisantes con champiñones + lomo"
+        },
+        {
+          "day": "L",
+          "dish": "Tortellini con champiñones"
+        }
+      ],
+      "Puerro": [
+        {
+          "day": "X",
+          "dish": "Lentejas con arroz"
+        }
+      ],
+      "Perejil": [
+        {
+          "day": "X",
+          "dish": "Lentejas con arroz"
+        }
+      ],
+      "Jamón York": [
+        {
+          "day": "S",
+          "dish": "Media mañana"
+        },
+        {
+          "day": "D",
+          "dish": "Media mañana"
+        },
+        {
+          "day": "L",
+          "dish": "Media mañana"
+        },
+        {
+          "day": "L",
+          "dish": "Tortellini con champiñones"
+        },
+        {
+          "day": "M",
+          "dish": "Desayuno"
+        }
+      ],
+      "Jamón serrano": [
+        {
+          "day": "L",
+          "dish": "Media mañana"
+        },
+        {
+          "day": "M",
+          "dish": "Media mañana"
+        },
+        {
+          "day": "X",
+          "dish": "Media mañana"
+        }
+      ],
+      "Hamburguesa": [
+        {
+          "day": "S",
+          "dish": "Ensalada mixta II + hamburguesa"
+        }
+      ],
+      "Lomo de cerdo": [
+        {
+          "day": "D",
+          "dish": "Guisantes con champiñones + lomo"
+        }
+      ],
+      "Ternera para bistec": [
+        {
+          "day": "S",
+          "dish": "Puré de verduras + bistec"
+        }
+      ],
+      "Pechuga de pollo": [
+        {
+          "day": "L",
+          "dish": "Crema naranja + pollo"
+        },
+        {
+          "day": "X",
+          "dish": "Media mañana"
+        }
+      ],
+      "Sepia": [
+        {
+          "day": "D",
+          "dish": "Verduras asadas + sepia"
+        }
+      ],
+      "Merluza": [
+        {
+          "day": "M",
+          "dish": "Verduras a la jardinera + merluza"
+        }
+      ],
+      "Huevo": [
+        {
+          "day": "V",
+          "dish": "Picadillo de patatas con atún"
+        }
+      ],
+      "Queso de Burgos": [
+        {
+          "day": "S",
+          "dish": "Merienda"
+        },
+        {
+          "day": "D",
+          "dish": "Merienda"
+        },
+        {
+          "day": "M",
+          "dish": "Media mañana"
+        }
+      ],
+      "Queso rallado": [
+        {
+          "day": "L",
+          "dish": "Tortellini con champiñones"
+        }
+      ],
+      "Yogur": [
+        {
+          "day": "V",
+          "dish": "Cena · opcional"
+        },
+        {
+          "day": "S",
+          "dish": "Cena · opcional"
+        },
+        {
+          "day": "D",
+          "dish": "Cena · opcional"
+        },
+        {
+          "day": "L",
+          "dish": "Cena · opcional"
+        },
+        {
+          "day": "M",
+          "dish": "Cena · opcional"
+        }
+      ],
+      "Pan integral": [
+        {
+          "day": "S",
+          "dish": "Media mañana"
+        },
+        {
+          "day": "D",
+          "dish": "Desayuno"
+        },
+        {
+          "day": "D",
+          "dish": "Media mañana"
+        },
+        {
+          "day": "L",
+          "dish": "Media mañana"
+        },
+        {
+          "day": "M",
+          "dish": "Desayuno"
+        },
+        {
+          "day": "M",
+          "dish": "Media mañana"
+        },
+        {
+          "day": "X",
+          "dish": "Desayuno"
+        },
+        {
+          "day": "X",
+          "dish": "Media mañana"
+        }
+      ],
+      "Tortas de maíz": [
+        {
+          "day": "S",
+          "dish": "Media mañana"
+        },
+        {
+          "day": "D",
+          "dish": "Media mañana"
+        },
+        {
+          "day": "L",
+          "dish": "Merienda"
+        },
+        {
+          "day": "M",
+          "dish": "Merienda"
+        }
+      ],
+      "Corn Flakes": [
+        {
+          "day": "S",
+          "dish": "Desayuno"
+        },
+        {
+          "day": "D",
+          "dish": "Desayuno"
+        },
+        {
+          "day": "L",
+          "dish": "Desayuno"
+        },
+        {
+          "day": "M",
+          "dish": "Desayuno"
+        },
+        {
+          "day": "X",
+          "dish": "Desayuno"
+        }
+      ],
+      "Copos de avena": [
+        {
+          "day": "S",
+          "dish": "Desayuno"
+        },
+        {
+          "day": "D",
+          "dish": "Desayuno"
+        },
+        {
+          "day": "L",
+          "dish": "Desayuno"
+        },
+        {
+          "day": "M",
+          "dish": "Desayuno"
+        },
+        {
+          "day": "X",
+          "dish": "Desayuno"
+        }
+      ],
+      "Tortellini frescos": [
+        {
+          "day": "L",
+          "dish": "Tortellini con champiñones"
+        }
+      ],
+      "Gnocchi": [
+        {
+          "day": "M",
+          "dish": "Gnocchi con atún"
+        }
+      ],
+      "Arroz": [
+        {
+          "day": "X",
+          "dish": "Lentejas con arroz"
+        }
+      ],
+      "Atún en conserva": [
+        {
+          "day": "V",
+          "dish": "Picadillo de patatas con atún"
+        },
+        {
+          "day": "M",
+          "dish": "Gnocchi con atún"
+        }
+      ],
+      "Lentejas": [
+        {
+          "day": "X",
+          "dish": "Lentejas con arroz"
+        }
+      ],
+      "Orégano seco": [
+        {
+          "day": "M",
+          "dish": "Gnocchi con atún"
+        }
+      ]
+    }
   },
   "recipes": {
     "ensalada_patatas_atun": {
