@@ -1,0 +1,335 @@
+{
+  "schema_version": 4,
+  "generated_at": "2026-10-23T06:49:14+02:00",
+  "timezone": "Europe/Madrid",
+  "window": {
+    "inicio": "2026-10-16",
+    "fin": "2026-10-29"
+  },
+  "weeks": [
+    {
+      "id": "20261016_SEMANA04_CICLO1",
+      "inicio": "2026-10-16",
+      "fin": "2026-10-22",
+      "document": "semana04_ciclo1"
+    },
+    {
+      "id": "20261023_SEMANA04_CICLO2",
+      "inicio": "2026-10-23",
+      "fin": "2026-10-29",
+      "document": "semana04_ciclo2"
+    }
+  ],
+  "documents": {
+    "semana04_ciclo1": {
+      "main_markdown": "# SEMANA 04 · CUADRO 01 · APROBADO\n\n**Periodo operativo:** 16/10/2026–22/10/2026  \n**Cambios aprobados:** V16 comida = lentejas estofadas; S usa la comida del domingo y mantiene la cena del jueves; D usa la comida que estaba el sábado; X usa comida/cena del sábado original; J usa comida/cena del miércoles. El jueves Almu toma carbonara y Fran garbanzos con espinacas y huevo. No se muestran aceite ni sal.\n\n| Día | Comida Almu | Comida Fran | Comida total | Cena Almu | Cena Fran | Cena total |\n|---|---|---|---|---|---|---|\n| **Viernes 16** | Lentejas estofadas | Lentejas estofadas | **Lentejas 350 g · tomate 90 g · cebolla 90 g · zanahoria 90 g · pimiento 70 g · harina 20 g** | Picadillo de patatas con atún 300 g | Picadillo de patatas con atún 350 g + yogur opcional | **Patata 225 g · tomate 140 g · huevo 130 g · atún 85 g · pimiento 75 g** |\n| **Sábado 17** | Puré de verduras 250 g + bistec 150 g | Puré de verduras 300 g + bistec 200 g + fruta 200 g | **Patata 195 g · calabacín 120 g · zanahoria 120 g · tomate 100 g · ternera 340 g** | Ensalada mixta II 200 g + hamburguesa 200 g | Ensalada mixta II 200 g + hamburguesa 200 g + fruta 200 g + yogur opcional | **Tomate 130 g · lechuga 80 g · apio 60 g · pimiento 60 g · pepino 60 g · hamburguesa 400 g** |\n| **Domingo 18** | Guisantes con champiñones 200 g + lomo 100 g | Guisantes con champiñones 300 g + lomo 150 g + fruta 200 g | **Guisantes 300 g · champiñones 150 g · ajo 30 g · lomo 245 g** | Verduras asadas 150 g + sepia 200 g | Verduras asadas 200 g + sepia 200 g + yogur opcional | **Pimiento 155 g · tomate 95 g · cebolla 95 g · sepia 380 g** |\n| **Lunes 19** | Tortellini con champiñones 250 g | Tortellini con champiñones 350 g + fruta 200 g | **Tortellini 300 g · champiñones 120 g · jamón York 75 g · cebolla 60 g · queso rallado 45 g** | Crema naranja 250 g + pechuga de pollo 150 g | Crema naranja 300 g + pechuga de pollo 150 g + yogur opcional | **Calabaza 365 g · zanahoria 185 g · pollo 300 g** |\n| **Martes 20** | Gnocchi con atún 250 g | Gnocchi con atún 400 g + fruta 200 g | **Gnocchi 400 g · atún 120 g · tomate 120 g · orégano 10 g** | Jardinera 150 g + merluza 200 g | Jardinera 250 g + merluza 200 g + fruta 200 g + yogur opcional | **Patata 175 g · guisantes 90 g · zanahoria 70 g · cebolla 55 g · merluza 390 g** |\n| **Miércoles 21** | Lentejas con arroz 300 g | Lentejas con arroz 400 g + fruta 200 g | **Lentejas 325 g · arroz 165 g · cebolla 95 g · zanahoria 95 g** | Tacos de salmón 250 g | Tacos de salmón 300 g + yogur opcional | **Tortillas de trigo 220 g · salmón ahumado 140 g · pimiento 85 g · lechuga 55 g · cebolla 50 g** |\n| **Jueves 22** | Espagueti carbonara 300 g | Garbanzos, espinacas y huevo duro 350 g + fruta 200 g | **—** | Crema verde 250 g + tortilla francesa 120 g | Crema verde 300 g + tortilla francesa 120 g + yogur opcional | **Calabacín 285 g · espinacas 180 g · brécol 75 g · huevo 230 g** |\n",
+      "menu_markdown": "# SEMANA 04 · CUADRO 02 · APROBADO\n\n**Periodo:** 16/10/2026–22/10/2026. Comidas y cenas según Cuadro 01 aprobado. Desayunos, medias mañanas y meriendas mantienen el día del PDF. No se muestran aceite ni sal.\n\n|  | Viernes Almu | Viernes Fran | Sábado Almu | Sábado Fran | Domingo Almu | Domingo Fran |\n|---|---|---|---|---|---|---|\n| **Desayuno** | Corn Flakes 30 g + leche soja 200 g · avena 20 g · kiwi 60 g | Corn Flakes 30 g + leche soja 200 g · café opcional · ciruelas 30 g | Corn Flakes 30 g + leche soja 200 g · avena 20 g · kiwi 60 g | Corn Flakes 30 g + leche soja 200 g · avena 50 g · café opcional · ciruelas 30 g | Corn Flakes 30 g + leche soja 200 g · avena 20 g · kiwi 60 g | Tostadas integrales 40 g + tomate 5 g · café opcional · ciruelas 30 g |\n| **Media mañana** | Pan 40 g + tomate 5 g · jamón serrano 30 g | Pan 85 g + jamón York 35 g + tomate 35 g · fruta 100 g | Tostadas integrales 30 g + jamón York 30 g | Tortas maíz 30 g · fruta 200 g | Tostadas integrales 30 g + jamón York 30 g | Tortas maíz 30 g · fruta 200 g |\n| **Comida** | Lentejas estofadas | Lentejas estofadas | Puré: patata 90 g · calabacín 55 g · zanahoria 55 g · tomate 45 g + ternera 145 g | Puré: patata 105 g · calabacín 65 g · zanahoria 65 g · tomate 55 g + ternera 195 g + fruta 200 g | Guisantes 120 g · champiñón 60 g · ajo 10 g + lomo 100 g | Guisantes 180 g · champiñón 90 g · ajo 20 g + lomo 145 g + fruta 200 g |\n| **Merienda** | Fruta 150 g | Tortas maíz 30 g · fruta 150 g | Fruta 150 g | Queso Burgos 60 g · fruta 150 g | Fruta 150 g | Queso Burgos 60 g · fruta 150 g |\n| **Cena** | Picadillo: patata 105 g · tomate 65 g · huevo 60 g · atún 40 g · pimiento 35 g | Patata 120 g · tomate 75 g · huevo 70 g · atún 45 g · pimiento 40 g + yogur opcional | Ensalada II: tomate 65 g · lechuga 40 g · apio 30 g · pimiento 30 g · pepino 30 g + hamburguesa 200 g | Igual + hamburguesa 200 g + fruta 200 g + yogur opcional | Verduras asadas: pimiento 65 g · tomate 40 g · cebolla 40 g + sepia 190 g | Pimiento 90 g · tomate 55 g · cebolla 55 g + sepia 190 g + yogur opcional |\n\n|  | Lunes Almu | Lunes Fran | Martes Almu | Martes Fran | Miércoles Almu | Miércoles Fran | Jueves Almu | Jueves Fran |\n|---|---|---|---|---|---|---|---|---|\n| **Desayuno** | Corn Flakes 30 g + leche soja 200 g · avena 20 g · kiwi 60 g | Corn Flakes 30 g + leche soja 200 g · avena 50 g · café opcional · ciruelas 30 g | Corn Flakes 30 g + leche soja 200 g · avena 20 g · kiwi 60 g | Tostadas integrales 45 g + jamón York 35 g · café opcional · ciruelas 30 g | Corn Flakes 30 g + leche soja 200 g · avena 20 g · kiwi 60 g | Tostadas integrales 25 g + tomate 5 g · café opcional ×2 según PDF · ciruelas 30 g | Corn Flakes 30 g + leche soja 200 g · avena 20 g · kiwi 60 g | Tostadas integrales 30 g + lomo curado 30 g · café opcional · ciruelas 30 g |\n| **Media mañana** | Pan 40 g + tomate 5 g · jamón serrano 30 g | Pan 85 g + jamón York 35 g + tomate 35 g · fruta 100 g | Pan 40 g + tomate 5 g · queso Burgos 40 g | Pan 70 g + jamón serrano 60 g · fruta 100 g | Pan 40 g + tomate 5 g · jamón serrano 30 g | Pan 80 g + pechuga pollo 55 g + lechuga 15 g · fruta 100 g | Pan 40 g + tomate 5 g · queso Burgos 40 g | Pan 70 g + jamón serrano 60 g · fruta 100 g |\n| **Comida** | Tortellini 125 g · champiñón 50 g · York 30 g · cebolla 25 g · queso 20 g | Tortellini 175 g · champiñón 70 g · York 45 g · cebolla 35 g · queso 25 g + fruta 200 g | Gnocchi 155 g · atún 45 g · tomate 45 g · orégano 5 g | Gnocchi 245 g · atún 75 g · tomate 75 g · orégano 5 g + fruta 200 g | Lentejas 140 g · arroz 70 g · cebolla 40 g · zanahoria 40 g | Lentejas 185 g · arroz 95 g · cebolla 55 g · zanahoria 55 g + fruta 200 g | Carbonara: espagueti 150 g · huevo 85 g · cebolla 30 g · bacón 15 g · queso 15 g | Garbanzos 135 g · espinacas 135 g · huevo 75 g + fruta 200 g |\n| **Merienda** | Fruta 150 g | Tortas maíz 30 g · fruta 150 g | Fruta 150 g | Tortas maíz 30 g · fruta 150 g | Fruta 150 g | Tortas maíz 30 g · fruta 150 g | Fruta 150 g | Tortas maíz 30 g · fruta 150 g |\n| **Cena** | Crema naranja: calabaza 165 g · zanahoria 85 g + pollo 150 g | Calabaza 200 g · zanahoria 100 g + pollo 150 g + yogur opcional | Jardinera: patata 65 g · guisantes 35 g · zanahoria 25 g · cebolla 20 g + merluza 195 g | Patata 110 g · guisantes 55 g · zanahoria 45 g · cebolla 35 g + merluza 195 g + fruta 200 g + yogur opcional | Tacos salmón: tortillas 100 g · salmón 65 g · pimiento 40 g · lechuga 25 g · cebolla 25 g | Tortillas 120 g · salmón 75 g · pimiento 45 g · lechuga 30 g · cebolla 25 g + yogur opcional | Crema verde: calabacín 130 g · espinacas 80 g · brécol 35 g + tortilla huevo 115 g | Calabacín 155 g · espinacas 100 g · brécol 40 g + tortilla huevo 115 g + yogur opcional |\n"
+    },
+    "semana04_ciclo2": {
+      "main_markdown": "# SEMANA 04 · CUADRO 01 · APROBADO\n\n**Periodo operativo:** 23/10/2026–29/10/2026  \n**Criterio:** se repite el patrón aprobado. El viernes vuelve al menú normal del PDF: tabouleh de quinoa + muslo de pollo. Se mantiene la redistribución aprobada y se intercambian las comidas de sábado y domingo.\n\n| Día | Comida Almu | Comida Fran | Comida total | Cena Almu | Cena Fran | Cena total |\n|---|---|---|---|---|---|---|\n| **Viernes 23** | Tabouleh de quinoa 130 g + muslo de pollo 200 g | Tabouleh 200 g + muslo 200 g + fruta 200 g | **Tabouleh 330 g · muslo pollo 380 g** | Picadillo de patatas con atún 300 g | Picadillo 350 g + yogur opcional | **Patata 225 g · tomate 140 g · huevo 130 g · atún 85 g · pimiento 75 g** |\n| **Sábado 24** | Puré de verduras 250 g + bistec 150 g | Puré 300 g + bistec 200 g + fruta 200 g | **Patata 195 g · calabacín 120 g · zanahoria 120 g · tomate 100 g · ternera 340 g** | Ensalada mixta II + hamburguesa 200 g | Ensalada mixta II + hamburguesa 200 g + fruta 200 g + yogur opcional | **Tomate 130 g · lechuga 80 g · apio 60 g · pimiento 60 g · pepino 60 g · hamburguesa 400 g** |\n| **Domingo 25** | Guisantes con champiñones 200 g + lomo 100 g | Guisantes con champiñones 300 g + lomo 150 g + fruta 200 g | **Guisantes 300 g · champiñones 150 g · ajo 30 g · lomo 245 g** | Verduras asadas 150 g + sepia 200 g | Verduras asadas 200 g + sepia 200 g + yogur opcional | **Pimiento 155 g · tomate 95 g · cebolla 95 g · sepia 380 g** |\n| **Lunes 26** | Tortellini con champiñones 250 g | Tortellini 350 g + fruta 200 g | **Tortellini 300 g · champiñones 120 g · jamón York 75 g · cebolla 60 g · queso 45 g** | Crema naranja 250 g + pollo 150 g | Crema naranja 300 g + pollo 150 g + yogur opcional | **Calabaza 365 g · zanahoria 185 g · pollo 300 g** |\n| **Martes 27** | Gnocchi con atún 250 g | Gnocchi 400 g + fruta 200 g | **Gnocchi 400 g · atún 120 g · tomate 120 g · orégano 10 g** | Jardinera 150 g + merluza 200 g | Jardinera 250 g + merluza 200 g + fruta 200 g + yogur opcional | **Patata 175 g · guisantes 90 g · zanahoria 70 g · cebolla 55 g · merluza 390 g** |\n| **Miércoles 28** | Lentejas con arroz 300 g | Lentejas con arroz 400 g + fruta 200 g | **Lentejas 325 g · arroz 165 g · cebolla 95 g · zanahoria 95 g** | Tacos de salmón 250 g | Tacos de salmón 300 g + yogur opcional | **Tortillas 220 g · salmón 140 g · pimiento 85 g · lechuga 55 g · cebolla 50 g** |\n| **Jueves 29** | Espagueti carbonara 300 g | Garbanzos, espinacas y huevo duro 350 g + fruta 200 g | **—** | Crema verde 250 g + tortilla francesa 120 g | Crema verde 300 g + tortilla francesa 120 g + yogur opcional | **Calabacín 285 g · espinacas 180 g · brécol 75 g · huevo 230 g** |\n",
+      "menu_markdown": "# SEMANA 04 · CUADRO 02 · APROBADO\n\n**Periodo:** 23/10/2026–29/10/2026. Comidas y cenas según Cuadro 01 aprobado. Desayunos, medias mañanas y meriendas mantienen el día del PDF. No se muestran aceite ni sal.\n\n|  | Viernes Almu | Viernes Fran | Sábado Almu | Sábado Fran | Domingo Almu | Domingo Fran |\n|---|---|---|---|---|---|---|\n| **Desayuno** | Corn Flakes 30 g + leche soja 200 g · avena 20 g · kiwi 60 g | Corn Flakes 30 g + leche soja 200 g · café opcional · ciruelas 30 g | Corn Flakes 30 g + leche soja 200 g · avena 20 g · kiwi 60 g | Corn Flakes 30 g + leche soja 200 g · avena 50 g · café opcional · ciruelas 30 g | Corn Flakes 30 g + leche soja 200 g · avena 20 g · kiwi 60 g | Tostadas integrales 40 g + tomate 5 g · café opcional · ciruelas 30 g |\n| **Media mañana** | Pan 40 g + tomate 5 g · jamón serrano 30 g | Pan 85 g + jamón York 35 g + tomate 35 g · fruta 100 g | Tostadas integrales 30 g + jamón York 30 g | Tortas maíz 30 g · fruta 200 g | Tostadas integrales 30 g + jamón York 30 g | Tortas maíz 30 g · fruta 200 g |\n| **Comida** | Tabouleh de quinoa 130 g + muslo pollo 190 g | Tabouleh de quinoa 200 g + muslo pollo 190 g + fruta 200 g | Puré: patata 90 g · calabacín 55 g · zanahoria 55 g · tomate 45 g + ternera 145 g | Puré: patata 105 g · calabacín 65 g · zanahoria 65 g · tomate 55 g + ternera 195 g + fruta 200 g | Guisantes 120 g · champiñón 60 g · ajo 10 g + lomo 100 g | Guisantes 180 g · champiñón 90 g · ajo 20 g + lomo 145 g + fruta 200 g |\n| **Merienda** | Fruta 150 g | Tortas maíz 30 g · fruta 150 g | Fruta 150 g | Queso Burgos 60 g · fruta 150 g | Fruta 150 g | Queso Burgos 60 g · fruta 150 g |\n| **Cena** | Picadillo: patata 105 g · tomate 65 g · huevo 60 g · atún 40 g · pimiento 35 g | Patata 120 g · tomate 75 g · huevo 70 g · atún 45 g · pimiento 40 g + yogur opcional | Ensalada II: tomate 65 g · lechuga 40 g · apio 30 g · pimiento 30 g · pepino 30 g + hamburguesa 200 g | Igual + hamburguesa 200 g + fruta 200 g + yogur opcional | Verduras asadas: pimiento 65 g · tomate 40 g · cebolla 40 g + sepia 190 g | Pimiento 90 g · tomate 55 g · cebolla 55 g + sepia 190 g + yogur opcional |\n\n|  | Lunes Almu | Lunes Fran | Martes Almu | Martes Fran | Miércoles Almu | Miércoles Fran | Jueves Almu | Jueves Fran |\n|---|---|---|---|---|---|---|---|---|\n| **Desayuno** | Corn Flakes 30 g + leche soja 200 g · avena 20 g · kiwi 60 g | Corn Flakes 30 g + leche soja 200 g · avena 50 g · café opcional · ciruelas 30 g | Corn Flakes 30 g + leche soja 200 g · avena 20 g · kiwi 60 g | Tostadas integrales 45 g + jamón York 35 g · café opcional · ciruelas 30 g | Corn Flakes 30 g + leche soja 200 g · avena 20 g · kiwi 60 g | Tostadas integrales 25 g + tomate 5 g · café opcional ×2 según PDF · ciruelas 30 g | Corn Flakes 30 g + leche soja 200 g · avena 20 g · kiwi 60 g | Tostadas integrales 30 g + lomo curado 30 g · café opcional · ciruelas 30 g |\n| **Media mañana** | Pan 40 g + tomate 5 g · jamón serrano 30 g | Pan 85 g + jamón York 35 g + tomate 35 g · fruta 100 g | Pan 40 g + tomate 5 g · queso Burgos 40 g | Pan 70 g + jamón serrano 60 g · fruta 100 g | Pan 40 g + tomate 5 g · jamón serrano 30 g | Pan 80 g + pechuga pollo 55 g + lechuga 15 g · fruta 100 g | Pan 40 g + tomate 5 g · queso Burgos 40 g | Pan 70 g + jamón serrano 60 g · fruta 100 g |\n| **Comida** | Tortellini 125 g · champiñón 50 g · York 30 g · cebolla 25 g · queso 20 g | Tortellini 175 g · champiñón 70 g · York 45 g · cebolla 35 g · queso 25 g + fruta 200 g | Gnocchi 155 g · atún 45 g · tomate 45 g · orégano 5 g | Gnocchi 245 g · atún 75 g · tomate 75 g · orégano 5 g + fruta 200 g | Lentejas 140 g · arroz 70 g · cebolla 40 g · zanahoria 40 g | Lentejas 185 g · arroz 95 g · cebolla 55 g · zanahoria 55 g + fruta 200 g | Carbonara: espagueti 150 g · huevo 85 g · cebolla 30 g · bacón 15 g · queso 15 g | Garbanzos 135 g · espinacas 135 g · huevo 75 g + fruta 200 g |\n| **Merienda** | Fruta 150 g | Tortas maíz 30 g · fruta 150 g | Fruta 150 g | Tortas maíz 30 g · fruta 150 g | Fruta 150 g | Tortas maíz 30 g · fruta 150 g | Fruta 150 g | Tortas maíz 30 g · fruta 150 g |\n| **Cena** | Crema naranja: calabaza 165 g · zanahoria 85 g + pollo 150 g | Calabaza 200 g · zanahoria 100 g + pollo 150 g + yogur opcional | Jardinera: patata 65 g · guisantes 35 g · zanahoria 25 g · cebolla 20 g + merluza 195 g | Patata 110 g · guisantes 55 g · zanahoria 45 g · cebolla 35 g + merluza 195 g + fruta 200 g + yogur opcional | Tacos salmón: tortillas 100 g · salmón 65 g · pimiento 40 g · lechuga 25 g · cebolla 25 g | Tortillas 120 g · salmón 75 g · pimiento 45 g · lechuga 30 g · cebolla 25 g + yogur opcional | Crema verde: calabacín 130 g · espinacas 80 g · brécol 35 g + tortilla huevo 115 g | Calabacín 155 g · espinacas 100 g · brécol 40 g + tortilla huevo 115 g + yogur opcional |\n"
+    }
+  },
+  "shopping": {
+    "titulo": "Compra nueva · pendiente de validar · V 23 cena a X 28 comida",
+    "dias": [
+      "V",
+      "S",
+      "D",
+      "L",
+      "M",
+      "X"
+    ],
+    "csv": "",
+    "uses": {}
+  },
+  "recipes": {
+    "ensalada_patatas_atun": {
+      "nombre": "Ensalada de patatas y atún",
+      "elaboracion": "Añadir el huevo duro a la ensalada."
+    },
+    "cous_cous_pollo_curry": {
+      "nombre": "Cous cous con pollo al curry",
+      "ingredientes": [
+        "1 pechuga de pollo (preferiblemente sin piel)",
+        "1 cebolla",
+        "½ pimiento verde",
+        "½ pimiento rojo",
+        "1 zanahoria grande",
+        "1 diente de ajo",
+        "125 g de cuscús de grano medio",
+        "Mantequilla",
+        "Curry en polvo",
+        "AOVE, sal y pimienta al gusto"
+      ],
+      "elaboracion": "Picar ajo, cebolla, zanahoria y pimientos. Dorar las verduras, añadir el pollo troceado y cocinar. Preparar el cuscús con curry y mezclar con las verduras y el pollo."
+    },
+    "ensalada_nicoise": {
+      "nombre": "Ensalada niçoise",
+      "elaboracion": "Colocar la lechuga en una fuente. Trocear los huevos duros, cocer las patatas con piel y las judías verdes, añadir el resto de ingredientes y aliñar."
+    },
+    "crema_naranja": {
+      "nombre": "Crema naranja",
+      "elaboracion": "Picar la verdura, cocerla cubierta de agua durante unos 20 minutos y triturar."
+    },
+    "ensalada_hortalizas": {
+      "nombre": "Ensalada de hortalizas",
+      "elaboracion": "Cortar y lavar la lechuga, añadir tomate y el resto de hortalizas, incorporar el huevo rallado y aliñar."
+    },
+    "guisantes_champinones": {
+      "nombre": "Guisantes con champiñones",
+      "elaboracion": "Cocer los guisantes. Sofreír el ajo, saltear los champiñones, añadir los guisantes y cocinar unos minutos a fuego lento."
+    },
+    "tortilla_paisana": {
+      "nombre": "Tortilla paisana",
+      "elaboracion": "Se pueden usar las verduras ya cocidas. Añadir el huevo en una sartén, incorporar las verduras y cocinar al gusto."
+    },
+    "patatas_horno": {
+      "nombre": "Patatas al horno",
+      "elaboracion": "Cortar las patatas en rodajas finas, disponerlas en una fuente, aromatizar y hornear hasta que estén doradas."
+    },
+    "pure_verduras": {
+      "nombre": "Puré de verduras",
+      "elaboracion": "Cocer todos los ingredientes y pasar por el pasapurés o la batidora antes de que se enfríen."
+    },
+    "cogollos_anchoas": {
+      "nombre": "Cogollos y anchoas",
+      "elaboracion": "Lavar los cogollos, dividirlos en cuatro trozos, colocarlos en una fuente y añadir las anchoas por encima."
+    },
+    "lomo_cerdo_horno": {
+      "nombre": "Lomo de cerdo",
+      "elaboracion": "Disponer la carne en una fuente con el resto de ingredientes y hornear. Alternativa indicada: plancha."
+    },
+    "carne_cerdo_guisada": {
+      "nombre": "Carne de cerdo guisada",
+      "elaboracion": "Cocer patata y zanahoria en caldo. Dorar ligeramente el cerdo y añadirlo al guiso hasta que quede tierno.",
+      "aliases": [
+        "Carne cerdo guisada"
+      ]
+    },
+    "crema_verde": {
+      "nombre": "Crema verde",
+      "elaboracion": "Cocer calabacín, espinacas y brécol unos 20 minutos y triturar.",
+      "aliases": [
+        "Crema verde"
+      ]
+    },
+    "garbanzos_arroz": {
+      "nombre": "Garbanzos con arroz",
+      "elaboracion": "Cocer los garbanzos, añadir el arroz y terminar con un sofrito de cebolla y ajo."
+    },
+    "ensalada_mixta_ii": {
+      "nombre": "Ensalada mixta II",
+      "elaboracion": "Mezclar tomate, lechuga, apio, pimiento y pepino y aliñar.",
+      "aliases": [
+        "Ensalada mixta II"
+      ]
+    },
+    "salmon_plancha": {
+      "nombre": "Salmón a la plancha",
+      "elaboracion": "Cocinar el salmón en la plancha bien caliente."
+    },
+    "judias_almendras": {
+      "nombre": "Judías verdes con almendras",
+      "elaboracion": "Cocer las judías. Saltear las almendras, añadir la nata y verter sobre las judías.",
+      "aliases": [
+        "Judías"
+      ]
+    },
+    "ensalada_mar_montana": {
+      "nombre": "Ensalada mar y montaña",
+      "elaboracion": "Mezclar lechuga, manzana, champiñones, atún, jamón serrano, limón, tomate y piñones.",
+      "aliases": [
+        "Ensalada mar y montaña"
+      ]
+    },
+    "lentejas_estofadas": {
+      "nombre": "Lentejas estofadas",
+      "elaboracion": "Cocer las lentejas y añadir un sofrito de tomate, cebolla, zanahoria y pimiento; ligar con un poco de harina.",
+      "aliases": [
+        "Lentejas"
+      ]
+    },
+    "verduras_asadas": {
+      "nombre": "Verduras asadas",
+      "elaboracion": "Asar pimiento, tomate y cebolla al horno y condimentar al servir.",
+      "aliases": [
+        "Verduras asadas"
+      ]
+    },
+    "macarrones_atun": {
+      "nombre": "Macarrones con atún",
+      "elaboracion": "Hervir la pasta, mezclar con tomate y atún y servir.",
+      "aliases": [
+        "Macarrones"
+      ]
+    },
+    "crepes_vegetarianos": {
+      "nombre": "Crepes vegetarianos",
+      "elaboracion": "Preparar la masa de crepes y rellenar con calabacín y pimiento cocinados.",
+      "aliases": [
+        "Crepes"
+      ]
+    },
+    "picadillo_patatas_atun": {
+      "nombre": "Picadillo de patatas con atún",
+      "elaboracion": "Mezclar patata hervida con tomate, huevo duro, atún y pimiento.",
+      "aliases": [
+        "Picadillo"
+      ]
+    },
+    "tacos_pollo": {
+      "nombre": "Tacos de pollo",
+      "elaboracion": "Preparar los tacos con pollo, pan sin gluten, pimiento y cebolla según la pauta.",
+      "aliases": [
+        "Tacos pollo"
+      ]
+    },
+    "espagueti_carbonara": {
+      "nombre": "Espagueti carbonara",
+      "elaboracion": "Cocinar cebolla y bacón, mezclar con los espaguetis, huevo batido y queso.",
+      "aliases": [
+        "Carbonara"
+      ]
+    },
+    "tostadas_atun": {
+      "nombre": "Tostadas integrales con atún",
+      "elaboracion": "Servir las tostadas integrales con el atún.",
+      "aliases": [
+        "Tostadas integrales"
+      ]
+    },
+    "tortilla_francesa": {
+      "nombre": "Tortilla francesa",
+      "elaboracion": "Batir el huevo y cuajar en sartén al gusto."
+    },
+    "tabouleh_quinoa": {
+      "nombre": "Tabouleh de quinoa",
+      "ingredientes": [
+        "1 vaso de quinoa",
+        "2 vasos de caldo de verduras + 2 o 3 cucharadas para el aliño",
+        "1 pimiento rojo",
+        "1 pimiento verde",
+        "1 zanahoria",
+        "1 cebolleta no muy grande",
+        "1 o 2 cucharadas de vinagre blanco",
+        "4 cucharadas de AOVE",
+        "1 puñadito de pasas",
+        "Unas hojas de menta fresca o 1 cucharadita de salsa de menta",
+        "Sal, solo si es necesaria al final"
+      ],
+      "elaboracion": "Lavar bien la quinoa para eliminar la saponina. Tostarla brevemente, añadir 2 vasos de caldo y cocer a hervor ligero unos 15 minutos. Saltear las verduras unos 5 minutos. Preparar el aliño con el resto del caldo, vinagre, menta y pasas. Refrescar la quinoa y mezclar con las verduras y el aliño.",
+      "aliases": [
+        "Tabouleh de quinoa"
+      ]
+    },
+    "palmera_hojaldre_chocolate": {
+      "nombre": "Palmeras grandes de hojaldre con chocolate",
+      "fuente": "Receta añadida por el usuario, ajustada para 2 palmeras grandes",
+      "raciones": "2 palmeras grandes",
+      "ingredientes": [
+        "1 lámina de masa de hojaldre con mantequilla Carrefour (230 g)",
+        "40-50 g de chocolate negro (mínimo 85 % cacao, sin azúcar)",
+        "3-4 cucharadas de eritritol granulado",
+        "1 cucharadita de aceite de coco (opcional)"
+      ],
+      "pasos": [
+        "Sacar la masa de la nevera unos 5 minutos antes. Desenrollarla sobre su propio papel vegetal.",
+        "Espolvorear 2 cucharadas de eritritol de forma uniforme y pasar suavemente un rodillo para fijarlo.",
+        "Doblar los dos lados largos hacia el centro. Repetir el doblez hacia el centro y cerrar un lado sobre el otro como un libro. Espolvorear un poco más de eritritol por fuera.",
+        "Cortar el rulo en 2 piezas iguales. Colocar cada pieza con el corte hacia arriba y aplanarla suavemente hasta dejarla de unos 2-2,5 cm de grosor. Abrir ligeramente las dos puntas superiores para dar forma de corazón. Este aplanado es importante para que el centro se cocine bien.",
+        "Precalentar la airfryer si el modelo lo recomienda. Colocar papel vegetal perforado o bien sujeto por el peso de las palmeras. Cocinar a 175 °C durante 10-12 minutos.",
+        "Dar la vuelta con cuidado y cocinar 2-4 minutos más, vigilando el dorado. El tiempo total orientativo es de 12-16 minutos, según la airfryer y el grosor final.",
+        "Dejar enfriar sobre una rejilla. Derretir 40-50 g de chocolate en tandas de 20-30 segundos. Añadir 1 cucharadita de aceite de coco solo si se desea una cobertura más fluida.",
+        "Cubrir las dos palmeras con el chocolate y dejar solidificar. Se pueden meter unos 10 minutos en la nevera cuando ya estén templadas."
+      ],
+      "nota": "Una lámina de 230 g da aproximadamente 115 g de masa cruda por palmera antes de añadir la cobertura. La compra está dimensionada para esta receta: se usa 1 lámina completa, 40-50 g de chocolate, 3-4 cucharadas de eritritol y 1 cucharadita opcional de aceite de coco."
+    },
+    "tortellini_champinones": {
+      "nombre": "Tortellini con champiñones",
+      "ingredientes": [
+        "Tortellini frescos",
+        "Champiñones",
+        "Jamón de York",
+        "Cebolla",
+        "Queso rallado",
+        "Ajo (mencionado en la elaboración, sin cantidad indicada)"
+      ],
+      "elaboracion": "Dorar el ajo y la cebolla. Añadir los champiñones troceados, sazonar y tapar unos 15 minutos. Añadir el jamón en tiras y cubrir los tortellini hervidos con la salsa.",
+      "aliases": [
+        "Tortellini",
+        "Tortellini con champiñones"
+      ]
+    },
+    "gnocchi_atun": {
+      "nombre": "Gnocchi con atún",
+      "ingredientes": [
+        "Gnocchi",
+        "Atún en aceite",
+        "Tomate",
+        "Orégano seco"
+      ],
+      "elaboracion": "El PDF del nutricionista no incluye una elaboración específica para este plato.",
+      "aliases": [
+        "Gnocchi",
+        "Gnocchi con atún"
+      ]
+    },
+    "jardinera": {
+      "nombre": "Verduras a la jardinera",
+      "ingredientes": [
+        "Patata",
+        "Guisantes",
+        "Zanahoria",
+        "Cebolla"
+      ],
+      "elaboracion": "Pelar y trocear las patatas y las zanahorias. Cocer al vapor junto con los guisantes y las cebollas.",
+      "aliases": [
+        "Jardinera",
+        "Verduras a la jardinera"
+      ]
+    },
+    "lentejas_arroz": {
+      "nombre": "Lentejas con arroz",
+      "ingredientes": [
+        "Lentejas",
+        "Arroz",
+        "Cebolla",
+        "Zanahoria",
+        "Perejil, puerro y apio (mencionados en la elaboración sin cantidad indicada)"
+      ],
+      "elaboracion": "Cocer las lentejas con perejil, puerro y apio. Cuando estén blandas, añadir el arroz y dejar cocer a fuego lento. Sofreír cebolla y zanahoria con las hierbas y añadir el sofrito a las lentejas.",
+      "aliases": [
+        "Lentejas con arroz"
+      ]
+    },
+    "tacos_salmon": {
+      "nombre": "Tacos de salmón",
+      "ingredientes": [
+        "Tortillas de trigo",
+        "Salmón ahumado",
+        "Pimiento",
+        "Lechuga",
+        "Cebolla"
+      ],
+      "elaboracion": "El PDF del nutricionista indica los ingredientes, pero no aporta pasos de elaboración específicos.",
+      "aliases": [
+        "Tacos de salmón",
+        "Tacos salmón"
+      ]
+    },
+    "garbanzos_espinacas_huevo": {
+      "nombre": "Garbanzos, espinacas y huevo duro",
+      "ingredientes": [
+        "Garbanzos",
+        "Espinacas",
+        "Huevo"
+      ],
+      "elaboracion": "Cocer los garbanzos y escurrirlos. Hervir las espinacas, escurrirlas y rehogarlas. Añadirlas a los garbanzos y terminar con el huevo duro cortado en gajos.",
+      "aliases": [
+        "Garbanzos, espinacas y huevo duro",
+        "Garbanzos espinacas huevo"
+      ]
+    }
+  }
+}
