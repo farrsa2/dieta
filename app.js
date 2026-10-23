@@ -188,7 +188,10 @@ async function renderShopping() {
   try {
     const source = await fetchText(week.archivos.compra);
     const items = week.archivos.compra.toLowerCase().endsWith('.csv') ? parseShoppingCsv(source) : parseShoppingMarkdown(source);
-    if (!items.length) throw new Error('No se encontraron productos');
+    if (!items.length) {
+      app.innerHTML = pageHeader('Lista de la compra', periodTitle) + '<div class="status">🛒 Lista vacía. Pendiente de validar la nueva compra.</div>';
+      return;
+    }
 
     const localChecked = JSON.parse(localStorage.getItem(storageKey) || '{}');
     let checked = { ...localChecked };
