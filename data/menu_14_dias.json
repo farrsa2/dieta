@@ -1,6 +1,6 @@
 {
   "schema_version": 4,
-  "generated_at": "2026-10-25T08:21:33+01:00",
+  "generated_at": "2026-10-25T08:26:02+01:00",
   "timezone": "Europe/Madrid",
   "window": {
     "inicio": "2026-10-16",
@@ -602,23 +602,26 @@
     "retailer_plan": {
       "status": "borrador_no_aprobado",
       "checked_on": "2026-10-25",
-      "criterion": "Máximo ahorro por producto comparable; comparar misma variedad, envase y coste total cuando se conozca. Empates asignados a Ahorramás solo como agrupación provisional. Ningún producto sin dos precios equiparables se declara más barato.",
-      "disclaimer": "Precios web publicados; pueden variar por código postal, promociones, existencias y tienda física. No son precios de caja garantizados.",
+      "criterion": "Carrefour por defecto por facilidad para cargar la compra en coche. Los empates y los productos sin una comparación de precio fiable se asignan a Carrefour, señalando cuáles siguen pendientes de contrastar. Ahorramás solo conserva productos cuyo precio publicado es menor. Antes de recomendar un cambio de tienda, comparar envase, variedad y coste total en caja.",
+      "disclaimer": "BORRADOR sin aprobación. Las asignaciones por defecto no demuestran que Carrefour sea el más barato. Precios web orientativos, sujetos a tienda física, código postal, ofertas y disponibilidad.",
       "items": {
         "Fruta de temporada": {
-          "store": "pendiente",
+          "store": "carrefour",
           "status": "sin_doble_precio",
-          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado.",
+          "assignment_reason": "Carrefour por defecto: mayor comodidad para llevar la compra en coche; precios pendientes de comparar"
         },
         "Kiwi": {
-          "store": "pendiente",
+          "store": "carrefour",
           "status": "sin_doble_precio",
-          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado.",
+          "assignment_reason": "Carrefour por defecto: mayor comodidad para llevar la compra en coche; precios pendientes de comparar"
         },
         "Ciruelas": {
-          "store": "pendiente",
+          "store": "carrefour",
           "status": "sin_doble_precio",
-          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado.",
+          "assignment_reason": "Carrefour por defecto: mayor comodidad para llevar la compra en coche; precios pendientes de comparar"
         },
         "Tomate fresco": {
           "store": "carrefour",
@@ -627,21 +630,24 @@
           "c": "Tomate ensalada Carrefour · 2,19 €/kg",
           "aUrl": "https://www.ahorramas.com/frescos/verduras-y-hortalizas/tomates-y-pepinos/",
           "cUrl": "https://www.carrefour.es/supermercado/productoscrf-carrefour-guacamole-tomate/F-1kc6vZ10siZ14ohZ12pp/g",
-          "note": "Carrefour tiene menor precio por kilo; confirmar posibilidad de coger solo 645 g, pues figura 1 kg aprox."
+          "note": "Carrefour tiene menor precio por kilo; confirmar posibilidad de coger solo 645 g, pues figura 1 kg aprox.",
+          "assignment_reason": "Precio público menor en Carrefour, sujeto a comprobación en tienda"
         },
         "Patata": {
-          "store": "ahorramas",
+          "store": "carrefour",
           "status": "empate",
           "a": "Patata a granel · 1,89 €/kg",
           "c": "Patata lavada 1 kg aprox · 1,89 €/kg",
           "aUrl": "https://www.ahorramas.com/frescos/verduras-y-hortalizas/patatas-ajos-y-cebollas/",
           "cUrl": "https://www.carrefour.es/supermercado/hortalizasguisos25/hortalizasguisos25/g",
-          "note": "Mismo precio por kilo; Ahorramás facilita ajustar los 595 g requeridos."
+          "note": "Mismo precio por kilo; Ahorramás facilita ajustar los 595 g requeridos.",
+          "assignment_reason": "Precios equivalentes; Carrefour por preferencia logística"
         },
         "Pimiento": {
-          "store": "pendiente",
+          "store": "carrefour",
           "status": "sin_doble_precio",
-          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado.",
+          "assignment_reason": "Carrefour por defecto: mayor comodidad para llevar la compra en coche; precios pendientes de comparar"
         },
         "Zanahoria": {
           "store": "carrefour",
@@ -650,7 +656,8 @@
           "c": "Bandeja 500 g · 0,75 €",
           "aUrl": "https://www.ahorramas.com/ofertas-destacadas/",
           "cUrl": "https://www.carrefour.es/supermercado/frescos/verduras-y-hortalizas/hortalizas/cat220019/c",
-          "note": "Mismo formato de 500 g; diferencia de 0,04 € a favor de Carrefour."
+          "note": "Mismo formato de 500 g; diferencia de 0,04 € a favor de Carrefour.",
+          "assignment_reason": "Precio público menor en Carrefour, sujeto a comprobación en tienda"
         },
         "Cebolla": {
           "store": "carrefour",
@@ -659,22 +666,26 @@
           "c": "Bolsa 1 kg · 1,59 €",
           "aUrl": "https://www.ahorramas.com/frescos/verduras-y-hortalizas/patatas-ajos-y-cebollas/",
           "cUrl": "https://www.carrefour.es/supermercado/productos-frescos/verduras-y-hortalizas-carrefour-cebolla/F-13rjcZ10siZ17zx/c",
-          "note": "Mismo formato de 1 kg; ahorro publicado de 0,10 € con Carrefour."
+          "note": "Mismo formato de 1 kg; ahorro publicado de 0,10 € con Carrefour.",
+          "assignment_reason": "Precio público menor en Carrefour, sujeto a comprobación en tienda"
         },
         "Champiñones": {
-          "store": "pendiente",
+          "store": "carrefour",
           "status": "sin_doble_precio",
-          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado.",
+          "assignment_reason": "Carrefour por defecto: mayor comodidad para llevar la compra en coche; precios pendientes de comparar"
         },
         "Guisantes": {
-          "store": "pendiente",
+          "store": "carrefour",
           "status": "sin_doble_precio",
-          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado.",
+          "assignment_reason": "Carrefour por defecto: mayor comodidad para llevar la compra en coche; precios pendientes de comparar"
         },
         "Calabaza": {
-          "store": "pendiente",
+          "store": "carrefour",
           "status": "sin_doble_precio",
-          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado.",
+          "assignment_reason": "Carrefour por defecto: mayor comodidad para llevar la compra en coche; precios pendientes de comparar"
         },
         "Calabacín": {
           "store": "ahorramas",
@@ -683,124 +694,146 @@
           "c": "Granel · 1,89 €/kg",
           "aUrl": "https://www.ahorramas.com/frescos/frutas/",
           "cUrl": "https://www.carrefour.es/supermercado/frescos/verduras-y-hortalizas/hortalizas/cat220019/c",
-          "note": "Menor precio por kilo en Ahorramás; el peso de pieza puede superar los 120 g prescritos."
+          "note": "Menor precio por kilo en Ahorramás; el peso de pieza puede superar los 120 g prescritos.",
+          "assignment_reason": "Menor precio publicado en Ahorramás, diferencia pequeña; podría comprarse también en Carrefour para evitar una segunda parada"
         },
         "Lechuga": {
-          "store": "pendiente",
+          "store": "carrefour",
           "status": "sin_doble_precio",
-          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado.",
+          "assignment_reason": "Carrefour por defecto: mayor comodidad para llevar la compra en coche; precios pendientes de comparar"
         },
         "Apio": {
-          "store": "pendiente",
+          "store": "carrefour",
           "status": "sin_doble_precio",
-          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado.",
+          "assignment_reason": "Carrefour por defecto: mayor comodidad para llevar la compra en coche; precios pendientes de comparar"
         },
         "Pepino": {
-          "store": "ahorramas",
+          "store": "carrefour",
           "status": "empate",
           "a": "Granel · 1,69 €/kg",
           "c": "Granel · 1,69 €/kg",
           "aUrl": "https://www.ahorramas.com/frescos/verduras-y-hortalizas/tomates-y-pepinos/",
           "cUrl": "https://www.carrefour.es/supermercado/productos-frescos/verduras-y-hortalizas/pepinos-y-tomates/cat220018/c",
-          "note": "Empate por kilo; comprobar tamaño mínimo de la pieza."
+          "note": "Empate por kilo; comprobar tamaño mínimo de la pieza.",
+          "assignment_reason": "Precios equivalentes; Carrefour por preferencia logística"
         },
         "Ajo": {
-          "store": "pendiente",
+          "store": "carrefour",
           "status": "sin_doble_precio",
-          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado.",
+          "assignment_reason": "Carrefour por defecto: mayor comodidad para llevar la compra en coche; precios pendientes de comparar"
         },
         "Puerro": {
-          "store": "pendiente",
+          "store": "carrefour",
           "status": "sin_doble_precio",
-          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado.",
+          "assignment_reason": "Carrefour por defecto: mayor comodidad para llevar la compra en coche; precios pendientes de comparar"
         },
         "Perejil": {
-          "store": "pendiente",
+          "store": "carrefour",
           "status": "sin_doble_precio",
-          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado.",
+          "assignment_reason": "Carrefour por defecto: mayor comodidad para llevar la compra en coche; precios pendientes de comparar"
         },
         "Jamón York": {
-          "store": "pendiente",
+          "store": "carrefour",
           "status": "sin_doble_precio",
-          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado.",
+          "assignment_reason": "Carrefour por defecto: mayor comodidad para llevar la compra en coche; precios pendientes de comparar"
         },
         "Jamón serrano": {
-          "store": "pendiente",
+          "store": "carrefour",
           "status": "sin_doble_precio",
-          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado.",
+          "assignment_reason": "Carrefour por defecto: mayor comodidad para llevar la compra en coche; precios pendientes de comparar"
         },
         "Hamburguesa": {
-          "store": "pendiente",
+          "store": "carrefour",
           "status": "sin_doble_precio",
-          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado.",
+          "assignment_reason": "Carrefour por defecto: mayor comodidad para llevar la compra en coche; precios pendientes de comparar"
         },
         "Lomo de cerdo": {
-          "store": "pendiente",
+          "store": "carrefour",
           "status": "sin_doble_precio",
-          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado.",
+          "assignment_reason": "Carrefour por defecto: mayor comodidad para llevar la compra en coche; precios pendientes de comparar"
         },
         "Ternera para bistec": {
-          "store": "pendiente",
+          "store": "carrefour",
           "status": "sin_doble_precio",
-          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado.",
+          "assignment_reason": "Carrefour por defecto: mayor comodidad para llevar la compra en coche; precios pendientes de comparar"
         },
         "Pechuga de pollo": {
-          "store": "pendiente",
+          "store": "carrefour",
           "status": "sin_doble_precio",
-          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado.",
+          "assignment_reason": "Carrefour por defecto: mayor comodidad para llevar la compra en coche; precios pendientes de comparar"
         },
         "Sepia": {
-          "store": "pendiente",
+          "store": "carrefour",
           "status": "sin_doble_precio",
-          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado.",
+          "assignment_reason": "Carrefour por defecto: mayor comodidad para llevar la compra en coche; precios pendientes de comparar"
         },
         "Merluza": {
-          "store": "pendiente",
+          "store": "carrefour",
           "status": "sin_doble_precio",
-          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado.",
+          "assignment_reason": "Carrefour por defecto: mayor comodidad para llevar la compra en coche; precios pendientes de comparar"
         },
         "Huevo": {
-          "store": "ahorramas",
+          "store": "carrefour",
           "status": "empate",
           "a": "12 huevos M de suelo · 2,85 €",
           "c": "12 huevos M de suelo · 2,85 €",
           "aUrl": "https://www.ahorramas.com/frescos/huevos/huevos-de-suelo/",
           "cUrl": "https://www.carrefour.es/supermercado/huevos/cat20021/c",
-          "note": "Empate en docena M; necesitas aproximadamente 130 g, pero se compra el envase."
+          "note": "Empate en docena M; necesitas aproximadamente 130 g, pero se compra el envase.",
+          "assignment_reason": "Precios equivalentes; Carrefour por preferencia logística"
         },
         "Queso de Burgos": {
-          "store": "pendiente",
+          "store": "carrefour",
           "status": "sin_doble_precio",
-          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado.",
+          "assignment_reason": "Carrefour por defecto: mayor comodidad para llevar la compra en coche; precios pendientes de comparar"
         },
         "Queso rallado": {
-          "store": "pendiente",
+          "store": "carrefour",
           "status": "sin_doble_precio",
-          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado.",
+          "assignment_reason": "Carrefour por defecto: mayor comodidad para llevar la compra en coche; precios pendientes de comparar"
         },
         "Yogur": {
-          "store": "pendiente",
+          "store": "carrefour",
           "status": "sin_doble_precio",
-          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado.",
+          "assignment_reason": "Carrefour por defecto: mayor comodidad para llevar la compra en coche; precios pendientes de comparar"
         },
         "Pan integral": {
-          "store": "pendiente",
+          "store": "carrefour",
           "status": "sin_doble_precio",
-          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado.",
+          "assignment_reason": "Carrefour por defecto: mayor comodidad para llevar la compra en coche; precios pendientes de comparar"
         },
         "Tortas de maíz": {
-          "store": "pendiente",
+          "store": "carrefour",
           "status": "sin_doble_precio",
-          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado.",
+          "assignment_reason": "Carrefour por defecto: mayor comodidad para llevar la compra en coche; precios pendientes de comparar"
         },
         "Corn Flakes": {
-          "store": "ahorramas",
+          "store": "carrefour",
           "status": "empate",
           "a": "Copos de maíz Alipende 500 g · 1,50 €",
           "c": "Corn Flakes Carrefour 500 g · 1,50 €",
           "aUrl": "https://www.ahorramas.com/alimentacion/galletas-cereales-y-barritas/cereales/cereales-corn-flakes/",
           "cUrl": "https://www.carrefour.es/supermercado/cereales-de-maiz-sin-azucar-anadido-corn-flakes-carrefour-500-g/R-527030608/p",
-          "note": "Empate de precio y tamaño; confirmar que la variante elegida cumple las preferencias."
+          "note": "Empate de precio y tamaño; confirmar que la variante elegida cumple las preferencias.",
+          "assignment_reason": "Precios equivalentes; Carrefour por preferencia logística"
         },
         "Copos de avena": {
           "store": "carrefour",
@@ -809,22 +842,26 @@
           "c": "Carrefour 500 g · 0,83 € (1,66 €/kg)",
           "aUrl": "https://www.ahorramas.com/alimentacion/galletas-cereales-y-barritas/cereales/cereales-integrales-avena-y-muesli/",
           "cUrl": "https://www.carrefour.es/supermercado/la-despensa/desayuno/cereales/cat26100678/c",
-          "note": "Para los 200 g necesarios basta un envase; Carrefour requiere menor desembolso inicial y cuesta 0,02 €/kg menos."
+          "note": "Para los 200 g necesarios basta un envase; Carrefour requiere menor desembolso inicial y cuesta 0,02 €/kg menos.",
+          "assignment_reason": "Precio público menor en Carrefour, sujeto a comprobación en tienda"
         },
         "Tortellini frescos": {
-          "store": "pendiente",
+          "store": "carrefour",
           "status": "sin_doble_precio",
-          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado.",
+          "assignment_reason": "Carrefour por defecto: mayor comodidad para llevar la compra en coche; precios pendientes de comparar"
         },
         "Gnocchi": {
-          "store": "pendiente",
+          "store": "carrefour",
           "status": "sin_doble_precio",
-          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado.",
+          "assignment_reason": "Carrefour por defecto: mayor comodidad para llevar la compra en coche; precios pendientes de comparar"
         },
         "Arroz": {
-          "store": "pendiente",
+          "store": "carrefour",
           "status": "sin_doble_precio",
-          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado.",
+          "assignment_reason": "Carrefour por defecto: mayor comodidad para llevar la compra en coche; precios pendientes de comparar"
         },
         "Atún en conserva": {
           "store": "ahorramas",
@@ -833,23 +870,27 @@
           "c": "Atún claro oliva Carrefour · 312 g escurridos, 4,95 €",
           "aUrl": "https://www.ahorramas.com/atun-claro-alipende-pack-6-en-aceite-oliva-84950.html",
           "cUrl": "https://www.carrefour.es/supermercado/productoscrf-atun-claro-en-aceite-de-oliva/F-1kc6vZ14rj/g",
-          "note": "Ambos productos tienen 312 g escurridos: Ahorramás ahorra 0,05 € aunque las latas se presentan en packs diferentes (6×52 g vs 3×104 g)."
+          "note": "Ambos productos tienen 312 g escurridos: Ahorramás ahorra 0,05 € aunque las latas se presentan en packs diferentes (6×52 g vs 3×104 g).",
+          "assignment_reason": "Menor precio publicado en Ahorramás, diferencia pequeña; podría comprarse también en Carrefour para evitar una segunda parada"
         },
         "Lentejas": {
-          "store": "ahorramas",
+          "store": "carrefour",
           "status": "empate",
           "a": "Lenteja pardina Alipende seca 1 kg · 1,85 €",
           "c": "Lenteja pardina Carrefour seca 1 kg · 1,85 €",
           "aUrl": "https://www.ahorramas.com/alimentacion/arroces-pastas-y-legumbres/legumbres/lentejas/",
           "cUrl": "https://www.carrefour.es/supermercado/lenteja-pardina-categoria-extra-classic-carrefour-1-kg/R-616401946/p",
-          "note": "Empate en lenteja pardina seca de 1 kg; la receta usa lentejas para cocer, no tarro cocido."
+          "note": "Empate en lenteja pardina seca de 1 kg; la receta usa lentejas para cocer, no tarro cocido.",
+          "assignment_reason": "Precios equivalentes; Carrefour por preferencia logística"
         },
         "Orégano seco": {
-          "store": "pendiente",
+          "store": "carrefour",
           "status": "sin_doble_precio",
-          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado.",
+          "assignment_reason": "Carrefour por defecto: mayor comodidad para llevar la compra en coche; precios pendientes de comparar"
         }
-      }
+      },
+      "default_store": "carrefour"
     }
   },
   "recipes": {
