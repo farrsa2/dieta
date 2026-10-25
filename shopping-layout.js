@@ -174,9 +174,8 @@
 
     container.classList.add('shopping-two-level');
     const stores = [
-      { key: 'ahorramas', label: 'Ahorramás', icon: '🟠' },
       { key: 'carrefour', label: 'Carrefour', icon: '🔵' },
-      { key: 'pendiente', label: 'Sin comparar todavía', icon: '🔎' }
+      { key: 'ahorramas', label: 'Ahorramás', icon: '🟠' }
     ];
     const buckets = Object.fromEntries(stores.map(store => [
       store.key, Object.fromEntries(SHOPPING_GROUPS.map(group => [group.key, []]))
@@ -185,7 +184,7 @@
     items.forEach(item => {
       const name = item.querySelector('.shopping-name-row strong')?.textContent?.trim() || '';
       const candidate = proposal.items[name] || {};
-      const store = stores.some(o => o.key === candidate.store) ? candidate.store : 'pendiente';
+      const store = stores.some(o => o.key === candidate.store) ? candidate.store : 'carrefour';
       const section = categoryForProduct(name);
       (buckets[store][section] || buckets[store].OTROS).push(item);
 
@@ -196,12 +195,12 @@
       old?.remove();
       const prices = document.createElement('span');
       prices.className = 'shopping-price-comparison';
-      if (store === 'pendiente') {
-        prices.textContent = 'Precio sin verificar en ambos supermercados';
+      if (candidate.status === 'sin_doble_precio') {
+        prices.textContent = 'Carrefour por defecto · Precio sin comparar todavía';
       } else {
         const pricesLine = [candidate.a ? 'Ahorramás: ' + candidate.a : '',
           candidate.c ? 'Carrefour: ' + candidate.c : ''].filter(Boolean).join(' · ');
-        const state = candidate.status === 'empate' ? 'Empate provisional' : 'Comparación orientativa';
+        const state = candidate.status === 'empate' ? 'Empate de precio · Carrefour por comodidad' : 'Comparación orientativa';
         prices.textContent = state + ' · ' + pricesLine;
       }
       if (candidate.note) prices.title = candidate.note;
@@ -210,7 +209,7 @@
 
     const info = document.createElement('p');
     info.className = 'shopping-proposal-info';
-    info.textContent = 'BORRADOR SOLO EN DESARROLLO · Comparar el precio por formato y la compra real; los artículos sin dos precios equivalentes se mantienen pendientes. Precios web sujetos a cambios en tienda.';
+    info.textContent = 'BORRADOR SOLO EN DESARROLLO · Carrefour por defecto para empates y productos sin dos precios comparables. Estos siguen pendientes de contrastar; los precios web pueden variar en tienda.';
     fragment.appendChild(info);
 
     stores.forEach(store => {
