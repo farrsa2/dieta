@@ -827,14 +827,22 @@
           "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
         },
         "Atún en conserva": {
-          "store": "pendiente",
-          "status": "sin_doble_precio",
-          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+          "store": "ahorramas",
+          "status": "comparado",
+          "a": "Atún claro oliva Alipende · 312 g escurridos, 4,90 €",
+          "c": "Atún claro oliva Carrefour · 312 g escurridos, 4,95 €",
+          "aUrl": "https://www.ahorramas.com/atun-claro-alipende-pack-6-en-aceite-oliva-84950.html",
+          "cUrl": "https://www.carrefour.es/supermercado/productoscrf-atun-claro-en-aceite-de-oliva/F-1kc6vZ14rj/g",
+          "note": "Ambos productos tienen 312 g escurridos: Ahorramás ahorra 0,05 € aunque las latas se presentan en packs diferentes (6×52 g vs 3×104 g)."
         },
         "Lentejas": {
-          "store": "pendiente",
-          "status": "sin_doble_precio",
-          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+          "store": "ahorramas",
+          "status": "empate",
+          "a": "Lenteja pardina Alipende seca 1 kg · 1,85 €",
+          "c": "Lenteja pardina Carrefour seca 1 kg · 1,85 €",
+          "aUrl": "https://www.ahorramas.com/alimentacion/arroces-pastas-y-legumbres/legumbres/lentejas/",
+          "cUrl": "https://www.carrefour.es/supermercado/lenteja-pardina-categoria-extra-classic-carrefour-1-kg/R-616401946/p",
+          "note": "Empate en lenteja pardina seca de 1 kg; la receta usa lentejas para cocer, no tarro cocido."
         },
         "Orégano seco": {
           "store": "pendiente",
