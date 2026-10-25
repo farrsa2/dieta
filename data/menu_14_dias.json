@@ -1,6 +1,6 @@
 {
   "schema_version": 4,
-  "generated_at": "2026-10-23T06:57:46+02:00",
+  "generated_at": "2026-10-25T07:17:01.721+00:00",
   "timezone": "Europe/Madrid",
   "window": {
     "inicio": "2026-10-16",
@@ -598,6 +598,250 @@
           "dish": "Gnocchi con atún"
         }
       ]
+    },
+    "retailer_plan": {
+      "status": "borrador_no_aprobado",
+      "checked_on": "2026-10-25",
+      "criterion": "Máximo ahorro por producto comparable; comparar misma variedad, envase y coste total cuando se conozca. Empates asignados a Ahorramás solo como agrupación provisional. Ningún producto sin dos precios equiparables se declara más barato.",
+      "disclaimer": "Precios web publicados; pueden variar por código postal, promociones, existencias y tienda física. No son precios de caja garantizados.",
+      "items": {
+        "Fruta de temporada": {
+          "store": "pendiente",
+          "status": "sin_doble_precio",
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+        },
+        "Kiwi": {
+          "store": "pendiente",
+          "status": "sin_doble_precio",
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+        },
+        "Ciruelas": {
+          "store": "pendiente",
+          "status": "sin_doble_precio",
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+        },
+        "Tomate fresco": {
+          "store": "carrefour",
+          "status": "orientativo",
+          "a": "Tomate ensalada · 2,79 €/kg",
+          "c": "Tomate ensalada Carrefour · 2,19 €/kg",
+          "aUrl": "https://www.ahorramas.com/frescos/verduras-y-hortalizas/tomates-y-pepinos/",
+          "cUrl": "https://www.carrefour.es/supermercado/productoscrf-carrefour-guacamole-tomate/F-1kc6vZ10siZ14ohZ12pp/g",
+          "note": "Carrefour tiene menor precio por kilo; confirmar posibilidad de coger solo 645 g, pues figura 1 kg aprox."
+        },
+        "Patata": {
+          "store": "ahorramas",
+          "status": "empate",
+          "a": "Patata a granel · 1,89 €/kg",
+          "c": "Patata lavada 1 kg aprox · 1,89 €/kg",
+          "aUrl": "https://www.ahorramas.com/frescos/verduras-y-hortalizas/patatas-ajos-y-cebollas/",
+          "cUrl": "https://www.carrefour.es/supermercado/hortalizasguisos25/hortalizasguisos25/g",
+          "note": "Mismo precio por kilo; Ahorramás facilita ajustar los 595 g requeridos."
+        },
+        "Pimiento": {
+          "store": "pendiente",
+          "status": "sin_doble_precio",
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+        },
+        "Zanahoria": {
+          "store": "carrefour",
+          "status": "comparado",
+          "a": "Bandeja 500 g · 0,79 €",
+          "c": "Bandeja 500 g · 0,75 €",
+          "aUrl": "https://www.ahorramas.com/ofertas-destacadas/",
+          "cUrl": "https://www.carrefour.es/supermercado/frescos/verduras-y-hortalizas/hortalizas/cat220019/c",
+          "note": "Mismo formato de 500 g; diferencia de 0,04 € a favor de Carrefour."
+        },
+        "Cebolla": {
+          "store": "carrefour",
+          "status": "comparado",
+          "a": "Bolsa 1 kg · 1,69 €",
+          "c": "Bolsa 1 kg · 1,59 €",
+          "aUrl": "https://www.ahorramas.com/frescos/verduras-y-hortalizas/patatas-ajos-y-cebollas/",
+          "cUrl": "https://www.carrefour.es/supermercado/productos-frescos/verduras-y-hortalizas-carrefour-cebolla/F-13rjcZ10siZ17zx/c",
+          "note": "Mismo formato de 1 kg; ahorro publicado de 0,10 € con Carrefour."
+        },
+        "Champiñones": {
+          "store": "pendiente",
+          "status": "sin_doble_precio",
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+        },
+        "Guisantes": {
+          "store": "pendiente",
+          "status": "sin_doble_precio",
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+        },
+        "Calabaza": {
+          "store": "pendiente",
+          "status": "sin_doble_precio",
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+        },
+        "Calabacín": {
+          "store": "ahorramas",
+          "status": "orientativo",
+          "a": "Granel · 1,59 €/kg (oferta al 28/10)",
+          "c": "Granel · 1,89 €/kg",
+          "aUrl": "https://www.ahorramas.com/frescos/frutas/",
+          "cUrl": "https://www.carrefour.es/supermercado/frescos/verduras-y-hortalizas/hortalizas/cat220019/c",
+          "note": "Menor precio por kilo en Ahorramás; el peso de pieza puede superar los 120 g prescritos."
+        },
+        "Lechuga": {
+          "store": "pendiente",
+          "status": "sin_doble_precio",
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+        },
+        "Apio": {
+          "store": "pendiente",
+          "status": "sin_doble_precio",
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+        },
+        "Pepino": {
+          "store": "ahorramas",
+          "status": "empate",
+          "a": "Granel · 1,69 €/kg",
+          "c": "Granel · 1,69 €/kg",
+          "aUrl": "https://www.ahorramas.com/frescos/verduras-y-hortalizas/tomates-y-pepinos/",
+          "cUrl": "https://www.carrefour.es/supermercado/productos-frescos/verduras-y-hortalizas/pepinos-y-tomates/cat220018/c",
+          "note": "Empate por kilo; comprobar tamaño mínimo de la pieza."
+        },
+        "Ajo": {
+          "store": "pendiente",
+          "status": "sin_doble_precio",
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+        },
+        "Puerro": {
+          "store": "pendiente",
+          "status": "sin_doble_precio",
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+        },
+        "Perejil": {
+          "store": "pendiente",
+          "status": "sin_doble_precio",
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+        },
+        "Jamón York": {
+          "store": "pendiente",
+          "status": "sin_doble_precio",
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+        },
+        "Jamón serrano": {
+          "store": "pendiente",
+          "status": "sin_doble_precio",
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+        },
+        "Hamburguesa": {
+          "store": "pendiente",
+          "status": "sin_doble_precio",
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+        },
+        "Lomo de cerdo": {
+          "store": "pendiente",
+          "status": "sin_doble_precio",
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+        },
+        "Ternera para bistec": {
+          "store": "pendiente",
+          "status": "sin_doble_precio",
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+        },
+        "Pechuga de pollo": {
+          "store": "pendiente",
+          "status": "sin_doble_precio",
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+        },
+        "Sepia": {
+          "store": "pendiente",
+          "status": "sin_doble_precio",
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+        },
+        "Merluza": {
+          "store": "pendiente",
+          "status": "sin_doble_precio",
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+        },
+        "Huevo": {
+          "store": "ahorramas",
+          "status": "empate",
+          "a": "12 huevos M de suelo · 2,85 €",
+          "c": "12 huevos M de suelo · 2,85 €",
+          "aUrl": "https://www.ahorramas.com/frescos/huevos/huevos-de-suelo/",
+          "cUrl": "https://www.carrefour.es/supermercado/huevos/cat20021/c",
+          "note": "Empate en docena M; necesitas aproximadamente 130 g, pero se compra el envase."
+        },
+        "Queso de Burgos": {
+          "store": "pendiente",
+          "status": "sin_doble_precio",
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+        },
+        "Queso rallado": {
+          "store": "pendiente",
+          "status": "sin_doble_precio",
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+        },
+        "Yogur": {
+          "store": "pendiente",
+          "status": "sin_doble_precio",
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+        },
+        "Pan integral": {
+          "store": "pendiente",
+          "status": "sin_doble_precio",
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+        },
+        "Tortas de maíz": {
+          "store": "pendiente",
+          "status": "sin_doble_precio",
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+        },
+        "Corn Flakes": {
+          "store": "ahorramas",
+          "status": "empate",
+          "a": "Copos de maíz Alipende 500 g · 1,50 €",
+          "c": "Corn Flakes Carrefour 500 g · 1,50 €",
+          "aUrl": "https://www.ahorramas.com/alimentacion/galletas-cereales-y-barritas/cereales/cereales-corn-flakes/",
+          "cUrl": "https://www.carrefour.es/supermercado/cereales-de-maiz-sin-azucar-anadido-corn-flakes-carrefour-500-g/R-527030608/p",
+          "note": "Empate de precio y tamaño; confirmar que la variante elegida cumple las preferencias."
+        },
+        "Copos de avena": {
+          "store": "carrefour",
+          "status": "comparado",
+          "a": "Alipende 1 kg · 1,68 € (1,68 €/kg)",
+          "c": "Carrefour 500 g · 0,83 € (1,66 €/kg)",
+          "aUrl": "https://www.ahorramas.com/alimentacion/galletas-cereales-y-barritas/cereales/cereales-integrales-avena-y-muesli/",
+          "cUrl": "https://www.carrefour.es/supermercado/la-despensa/desayuno/cereales/cat26100678/c",
+          "note": "Para los 200 g necesarios basta un envase; Carrefour requiere menor desembolso inicial y cuesta 0,02 €/kg menos."
+        },
+        "Tortellini frescos": {
+          "store": "pendiente",
+          "status": "sin_doble_precio",
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+        },
+        "Gnocchi": {
+          "store": "pendiente",
+          "status": "sin_doble_precio",
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+        },
+        "Arroz": {
+          "store": "pendiente",
+          "status": "sin_doble_precio",
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+        },
+        "Atún en conserva": {
+          "store": "pendiente",
+          "status": "sin_doble_precio",
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+        },
+        "Lentejas": {
+          "store": "pendiente",
+          "status": "sin_doble_precio",
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+        },
+        "Orégano seco": {
+          "store": "pendiente",
+          "status": "sin_doble_precio",
+          "note": "Sin dos ofertas verificadas del mismo tipo y formato; no se atribuye un ahorro no demostrado."
+        }
+      }
     }
   },
   "recipes": {
