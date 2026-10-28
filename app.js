@@ -181,7 +181,7 @@ async function renderShopping() {
   const week = activeWeek();
   if (!week) return void (app.innerHTML = pageHeader('Lista de la compra') + '<div class="status">No hay una semana configurada.</div>');
   const periodTitle = week.compra?.titulo || week.id;
-  const listId = `${week.id}_${(week.compra?.dias || []).join('') || 'todo'}`;
+  const listId = week.compra?.list_id || `${week.id}_${(week.compra?.dias || []).join('') || 'todo'}`;
   const storageKey = `compra_${listId}`;
   app.innerHTML = pageHeader('Lista de la compra', periodTitle) + '<div class="status">Preparando la lista…</div>';
 
