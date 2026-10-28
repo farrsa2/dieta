@@ -116,45 +116,122 @@
 
     if (/(jamon serrano|jamon york|fiambre|lomo embuchado|lomo curado|bacon)/.test(n)) return 'FIAMBRE';
 
-    if (/(muslo de pavo|muslo de pollo|pechuga de pavo|pavo fresco|pechuga de pollo|pollo fresco|lomo fresco|lomo de cerdo|hamburguesa)/.test(n)) return 'CARNE';
+    if (/(muslo de pavo|muslo de pollo|pechuga de pavo|pavo fresco|pechuga de pollo|pollo fresco|lomo fresco|lomo de cerdo|magro de cerdo|hamburguesa|ternera|bistec)/.test(n)) return 'CARNE';
 
     if (/(salmon|merluza|rape|sepia|bacalao|almeja|mejillon)/.test(n)) return 'PESCADO';
     if (n === 'huevo' || /\bhuevos?\b/.test(n)) return 'HUEVOS';
     if (/(queso|yogur|arroz con leche|mantequilla|cheddar|leche desnatada|leche de soja)/.test(n)) return 'LACTEOS';
     if (/(lentejas?|garbanzos?|alubias?)/.test(n)) return 'LEGUMBRES';
     if (/(masa de hojaldre|chocolate negro|eritritol)/.test(n)) return 'REPOSTERIA';
-    if (/(pan integral|pan sin gluten|tortitas|tortas de maiz|macarrones|gnocchi|cuscus|cous cous|corn flakes|special k|copos de avena|quinoa|arroz|pasta|cereal|harina)/.test(n)) return 'PAN_CEREALES';
+    if (/(pan integral|pan sin gluten|tortitas|tortas de maiz|macarrones|gnocchi|tortellini|cuscus|cous cous|corn flakes|special k|copos de avena|quinoa|arroz|pasta|cereal|harina)/.test(n)) return 'PAN_CEREALES';
     if (/(atun en lata|atun en conserva|anchoas? en conserva|tomate frito|salsa de tomate|aceituna)/.test(n)) return 'CONSERVAS';
 
-    if (/(tomate fresco|patata|guisante|judias verdes|zanahoria|cebolla|cebolleta|pimiento|lechuga|cogollo|champinon|ajo|rabano|remolacha|calabaza|apio|puerro|pepino|calabacin|menta fresca)/.test(n)) return 'VERDURA';
+    if (/(tomate fresco|patata|guisante|judias verdes|zanahoria|cebolla|cebolleta|pimiento|lechuga|cogollo|champinon|ajo|rabano|remolacha|calabaza|apio|puerro|pepino|calabacin|espinacas?|brecol|brocoli|menta fresca|perejil)/.test(n)) return 'VERDURA';
 
     return 'OTROS';
   }
 
+  // DOS NIVELES: supermercado > sección. Solo activo cuando existe
+  // una propuesta explícita en el JSON operativo de esta rama.
   function regroupShoppingItems() {
     const container = document.querySelector('.shopping-groups');
     if (!container) return;
     const items = [...container.querySelectorAll('.shopping-item')];
     if (!items.length) return;
 
-    const buckets = Object.fromEntries(SHOPPING_GROUPS.map(group => [group.key, []]));
-    items.forEach(item => {
-      const name = item.querySelector('.shopping-name-row strong')?.textContent?.trim() || '';
-      const key = categoryForProduct(name);
-      (buckets[key] || buckets.OTROS).push(item);
-    });
-
+    const proposal = window.DIET_OPERATIONAL?.shopping?.retailer_plan;
+    const hasProposal = ['borrador_no_aprobado', 'aprobado'].includes(proposal?.status) && proposal?.items;
     const fragment = document.createDocumentFragment();
-    SHOPPING_GROUPS.forEach(group => {
-      const groupItems = buckets[group.key];
-      if (!groupItems.length) return;
+
+    const makeSection = (group, groupItems) => {
       const section = document.createElement('section');
       section.className = 'shopping-group';
       section.dataset.shoppingGroup = '';
-      section.innerHTML = `<div class="shopping-category-head"><span class="shopping-category-icon">${group.icon}</span><h2>${group.label}</h2><span class="shopping-category-count">${groupItems.length}</span></div><div class="shopping-list"></div>`;
+      section.innerHTML =
+        '<div class="shopping-category-head"><span class="shopping-category-icon">' +
+        group.icon + '</span><h2>' + group.label +
+        '</h2><span class="shopping-category-count">' + groupItems.length +
+        '</span></div><div class="shopping-list"></div>';
       const list = section.querySelector('.shopping-list');
       groupItems.forEach(item => list.appendChild(item));
-      fragment.appendChild(section);
+      return section;
+    };
+
+    // Sin propuesta, mantener intacto el agrupamiento existente por secciones.
+    if (!hasProposal) {
+      const buckets = Object.fromEntries(SHOPPING_GROUPS.map(group => [group.key, []]));
+      items.forEach(item => {
+        const name = item.querySelector('.shopping-name-row strong')?.textContent?.trim() || '';
+        const key = categoryForProduct(name);
+        (buckets[key] || buckets.OTROS).push(item);
+      });
+      SHOPPING_GROUPS.forEach(group => {
+        if (buckets[group.key].length) fragment.appendChild(makeSection(group, buckets[group.key]));
+      });
+      container.replaceChildren(fragment);
+      return;
+    }
+
+    container.classList.add('shopping-two-level');
+    const stores = [
+      { key: 'carrefour', label: 'Carrefour', icon: '🔵' },
+      { key: 'ahorramas', label: 'Ahorramás', icon: '🟠' }
+    ];
+    const buckets = Object.fromEntries(stores.map(store => [
+      store.key, Object.fromEntries(SHOPPING_GROUPS.map(group => [group.key, []]))
+    ]));
+
+    items.forEach(item => {
+      const name = item.querySelector('.shopping-name-row strong')?.textContent?.trim() || '';
+      const candidate = proposal.items[name] || {};
+      const store = stores.some(o => o.key === candidate.store) ? candidate.store : 'carrefour';
+      const section = categoryForProduct(name);
+      (buckets[store][section] || buckets[store].OTROS).push(item);
+
+      // El producto y su estado de compra se conservan: no se clonan
+      // etiquetas ni se cambia su identificador Supabase.
+      item.dataset.shoppingStore = store;
+      const old = item.querySelector('.shopping-price-comparison');
+      old?.remove();
+      const prices = document.createElement('span');
+      prices.className = 'shopping-price-comparison';
+      if (candidate.status === 'sin_doble_precio') {
+        prices.textContent = 'Carrefour por defecto · Precio sin comparar todavía';
+      } else {
+        const pricesLine = [candidate.a ? 'Ahorramás: ' + candidate.a : '',
+          candidate.c ? 'Carrefour: ' + candidate.c : ''].filter(Boolean).join(' · ');
+        const state = candidate.status === 'empate' ? 'Empate de precio · Carrefour por comodidad' : 'Comparación orientativa';
+        prices.textContent = state + ' · ' + pricesLine;
+      }
+      if (candidate.note) prices.title = candidate.note;
+      item.querySelector('.shopping-text')?.appendChild(prices);
+    });
+
+    const info = document.createElement('p');
+    info.className = 'shopping-proposal-info';
+    info.textContent = proposal.status === 'aprobado' ? 'COMPRA APROBADA · Carrefour por defecto. Los artículos sin dos precios comparables mantienen su tienda provisional; precios sujetos a cambios en caja.' : 'BORRADOR SOLO EN DESARROLLO · Carrefour por defecto para empates y productos sin dos precios comparables. Estos siguen pendientes de contrastar; los precios web pueden variar en tienda.';
+    fragment.appendChild(info);
+
+    stores.forEach(store => {
+      const bySection = buckets[store.key];
+      const count = Object.values(bySection).reduce((sum, array) => sum + array.length, 0);
+      if (!count) return;
+      const storeGroup = document.createElement('div');
+      storeGroup.className = 'shopping-store-group';
+      storeGroup.dataset.shoppingStoreGroup = store.key;
+      const head = document.createElement('div');
+      head.className = 'shopping-store-header';
+      const name = document.createElement('h2');
+      name.textContent = store.icon + ' ' + store.label;
+      const size = document.createElement('span');
+      size.textContent = count + ' productos';
+      head.append(name, size);
+      storeGroup.appendChild(head);
+      SHOPPING_GROUPS.forEach(group => {
+        if (bySection[group.key].length)
+          storeGroup.appendChild(makeSection(group, bySection[group.key]));
+      });
+      fragment.appendChild(storeGroup);
     });
 
     container.replaceChildren(fragment);
