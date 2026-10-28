@@ -295,6 +295,7 @@
             },
             compra: {
               dias: data.shopping.dias || [],
+              list_id: data.shopping.list_id || '',
               titulo: data.shopping.titulo || 'Compra validada',
               usos: shoppingUses
             }
