@@ -116,7 +116,7 @@
 
     if (/(jamon serrano|jamon york|fiambre|lomo embuchado|lomo curado|bacon)/.test(n)) return 'FIAMBRE';
 
-    if (/(muslo de pavo|muslo de pollo|pechuga de pavo|pavo fresco|pechuga de pollo|pollo fresco|lomo fresco|lomo de cerdo|hamburguesa|ternera|bistec)/.test(n)) return 'CARNE';
+    if (/(muslo de pavo|muslo de pollo|pechuga de pavo|pavo fresco|pechuga de pollo|pollo fresco|lomo fresco|lomo de cerdo|magro de cerdo|hamburguesa|ternera|bistec)/.test(n)) return 'CARNE';
 
     if (/(salmon|merluza|rape|sepia|bacalao|almeja|mejillon)/.test(n)) return 'PESCADO';
     if (n === 'huevo' || /\bhuevos?\b/.test(n)) return 'HUEVOS';
@@ -126,7 +126,7 @@
     if (/(pan integral|pan sin gluten|tortitas|tortas de maiz|macarrones|gnocchi|tortellini|cuscus|cous cous|corn flakes|special k|copos de avena|quinoa|arroz|pasta|cereal|harina)/.test(n)) return 'PAN_CEREALES';
     if (/(atun en lata|atun en conserva|anchoas? en conserva|tomate frito|salsa de tomate|aceituna)/.test(n)) return 'CONSERVAS';
 
-    if (/(tomate fresco|patata|guisante|judias verdes|zanahoria|cebolla|cebolleta|pimiento|lechuga|cogollo|champinon|ajo|rabano|remolacha|calabaza|apio|puerro|pepino|calabacin|menta fresca|perejil)/.test(n)) return 'VERDURA';
+    if (/(tomate fresco|patata|guisante|judias verdes|zanahoria|cebolla|cebolleta|pimiento|lechuga|cogollo|champinon|ajo|rabano|remolacha|calabaza|apio|puerro|pepino|calabacin|espinacas?|brecol|brocoli|menta fresca|perejil)/.test(n)) return 'VERDURA';
 
     return 'OTROS';
   }
@@ -140,7 +140,7 @@
     if (!items.length) return;
 
     const proposal = window.DIET_OPERATIONAL?.shopping?.retailer_plan;
-    const hasProposal = proposal?.status === 'borrador_no_aprobado' && proposal?.items;
+    const hasProposal = ['borrador_no_aprobado', 'aprobado'].includes(proposal?.status) && proposal?.items;
     const fragment = document.createDocumentFragment();
 
     const makeSection = (group, groupItems) => {
@@ -209,7 +209,7 @@
 
     const info = document.createElement('p');
     info.className = 'shopping-proposal-info';
-    info.textContent = 'BORRADOR SOLO EN DESARROLLO · Carrefour por defecto para empates y productos sin dos precios comparables. Estos siguen pendientes de contrastar; los precios web pueden variar en tienda.';
+    info.textContent = proposal.status === 'aprobado' ? 'COMPRA APROBADA · Carrefour por defecto. Los artículos sin dos precios comparables mantienen su tienda provisional; precios sujetos a cambios en caja.' : 'BORRADOR SOLO EN DESARROLLO · Carrefour por defecto para empates y productos sin dos precios comparables. Estos siguen pendientes de contrastar; los precios web pueden variar en tienda.';
     fragment.appendChild(info);
 
     stores.forEach(store => {
