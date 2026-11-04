@@ -5,6 +5,7 @@
 
   const MEALS = ['Desayuno', 'Media mañana', 'Comida', 'Merienda', 'Cena'];
   const RECIPE_MEALS = new Set(['Comida', 'Cena']);
+  // Nunca se muestran botones en Desayuno, Media mañana o Merienda.
   const SPECIAL_RECIPE_MEALS = new Map([
     ['Merienda', new Set(['palmera_hojaldre_chocolate'])]
   ]);
@@ -82,8 +83,49 @@
     return candidates.length ? [candidates[0]] : [];
   }
 
+  // Las recetas se relacionan por identificadores explícitos del JSON operativo, nunca por texto aproximado.
+  function explicitRecipesFor(date,meal,person){
+  if(!date||!['Comida','Cena'].includes(meal)||!['almu','fran'].includes(person))return [];
+  const data=window.DIET_OPERATIONAL||{};
+  const ids=data.recetas_vinculadas?.[date]?.[meal]?.[person];
+  if(!Array.isArray(ids))return [];
+  const recipes=data.recipes||{};
+  const result=[];
+  for(const id of [...new Set(ids)]){
+    const raw=recipes[id];
+    if(!raw||typeof raw!=='object'||Array.isArray(raw))continue;
+    const hasDetails=(typeof raw.elaboracion==='string'&&raw.elaboracion.trim())||(Array.isArray(raw.pasos)&&raw.pasos.length);
+    if(!hasDetails)continue;
+    result.push({id,name:raw.nombre||id.replace(/_/g,' '),recipe:raw});
+  }
+  return result;
+}
+
+  function totalsFromJson(date,meal){
+  if(!date||!['Comida','Cena'].includes(meal))return null;
+  const data=window.DIET_OPERATIONAL||{};
+  const week=(data.weeks||[]).find(w=>date>=w.inicio&&date<=w.fin);
+  const md=week&&data.documents?.[week.document]?.main_markdown;
+  if(typeof md!=='string')return null;
+  const day=capitalize(new Intl.DateTimeFormat('es-ES',{weekday:'long',timeZone:'UTC'}).format(new Date(date+'T12:00:00Z')));
+  const lines=md.split(/\r?\n/).filter(x=>x.trim().startsWith('|'));
+  const index=lines.findIndex(line=> {
+    const label=line.replace(/^\|/,'').split('|')[0].replace(/\*\*/g,'').trim();
+    return label===day||label.startsWith(day+' ');
+  });
+  if(index<0)return null;
+  const cells=lines[index].replace(/^\|/,'').replace(/\|$/,'').split('|').map(s=>s.trim());
+  if(cells.length<7)return null;
+  const col=meal==='Comida'?3:6;
+  const possible=lines[index+1]||'';
+  const next=possible.replace(/^\|/,'').replace(/\|$/,'').split('|').map(s=>s.trim());
+  const isDetail=next.length>=7 && !next[0].replace(/\*\*/g,'').trim();
+  return {title:cells[col]||'',detail:isDetail?next[col]||'':''};
+}
+
   function recipeBody(recipe) {
     if (typeof recipe === 'string') return `<p>${escapeHtml(recipe)}</p>`;
+    if (!recipe || typeof recipe !== 'object' || Array.isArray(recipe)) return '<p>Receta archivada no disponible.</p>';
     const parts = [];
     if (recipe.raciones) parts.push(`<p><strong>${escapeHtml(recipe.raciones)}</strong></p>`);
     if (Array.isArray(recipe.ingredientes) && recipe.ingredientes.length) {
@@ -134,7 +176,10 @@
 
   window.openOperationalRecipe = id => {
     const entry = registry.get(id);
-    if (!entry) return;
+    if (!entry) {
+      console.warn('Referencia de receta caducada:', id);
+      return;
+    }
     const modal = ensureModal();
     modal.querySelector('#operational-recipe-title').textContent = entry.recipes.length === 1 ? entry.recipes[0].name : 'Recetas de esta comida';
     const kicker = modal.querySelector('.recipe-modal-kicker');
@@ -152,26 +197,23 @@
     document.body.classList.add('recipe-modal-open');
   };
 
-  function decorateRollingMenu() {
-    const view = document.querySelector('.rolling-menu-view');
-    if (!view) return;
-    view.querySelectorAll('.cuadro02-meal-card').forEach(card => {
-      const meal = card.querySelector('h2')?.textContent?.trim() || '';
-      card.querySelectorAll('[data-recipe-action]').forEach(node => node.remove());
-      card.querySelectorAll('.cuadro-two-cols article').forEach(article => {
-        const person = article.querySelector('.cuadro-person-label')?.textContent?.trim() || '';
-        const content = `${article.querySelector('.cuadro-title')?.textContent || ''} ${article.querySelector('.cuadro-detail')?.textContent || ''}`;
-        let recipes = recipeEntriesFor(content);
-        if (!RECIPE_MEALS.has(meal)) {
-          const allowed = SPECIAL_RECIPE_MEALS.get(meal);
-          recipes = allowed ? recipes.filter(item => allowed.has(item.id)) : [];
-          if (!recipes.length) recipes = specialRecipesForMeal(meal, content);
-        }
-        if (!recipes.length) return;
-        article.insertAdjacentHTML('beforeend', recipeButton(recipes, `${meal} · ${person}`));
-      });
+  function decorateRollingMenu(){
+  const view=document.querySelector('.rolling-menu-view');
+  const date=view?.dataset?.menuDate;
+  if(!view||!date)return;
+  view.querySelectorAll('.cuadro02-meal-card').forEach(card=>{
+    const meal=card.querySelector('h2')?.textContent?.trim()||'';
+    card.querySelectorAll('[data-recipe-action]').forEach(node=>node.remove());
+    if(!RECIPE_MEALS.has(meal))return;
+    card.querySelectorAll('.cuadro-two-cols article').forEach(article=>{
+      const person=article.querySelector('.cuadro-person-label')?.textContent?.trim().toLowerCase()||'';
+      if(person!=='almu'&&person!=='fran')return;
+      const recipes=explicitRecipesFor(date,meal,person);
+      if(!recipes.length)return;
+      article.insertAdjacentHTML('beforeend',recipeButton(recipes,`${date} · ${meal} · ${person==='almu'?'Almu':'Fran'}`));
     });
-  }
+  });
+}
 
   function splitMd(line) {
     return line.replace(/^\|/, '').replace(/\|$/, '').split('|').map(value => value.trim());
@@ -247,41 +289,26 @@
     return sequence[displayIndex];
   }
 
-  async function decorateNextMeal() {
-    const card = document.querySelector('.next-card');
-    if (!card) return;
-    card.querySelectorAll('.next-total').forEach(node => node.remove());
-    card.querySelectorAll('.cuadro-recipe-button').forEach(node => node.remove());
-    const current = await resolveDisplayedMeal();
-    if (!current) return;
-
-    if (!RECIPE_MEALS.has(current.meal)) {
-      const allowed = SPECIAL_RECIPE_MEALS.get(current.meal);
-      if (!allowed) return;
-      const content = `${current.almu} ${current.fran}`;
-      let recipes = recipeEntriesFor(content).filter(item => allowed.has(item.id));
-      if (!recipes.length) recipes = specialRecipesForMeal(current.meal, content);
-      if (!recipes.length) return;
-      card.querySelectorAll('.people-grid .person').forEach(article => {
-        const person = article.querySelector('h3')?.textContent?.trim() || '';
-        article.querySelectorAll('[data-recipe-action]').forEach(node => node.remove());
-        article.insertAdjacentHTML('beforeend', recipeButton(recipes, `${current.day} · ${current.meal} · ${person}`));
-      });
-      return;
-    }
-
-    const totals = parseCuadro01Totals(await fetchText(current.week.archivos.cuadro01));
-    const total = totals[current.day]?.[current.meal];
-    if (!total) return;
-
-    const recipes = singleRecipeForMeal(`${current.almu} ${current.fran} ${total.title}`);
-    const testTotal = typeof window.nextMealMeasureDisplay === 'function' ? window.nextMealMeasureDisplay(current, 'total') : '';
-    const totalHtml = testTotal
-      ? `<article class="person next-total"><h3>TOTAL</h3><span class="next-total-detail">${formatMealCell(testTotal)}</span>${recipeButton(recipes, `${current.day} · ${current.meal} · Total`)}</article>`
-      : `<article class="person next-total"><h3>TOTAL</h3><span class="next-total-title">${formatMealCell(total.title)}</span><span class="next-total-detail">${formatMealCell(total.detail)}</span>${recipeButton(recipes, `${current.day} · ${current.meal} · Total`)}</article>`;
-    const grid = card.querySelector('.people-grid');
-    if (grid) grid.insertAdjacentHTML('beforeend', totalHtml);
-  }
+  function decorateNextMeal(){
+  const card=document.querySelector('.next-card');
+  if(!card)return;
+  card.querySelectorAll('.next-total').forEach(node=>node.remove());
+  card.querySelectorAll('[data-recipe-action]').forEach(node=>node.remove());
+  const current=window.DIET_CURRENT_MEAL;
+  const meal=card.querySelector('.meal-name')?.textContent?.trim();
+  if(!current||current.meal!==meal||!RECIPE_MEALS.has(meal))return;
+  const info=totalsFromJson(current.date,meal);
+  const title=info?.title||'— · pendiente de validar cantidades conjuntas';
+  const detail=info?.detail||'';
+  const a=explicitRecipesFor(current.date,meal,'almu');
+  const f=explicitRecipesFor(current.date,meal,'fran');
+  const all=[...new Map([...a,...f].map(x=>[x.id,x])).values()];
+  const src=a.length ? 'Almu y Fran' : 'Fran (Almu pendiente)';
+  const allowed=!/libre/i.test(String(title));
+  const recipeBtn=allowed?recipeButton(all,`${current.date} · ${meal} · Receta de ${src}`):'';
+  const html=`<article class="person next-total"><h3>TOTAL</h3><span class="next-total-title">${formatMealCell(title)}</span>${detail?`<span class="next-total-detail">${formatMealCell(detail)}</span>`:''}${recipeBtn}</article>`;
+  card.querySelector('.people-grid')?.insertAdjacentHTML('beforeend',html);
+}
 
   async function decorateCurrentView() {
     if (document.querySelector('.rolling-menu-view')) decorateRollingMenu();
