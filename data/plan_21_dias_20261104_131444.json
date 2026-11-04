@@ -1,0 +1,2976 @@
+{
+  "schema_version": 1,
+  "tipo": "planificacion_21_dias_no_operativa",
+  "timezone": "Europe/Madrid",
+  "periodo": {
+    "desde": "2026-11-04",
+    "primera_toma": "Cena",
+    "hasta": "2026-11-25",
+    "ultima_toma": "Comida",
+    "duracion": "21 días de diferencia entre extremos; 22 fechas con días extremos parciales"
+  },
+  "estado": "FRAN_FIJADO_ALMU_PENDIENTE",
+  "fuente_fran": "Fran Arroyo - Dieta Personalizada -- 04-11-2026.PDF · pauta 02–08/11/2026, repetida por encargo del usuario",
+  "prioridad": "Conservar comidas y cenas de Fran en sus fechas; adaptar a Almu cuando se reciba su PDF, sin modificar prescripciones sin permiso.",
+  "restricciones": "No crear Cuadros 01/02 definitivos, totales, compras ni publicación hasta recibir y aprobar Almu.",
+  "excepciones": [
+    "07/11 comida: patatas al horno + pollo al curry, en lugar de lentejas (solo sábado 7)",
+    "08/11 comida: Aluche · cumpleaños de Almu · libre",
+    "13/11 y 14/11: comida y cena Cartagena · libres; desayuno, media mañana y merienda habituales",
+    "15/11 comida: Cartagena · libre; cena: espinacas salteadas con huevo + yogur (domingo habitual)"
+  ],
+  "dias": [
+    {
+      "fecha": "2026-11-04",
+      "dia": "Miércoles",
+      "tomas": {
+        "Cena": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Puré de verduras",
+                "racion_g": 300,
+                "ingredientes": [
+                  "Patata 105 g",
+                  "Calabacín 65 g",
+                  "Zanahoria 65 g",
+                  "Tomate 55 g",
+                  "Aceite de oliva 2 g"
+                ]
+              },
+              {
+                "nombre": "Bacalao fresco",
+                "racion_g": 200,
+                "ingredientes": [
+                  "Bacalao fresco 200 g"
+                ]
+              },
+              {
+                "nombre": "Yogur natural desnatado",
+                "racion_g": 125,
+                "ingredientes": [
+                  "Yogur natural desnatado 125 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-05",
+      "dia": "Jueves",
+      "tomas": {
+        "Desayuno": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tostadas integrales con lomo curado",
+                "racion_g": 60,
+                "ingredientes": [
+                  "Tostadas integrales 30 g",
+                  "Lomo curado 30 g"
+                ]
+              },
+              {
+                "nombre": "Café cortado descremado",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Café natural 85 g",
+                  "Leche descremada 15 g"
+                ],
+                "nota": "Opcional"
+              },
+              {
+                "nombre": "Ciruelas",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Ciruelas 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Media mañana": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Bocadillo con jamón serrano",
+                "racion_g": 130,
+                "ingredientes": [
+                  "Pan baguette 70 g",
+                  "Jamón serrano 60 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Comida": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Arroz a la cubana con huevo",
+                "racion_g": 400,
+                "ingredientes": [
+                  "Arroz 210 g",
+                  "Huevo 105 g",
+                  "Tomate 85 g",
+                  "Aceite de oliva 4 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        },
+        "Merienda": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tortas de maíz",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Tortas de maíz 30 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Cena": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Ensalada de remolacha",
+                "racion_g": 250,
+                "ingredientes": [
+                  "Remolacha 155 g",
+                  "Yogur natural desnatado 45 g",
+                  "Rábanos 15 g",
+                  "Zumo de limón 15 g",
+                  "Pepino a la vinagreta 15 g"
+                ],
+                "nota": "Comino y clavo en polvo al gusto"
+              },
+              {
+                "nombre": "Salmón a la plancha",
+                "racion_g": 200,
+                "ingredientes": [
+                  "Salmón 195 g",
+                  "Aceite de oliva 4 g"
+                ]
+              },
+              {
+                "nombre": "Yogur natural desnatado",
+                "racion_g": 125,
+                "ingredientes": [
+                  "Yogur natural desnatado 125 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-06",
+      "dia": "Viernes",
+      "tomas": {
+        "Desayuno": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Corn Flakes con leche de soja",
+                "racion_g": 230,
+                "ingredientes": [
+                  "Leche de soja 200 g",
+                  "Corn Flakes 30 g"
+                ]
+              },
+              {
+                "nombre": "Café cortado descremado",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Café natural 85 g",
+                  "Leche descremada 15 g"
+                ],
+                "nota": "Opcional"
+              },
+              {
+                "nombre": "Ciruelas",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Ciruelas 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Media mañana": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Bocadillo de jamón York y tomate",
+                "racion_g": 150,
+                "ingredientes": [
+                  "Pan baguette 85 g",
+                  "Jamón York 35 g",
+                  "Tomate 35 g"
+                ],
+                "nota": "La ración indica 150 g; ingredientes suman 155 g"
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Comida": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Patatas guisadas",
+                "racion_g": 400,
+                "ingredientes": [
+                  "Patatas 180 g",
+                  "Tomate 90 g",
+                  "Cebolla 90 g",
+                  "Pimiento 35 g"
+                ],
+                "nota": "Ajo y hierbas aromáticas mencionados en la elaboración, sin gramos"
+              },
+              {
+                "nombre": "Huevo escalfado",
+                "racion_g": 60,
+                "ingredientes": [
+                  "Huevo 60 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        },
+        "Merienda": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tortas de maíz",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Tortas de maíz 30 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Cena": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Crema de champiñones y patata",
+                "racion_g": 300,
+                "ingredientes": [
+                  "Champiñones 100 g",
+                  "Leche descremada 100 g",
+                  "Patata 70 g",
+                  "Cebolla 25 g",
+                  "Aceite de oliva 5 g"
+                ]
+              },
+              {
+                "nombre": "Merluza a la plancha",
+                "racion_g": 200,
+                "ingredientes": [
+                  "Merluza 195 g",
+                  "Aceite de oliva 6 g"
+                ]
+              },
+              {
+                "nombre": "Yogur natural desnatado",
+                "racion_g": 125,
+                "ingredientes": [
+                  "Yogur natural desnatado 125 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-07",
+      "dia": "Sábado",
+      "tomas": {
+        "Desayuno": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Corn Flakes con leche de soja",
+                "racion_g": 230,
+                "ingredientes": [
+                  "Leche de soja 200 g",
+                  "Corn Flakes 30 g"
+                ]
+              },
+              {
+                "nombre": "Copos de avena",
+                "racion_g": 50,
+                "ingredientes": [
+                  "Copos de avena 50 g"
+                ]
+              },
+              {
+                "nombre": "Café cortado descremado",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Café natural 85 g",
+                  "Leche descremada 15 g"
+                ],
+                "nota": "Opcional"
+              },
+              {
+                "nombre": "Ciruelas",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Ciruelas 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Media mañana": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tortas de maíz",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Tortas de maíz 30 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 200,
+                "ingredientes": [
+                  "Fruta de temporada 200 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Comida": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Patatas al horno",
+                "racion_g": 200,
+                "ingredientes": [
+                  "Patatas 190 g",
+                  "Aceite de oliva 10 g"
+                ],
+                "nota": "Con romero"
+              },
+              {
+                "nombre": "Pollo con curry",
+                "racion_g": 200,
+                "ingredientes": [
+                  "Pechuga de pollo 145 g",
+                  "Cebolla 55 g",
+                  "Curry sin gramos"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario",
+            "origen_fecha": "2026-11-08"
+          },
+          "calendario_fijado": true,
+          "nota": "Sábado 7: sustituye lentejas por patatas al horno y pollo al curry (plato original domingo 8)."
+        },
+        "Merienda": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Queso de Burgos",
+                "racion_g": 60,
+                "ingredientes": [
+                  "Queso de Burgos 60 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Cena": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Ensalada niçoise",
+                "racion_g": 450,
+                "ingredientes": [
+                  "Huevo 90 g",
+                  "Tomate 80 g",
+                  "Patata asada 70 g",
+                  "Atún en aceite 50 g",
+                  "Judías verdes 50 g",
+                  "Pimiento 30 g",
+                  "Lechuga 30 g",
+                  "Aceitunas negras 25 g",
+                  "Anchoas en aceite 20 g",
+                  "Aceite de oliva 3 g"
+                ],
+                "nota": "El PDF indica patata asada en ingredientes y cocer con piel en elaboración"
+              },
+              {
+                "nombre": "Yogur natural desnatado",
+                "racion_g": 125,
+                "ingredientes": [
+                  "Yogur natural desnatado 125 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-08",
+      "dia": "Domingo",
+      "tomas": {
+        "Desayuno": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tostadas integrales con tomate y aceite",
+                "racion_g": 50,
+                "ingredientes": [
+                  "Tostadas integrales 40 g",
+                  "Tomate 5 g",
+                  "Aceite de oliva 6 g"
+                ]
+              },
+              {
+                "nombre": "Café cortado descremado",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Café natural 85 g",
+                  "Leche descremada 15 g"
+                ],
+                "nota": "Opcional"
+              },
+              {
+                "nombre": "Ciruelas",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Ciruelas 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Media mañana": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tortas de maíz",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Tortas de maíz 30 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 200,
+                "ingredientes": [
+                  "Fruta de temporada 200 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Comida": {
+          "almu": {
+            "estado": "libre",
+            "lugar": "Aluche",
+            "motivo": "Cumpleaños de Almu"
+          },
+          "fran": {
+            "estado": "libre",
+            "lugar": "Aluche",
+            "motivo": "Cumpleaños de Almu"
+          },
+          "calendario_fijado": true
+        },
+        "Merienda": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Queso de Burgos",
+                "racion_g": 60,
+                "ingredientes": [
+                  "Queso de Burgos 60 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Cena": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Espinacas salteadas con huevo",
+                "racion_g": 400,
+                "ingredientes": [
+                  "Espinacas 260 g",
+                  "Huevo 140 g"
+                ]
+              },
+              {
+                "nombre": "Yogur natural desnatado",
+                "racion_g": 125,
+                "ingredientes": [
+                  "Yogur natural desnatado 125 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-09",
+      "dia": "Lunes",
+      "tomas": {
+        "Desayuno": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Corn Flakes con leche de soja",
+                "racion_g": 230,
+                "ingredientes": [
+                  "Leche de soja 200 g",
+                  "Corn Flakes 30 g"
+                ]
+              },
+              {
+                "nombre": "Copos de avena",
+                "racion_g": 50,
+                "ingredientes": [
+                  "Copos de avena 50 g"
+                ]
+              },
+              {
+                "nombre": "Café cortado descremado",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Café natural 85 g",
+                  "Leche descremada 15 g"
+                ],
+                "nota": "Opcional"
+              },
+              {
+                "nombre": "Ciruelas",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Ciruelas 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Media mañana": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Bocadillo de jamón York y tomate",
+                "racion_g": 150,
+                "ingredientes": [
+                  "Pan baguette 85 g",
+                  "Jamón York 35 g",
+                  "Tomate 35 g"
+                ],
+                "nota": "La ración indica 150 g; ingredientes suman 155 g"
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Comida": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Macarrones con atún",
+                "racion_g": 400,
+                "ingredientes": [
+                  "Macarrones 215 g",
+                  "Tomate 110 g",
+                  "Atún en aceite 75 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        },
+        "Merienda": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tortas de maíz",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Tortas de maíz 30 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Cena": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Picadillo de patatas con atún",
+                "racion_g": 400,
+                "ingredientes": [
+                  "Patata hervida 140 g",
+                  "Tomate 85 g",
+                  "Huevo 80 g",
+                  "Atún en aceite 50 g",
+                  "Pimiento 45 g"
+                ]
+              },
+              {
+                "nombre": "Yogur natural desnatado",
+                "racion_g": 125,
+                "ingredientes": [
+                  "Yogur natural desnatado 125 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-10",
+      "dia": "Martes",
+      "tomas": {
+        "Desayuno": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tostadas integrales con jamón York",
+                "racion_g": 80,
+                "ingredientes": [
+                  "Tostadas integrales 45 g",
+                  "Jamón York 35 g"
+                ]
+              },
+              {
+                "nombre": "Café cortado descremado",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Café natural 85 g",
+                  "Leche descremada 15 g"
+                ],
+                "nota": "Opcional"
+              },
+              {
+                "nombre": "Ciruelas",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Ciruelas 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Media mañana": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Bocadillo con jamón serrano",
+                "racion_g": 130,
+                "ingredientes": [
+                  "Pan baguette 70 g",
+                  "Jamón serrano 60 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Comida": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Arroz a la marinera",
+                "racion_g": 450,
+                "ingredientes": [
+                  "Arroz 145 g",
+                  "Almejas frescas 85 g",
+                  "Gambas 85 g",
+                  "Sepia 85 g",
+                  "Cebolla 45 g",
+                  "Ajo sin cantidad indicada"
+                ],
+                "nota": "Arroz cocinado con el doble de agua (volumen) y reposo de 5 minutos"
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        },
+        "Merienda": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tortas de maíz",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Tortas de maíz 30 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Cena": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Judías verdes salteadas",
+                "racion_g": 240,
+                "ingredientes": [
+                  "Judías verdes 105 g",
+                  "Zanahoria 65 g",
+                  "Patata 55 g",
+                  "Jamón serrano 10 g",
+                  "Aceite de oliva 4 g"
+                ]
+              },
+              {
+                "nombre": "Tortilla francesa",
+                "racion_g": 120,
+                "ingredientes": [
+                  "Huevo 115 g",
+                  "Aceite de oliva 4 g"
+                ]
+              },
+              {
+                "nombre": "Yogur natural desnatado",
+                "racion_g": 125,
+                "ingredientes": [
+                  "Yogur natural desnatado 125 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-11",
+      "dia": "Miércoles",
+      "tomas": {
+        "Desayuno": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tostadas integrales con tomate y aceite",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Tostadas integrales 25 g",
+                  "Tomate 5 g",
+                  "Aceite de oliva 3 g"
+                ]
+              },
+              {
+                "nombre": "Café cortado descremado",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Café natural 85 g",
+                  "Leche descremada 15 g"
+                ],
+                "nota": "Opcional"
+              },
+              {
+                "nombre": "Café cortado descremado",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Café natural 85 g",
+                  "Leche descremada 15 g"
+                ],
+                "nota": "Opcional"
+              },
+              {
+                "nombre": "Ciruelas",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Ciruelas 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Media mañana": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Bocadillo de pollo",
+                "racion_g": 150,
+                "ingredientes": [
+                  "Pan baguette 80 g",
+                  "Pechuga de pollo 55 g",
+                  "Lechuga 15 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Comida": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Cuscús con pollo al curry",
+                "racion_g": 350,
+                "ingredientes": [
+                  "Cuscús con pollo, plato preparado 350 g"
+                ],
+                "nota": "Receta completa, NO ración individual: pechuga de pollo 1 ud.; cebolla 1 ud.; medio pimiento rojo y medio verde; zanahoria grande 1 ud.; ajo 1 diente; cuscús 125 g; mantequilla; curry; AOVE; sal y pimienta"
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        },
+        "Merienda": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tortas de maíz",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Tortas de maíz 30 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Cena": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Puré de verduras",
+                "racion_g": 300,
+                "ingredientes": [
+                  "Patata 105 g",
+                  "Calabacín 65 g",
+                  "Zanahoria 65 g",
+                  "Tomate 55 g",
+                  "Aceite de oliva 2 g"
+                ]
+              },
+              {
+                "nombre": "Bacalao fresco",
+                "racion_g": 200,
+                "ingredientes": [
+                  "Bacalao fresco 200 g"
+                ]
+              },
+              {
+                "nombre": "Yogur natural desnatado",
+                "racion_g": 125,
+                "ingredientes": [
+                  "Yogur natural desnatado 125 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-12",
+      "dia": "Jueves",
+      "tomas": {
+        "Desayuno": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tostadas integrales con lomo curado",
+                "racion_g": 60,
+                "ingredientes": [
+                  "Tostadas integrales 30 g",
+                  "Lomo curado 30 g"
+                ]
+              },
+              {
+                "nombre": "Café cortado descremado",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Café natural 85 g",
+                  "Leche descremada 15 g"
+                ],
+                "nota": "Opcional"
+              },
+              {
+                "nombre": "Ciruelas",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Ciruelas 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Media mañana": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Bocadillo con jamón serrano",
+                "racion_g": 130,
+                "ingredientes": [
+                  "Pan baguette 70 g",
+                  "Jamón serrano 60 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Comida": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Arroz a la cubana con huevo",
+                "racion_g": 400,
+                "ingredientes": [
+                  "Arroz 210 g",
+                  "Huevo 105 g",
+                  "Tomate 85 g",
+                  "Aceite de oliva 4 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        },
+        "Merienda": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tortas de maíz",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Tortas de maíz 30 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Cena": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Ensalada de remolacha",
+                "racion_g": 250,
+                "ingredientes": [
+                  "Remolacha 155 g",
+                  "Yogur natural desnatado 45 g",
+                  "Rábanos 15 g",
+                  "Zumo de limón 15 g",
+                  "Pepino a la vinagreta 15 g"
+                ],
+                "nota": "Comino y clavo en polvo al gusto"
+              },
+              {
+                "nombre": "Salmón a la plancha",
+                "racion_g": 200,
+                "ingredientes": [
+                  "Salmón 195 g",
+                  "Aceite de oliva 4 g"
+                ]
+              },
+              {
+                "nombre": "Yogur natural desnatado",
+                "racion_g": 125,
+                "ingredientes": [
+                  "Yogur natural desnatado 125 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-13",
+      "dia": "Viernes",
+      "tomas": {
+        "Desayuno": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Corn Flakes con leche de soja",
+                "racion_g": 230,
+                "ingredientes": [
+                  "Leche de soja 200 g",
+                  "Corn Flakes 30 g"
+                ]
+              },
+              {
+                "nombre": "Café cortado descremado",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Café natural 85 g",
+                  "Leche descremada 15 g"
+                ],
+                "nota": "Opcional"
+              },
+              {
+                "nombre": "Ciruelas",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Ciruelas 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Media mañana": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Bocadillo de jamón York y tomate",
+                "racion_g": 150,
+                "ingredientes": [
+                  "Pan baguette 85 g",
+                  "Jamón York 35 g",
+                  "Tomate 35 g"
+                ],
+                "nota": "La ración indica 150 g; ingredientes suman 155 g"
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Comida": {
+          "almu": {
+            "estado": "libre",
+            "lugar": "Cartagena",
+            "motivo": "Viaje"
+          },
+          "fran": {
+            "estado": "libre",
+            "lugar": "Cartagena",
+            "motivo": "Viaje"
+          },
+          "calendario_fijado": true
+        },
+        "Merienda": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tortas de maíz",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Tortas de maíz 30 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Cena": {
+          "almu": {
+            "estado": "libre",
+            "lugar": "Cartagena",
+            "motivo": "Viaje"
+          },
+          "fran": {
+            "estado": "libre",
+            "lugar": "Cartagena",
+            "motivo": "Viaje"
+          },
+          "calendario_fijado": true
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-14",
+      "dia": "Sábado",
+      "tomas": {
+        "Desayuno": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Corn Flakes con leche de soja",
+                "racion_g": 230,
+                "ingredientes": [
+                  "Leche de soja 200 g",
+                  "Corn Flakes 30 g"
+                ]
+              },
+              {
+                "nombre": "Copos de avena",
+                "racion_g": 50,
+                "ingredientes": [
+                  "Copos de avena 50 g"
+                ]
+              },
+              {
+                "nombre": "Café cortado descremado",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Café natural 85 g",
+                  "Leche descremada 15 g"
+                ],
+                "nota": "Opcional"
+              },
+              {
+                "nombre": "Ciruelas",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Ciruelas 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Media mañana": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tortas de maíz",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Tortas de maíz 30 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 200,
+                "ingredientes": [
+                  "Fruta de temporada 200 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Comida": {
+          "almu": {
+            "estado": "libre",
+            "lugar": "Cartagena",
+            "motivo": "Viaje"
+          },
+          "fran": {
+            "estado": "libre",
+            "lugar": "Cartagena",
+            "motivo": "Viaje"
+          },
+          "calendario_fijado": true
+        },
+        "Merienda": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Queso de Burgos",
+                "racion_g": 60,
+                "ingredientes": [
+                  "Queso de Burgos 60 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Cena": {
+          "almu": {
+            "estado": "libre",
+            "lugar": "Cartagena",
+            "motivo": "Viaje"
+          },
+          "fran": {
+            "estado": "libre",
+            "lugar": "Cartagena",
+            "motivo": "Viaje"
+          },
+          "calendario_fijado": true
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-15",
+      "dia": "Domingo",
+      "tomas": {
+        "Desayuno": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tostadas integrales con tomate y aceite",
+                "racion_g": 50,
+                "ingredientes": [
+                  "Tostadas integrales 40 g",
+                  "Tomate 5 g",
+                  "Aceite de oliva 6 g"
+                ]
+              },
+              {
+                "nombre": "Café cortado descremado",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Café natural 85 g",
+                  "Leche descremada 15 g"
+                ],
+                "nota": "Opcional"
+              },
+              {
+                "nombre": "Ciruelas",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Ciruelas 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Media mañana": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tortas de maíz",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Tortas de maíz 30 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 200,
+                "ingredientes": [
+                  "Fruta de temporada 200 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Comida": {
+          "almu": {
+            "estado": "libre",
+            "lugar": "Cartagena",
+            "motivo": "Viaje"
+          },
+          "fran": {
+            "estado": "libre",
+            "lugar": "Cartagena",
+            "motivo": "Viaje"
+          },
+          "calendario_fijado": true
+        },
+        "Merienda": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Queso de Burgos",
+                "racion_g": 60,
+                "ingredientes": [
+                  "Queso de Burgos 60 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Cena": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Espinacas salteadas con huevo",
+                "racion_g": 400,
+                "ingredientes": [
+                  "Espinacas 260 g",
+                  "Huevo 140 g"
+                ]
+              },
+              {
+                "nombre": "Yogur natural desnatado",
+                "racion_g": 125,
+                "ingredientes": [
+                  "Yogur natural desnatado 125 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true,
+          "nota": "Cena normal del domingo, no Cartagena."
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-16",
+      "dia": "Lunes",
+      "tomas": {
+        "Desayuno": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Corn Flakes con leche de soja",
+                "racion_g": 230,
+                "ingredientes": [
+                  "Leche de soja 200 g",
+                  "Corn Flakes 30 g"
+                ]
+              },
+              {
+                "nombre": "Copos de avena",
+                "racion_g": 50,
+                "ingredientes": [
+                  "Copos de avena 50 g"
+                ]
+              },
+              {
+                "nombre": "Café cortado descremado",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Café natural 85 g",
+                  "Leche descremada 15 g"
+                ],
+                "nota": "Opcional"
+              },
+              {
+                "nombre": "Ciruelas",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Ciruelas 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Media mañana": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Bocadillo de jamón York y tomate",
+                "racion_g": 150,
+                "ingredientes": [
+                  "Pan baguette 85 g",
+                  "Jamón York 35 g",
+                  "Tomate 35 g"
+                ],
+                "nota": "La ración indica 150 g; ingredientes suman 155 g"
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Comida": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Macarrones con atún",
+                "racion_g": 400,
+                "ingredientes": [
+                  "Macarrones 215 g",
+                  "Tomate 110 g",
+                  "Atún en aceite 75 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        },
+        "Merienda": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tortas de maíz",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Tortas de maíz 30 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Cena": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Picadillo de patatas con atún",
+                "racion_g": 400,
+                "ingredientes": [
+                  "Patata hervida 140 g",
+                  "Tomate 85 g",
+                  "Huevo 80 g",
+                  "Atún en aceite 50 g",
+                  "Pimiento 45 g"
+                ]
+              },
+              {
+                "nombre": "Yogur natural desnatado",
+                "racion_g": 125,
+                "ingredientes": [
+                  "Yogur natural desnatado 125 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-17",
+      "dia": "Martes",
+      "tomas": {
+        "Desayuno": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tostadas integrales con jamón York",
+                "racion_g": 80,
+                "ingredientes": [
+                  "Tostadas integrales 45 g",
+                  "Jamón York 35 g"
+                ]
+              },
+              {
+                "nombre": "Café cortado descremado",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Café natural 85 g",
+                  "Leche descremada 15 g"
+                ],
+                "nota": "Opcional"
+              },
+              {
+                "nombre": "Ciruelas",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Ciruelas 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Media mañana": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Bocadillo con jamón serrano",
+                "racion_g": 130,
+                "ingredientes": [
+                  "Pan baguette 70 g",
+                  "Jamón serrano 60 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Comida": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Arroz a la marinera",
+                "racion_g": 450,
+                "ingredientes": [
+                  "Arroz 145 g",
+                  "Almejas frescas 85 g",
+                  "Gambas 85 g",
+                  "Sepia 85 g",
+                  "Cebolla 45 g",
+                  "Ajo sin cantidad indicada"
+                ],
+                "nota": "Arroz cocinado con el doble de agua (volumen) y reposo de 5 minutos"
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        },
+        "Merienda": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tortas de maíz",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Tortas de maíz 30 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Cena": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Judías verdes salteadas",
+                "racion_g": 240,
+                "ingredientes": [
+                  "Judías verdes 105 g",
+                  "Zanahoria 65 g",
+                  "Patata 55 g",
+                  "Jamón serrano 10 g",
+                  "Aceite de oliva 4 g"
+                ]
+              },
+              {
+                "nombre": "Tortilla francesa",
+                "racion_g": 120,
+                "ingredientes": [
+                  "Huevo 115 g",
+                  "Aceite de oliva 4 g"
+                ]
+              },
+              {
+                "nombre": "Yogur natural desnatado",
+                "racion_g": 125,
+                "ingredientes": [
+                  "Yogur natural desnatado 125 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-18",
+      "dia": "Miércoles",
+      "tomas": {
+        "Desayuno": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tostadas integrales con tomate y aceite",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Tostadas integrales 25 g",
+                  "Tomate 5 g",
+                  "Aceite de oliva 3 g"
+                ]
+              },
+              {
+                "nombre": "Café cortado descremado",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Café natural 85 g",
+                  "Leche descremada 15 g"
+                ],
+                "nota": "Opcional"
+              },
+              {
+                "nombre": "Café cortado descremado",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Café natural 85 g",
+                  "Leche descremada 15 g"
+                ],
+                "nota": "Opcional"
+              },
+              {
+                "nombre": "Ciruelas",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Ciruelas 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Media mañana": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Bocadillo de pollo",
+                "racion_g": 150,
+                "ingredientes": [
+                  "Pan baguette 80 g",
+                  "Pechuga de pollo 55 g",
+                  "Lechuga 15 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Comida": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Cuscús con pollo al curry",
+                "racion_g": 350,
+                "ingredientes": [
+                  "Cuscús con pollo, plato preparado 350 g"
+                ],
+                "nota": "Receta completa, NO ración individual: pechuga de pollo 1 ud.; cebolla 1 ud.; medio pimiento rojo y medio verde; zanahoria grande 1 ud.; ajo 1 diente; cuscús 125 g; mantequilla; curry; AOVE; sal y pimienta"
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        },
+        "Merienda": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tortas de maíz",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Tortas de maíz 30 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Cena": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Puré de verduras",
+                "racion_g": 300,
+                "ingredientes": [
+                  "Patata 105 g",
+                  "Calabacín 65 g",
+                  "Zanahoria 65 g",
+                  "Tomate 55 g",
+                  "Aceite de oliva 2 g"
+                ]
+              },
+              {
+                "nombre": "Bacalao fresco",
+                "racion_g": 200,
+                "ingredientes": [
+                  "Bacalao fresco 200 g"
+                ]
+              },
+              {
+                "nombre": "Yogur natural desnatado",
+                "racion_g": 125,
+                "ingredientes": [
+                  "Yogur natural desnatado 125 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-19",
+      "dia": "Jueves",
+      "tomas": {
+        "Desayuno": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tostadas integrales con lomo curado",
+                "racion_g": 60,
+                "ingredientes": [
+                  "Tostadas integrales 30 g",
+                  "Lomo curado 30 g"
+                ]
+              },
+              {
+                "nombre": "Café cortado descremado",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Café natural 85 g",
+                  "Leche descremada 15 g"
+                ],
+                "nota": "Opcional"
+              },
+              {
+                "nombre": "Ciruelas",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Ciruelas 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Media mañana": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Bocadillo con jamón serrano",
+                "racion_g": 130,
+                "ingredientes": [
+                  "Pan baguette 70 g",
+                  "Jamón serrano 60 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Comida": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Arroz a la cubana con huevo",
+                "racion_g": 400,
+                "ingredientes": [
+                  "Arroz 210 g",
+                  "Huevo 105 g",
+                  "Tomate 85 g",
+                  "Aceite de oliva 4 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        },
+        "Merienda": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tortas de maíz",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Tortas de maíz 30 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Cena": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Ensalada de remolacha",
+                "racion_g": 250,
+                "ingredientes": [
+                  "Remolacha 155 g",
+                  "Yogur natural desnatado 45 g",
+                  "Rábanos 15 g",
+                  "Zumo de limón 15 g",
+                  "Pepino a la vinagreta 15 g"
+                ],
+                "nota": "Comino y clavo en polvo al gusto"
+              },
+              {
+                "nombre": "Salmón a la plancha",
+                "racion_g": 200,
+                "ingredientes": [
+                  "Salmón 195 g",
+                  "Aceite de oliva 4 g"
+                ]
+              },
+              {
+                "nombre": "Yogur natural desnatado",
+                "racion_g": 125,
+                "ingredientes": [
+                  "Yogur natural desnatado 125 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-20",
+      "dia": "Viernes",
+      "tomas": {
+        "Desayuno": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Corn Flakes con leche de soja",
+                "racion_g": 230,
+                "ingredientes": [
+                  "Leche de soja 200 g",
+                  "Corn Flakes 30 g"
+                ]
+              },
+              {
+                "nombre": "Café cortado descremado",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Café natural 85 g",
+                  "Leche descremada 15 g"
+                ],
+                "nota": "Opcional"
+              },
+              {
+                "nombre": "Ciruelas",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Ciruelas 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Media mañana": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Bocadillo de jamón York y tomate",
+                "racion_g": 150,
+                "ingredientes": [
+                  "Pan baguette 85 g",
+                  "Jamón York 35 g",
+                  "Tomate 35 g"
+                ],
+                "nota": "La ración indica 150 g; ingredientes suman 155 g"
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Comida": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Patatas guisadas",
+                "racion_g": 400,
+                "ingredientes": [
+                  "Patatas 180 g",
+                  "Tomate 90 g",
+                  "Cebolla 90 g",
+                  "Pimiento 35 g"
+                ],
+                "nota": "Ajo y hierbas aromáticas mencionados en la elaboración, sin gramos"
+              },
+              {
+                "nombre": "Huevo escalfado",
+                "racion_g": 60,
+                "ingredientes": [
+                  "Huevo 60 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        },
+        "Merienda": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tortas de maíz",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Tortas de maíz 30 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Cena": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Crema de champiñones y patata",
+                "racion_g": 300,
+                "ingredientes": [
+                  "Champiñones 100 g",
+                  "Leche descremada 100 g",
+                  "Patata 70 g",
+                  "Cebolla 25 g",
+                  "Aceite de oliva 5 g"
+                ]
+              },
+              {
+                "nombre": "Merluza a la plancha",
+                "racion_g": 200,
+                "ingredientes": [
+                  "Merluza 195 g",
+                  "Aceite de oliva 6 g"
+                ]
+              },
+              {
+                "nombre": "Yogur natural desnatado",
+                "racion_g": 125,
+                "ingredientes": [
+                  "Yogur natural desnatado 125 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-21",
+      "dia": "Sábado",
+      "tomas": {
+        "Desayuno": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Corn Flakes con leche de soja",
+                "racion_g": 230,
+                "ingredientes": [
+                  "Leche de soja 200 g",
+                  "Corn Flakes 30 g"
+                ]
+              },
+              {
+                "nombre": "Copos de avena",
+                "racion_g": 50,
+                "ingredientes": [
+                  "Copos de avena 50 g"
+                ]
+              },
+              {
+                "nombre": "Café cortado descremado",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Café natural 85 g",
+                  "Leche descremada 15 g"
+                ],
+                "nota": "Opcional"
+              },
+              {
+                "nombre": "Ciruelas",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Ciruelas 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Media mañana": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tortas de maíz",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Tortas de maíz 30 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 200,
+                "ingredientes": [
+                  "Fruta de temporada 200 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Comida": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Lentejas estofadas",
+                "racion_g": 400,
+                "ingredientes": [
+                  "Lentejas 200 g",
+                  "Tomate 50 g",
+                  "Cebolla 50 g",
+                  "Zanahoria 50 g",
+                  "Pimiento 40 g",
+                  "Harina de trigo 10 g"
+                ],
+                "nota": "Ajo mencionado en elaboración, sin gramos"
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        },
+        "Merienda": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Queso de Burgos",
+                "racion_g": 60,
+                "ingredientes": [
+                  "Queso de Burgos 60 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Cena": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Ensalada niçoise",
+                "racion_g": 450,
+                "ingredientes": [
+                  "Huevo 90 g",
+                  "Tomate 80 g",
+                  "Patata asada 70 g",
+                  "Atún en aceite 50 g",
+                  "Judías verdes 50 g",
+                  "Pimiento 30 g",
+                  "Lechuga 30 g",
+                  "Aceitunas negras 25 g",
+                  "Anchoas en aceite 20 g",
+                  "Aceite de oliva 3 g"
+                ],
+                "nota": "El PDF indica patata asada en ingredientes y cocer con piel en elaboración"
+              },
+              {
+                "nombre": "Yogur natural desnatado",
+                "racion_g": 125,
+                "ingredientes": [
+                  "Yogur natural desnatado 125 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-22",
+      "dia": "Domingo",
+      "tomas": {
+        "Desayuno": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tostadas integrales con tomate y aceite",
+                "racion_g": 50,
+                "ingredientes": [
+                  "Tostadas integrales 40 g",
+                  "Tomate 5 g",
+                  "Aceite de oliva 6 g"
+                ]
+              },
+              {
+                "nombre": "Café cortado descremado",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Café natural 85 g",
+                  "Leche descremada 15 g"
+                ],
+                "nota": "Opcional"
+              },
+              {
+                "nombre": "Ciruelas",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Ciruelas 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Media mañana": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tortas de maíz",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Tortas de maíz 30 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 200,
+                "ingredientes": [
+                  "Fruta de temporada 200 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Comida": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Patatas al horno",
+                "racion_g": 200,
+                "ingredientes": [
+                  "Patatas 190 g",
+                  "Aceite de oliva 10 g"
+                ],
+                "nota": "Con romero"
+              },
+              {
+                "nombre": "Pollo con curry",
+                "racion_g": 200,
+                "ingredientes": [
+                  "Pechuga de pollo 145 g",
+                  "Cebolla 55 g",
+                  "Curry sin gramos"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        },
+        "Merienda": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Queso de Burgos",
+                "racion_g": 60,
+                "ingredientes": [
+                  "Queso de Burgos 60 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Cena": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Espinacas salteadas con huevo",
+                "racion_g": 400,
+                "ingredientes": [
+                  "Espinacas 260 g",
+                  "Huevo 140 g"
+                ]
+              },
+              {
+                "nombre": "Yogur natural desnatado",
+                "racion_g": 125,
+                "ingredientes": [
+                  "Yogur natural desnatado 125 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-23",
+      "dia": "Lunes",
+      "tomas": {
+        "Desayuno": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Corn Flakes con leche de soja",
+                "racion_g": 230,
+                "ingredientes": [
+                  "Leche de soja 200 g",
+                  "Corn Flakes 30 g"
+                ]
+              },
+              {
+                "nombre": "Copos de avena",
+                "racion_g": 50,
+                "ingredientes": [
+                  "Copos de avena 50 g"
+                ]
+              },
+              {
+                "nombre": "Café cortado descremado",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Café natural 85 g",
+                  "Leche descremada 15 g"
+                ],
+                "nota": "Opcional"
+              },
+              {
+                "nombre": "Ciruelas",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Ciruelas 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Media mañana": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Bocadillo de jamón York y tomate",
+                "racion_g": 150,
+                "ingredientes": [
+                  "Pan baguette 85 g",
+                  "Jamón York 35 g",
+                  "Tomate 35 g"
+                ],
+                "nota": "La ración indica 150 g; ingredientes suman 155 g"
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Comida": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Macarrones con atún",
+                "racion_g": 400,
+                "ingredientes": [
+                  "Macarrones 215 g",
+                  "Tomate 110 g",
+                  "Atún en aceite 75 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        },
+        "Merienda": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tortas de maíz",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Tortas de maíz 30 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Cena": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Picadillo de patatas con atún",
+                "racion_g": 400,
+                "ingredientes": [
+                  "Patata hervida 140 g",
+                  "Tomate 85 g",
+                  "Huevo 80 g",
+                  "Atún en aceite 50 g",
+                  "Pimiento 45 g"
+                ]
+              },
+              {
+                "nombre": "Yogur natural desnatado",
+                "racion_g": 125,
+                "ingredientes": [
+                  "Yogur natural desnatado 125 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-24",
+      "dia": "Martes",
+      "tomas": {
+        "Desayuno": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tostadas integrales con jamón York",
+                "racion_g": 80,
+                "ingredientes": [
+                  "Tostadas integrales 45 g",
+                  "Jamón York 35 g"
+                ]
+              },
+              {
+                "nombre": "Café cortado descremado",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Café natural 85 g",
+                  "Leche descremada 15 g"
+                ],
+                "nota": "Opcional"
+              },
+              {
+                "nombre": "Ciruelas",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Ciruelas 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Media mañana": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Bocadillo con jamón serrano",
+                "racion_g": 130,
+                "ingredientes": [
+                  "Pan baguette 70 g",
+                  "Jamón serrano 60 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Comida": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Arroz a la marinera",
+                "racion_g": 450,
+                "ingredientes": [
+                  "Arroz 145 g",
+                  "Almejas frescas 85 g",
+                  "Gambas 85 g",
+                  "Sepia 85 g",
+                  "Cebolla 45 g",
+                  "Ajo sin cantidad indicada"
+                ],
+                "nota": "Arroz cocinado con el doble de agua (volumen) y reposo de 5 minutos"
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        },
+        "Merienda": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tortas de maíz",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Tortas de maíz 30 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Cena": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Judías verdes salteadas",
+                "racion_g": 240,
+                "ingredientes": [
+                  "Judías verdes 105 g",
+                  "Zanahoria 65 g",
+                  "Patata 55 g",
+                  "Jamón serrano 10 g",
+                  "Aceite de oliva 4 g"
+                ]
+              },
+              {
+                "nombre": "Tortilla francesa",
+                "racion_g": 120,
+                "ingredientes": [
+                  "Huevo 115 g",
+                  "Aceite de oliva 4 g"
+                ]
+              },
+              {
+                "nombre": "Yogur natural desnatado",
+                "racion_g": 125,
+                "ingredientes": [
+                  "Yogur natural desnatado 125 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-25",
+      "dia": "Miércoles",
+      "tomas": {
+        "Desayuno": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tostadas integrales con tomate y aceite",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Tostadas integrales 25 g",
+                  "Tomate 5 g",
+                  "Aceite de oliva 3 g"
+                ]
+              },
+              {
+                "nombre": "Café cortado descremado",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Café natural 85 g",
+                  "Leche descremada 15 g"
+                ],
+                "nota": "Opcional"
+              },
+              {
+                "nombre": "Café cortado descremado",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Café natural 85 g",
+                  "Leche descremada 15 g"
+                ],
+                "nota": "Opcional"
+              },
+              {
+                "nombre": "Ciruelas",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Ciruelas 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Media mañana": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Bocadillo de pollo",
+                "racion_g": 150,
+                "ingredientes": [
+                  "Pan baguette 80 g",
+                  "Pechuga de pollo 55 g",
+                  "Lechuga 15 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Comida": {
+          "almu": null,
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Cuscús con pollo al curry",
+                "racion_g": 350,
+                "ingredientes": [
+                  "Cuscús con pollo, plato preparado 350 g"
+                ],
+                "nota": "Receta completa, NO ración individual: pechuga de pollo 1 ud.; cebolla 1 ud.; medio pimiento rojo y medio verde; zanahoria grande 1 ud.; ajo 1 diente; cuscús 125 g; mantequilla; curry; AOVE; sal y pimienta"
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        }
+      }
+    }
+  ]
+}
