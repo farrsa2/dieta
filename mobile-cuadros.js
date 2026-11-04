@@ -191,7 +191,7 @@
       <span class="cuadro-person-label">${label}</span>
       <div class="cuadro-title">${rich(title)}</div>
       ${ingredientDetails(detail)}
-      ${recipeButton(full, context)}
+      <!-- Las recetas solo se muestran en Menú · 8 días y Próxima comida. -->
     </article>`;
   }
 
@@ -253,7 +253,7 @@
       <span class="cuadro-person-label">${label}</span>
       <div class="cuadro-title">${rich(parts.title)}</div>
       ${ingredientDetails(parts.detail)}
-      ${showRecipe ? recipeButton(full, context) : ''}
+      <!-- La receta se gestiona únicamente en la vista operativa. -->
     </article>`;
   }
 
