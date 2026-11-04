@@ -150,7 +150,7 @@
         body = '<div class="status">No se pudo leer el menú de este día.</div>';
       }
     }
-    app.innerHTML = `${pageHeader('Menú · 8 días', 'Ayer · hoy · +6 días')}<section class="cuadro-mobile-view rolling-menu-view"><div class="cuadro-mobile-top"><span>📋 MENÚ · 8 DÍAS</span><h1>${escapeHtml(longDate(iso))}</h1><p>Ayer, hoy y los seis días siguientes</p></div>${dateSelector(iso)}${body}${dateNav(iso)}</section>`;
+    app.innerHTML = `${pageHeader('Menú · 8 días', 'Ayer · hoy · +6 días')}<section class="cuadro-mobile-view rolling-menu-view" data-menu-date="${iso}"><div class="cuadro-mobile-top"><span>📋 MENÚ · 8 DÍAS</span><h1>${escapeHtml(longDate(iso))}</h1><p>Ayer, hoy y los seis días siguientes</p></div>${dateSelector(iso)}${body}${dateNav(iso)}</section>`;
   }
 
   window.selectRollingDate = iso => { selectedDate = iso; renderRollingMenu(); };
@@ -251,6 +251,7 @@
       const displayIndex = Math.max(0, Math.min(sequence.length - 1, baseIndex + mealOffset));
       mealOffset = displayIndex - baseIndex;
       const current = sequence[displayIndex];
+      window.DIET_CURRENT_MEAL = { date: current.date, meal: current.meal };
       const previous = sequence[displayIndex - 1] || null;
       const next = sequence[displayIndex + 1] || null;
       app.innerHTML = pageHeader('Próxima comida', `${longDate(current.date)} · ${now.time}`) + `<section class="card next-card"><p class="meal-kicker">${mealOffset === 0 ? 'Según la hora actual' : 'Vista manual'}</p><p class="meal-name">${escapeHtml(current.meal)}</p><div class="people-grid"><article class="person"><h3>ALMU</h3><p>${formatMealCell(nextMealMeasureDisplay(current, 'almu'))}</p></article><article class="person"><h3>FRAN</h3><p>${formatMealCell(nextMealMeasureDisplay(current, 'fran'))}</p></article></div><div class="meal-nav"><button class="meal-nav-button" type="button" ${previous ? '' : 'disabled'} onclick="shiftMeal(-1)"><span>← Anterior</span><strong>${previous ? escapeHtml(previous.meal) : '—'}</strong></button><button class="meal-nav-button" type="button" ${next ? '' : 'disabled'} onclick="shiftMeal(1)"><span>Posterior →</span><strong>${next ? escapeHtml(next.meal) : '—'}</strong></button></div></section>`;
