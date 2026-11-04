@@ -1,6 +1,6 @@
 {
   "schema_version": 4,
-  "generated_at": "2026-11-04T13:14:44+01:00",
+  "generated_at": "2026-11-04T13:20:14+01:00",
   "timezone": "Europe/Madrid",
   "window": {
     "inicio": "2026-11-02",
@@ -328,12 +328,395 @@
         "Garbanzos, espinacas y huevo duro",
         "Garbanzos espinacas huevo"
       ]
+    },
+    "202611_macarrones_atun": {
+      "nombre": "Macarrones con atún",
+      "fuente": "PDF Fran Arroyo · 02–08/11/2026",
+      "raciones": "Cantidades de Fran, salvo indicación contraria",
+      "ingredientes": [
+        "Macarrones 215 g",
+        "Tomate 110 g",
+        "Atún en aceite 75 g"
+      ],
+      "elaboracion": "Freír el tomate. Hervir los macarrones en abundante agua, incorporándolos cuando el agua hierva; preferentemente dejarlos al dente. Mezclar los macarrones con el tomate y el atún y servir."
+    },
+    "202611_picadillo_patatas_atun": {
+      "nombre": "Picadillo de patatas con atún",
+      "fuente": "PDF Fran Arroyo · 02–08/11/2026",
+      "raciones": "Cantidades de Fran, salvo indicación contraria",
+      "ingredientes": [
+        "Patata hervida 140 g",
+        "Tomate 85 g",
+        "Huevo 80 g",
+        "Atún en aceite 50 g",
+        "Pimiento 45 g"
+      ],
+      "elaboracion": "Poner la patata hervida y cortada en un recipiente. Añadir pimiento troceado muy pequeño, tomate, huevo duro y atún. Mezclar y servir con una pizca de aceite, según la indicación de elaboración del PDF.",
+      "nota": "El aceite se menciona en la elaboración, pero no tiene cantidad prescrita en la lista de ingredientes."
+    },
+    "202611_arroz_marinera": {
+      "nombre": "Arroz a la marinera",
+      "fuente": "PDF Fran Arroyo · 02–08/11/2026",
+      "raciones": "Cantidades de Fran, salvo indicación contraria",
+      "ingredientes": [
+        "Arroz 145 g",
+        "Almejas frescas 85 g",
+        "Gambas 85 g",
+        "Sepia 85 g",
+        "Cebolla 45 g",
+        "Ajo: una pizca (sin cantidad indicada)"
+      ],
+      "elaboracion": "Triturar una pizca de ajo con la cebolla y sofreírlos en una cazuela. Añadir las almejas, gambas y sepia; rehogar y dejar cocer unos minutos. Incorporar el arroz y cubrir con el doble de agua que de arroz. Cocer hasta que absorba el agua, dejar reposar 5 minutos y servir.",
+      "nota": "El PDF prescribe 450 g de plato. El ajo no tiene gramos indicados."
+    },
+    "202611_judias_verdes": {
+      "nombre": "Judías verdes salteadas",
+      "fuente": "PDF Fran Arroyo · 02–08/11/2026",
+      "raciones": "Cantidades de Fran, salvo indicación contraria",
+      "ingredientes": [
+        "Judías verdes 105 g",
+        "Zanahorias 65 g",
+        "Patatas 55 g",
+        "Jamón serrano 10 g",
+        "Aceite de oliva 4 g"
+      ],
+      "elaboracion": "Hervir las verduras y saltearlas con el jamón serrano."
+    },
+    "202611_cuscus_pollo_curry": {
+      "nombre": "Cuscús con pollo al curry",
+      "fuente": "PDF Fran Arroyo · 02–08/11/2026",
+      "raciones": "Cantidades de Fran, salvo indicación contraria",
+      "ingredientes": [
+        "Receta completa: 1 pechuga de pollo, preferentemente sin piel",
+        "1 cebolla",
+        "½ pimiento verde",
+        "½ pimiento rojo",
+        "1 zanahoria grande",
+        "1 diente de ajo",
+        "125 g de cuscús de grano medio",
+        "Mantequilla",
+        "Curry en polvo",
+        "Aceite de oliva virgen extra",
+        "Sal y pimienta negra al gusto"
+      ],
+      "elaboracion": "1. Pelar ajo, cebolla y zanahoria; lavar y picar también los pimientos. Sofreír las verduras en una sartén con un chorro de AOVE, con sal y pimienta al gusto.\n\n2. Limpiar la pechuga de piel y grasa, trocearla en dados pequeños y añadirla a las verduras. Remover hasta que el pollo tome color, sin dorarlo en exceso. Retirar y conservar caliente.\n\n3. En la misma sartén, fundir una nuez de mantequilla a fuego medio, añadir un vaso de agua, una cucharadita de curry y una pizca de sal. Cuando hierva, añadir el cuscús. Apagar el fuego y dejar que absorba el líquido durante unos 5 minutos o según el fabricante.\n\n4. Incorporar las verduras y el pollo al cuscús, mezclar y servir.",
+      "nota": "La ración prescrita a Fran es 350 g de plato preparado. Los 125 g de cuscús pertenecen a la receta completa y NO se pueden interpretar como cantidad individual de Fran."
+    },
+    "202611_pure_verduras": {
+      "nombre": "Puré de verduras",
+      "fuente": "PDF Fran Arroyo · 02–08/11/2026",
+      "raciones": "Cantidades de Fran, salvo indicación contraria",
+      "ingredientes": [
+        "Patatas 105 g",
+        "Calabacín 65 g",
+        "Zanahorias 65 g",
+        "Tomate 55 g",
+        "Aceite de oliva 2 g"
+      ],
+      "elaboracion": "Cocer todos los ingredientes. Pasarlos por el pasapurés o la batidora antes de que se enfríen."
+    },
+    "202611_arroz_cubana": {
+      "nombre": "Arroz a la cubana con huevo",
+      "fuente": "PDF Fran Arroyo · 02–08/11/2026",
+      "raciones": "Cantidades de Fran, salvo indicación contraria",
+      "ingredientes": [
+        "Arroz 210 g",
+        "Huevo 105 g",
+        "Tomate 85 g",
+        "Aceite de oliva 4 g"
+      ],
+      "elaboracion": "Hervir el arroz. Preparar una salsa casera de tomate. Escurrir el arroz, cubrirlo con la salsa y colocar encima un huevo frito."
+    },
+    "202611_ensalada_remolacha": {
+      "nombre": "Ensalada de remolacha",
+      "fuente": "PDF Fran Arroyo · 02–08/11/2026",
+      "raciones": "Cantidades de Fran, salvo indicación contraria",
+      "ingredientes": [
+        "Remolacha 155 g",
+        "Yogur natural desnatado 45 g",
+        "Rábanos 15 g",
+        "Zumo de limón 15 g",
+        "Pepino a la vinagreta 15 g"
+      ],
+      "elaboracion": "Preparar una salsa con los condimentos, añadiendo comino y clavo en polvo al gusto. Hervir la remolacha, dejarla enfriar y añadir después la salsa.",
+      "nota": "Ración de ensalada prescrita: 250 g."
+    },
+    "202611_salmon_plancha": {
+      "nombre": "Salmón a la plancha",
+      "fuente": "PDF Fran Arroyo · 02–08/11/2026",
+      "raciones": "Cantidades de Fran, salvo indicación contraria",
+      "ingredientes": [
+        "Salmón 195 g",
+        "Aceite de oliva 4 g"
+      ],
+      "elaboracion": "Poner el salmón sobre una plancha bien caliente."
+    },
+    "202611_patatas_guisadas": {
+      "nombre": "Patatas guisadas",
+      "fuente": "PDF Fran Arroyo · 02–08/11/2026",
+      "raciones": "Cantidades de Fran, salvo indicación contraria",
+      "ingredientes": [
+        "Patatas 180 g",
+        "Tomate 90 g",
+        "Cebollas 90 g",
+        "Pimiento 35 g",
+        "Ajo, hierbas aromáticas, sal y pimienta: mencionados en elaboración sin cantidades"
+      ],
+      "elaboracion": "Pelar las patatas y las cebollas; retirar las semillas del pimiento. Cortar las hortalizas y el tomate en trozos. Ponerlas en una cacerola con las hierbas aromáticas, el ajo, sal, pimienta y un vaso de agua. Tapar y cocinar a fuego lento unos 45 minutos.",
+      "nota": "Ración indicada: 400 g; los ingredientes con cantidades expresas no suman exactamente ese peso."
+    },
+    "202611_huevo_escalfado": {
+      "nombre": "Huevo escalfado",
+      "fuente": "PDF Fran Arroyo · 02–08/11/2026",
+      "raciones": "Cantidades de Fran, salvo indicación contraria",
+      "ingredientes": [
+        "Huevo 60 g"
+      ],
+      "elaboracion": "Poner agua a hervir en una cacerola grande. Cascar el huevo en una taza e introducirlo en el agua cuando hierva. Cuando la clara comience a cuajar, recogerla con cuidado sobre la yema. Escurrir con una espumadera y dejar que suelte el agua restante."
+    },
+    "202611_crema_champinones": {
+      "nombre": "Crema de champiñones y patata",
+      "fuente": "PDF Fran Arroyo · 02–08/11/2026",
+      "raciones": "Cantidades de Fran, salvo indicación contraria",
+      "ingredientes": [
+        "Champiñones 100 g",
+        "Leche descremada 100 g",
+        "Patatas 70 g",
+        "Cebolla 25 g",
+        "Aceite de oliva 5 g"
+      ],
+      "elaboracion": "Cocer lentamente los champiñones, la patata y la cebolla, bien limpios, en caldo vegetal o agua. Triturar cuando estén blandos. Añadir la leche descremada para obtener la consistencia deseada."
+    },
+    "202611_patatas_horno": {
+      "nombre": "Patatas al horno",
+      "fuente": "PDF Fran Arroyo · 02–08/11/2026",
+      "raciones": "Cantidades de Fran, salvo indicación contraria",
+      "ingredientes": [
+        "Patatas 190 g",
+        "Aceite de oliva 10 g",
+        "Romero (mencionado sin cantidad)"
+      ],
+      "elaboracion": "Cortar las patatas en rodajas finas. Ponerlas en una fuente, aromatizarlas con romero y hornearlas hasta que estén doradas."
+    },
+    "202611_pollo_curry": {
+      "nombre": "Pollo con curry",
+      "fuente": "PDF Fran Arroyo · 02–08/11/2026",
+      "raciones": "Cantidades de Fran, salvo indicación contraria",
+      "ingredientes": [
+        "Pechuga de pollo 145 g",
+        "Cebolla 55 g",
+        "Curry, sin gramos indicados"
+      ],
+      "elaboracion": "Cocer la cebolla en un poco de agua. Añadir el pollo troceado. Incorporar el curry a mitad de la cocción."
+    },
+    "202611_ensalada_nicoise": {
+      "nombre": "Ensalada niçoise",
+      "fuente": "PDF Fran Arroyo · 02–08/11/2026",
+      "raciones": "Cantidades de Fran, salvo indicación contraria",
+      "ingredientes": [
+        "Huevo 90 g",
+        "Tomate 80 g",
+        "Patata asada 70 g",
+        "Atún en aceite 50 g",
+        "Judías verdes 50 g",
+        "Pimiento 30 g",
+        "Lechuga 30 g",
+        "Aceitunas negras 25 g",
+        "Anchoas en aceite 20 g",
+        "Aceite de oliva 3 g"
+      ],
+      "elaboracion": "Colocar la lechuga en una fuente. Trocear los huevos duros. Cocer las patatas con piel y cocer también las judías verdes. Añadir todos los ingredientes y aliñar con aceite mezclado con vinagre y una pizca de sal.",
+      "nota": "El PDF indica 'patata asada' en ingredientes, pero dice cocerla con piel en la elaboración; ambas menciones se conservan."
+    },
+    "202611_espinacas_huevo": {
+      "nombre": "Espinacas salteadas con huevo",
+      "fuente": "PDF Fran Arroyo · 02–08/11/2026",
+      "raciones": "Cantidades de Fran, salvo indicación contraria",
+      "ingredientes": [
+        "Espinacas 260 g",
+        "Huevo 140 g"
+      ],
+      "elaboracion": "Condimentar al gusto. Utilizar con moderación la sal y las especias.",
+      "nota": "El PDF no proporciona pasos adicionales de cocinado; no se inventa un procedimiento como receta del nutricionista."
+    },
+    "202611_lentejas_estofadas": {
+      "nombre": "Lentejas estofadas",
+      "fuente": "PDF Fran Arroyo · 02–08/11/2026",
+      "raciones": "Cantidades de Fran, salvo indicación contraria",
+      "ingredientes": [
+        "Lentejas 200 g",
+        "Tomate 50 g",
+        "Cebollas 50 g",
+        "Zanahorias 50 g",
+        "Pimiento 40 g",
+        "Harina de trigo 10 g",
+        "Ajo, sin cantidad indicada en los ingredientes"
+      ],
+      "elaboracion": "Cocer las lentejas en agua con una pizca de sal hasta que estén tiernas. Preparar un sofrito con pimiento, zanahoria, ajo y cebolla picados muy pequeños. Añadir el tomate troceado. Retirar el sofrito del fuego, incorporar una pizca de harina, verterlo sobre las lentejas y cocer a fuego lento unos 10 minutos."
     }
   },
   "calendario_21_dias": {
-    "archivo": "data/plan_21_dias_20261104_131444.json",
+    "archivo": "data/plan_21_dias_20261104_132014.json",
     "desde": "2026-11-04",
     "hasta": "2026-11-25",
-    "estado": "FRAN_FIJADO_ALMU_PENDIENTE"
+    "estado": "FRAN_FIJADO_ALMU_PENDIENTE",
+    "version_recetas": "20261104_132014"
+  },
+  "recetas_vinculadas": {
+    "2026-11-04": {
+      "Cena": {
+        "almu": [],
+        "fran": [
+          "202611_pure_verduras"
+        ]
+      }
+    },
+    "2026-11-05": {
+      "Comida": {
+        "almu": [],
+        "fran": [
+          "202611_arroz_cubana"
+        ]
+      },
+      "Cena": {
+        "almu": [],
+        "fran": [
+          "202611_ensalada_remolacha",
+          "202611_salmon_plancha"
+        ]
+      }
+    },
+    "2026-11-06": {
+      "Comida": {
+        "almu": [],
+        "fran": [
+          "202611_patatas_guisadas",
+          "202611_huevo_escalfado"
+        ]
+      },
+      "Cena": {
+        "almu": [],
+        "fran": [
+          "202611_crema_champinones"
+        ]
+      }
+    },
+    "2026-11-07": {
+      "Comida": {
+        "almu": [],
+        "fran": [
+          "202611_patatas_horno",
+          "202611_pollo_curry"
+        ]
+      },
+      "Cena": {
+        "almu": [],
+        "fran": [
+          "202611_ensalada_nicoise"
+        ]
+      }
+    },
+    "2026-11-08": {
+      "Comida": {
+        "almu": [],
+        "fran": []
+      },
+      "Cena": {
+        "almu": [],
+        "fran": [
+          "202611_espinacas_huevo"
+        ]
+      }
+    },
+    "2026-11-09": {
+      "Comida": {
+        "almu": [],
+        "fran": [
+          "202611_macarrones_atun"
+        ]
+      },
+      "Cena": {
+        "almu": [],
+        "fran": [
+          "202611_picadillo_patatas_atun"
+        ]
+      }
+    },
+    "2026-11-10": {
+      "Comida": {
+        "almu": [],
+        "fran": [
+          "202611_arroz_marinera"
+        ]
+      },
+      "Cena": {
+        "almu": [],
+        "fran": [
+          "202611_judias_verdes",
+          "tortilla_francesa"
+        ]
+      }
+    },
+    "2026-11-11": {
+      "Comida": {
+        "almu": [],
+        "fran": [
+          "202611_cuscus_pollo_curry"
+        ]
+      },
+      "Cena": {
+        "almu": [],
+        "fran": [
+          "202611_pure_verduras"
+        ]
+      }
+    },
+    "2026-11-12": {
+      "Comida": {
+        "almu": [],
+        "fran": [
+          "202611_arroz_cubana"
+        ]
+      },
+      "Cena": {
+        "almu": [],
+        "fran": [
+          "202611_ensalada_remolacha",
+          "202611_salmon_plancha"
+        ]
+      }
+    },
+    "2026-11-13": {
+      "Comida": {
+        "almu": [],
+        "fran": []
+      },
+      "Cena": {
+        "almu": [],
+        "fran": []
+      }
+    },
+    "2026-11-14": {
+      "Comida": {
+        "almu": [],
+        "fran": []
+      },
+      "Cena": {
+        "almu": [],
+        "fran": []
+      }
+    },
+    "2026-11-15": {
+      "Comida": {
+        "almu": [],
+        "fran": []
+      },
+      "Cena": {
+        "almu": [],
+        "fran": [
+          "202611_espinacas_huevo"
+        ]
+      }
+    }
   }
 }
