@@ -1,0 +1,1956 @@
+{
+  "estado": "DESGLOSE_CALCULADO_SIN_VALIDAR_POR_DIA",
+  "dias": [
+    {
+      "fecha": "2026-11-04",
+      "dia": "Miércoles",
+      "estado": "PENDIENTE_VALIDACION_USUARIO",
+      "tomas": {
+        "Cena": {
+          "almu": "Puré de verduras 200 g (Patata 70 g; Calabacín 45 g; Zanahoria 45 g; Tomate 35 g; Aceite de oliva 1 g) + Bacalao fresco 200 g (Bacalao fresco 200 g)",
+          "fran": "Puré de verduras 300 g (Patata 105 g; Calabacín 65 g; Zanahoria 65 g; Tomate 55 g; Aceite de oliva 2 g) + Bacalao fresco 200 g (Bacalao fresco 200 g) + Yogur natural desnatado 125 g (Yogur natural desnatado 125 g)",
+          "interpretacion": [
+            "Patata",
+            "Calabacín",
+            "Zanahoria",
+            "Tomate fresco",
+            "Bacalao",
+            "Yogur natural desnatado"
+          ],
+          "total_de_los_dos": [
+            "Bacalao 400 g",
+            "Calabacín 110 g",
+            "Patata 175 g",
+            "Tomate fresco 90 g",
+            "Yogur natural desnatado 125 g",
+            "Zanahoria 110 g"
+          ],
+          "pendientes": []
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-05",
+      "dia": "Jueves",
+      "estado": "PENDIENTE_VALIDACION_USUARIO",
+      "tomas": {
+        "Desayuno": {
+          "almu": "Corn Flakes y leche de soja 230 g (Leche de soja 200 g; Corn Flakes 30 g) + Copos de avena 20 g (Copos de avena 20 g) + Kiwi 60 g (Kiwi 60 g)",
+          "fran": "Tostadas integrales con lomo curado 60 g (Tostadas integrales 30 g; Lomo curado 30 g) + Café cortado descremado 100 g (Café natural 85 g; Leche descremada 15 g) + Ciruelas 30 g (Ciruelas 30 g)",
+          "interpretacion": [
+            "Cereales Corn Flakes",
+            "Copos de avena",
+            "Kiwi",
+            "Pan integral",
+            "Lomo curado",
+            "Ciruelas"
+          ],
+          "total_de_los_dos": [
+            "Cereales Corn Flakes 30 g",
+            "Ciruelas 30 g",
+            "Copos de avena 20 g",
+            "Kiwi 60 g",
+            "Lomo curado 30 g",
+            "Pan integral 30 g"
+          ],
+          "pendientes": []
+        },
+        "Media mañana": {
+          "almu": "Pan tostado con aceite y tomate 50 g (Pan 40 g; Aceite de oliva 6 g; Tomate 5 g) + Queso de Burgos 40 g (Queso de Burgos 40 g)",
+          "fran": "Bocadillo con jamón serrano 130 g (Pan baguette 70 g; Jamón serrano 60 g) + Fruta de temporada 100 g (Fruta de temporada 100 g)",
+          "interpretacion": [
+            "Pan integral",
+            "Tomate fresco",
+            "Queso de Burgos",
+            "Jamón serrano",
+            "Fruta de temporada"
+          ],
+          "total_de_los_dos": [
+            "Fruta de temporada 100 g",
+            "Jamón serrano 60 g",
+            "Pan integral 110 g",
+            "Queso de Burgos 40 g",
+            "Tomate fresco 5 g"
+          ],
+          "pendientes": []
+        },
+        "Comida": {
+          "almu": "Arroz a la cubana con huevo 350 g (Arroz 180 g; Huevo 90 g; Tomate 75 g; Aceite de oliva 4 g)",
+          "fran": "Arroz a la cubana con huevo 400 g (Arroz 210 g; Huevo 105 g; Tomate 85 g; Aceite de oliva 4 g)",
+          "interpretacion": [
+            "Arroz",
+            "Huevo",
+            "Tomate para salsa (formato por confirmar)"
+          ],
+          "total_de_los_dos": [
+            "Arroz 390 g",
+            "Huevo 195 g",
+            "Tomate para salsa (formato por confirmar) 160 g"
+          ],
+          "pendientes": []
+        },
+        "Merienda": {
+          "almu": "Fruta de temporada 150 g (Fruta de temporada 150 g)",
+          "fran": "Tortas de maíz 30 g (Tortas de maíz 30 g) + Fruta de temporada 100 g (Fruta de temporada 100 g)",
+          "interpretacion": [
+            "Fruta de temporada",
+            "Tortas de maíz"
+          ],
+          "total_de_los_dos": [
+            "Fruta de temporada 250 g",
+            "Tortas de maíz 30 g"
+          ],
+          "pendientes": []
+        },
+        "Cena": {
+          "almu": "Ensalada de remolacha 200 g (Remolacha 125 g; Yogur natural desnatado 40 g; Rábanos 10 g; Zumo de limón 10 g; Pepino a la vinagreta 10 g) + Salmón a la plancha 150 g (Salmón 145 g; Aceite de oliva 3 g)",
+          "fran": "Ensalada de remolacha 250 g (Remolacha 155 g; Yogur natural desnatado 45 g; Rábanos 15 g; Zumo de limón 15 g; Pepino a la vinagreta 15 g) + Salmón a la plancha 200 g (Salmón 195 g; Aceite de oliva 4 g) + Yogur natural desnatado 125 g (Yogur natural desnatado 125 g)",
+          "interpretacion": [
+            "Remolacha",
+            "Yogur natural desnatado",
+            "Rábanos",
+            "Zumo de limón",
+            "Pepino a la vinagreta",
+            "Salmón"
+          ],
+          "total_de_los_dos": [
+            "Pepino a la vinagreta 25 g",
+            "Rábanos 25 g",
+            "Remolacha 280 g",
+            "Salmón 340 g",
+            "Yogur natural desnatado 210 g",
+            "Zumo de limón 25 g"
+          ],
+          "pendientes": []
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-06",
+      "dia": "Viernes",
+      "estado": "PENDIENTE_VALIDACION_USUARIO",
+      "tomas": {
+        "Desayuno": {
+          "almu": "Corn Flakes y leche de soja 230 g (Leche de soja 200 g; Corn Flakes 30 g) + Copos de avena 20 g (Copos de avena 20 g) + Kiwi 60 g (Kiwi 60 g)",
+          "fran": "Corn Flakes con leche de soja 230 g (Leche de soja 200 g; Corn Flakes 30 g) + Café cortado descremado 100 g (Café natural 85 g; Leche descremada 15 g) + Ciruelas 30 g (Ciruelas 30 g)",
+          "interpretacion": [
+            "Cereales Corn Flakes",
+            "Copos de avena",
+            "Kiwi",
+            "Ciruelas"
+          ],
+          "total_de_los_dos": [
+            "Cereales Corn Flakes 60 g",
+            "Ciruelas 30 g",
+            "Copos de avena 20 g",
+            "Kiwi 60 g"
+          ],
+          "pendientes": []
+        },
+        "Media mañana": {
+          "almu": "Pan tostado con aceite y tomate 50 g (Pan 40 g; Aceite de oliva 6 g; Tomate 5 g) + Jamón serrano 30 g (Jamón serrano 30 g)",
+          "fran": "Bocadillo de jamón York y tomate 150 g (Pan baguette 85 g; Jamón York 35 g; Tomate 35 g) + Fruta de temporada 100 g (Fruta de temporada 100 g)",
+          "interpretacion": [
+            "Pan integral",
+            "Tomate fresco",
+            "Jamón serrano",
+            "Jamón York",
+            "Fruta de temporada"
+          ],
+          "total_de_los_dos": [
+            "Fruta de temporada 100 g",
+            "Jamón serrano 30 g",
+            "Jamón York 35 g",
+            "Pan integral 125 g",
+            "Tomate fresco 40 g"
+          ],
+          "pendientes": []
+        },
+        "Comida": {
+          "almu": "Patatas guisadas 250 g (Patata 115 g; Tomate 55 g; Cebolla 55 g; Pimiento 25 g) + Huevo escalfado 60 g (Huevo 60 g)",
+          "fran": "Patatas guisadas 400 g (Patatas 180 g; Tomate 90 g; Cebolla 90 g; Pimiento 35 g) + Huevo escalfado 60 g (Huevo 60 g)",
+          "interpretacion": [
+            "Patata",
+            "Tomate fresco",
+            "Cebolla",
+            "Pimiento",
+            "Huevo"
+          ],
+          "total_de_los_dos": [
+            "Cebolla 145 g",
+            "Huevo 120 g",
+            "Patata 295 g",
+            "Pimiento 60 g",
+            "Tomate fresco 145 g"
+          ],
+          "pendientes": []
+        },
+        "Merienda": {
+          "almu": "Fruta de temporada 150 g (Fruta de temporada 150 g)",
+          "fran": "Tortas de maíz 30 g (Tortas de maíz 30 g) + Fruta de temporada 100 g (Fruta de temporada 100 g)",
+          "interpretacion": [
+            "Fruta de temporada",
+            "Tortas de maíz"
+          ],
+          "total_de_los_dos": [
+            "Fruta de temporada 250 g",
+            "Tortas de maíz 30 g"
+          ],
+          "pendientes": []
+        },
+        "Cena": {
+          "almu": "Crema de champiñones y patata 200 g (Champiñones 65 g; Leche descremada 65 g; Patata 45 g; Cebolla 15 g; Aceite de oliva 3 g) + Merluza a la plancha 200 g (Merluza 195 g; Aceite de oliva 6 g)",
+          "fran": "Crema de champiñones y patata 300 g (Champiñones 100 g; Leche descremada 100 g; Patata 70 g; Cebolla 25 g; Aceite de oliva 5 g) + Merluza a la plancha 200 g (Merluza 195 g; Aceite de oliva 6 g) + Yogur natural desnatado 125 g (Yogur natural desnatado 125 g)",
+          "interpretacion": [
+            "Champiñones",
+            "Patata",
+            "Cebolla",
+            "Merluza",
+            "Yogur natural desnatado"
+          ],
+          "total_de_los_dos": [
+            "Cebolla 40 g",
+            "Champiñones 165 g",
+            "Merluza 390 g",
+            "Patata 115 g",
+            "Yogur natural desnatado 125 g"
+          ],
+          "pendientes": []
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-07",
+      "dia": "Sábado",
+      "estado": "PENDIENTE_VALIDACION_USUARIO",
+      "tomas": {
+        "Desayuno": {
+          "almu": "Corn Flakes y leche de soja 230 g (Leche de soja 200 g; Corn Flakes 30 g) + Copos de avena 20 g (Copos de avena 20 g) + Kiwi 60 g (Kiwi 60 g)",
+          "fran": "Corn Flakes con leche de soja 230 g (Leche de soja 200 g; Corn Flakes 30 g) + Copos de avena 50 g (Copos de avena 50 g) + Café cortado descremado 100 g (Café natural 85 g; Leche descremada 15 g) + Ciruelas 30 g (Ciruelas 30 g)",
+          "interpretacion": [
+            "Cereales Corn Flakes",
+            "Copos de avena",
+            "Kiwi",
+            "Ciruelas"
+          ],
+          "total_de_los_dos": [
+            "Cereales Corn Flakes 60 g",
+            "Ciruelas 30 g",
+            "Copos de avena 70 g",
+            "Kiwi 60 g"
+          ],
+          "pendientes": []
+        },
+        "Media mañana": {
+          "almu": "Tostadas integrales con jamón York 60 g (Tostadas integrales 30 g; Jamón York 30 g)",
+          "fran": "Tortas de maíz 30 g (Tortas de maíz 30 g) + Fruta de temporada 200 g (Fruta de temporada 200 g)",
+          "interpretacion": [
+            "Pan integral",
+            "Jamón York",
+            "Tortas de maíz",
+            "Fruta de temporada"
+          ],
+          "total_de_los_dos": [
+            "Fruta de temporada 200 g",
+            "Jamón York 30 g",
+            "Pan integral 30 g",
+            "Tortas de maíz 30 g"
+          ],
+          "pendientes": []
+        },
+        "Comida": {
+          "almu": "Patatas al horno 200 g (Patata 190 g; Aceite de oliva 10 g) + Pollo con curry 150 g (Pechuga de pollo 105 g; Cebolla 45 g; Curry sin cantidad prescrita)",
+          "fran": "Patatas al horno 200 g (Patatas 190 g; Aceite de oliva 10 g) + Pollo con curry 200 g (Pechuga de pollo 145 g; Cebolla 55 g; Curry sin gramos)",
+          "interpretacion": [
+            "Patata",
+            "Pechuga de pollo fresca",
+            "Cebolla",
+            "Curry sin cantidad prescrita",
+            "Curry sin gramos"
+          ],
+          "total_de_los_dos": [
+            "Cebolla 100 g",
+            "Patata 380 g",
+            "Pechuga de pollo fresca 250 g"
+          ],
+          "pendientes": [
+            "Curry sin cantidad prescrita",
+            "Curry sin gramos"
+          ]
+        },
+        "Merienda": {
+          "almu": "Fruta de temporada 150 g (Fruta de temporada 150 g)",
+          "fran": "Queso de Burgos 60 g (Queso de Burgos 60 g) + Fruta de temporada 100 g (Fruta de temporada 100 g)",
+          "interpretacion": [
+            "Fruta de temporada",
+            "Queso de Burgos"
+          ],
+          "total_de_los_dos": [
+            "Fruta de temporada 250 g",
+            "Queso de Burgos 60 g"
+          ],
+          "pendientes": []
+        },
+        "Cena": {
+          "almu": "Tacos de pollo 250 g (Tacos de pollo (preparado) 125 g; Pan sin gluten 50 g; Pechuga de pollo 30 g; Pimiento 30 g; Cebolla 10 g)",
+          "fran": "Tacos de pollo 350 g (Pechuga de pollo fresca 217 g; Pan integral 70 g; Pimiento 42 g; Cebolla 14 g) + Yogur natural desnatado 125 g (Yogur natural desnatado 125 g)",
+          "interpretacion": [
+            "Pechuga de pollo fresca",
+            "Pan sin gluten",
+            "Pimiento",
+            "Cebolla",
+            "Pan integral",
+            "Yogur natural desnatado",
+            "Preparado de tacos de 125 g de Almu: producto distinto de los 30 g de pechuga, composición desconocida."
+          ],
+          "total_de_los_dos": [
+            "Cebolla 24 g",
+            "Pan integral 70 g",
+            "Pan sin gluten 50 g",
+            "Pechuga de pollo fresca 247 g",
+            "Pimiento 72 g",
+            "Preparado de tacos de pollo (composición sin especificar) 125 g",
+            "Yogur natural desnatado 125 g"
+          ],
+          "pendientes": [
+            "Comprobar qué contiene el preparado de 125 g de Almu",
+            "Fran: ingredientes calculados suman 343 g, ración de tacos aprobada 350 g."
+          ]
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-08",
+      "dia": "Domingo",
+      "estado": "PENDIENTE_VALIDACION_USUARIO",
+      "tomas": {
+        "Desayuno": {
+          "almu": "Corn Flakes y leche de soja 230 g (Leche de soja 200 g; Corn Flakes 30 g) + Copos de avena 20 g (Copos de avena 20 g) + Kiwi 60 g (Kiwi 60 g)",
+          "fran": "Tostadas integrales con tomate y aceite 50 g (Tostadas integrales 40 g; Tomate 5 g; Aceite de oliva 6 g) + Café cortado descremado 100 g (Café natural 85 g; Leche descremada 15 g) + Ciruelas 30 g (Ciruelas 30 g)",
+          "interpretacion": [
+            "Cereales Corn Flakes",
+            "Copos de avena",
+            "Kiwi",
+            "Pan integral",
+            "Tomate fresco",
+            "Ciruelas"
+          ],
+          "total_de_los_dos": [
+            "Cereales Corn Flakes 30 g",
+            "Ciruelas 30 g",
+            "Copos de avena 20 g",
+            "Kiwi 60 g",
+            "Pan integral 40 g",
+            "Tomate fresco 5 g"
+          ],
+          "pendientes": []
+        },
+        "Media mañana": {
+          "almu": "Tostadas integrales con jamón York 60 g (Tostadas integrales 30 g; Jamón York 30 g)",
+          "fran": "Tortas de maíz 30 g (Tortas de maíz 30 g) + Fruta de temporada 200 g (Fruta de temporada 200 g)",
+          "interpretacion": [
+            "Pan integral",
+            "Jamón York",
+            "Tortas de maíz",
+            "Fruta de temporada"
+          ],
+          "total_de_los_dos": [
+            "Fruta de temporada 200 g",
+            "Jamón York 30 g",
+            "Pan integral 30 g",
+            "Tortas de maíz 30 g"
+          ],
+          "pendientes": []
+        },
+        "Comida": {
+          "almu": "Aluche · LIBRE",
+          "fran": "Aluche · LIBRE",
+          "interpretacion": [],
+          "total_de_los_dos": [],
+          "pendientes": []
+        },
+        "Merienda": {
+          "almu": "Fruta de temporada 150 g (Fruta de temporada 150 g)",
+          "fran": "Queso de Burgos 60 g (Queso de Burgos 60 g) + Fruta de temporada 100 g (Fruta de temporada 100 g)",
+          "interpretacion": [
+            "Fruta de temporada",
+            "Queso de Burgos"
+          ],
+          "total_de_los_dos": [
+            "Fruta de temporada 250 g",
+            "Queso de Burgos 60 g"
+          ],
+          "pendientes": []
+        },
+        "Cena": {
+          "almu": "Espinacas salteadas con huevo 300 g (Espinacas 195 g; Huevo 105 g)",
+          "fran": "Espinacas salteadas con huevo 400 g (Espinacas 260 g; Huevo 140 g) + Yogur natural desnatado 125 g (Yogur natural desnatado 125 g)",
+          "interpretacion": [
+            "Espinacas",
+            "Huevo",
+            "Yogur natural desnatado"
+          ],
+          "total_de_los_dos": [
+            "Espinacas 455 g",
+            "Huevo 245 g",
+            "Yogur natural desnatado 125 g"
+          ],
+          "pendientes": []
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-09",
+      "dia": "Lunes",
+      "estado": "PENDIENTE_VALIDACION_USUARIO",
+      "tomas": {
+        "Desayuno": {
+          "almu": "Corn Flakes y leche de soja 230 g (Leche de soja 200 g; Corn Flakes 30 g) + Copos de avena 20 g (Copos de avena 20 g) + Kiwi 60 g (Kiwi 60 g)",
+          "fran": "Corn Flakes con leche de soja 230 g (Leche de soja 200 g; Corn Flakes 30 g) + Copos de avena 50 g (Copos de avena 50 g) + Café cortado descremado 100 g (Café natural 85 g; Leche descremada 15 g) + Ciruelas 30 g (Ciruelas 30 g)",
+          "interpretacion": [
+            "Cereales Corn Flakes",
+            "Copos de avena",
+            "Kiwi",
+            "Ciruelas"
+          ],
+          "total_de_los_dos": [
+            "Cereales Corn Flakes 60 g",
+            "Ciruelas 30 g",
+            "Copos de avena 70 g",
+            "Kiwi 60 g"
+          ],
+          "pendientes": []
+        },
+        "Media mañana": {
+          "almu": "Pan tostado con aceite y tomate 50 g (Pan 40 g; Aceite de oliva 6 g; Tomate 5 g) + Jamón serrano 30 g (Jamón serrano 30 g)",
+          "fran": "Bocadillo de jamón York y tomate 150 g (Pan baguette 85 g; Jamón York 35 g; Tomate 35 g) + Fruta de temporada 100 g (Fruta de temporada 100 g)",
+          "interpretacion": [
+            "Pan integral",
+            "Tomate fresco",
+            "Jamón serrano",
+            "Jamón York",
+            "Fruta de temporada"
+          ],
+          "total_de_los_dos": [
+            "Fruta de temporada 100 g",
+            "Jamón serrano 30 g",
+            "Jamón York 35 g",
+            "Pan integral 125 g",
+            "Tomate fresco 40 g"
+          ],
+          "pendientes": []
+        },
+        "Comida": {
+          "almu": "Macarrones con atún 300 g (Macarrones 160 g; Tomate 80 g; Atún en aceite 55 g)",
+          "fran": "Macarrones con atún 400 g (Macarrones 215 g; Tomate 110 g; Atún en aceite 75 g)",
+          "interpretacion": [
+            "Macarrones",
+            "Tomate para salsa (formato por confirmar)",
+            "Atún en conserva"
+          ],
+          "total_de_los_dos": [
+            "Atún en conserva 130 g",
+            "Macarrones 375 g",
+            "Tomate para salsa (formato por confirmar) 190 g"
+          ],
+          "pendientes": []
+        },
+        "Merienda": {
+          "almu": "Fruta de temporada 150 g (Fruta de temporada 150 g)",
+          "fran": "Tortas de maíz 30 g (Tortas de maíz 30 g) + Fruta de temporada 100 g (Fruta de temporada 100 g)",
+          "interpretacion": [
+            "Fruta de temporada",
+            "Tortas de maíz"
+          ],
+          "total_de_los_dos": [
+            "Fruta de temporada 250 g",
+            "Tortas de maíz 30 g"
+          ],
+          "pendientes": []
+        },
+        "Cena": {
+          "almu": "Picadillo de patatas con atún 250 g (Patata hervida 85 g; Tomate 55 g; Huevo 50 g; Atún en aceite 30 g; Pimiento 25 g)",
+          "fran": "Picadillo de patatas con atún 400 g (Patata hervida 140 g; Tomate 85 g; Huevo 80 g; Atún en aceite 50 g; Pimiento 45 g) + Yogur natural desnatado 125 g (Yogur natural desnatado 125 g)",
+          "interpretacion": [
+            "Patata",
+            "Tomate fresco",
+            "Huevo",
+            "Atún en conserva",
+            "Pimiento",
+            "Yogur natural desnatado"
+          ],
+          "total_de_los_dos": [
+            "Atún en conserva 80 g",
+            "Huevo 130 g",
+            "Patata 225 g",
+            "Pimiento 70 g",
+            "Tomate fresco 140 g",
+            "Yogur natural desnatado 125 g"
+          ],
+          "pendientes": []
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-10",
+      "dia": "Martes",
+      "estado": "PENDIENTE_VALIDACION_USUARIO",
+      "tomas": {
+        "Desayuno": {
+          "almu": "Corn Flakes y leche de soja 230 g (Leche de soja 200 g; Corn Flakes 30 g) + Copos de avena 20 g (Copos de avena 20 g) + Kiwi 60 g (Kiwi 60 g)",
+          "fran": "Tostadas integrales con jamón York 80 g (Tostadas integrales 45 g; Jamón York 35 g) + Café cortado descremado 100 g (Café natural 85 g; Leche descremada 15 g) + Ciruelas 30 g (Ciruelas 30 g)",
+          "interpretacion": [
+            "Cereales Corn Flakes",
+            "Copos de avena",
+            "Kiwi",
+            "Pan integral",
+            "Jamón York",
+            "Ciruelas"
+          ],
+          "total_de_los_dos": [
+            "Cereales Corn Flakes 30 g",
+            "Ciruelas 30 g",
+            "Copos de avena 20 g",
+            "Jamón York 35 g",
+            "Kiwi 60 g",
+            "Pan integral 45 g"
+          ],
+          "pendientes": []
+        },
+        "Media mañana": {
+          "almu": "Pan tostado con aceite y tomate 50 g (Pan 40 g; Aceite de oliva 6 g; Tomate 5 g) + Queso de Burgos 40 g (Queso de Burgos 40 g)",
+          "fran": "Bocadillo con jamón serrano 130 g (Pan baguette 70 g; Jamón serrano 60 g) + Fruta de temporada 100 g (Fruta de temporada 100 g)",
+          "interpretacion": [
+            "Pan integral",
+            "Tomate fresco",
+            "Queso de Burgos",
+            "Jamón serrano",
+            "Fruta de temporada"
+          ],
+          "total_de_los_dos": [
+            "Fruta de temporada 100 g",
+            "Jamón serrano 60 g",
+            "Pan integral 110 g",
+            "Queso de Burgos 40 g",
+            "Tomate fresco 5 g"
+          ],
+          "pendientes": []
+        },
+        "Comida": {
+          "almu": "Arroz a la marinera 350 g (Arroz 115 g; Almejas frescas 70 g; Gambas 70 g; Sepia 70 g; Cebolla 35 g; Ajo sin cantidad prescrita)",
+          "fran": "Arroz a la marinera 450 g (Arroz 145 g; Almejas frescas 85 g; Gambas 85 g; Sepia 85 g; Cebolla 45 g; Ajo sin cantidad indicada)",
+          "interpretacion": [
+            "Arroz",
+            "Almejas frescas",
+            "Gambas",
+            "Sepia",
+            "Cebolla",
+            "Ajo sin cantidad prescrita",
+            "Ajo sin cantidad indicada"
+          ],
+          "total_de_los_dos": [
+            "Almejas frescas 155 g",
+            "Arroz 260 g",
+            "Cebolla 80 g",
+            "Gambas 155 g",
+            "Sepia 155 g"
+          ],
+          "pendientes": [
+            "Ajo sin cantidad prescrita",
+            "Ajo sin cantidad indicada"
+          ]
+        },
+        "Merienda": {
+          "almu": "Fruta de temporada 150 g (Fruta de temporada 150 g)",
+          "fran": "Tortas de maíz 30 g (Tortas de maíz 30 g) + Fruta de temporada 100 g (Fruta de temporada 100 g)",
+          "interpretacion": [
+            "Fruta de temporada",
+            "Tortas de maíz"
+          ],
+          "total_de_los_dos": [
+            "Fruta de temporada 250 g",
+            "Tortas de maíz 30 g"
+          ],
+          "pendientes": []
+        },
+        "Cena": {
+          "almu": "Judías verdes salteadas 150 g (Judías verdes 65 g; Zanahoria 40 g; Patata 35 g; Jamón serrano 10 g; Aceite de oliva 3 g) + Tortilla francesa 120 g (Huevo 115 g; Aceite de oliva 4 g)",
+          "fran": "Judías verdes salteadas 240 g (Judías verdes 105 g; Zanahoria 65 g; Patata 55 g; Jamón serrano 10 g; Aceite de oliva 4 g) + Tortilla francesa 120 g (Huevo 115 g; Aceite de oliva 4 g) + Yogur natural desnatado 125 g (Yogur natural desnatado 125 g)",
+          "interpretacion": [
+            "Judías verdes",
+            "Zanahoria",
+            "Patata",
+            "Jamón serrano",
+            "Huevo",
+            "Yogur natural desnatado"
+          ],
+          "total_de_los_dos": [
+            "Huevo 230 g",
+            "Jamón serrano 20 g",
+            "Judías verdes 170 g",
+            "Patata 90 g",
+            "Yogur natural desnatado 125 g",
+            "Zanahoria 105 g"
+          ],
+          "pendientes": []
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-11",
+      "dia": "Miércoles",
+      "estado": "PENDIENTE_VALIDACION_USUARIO",
+      "tomas": {
+        "Desayuno": {
+          "almu": "Corn Flakes y leche de soja 230 g (Leche de soja 200 g; Corn Flakes 30 g) + Copos de avena 20 g (Copos de avena 20 g) + Kiwi 60 g (Kiwi 60 g)",
+          "fran": "Tostadas integrales con tomate y aceite 30 g (Tostadas integrales 25 g; Tomate 5 g; Aceite de oliva 3 g) + Café cortado descremado 100 g (Café natural 85 g; Leche descremada 15 g) + Café cortado descremado 100 g (Café natural 85 g; Leche descremada 15 g) + Ciruelas 30 g (Ciruelas 30 g)",
+          "interpretacion": [
+            "Cereales Corn Flakes",
+            "Copos de avena",
+            "Kiwi",
+            "Pan integral",
+            "Tomate fresco",
+            "Ciruelas"
+          ],
+          "total_de_los_dos": [
+            "Cereales Corn Flakes 30 g",
+            "Ciruelas 30 g",
+            "Copos de avena 20 g",
+            "Kiwi 60 g",
+            "Pan integral 25 g",
+            "Tomate fresco 5 g"
+          ],
+          "pendientes": []
+        },
+        "Media mañana": {
+          "almu": "Pan tostado con aceite y tomate 50 g (Pan 40 g; Aceite de oliva 6 g; Tomate 5 g) + Jamón serrano 30 g (Jamón serrano 30 g)",
+          "fran": "Bocadillo de pollo 150 g (Pan baguette 80 g; Pechuga de pollo 55 g; Lechuga 15 g) + Fruta de temporada 100 g (Fruta de temporada 100 g)",
+          "interpretacion": [
+            "Pan integral",
+            "Tomate fresco",
+            "Jamón serrano",
+            "Pechuga de pollo fresca",
+            "Lechuga",
+            "Fruta de temporada"
+          ],
+          "total_de_los_dos": [
+            "Fruta de temporada 100 g",
+            "Jamón serrano 30 g",
+            "Lechuga 15 g",
+            "Pan integral 120 g",
+            "Pechuga de pollo fresca 55 g",
+            "Tomate fresco 5 g"
+          ],
+          "pendientes": []
+        },
+        "Comida": {
+          "almu": "Cuscús con pollo al curry 250 g (Cuscús con pollo, plato preparado 250 g)",
+          "fran": "Cuscús con pollo al curry 350 g (Cuscús con pollo, plato preparado 350 g)",
+          "interpretacion": [
+            "Cuscús seco · receta completa (rendimiento por confirmar)",
+            "Receta completa: 1 pechuga de pollo, 1 cebolla, ½ pimiento verde, ½ rojo, 1 zanahoria grande y 1 ajo. Pesos y rendimiento por verificar."
+          ],
+          "total_de_los_dos": [
+            "Cuscús seco · receta completa (rendimiento por confirmar) 125 g"
+          ],
+          "pendientes": [
+            "Receta completa: 1 pechuga de pollo, 1 cebolla, ½ pimiento verde, ½ rojo, 1 zanahoria grande y 1 ajo. Pesos y rendimiento por verificar."
+          ]
+        },
+        "Merienda": {
+          "almu": "Fruta de temporada 150 g (Fruta de temporada 150 g)",
+          "fran": "Tortas de maíz 30 g (Tortas de maíz 30 g) + Fruta de temporada 100 g (Fruta de temporada 100 g)",
+          "interpretacion": [
+            "Fruta de temporada",
+            "Tortas de maíz"
+          ],
+          "total_de_los_dos": [
+            "Fruta de temporada 250 g",
+            "Tortas de maíz 30 g"
+          ],
+          "pendientes": []
+        },
+        "Cena": {
+          "almu": "Puré de verduras 200 g (Patata 70 g; Calabacín 45 g; Zanahoria 45 g; Tomate 35 g; Aceite de oliva 1 g) + Bacalao fresco 200 g (Bacalao fresco 200 g)",
+          "fran": "Puré de verduras 300 g (Patata 105 g; Calabacín 65 g; Zanahoria 65 g; Tomate 55 g; Aceite de oliva 2 g) + Bacalao fresco 200 g (Bacalao fresco 200 g) + Yogur natural desnatado 125 g (Yogur natural desnatado 125 g)",
+          "interpretacion": [
+            "Patata",
+            "Calabacín",
+            "Zanahoria",
+            "Tomate fresco",
+            "Bacalao",
+            "Yogur natural desnatado"
+          ],
+          "total_de_los_dos": [
+            "Bacalao 400 g",
+            "Calabacín 110 g",
+            "Patata 175 g",
+            "Tomate fresco 90 g",
+            "Yogur natural desnatado 125 g",
+            "Zanahoria 110 g"
+          ],
+          "pendientes": []
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-12",
+      "dia": "Jueves",
+      "estado": "PENDIENTE_VALIDACION_USUARIO",
+      "tomas": {
+        "Desayuno": {
+          "almu": "Corn Flakes y leche de soja 230 g (Leche de soja 200 g; Corn Flakes 30 g) + Copos de avena 20 g (Copos de avena 20 g) + Kiwi 60 g (Kiwi 60 g)",
+          "fran": "Tostadas integrales con lomo curado 60 g (Tostadas integrales 30 g; Lomo curado 30 g) + Café cortado descremado 100 g (Café natural 85 g; Leche descremada 15 g) + Ciruelas 30 g (Ciruelas 30 g)",
+          "interpretacion": [
+            "Cereales Corn Flakes",
+            "Copos de avena",
+            "Kiwi",
+            "Pan integral",
+            "Lomo curado",
+            "Ciruelas"
+          ],
+          "total_de_los_dos": [
+            "Cereales Corn Flakes 30 g",
+            "Ciruelas 30 g",
+            "Copos de avena 20 g",
+            "Kiwi 60 g",
+            "Lomo curado 30 g",
+            "Pan integral 30 g"
+          ],
+          "pendientes": []
+        },
+        "Media mañana": {
+          "almu": "Pan tostado con aceite y tomate 50 g (Pan 40 g; Aceite de oliva 6 g; Tomate 5 g) + Queso de Burgos 40 g (Queso de Burgos 40 g)",
+          "fran": "Bocadillo con jamón serrano 130 g (Pan baguette 70 g; Jamón serrano 60 g) + Fruta de temporada 100 g (Fruta de temporada 100 g)",
+          "interpretacion": [
+            "Pan integral",
+            "Tomate fresco",
+            "Queso de Burgos",
+            "Jamón serrano",
+            "Fruta de temporada"
+          ],
+          "total_de_los_dos": [
+            "Fruta de temporada 100 g",
+            "Jamón serrano 60 g",
+            "Pan integral 110 g",
+            "Queso de Burgos 40 g",
+            "Tomate fresco 5 g"
+          ],
+          "pendientes": []
+        },
+        "Comida": {
+          "almu": "Arroz a la cubana con huevo 350 g (Arroz 180 g; Huevo 90 g; Tomate 75 g; Aceite de oliva 4 g)",
+          "fran": "Arroz a la cubana con huevo 400 g (Arroz 210 g; Huevo 105 g; Tomate 85 g; Aceite de oliva 4 g)",
+          "interpretacion": [
+            "Arroz",
+            "Huevo",
+            "Tomate para salsa (formato por confirmar)"
+          ],
+          "total_de_los_dos": [
+            "Arroz 390 g",
+            "Huevo 195 g",
+            "Tomate para salsa (formato por confirmar) 160 g"
+          ],
+          "pendientes": []
+        },
+        "Merienda": {
+          "almu": "Fruta de temporada 150 g (Fruta de temporada 150 g)",
+          "fran": "Tortas de maíz 30 g (Tortas de maíz 30 g) + Fruta de temporada 100 g (Fruta de temporada 100 g)",
+          "interpretacion": [
+            "Fruta de temporada",
+            "Tortas de maíz"
+          ],
+          "total_de_los_dos": [
+            "Fruta de temporada 250 g",
+            "Tortas de maíz 30 g"
+          ],
+          "pendientes": []
+        },
+        "Cena": {
+          "almu": "Ensalada de remolacha 200 g (Remolacha 125 g; Yogur natural desnatado 40 g; Rábanos 10 g; Zumo de limón 10 g; Pepino a la vinagreta 10 g) + Salmón a la plancha 150 g (Salmón 145 g; Aceite de oliva 3 g)",
+          "fran": "Ensalada de remolacha 250 g (Remolacha 155 g; Yogur natural desnatado 45 g; Rábanos 15 g; Zumo de limón 15 g; Pepino a la vinagreta 15 g) + Salmón a la plancha 200 g (Salmón 195 g; Aceite de oliva 4 g) + Yogur natural desnatado 125 g (Yogur natural desnatado 125 g)",
+          "interpretacion": [
+            "Remolacha",
+            "Yogur natural desnatado",
+            "Rábanos",
+            "Zumo de limón",
+            "Pepino a la vinagreta",
+            "Salmón"
+          ],
+          "total_de_los_dos": [
+            "Pepino a la vinagreta 25 g",
+            "Rábanos 25 g",
+            "Remolacha 280 g",
+            "Salmón 340 g",
+            "Yogur natural desnatado 210 g",
+            "Zumo de limón 25 g"
+          ],
+          "pendientes": []
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-13",
+      "dia": "Viernes",
+      "estado": "PENDIENTE_VALIDACION_USUARIO",
+      "tomas": {
+        "Desayuno": {
+          "almu": "Corn Flakes y leche de soja 230 g (Leche de soja 200 g; Corn Flakes 30 g) + Copos de avena 20 g (Copos de avena 20 g) + Kiwi 60 g (Kiwi 60 g)",
+          "fran": "Corn Flakes con leche de soja 230 g (Leche de soja 200 g; Corn Flakes 30 g) + Café cortado descremado 100 g (Café natural 85 g; Leche descremada 15 g) + Ciruelas 30 g (Ciruelas 30 g)",
+          "interpretacion": [
+            "Cereales Corn Flakes",
+            "Copos de avena",
+            "Kiwi",
+            "Ciruelas"
+          ],
+          "total_de_los_dos": [
+            "Cereales Corn Flakes 60 g",
+            "Ciruelas 30 g",
+            "Copos de avena 20 g",
+            "Kiwi 60 g"
+          ],
+          "pendientes": []
+        },
+        "Media mañana": {
+          "almu": "Pan tostado con aceite y tomate 50 g (Pan 40 g; Aceite de oliva 6 g; Tomate 5 g) + Jamón serrano 30 g (Jamón serrano 30 g)",
+          "fran": "Bocadillo de jamón York y tomate 150 g (Pan baguette 85 g; Jamón York 35 g; Tomate 35 g) + Fruta de temporada 100 g (Fruta de temporada 100 g)",
+          "interpretacion": [
+            "Pan integral",
+            "Tomate fresco",
+            "Jamón serrano",
+            "Jamón York",
+            "Fruta de temporada"
+          ],
+          "total_de_los_dos": [
+            "Fruta de temporada 100 g",
+            "Jamón serrano 30 g",
+            "Jamón York 35 g",
+            "Pan integral 125 g",
+            "Tomate fresco 40 g"
+          ],
+          "pendientes": []
+        },
+        "Comida": {
+          "almu": "Cartagena · LIBRE",
+          "fran": "Cartagena · LIBRE",
+          "interpretacion": [],
+          "total_de_los_dos": [],
+          "pendientes": []
+        },
+        "Merienda": {
+          "almu": "Fruta de temporada 150 g (Fruta de temporada 150 g)",
+          "fran": "Tortas de maíz 30 g (Tortas de maíz 30 g) + Fruta de temporada 100 g (Fruta de temporada 100 g)",
+          "interpretacion": [
+            "Fruta de temporada",
+            "Tortas de maíz"
+          ],
+          "total_de_los_dos": [
+            "Fruta de temporada 250 g",
+            "Tortas de maíz 30 g"
+          ],
+          "pendientes": []
+        },
+        "Cena": {
+          "almu": "Cartagena · LIBRE",
+          "fran": "Cartagena · LIBRE",
+          "interpretacion": [],
+          "total_de_los_dos": [],
+          "pendientes": []
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-14",
+      "dia": "Sábado",
+      "estado": "PENDIENTE_VALIDACION_USUARIO",
+      "tomas": {
+        "Desayuno": {
+          "almu": "Corn Flakes y leche de soja 230 g (Leche de soja 200 g; Corn Flakes 30 g) + Copos de avena 20 g (Copos de avena 20 g) + Kiwi 60 g (Kiwi 60 g)",
+          "fran": "Corn Flakes con leche de soja 230 g (Leche de soja 200 g; Corn Flakes 30 g) + Copos de avena 50 g (Copos de avena 50 g) + Café cortado descremado 100 g (Café natural 85 g; Leche descremada 15 g) + Ciruelas 30 g (Ciruelas 30 g)",
+          "interpretacion": [
+            "Cereales Corn Flakes",
+            "Copos de avena",
+            "Kiwi",
+            "Ciruelas"
+          ],
+          "total_de_los_dos": [
+            "Cereales Corn Flakes 60 g",
+            "Ciruelas 30 g",
+            "Copos de avena 70 g",
+            "Kiwi 60 g"
+          ],
+          "pendientes": []
+        },
+        "Media mañana": {
+          "almu": "Tostadas integrales con jamón York 60 g (Tostadas integrales 30 g; Jamón York 30 g)",
+          "fran": "Tortas de maíz 30 g (Tortas de maíz 30 g) + Fruta de temporada 200 g (Fruta de temporada 200 g)",
+          "interpretacion": [
+            "Pan integral",
+            "Jamón York",
+            "Tortas de maíz",
+            "Fruta de temporada"
+          ],
+          "total_de_los_dos": [
+            "Fruta de temporada 200 g",
+            "Jamón York 30 g",
+            "Pan integral 30 g",
+            "Tortas de maíz 30 g"
+          ],
+          "pendientes": []
+        },
+        "Comida": {
+          "almu": "Cartagena · LIBRE",
+          "fran": "Cartagena · LIBRE",
+          "interpretacion": [],
+          "total_de_los_dos": [],
+          "pendientes": []
+        },
+        "Merienda": {
+          "almu": "Fruta de temporada 150 g (Fruta de temporada 150 g)",
+          "fran": "Queso de Burgos 60 g (Queso de Burgos 60 g) + Fruta de temporada 100 g (Fruta de temporada 100 g)",
+          "interpretacion": [
+            "Fruta de temporada",
+            "Queso de Burgos"
+          ],
+          "total_de_los_dos": [
+            "Fruta de temporada 250 g",
+            "Queso de Burgos 60 g"
+          ],
+          "pendientes": []
+        },
+        "Cena": {
+          "almu": "Cartagena · LIBRE",
+          "fran": "Cartagena · LIBRE",
+          "interpretacion": [],
+          "total_de_los_dos": [],
+          "pendientes": []
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-15",
+      "dia": "Domingo",
+      "estado": "PENDIENTE_VALIDACION_USUARIO",
+      "tomas": {
+        "Desayuno": {
+          "almu": "Corn Flakes y leche de soja 230 g (Leche de soja 200 g; Corn Flakes 30 g) + Copos de avena 20 g (Copos de avena 20 g) + Kiwi 60 g (Kiwi 60 g)",
+          "fran": "Tostadas integrales con tomate y aceite 50 g (Tostadas integrales 40 g; Tomate 5 g; Aceite de oliva 6 g) + Café cortado descremado 100 g (Café natural 85 g; Leche descremada 15 g) + Ciruelas 30 g (Ciruelas 30 g)",
+          "interpretacion": [
+            "Cereales Corn Flakes",
+            "Copos de avena",
+            "Kiwi",
+            "Pan integral",
+            "Tomate fresco",
+            "Ciruelas"
+          ],
+          "total_de_los_dos": [
+            "Cereales Corn Flakes 30 g",
+            "Ciruelas 30 g",
+            "Copos de avena 20 g",
+            "Kiwi 60 g",
+            "Pan integral 40 g",
+            "Tomate fresco 5 g"
+          ],
+          "pendientes": []
+        },
+        "Media mañana": {
+          "almu": "Tostadas integrales con jamón York 60 g (Tostadas integrales 30 g; Jamón York 30 g)",
+          "fran": "Tortas de maíz 30 g (Tortas de maíz 30 g) + Fruta de temporada 200 g (Fruta de temporada 200 g)",
+          "interpretacion": [
+            "Pan integral",
+            "Jamón York",
+            "Tortas de maíz",
+            "Fruta de temporada"
+          ],
+          "total_de_los_dos": [
+            "Fruta de temporada 200 g",
+            "Jamón York 30 g",
+            "Pan integral 30 g",
+            "Tortas de maíz 30 g"
+          ],
+          "pendientes": []
+        },
+        "Comida": {
+          "almu": "Cartagena · LIBRE",
+          "fran": "Cartagena · LIBRE",
+          "interpretacion": [],
+          "total_de_los_dos": [],
+          "pendientes": []
+        },
+        "Merienda": {
+          "almu": "Fruta de temporada 150 g (Fruta de temporada 150 g)",
+          "fran": "Queso de Burgos 60 g (Queso de Burgos 60 g) + Fruta de temporada 100 g (Fruta de temporada 100 g)",
+          "interpretacion": [
+            "Fruta de temporada",
+            "Queso de Burgos"
+          ],
+          "total_de_los_dos": [
+            "Fruta de temporada 250 g",
+            "Queso de Burgos 60 g"
+          ],
+          "pendientes": []
+        },
+        "Cena": {
+          "almu": "Espinacas salteadas con huevo 300 g (Espinacas 195 g; Huevo 105 g)",
+          "fran": "Espinacas salteadas con huevo 400 g (Espinacas 260 g; Huevo 140 g) + Yogur natural desnatado 125 g (Yogur natural desnatado 125 g)",
+          "interpretacion": [
+            "Espinacas",
+            "Huevo",
+            "Yogur natural desnatado"
+          ],
+          "total_de_los_dos": [
+            "Espinacas 455 g",
+            "Huevo 245 g",
+            "Yogur natural desnatado 125 g"
+          ],
+          "pendientes": []
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-16",
+      "dia": "Lunes",
+      "estado": "PENDIENTE_VALIDACION_USUARIO",
+      "tomas": {
+        "Desayuno": {
+          "almu": "Corn Flakes y leche de soja 230 g (Leche de soja 200 g; Corn Flakes 30 g) + Copos de avena 20 g (Copos de avena 20 g) + Kiwi 60 g (Kiwi 60 g)",
+          "fran": "Corn Flakes con leche de soja 230 g (Leche de soja 200 g; Corn Flakes 30 g) + Copos de avena 50 g (Copos de avena 50 g) + Café cortado descremado 100 g (Café natural 85 g; Leche descremada 15 g) + Ciruelas 30 g (Ciruelas 30 g)",
+          "interpretacion": [
+            "Cereales Corn Flakes",
+            "Copos de avena",
+            "Kiwi",
+            "Ciruelas"
+          ],
+          "total_de_los_dos": [
+            "Cereales Corn Flakes 60 g",
+            "Ciruelas 30 g",
+            "Copos de avena 70 g",
+            "Kiwi 60 g"
+          ],
+          "pendientes": []
+        },
+        "Media mañana": {
+          "almu": "Pan tostado con aceite y tomate 50 g (Pan 40 g; Aceite de oliva 6 g; Tomate 5 g) + Jamón serrano 30 g (Jamón serrano 30 g)",
+          "fran": "Bocadillo de jamón York y tomate 150 g (Pan baguette 85 g; Jamón York 35 g; Tomate 35 g) + Fruta de temporada 100 g (Fruta de temporada 100 g)",
+          "interpretacion": [
+            "Pan integral",
+            "Tomate fresco",
+            "Jamón serrano",
+            "Jamón York",
+            "Fruta de temporada"
+          ],
+          "total_de_los_dos": [
+            "Fruta de temporada 100 g",
+            "Jamón serrano 30 g",
+            "Jamón York 35 g",
+            "Pan integral 125 g",
+            "Tomate fresco 40 g"
+          ],
+          "pendientes": []
+        },
+        "Comida": {
+          "almu": "Macarrones con atún 300 g (Macarrones 160 g; Tomate 80 g; Atún en aceite 55 g)",
+          "fran": "Macarrones con atún 400 g (Macarrones 215 g; Tomate 110 g; Atún en aceite 75 g)",
+          "interpretacion": [
+            "Macarrones",
+            "Tomate para salsa (formato por confirmar)",
+            "Atún en conserva"
+          ],
+          "total_de_los_dos": [
+            "Atún en conserva 130 g",
+            "Macarrones 375 g",
+            "Tomate para salsa (formato por confirmar) 190 g"
+          ],
+          "pendientes": []
+        },
+        "Merienda": {
+          "almu": "Fruta de temporada 150 g (Fruta de temporada 150 g)",
+          "fran": "Tortas de maíz 30 g (Tortas de maíz 30 g) + Fruta de temporada 100 g (Fruta de temporada 100 g)",
+          "interpretacion": [
+            "Fruta de temporada",
+            "Tortas de maíz"
+          ],
+          "total_de_los_dos": [
+            "Fruta de temporada 250 g",
+            "Tortas de maíz 30 g"
+          ],
+          "pendientes": []
+        },
+        "Cena": {
+          "almu": "Picadillo de patatas con atún 250 g (Patata hervida 85 g; Tomate 55 g; Huevo 50 g; Atún en aceite 30 g; Pimiento 25 g)",
+          "fran": "Picadillo de patatas con atún 400 g (Patata hervida 140 g; Tomate 85 g; Huevo 80 g; Atún en aceite 50 g; Pimiento 45 g) + Yogur natural desnatado 125 g (Yogur natural desnatado 125 g)",
+          "interpretacion": [
+            "Patata",
+            "Tomate fresco",
+            "Huevo",
+            "Atún en conserva",
+            "Pimiento",
+            "Yogur natural desnatado"
+          ],
+          "total_de_los_dos": [
+            "Atún en conserva 80 g",
+            "Huevo 130 g",
+            "Patata 225 g",
+            "Pimiento 70 g",
+            "Tomate fresco 140 g",
+            "Yogur natural desnatado 125 g"
+          ],
+          "pendientes": []
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-17",
+      "dia": "Martes",
+      "estado": "PENDIENTE_VALIDACION_USUARIO",
+      "tomas": {
+        "Desayuno": {
+          "almu": "Corn Flakes y leche de soja 230 g (Leche de soja 200 g; Corn Flakes 30 g) + Copos de avena 20 g (Copos de avena 20 g) + Kiwi 60 g (Kiwi 60 g)",
+          "fran": "Tostadas integrales con jamón York 80 g (Tostadas integrales 45 g; Jamón York 35 g) + Café cortado descremado 100 g (Café natural 85 g; Leche descremada 15 g) + Ciruelas 30 g (Ciruelas 30 g)",
+          "interpretacion": [
+            "Cereales Corn Flakes",
+            "Copos de avena",
+            "Kiwi",
+            "Pan integral",
+            "Jamón York",
+            "Ciruelas"
+          ],
+          "total_de_los_dos": [
+            "Cereales Corn Flakes 30 g",
+            "Ciruelas 30 g",
+            "Copos de avena 20 g",
+            "Jamón York 35 g",
+            "Kiwi 60 g",
+            "Pan integral 45 g"
+          ],
+          "pendientes": []
+        },
+        "Media mañana": {
+          "almu": "Pan tostado con aceite y tomate 50 g (Pan 40 g; Aceite de oliva 6 g; Tomate 5 g) + Queso de Burgos 40 g (Queso de Burgos 40 g)",
+          "fran": "Bocadillo con jamón serrano 130 g (Pan baguette 70 g; Jamón serrano 60 g) + Fruta de temporada 100 g (Fruta de temporada 100 g)",
+          "interpretacion": [
+            "Pan integral",
+            "Tomate fresco",
+            "Queso de Burgos",
+            "Jamón serrano",
+            "Fruta de temporada"
+          ],
+          "total_de_los_dos": [
+            "Fruta de temporada 100 g",
+            "Jamón serrano 60 g",
+            "Pan integral 110 g",
+            "Queso de Burgos 40 g",
+            "Tomate fresco 5 g"
+          ],
+          "pendientes": []
+        },
+        "Comida": {
+          "almu": "Arroz a la marinera 350 g (Arroz 115 g; Almejas frescas 70 g; Gambas 70 g; Sepia 70 g; Cebolla 35 g; Ajo sin cantidad prescrita)",
+          "fran": "Arroz a la marinera 450 g (Arroz 145 g; Almejas frescas 85 g; Gambas 85 g; Sepia 85 g; Cebolla 45 g; Ajo sin cantidad indicada)",
+          "interpretacion": [
+            "Arroz",
+            "Almejas frescas",
+            "Gambas",
+            "Sepia",
+            "Cebolla",
+            "Ajo sin cantidad prescrita",
+            "Ajo sin cantidad indicada"
+          ],
+          "total_de_los_dos": [
+            "Almejas frescas 155 g",
+            "Arroz 260 g",
+            "Cebolla 80 g",
+            "Gambas 155 g",
+            "Sepia 155 g"
+          ],
+          "pendientes": [
+            "Ajo sin cantidad prescrita",
+            "Ajo sin cantidad indicada"
+          ]
+        },
+        "Merienda": {
+          "almu": "Fruta de temporada 150 g (Fruta de temporada 150 g)",
+          "fran": "Tortas de maíz 30 g (Tortas de maíz 30 g) + Fruta de temporada 100 g (Fruta de temporada 100 g)",
+          "interpretacion": [
+            "Fruta de temporada",
+            "Tortas de maíz"
+          ],
+          "total_de_los_dos": [
+            "Fruta de temporada 250 g",
+            "Tortas de maíz 30 g"
+          ],
+          "pendientes": []
+        },
+        "Cena": {
+          "almu": "Judías verdes salteadas 150 g (Judías verdes 65 g; Zanahoria 40 g; Patata 35 g; Jamón serrano 10 g; Aceite de oliva 3 g) + Tortilla francesa 120 g (Huevo 115 g; Aceite de oliva 4 g)",
+          "fran": "Judías verdes salteadas 240 g (Judías verdes 105 g; Zanahoria 65 g; Patata 55 g; Jamón serrano 10 g; Aceite de oliva 4 g) + Tortilla francesa 120 g (Huevo 115 g; Aceite de oliva 4 g) + Yogur natural desnatado 125 g (Yogur natural desnatado 125 g)",
+          "interpretacion": [
+            "Judías verdes",
+            "Zanahoria",
+            "Patata",
+            "Jamón serrano",
+            "Huevo",
+            "Yogur natural desnatado"
+          ],
+          "total_de_los_dos": [
+            "Huevo 230 g",
+            "Jamón serrano 20 g",
+            "Judías verdes 170 g",
+            "Patata 90 g",
+            "Yogur natural desnatado 125 g",
+            "Zanahoria 105 g"
+          ],
+          "pendientes": []
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-18",
+      "dia": "Miércoles",
+      "estado": "PENDIENTE_VALIDACION_USUARIO",
+      "tomas": {
+        "Desayuno": {
+          "almu": "Corn Flakes y leche de soja 230 g (Leche de soja 200 g; Corn Flakes 30 g) + Copos de avena 20 g (Copos de avena 20 g) + Kiwi 60 g (Kiwi 60 g)",
+          "fran": "Tostadas integrales con tomate y aceite 30 g (Tostadas integrales 25 g; Tomate 5 g; Aceite de oliva 3 g) + Café cortado descremado 100 g (Café natural 85 g; Leche descremada 15 g) + Café cortado descremado 100 g (Café natural 85 g; Leche descremada 15 g) + Ciruelas 30 g (Ciruelas 30 g)",
+          "interpretacion": [
+            "Cereales Corn Flakes",
+            "Copos de avena",
+            "Kiwi",
+            "Pan integral",
+            "Tomate fresco",
+            "Ciruelas"
+          ],
+          "total_de_los_dos": [
+            "Cereales Corn Flakes 30 g",
+            "Ciruelas 30 g",
+            "Copos de avena 20 g",
+            "Kiwi 60 g",
+            "Pan integral 25 g",
+            "Tomate fresco 5 g"
+          ],
+          "pendientes": []
+        },
+        "Media mañana": {
+          "almu": "Pan tostado con aceite y tomate 50 g (Pan 40 g; Aceite de oliva 6 g; Tomate 5 g) + Jamón serrano 30 g (Jamón serrano 30 g)",
+          "fran": "Bocadillo de pollo 150 g (Pan baguette 80 g; Pechuga de pollo 55 g; Lechuga 15 g) + Fruta de temporada 100 g (Fruta de temporada 100 g)",
+          "interpretacion": [
+            "Pan integral",
+            "Tomate fresco",
+            "Jamón serrano",
+            "Pechuga de pollo fresca",
+            "Lechuga",
+            "Fruta de temporada"
+          ],
+          "total_de_los_dos": [
+            "Fruta de temporada 100 g",
+            "Jamón serrano 30 g",
+            "Lechuga 15 g",
+            "Pan integral 120 g",
+            "Pechuga de pollo fresca 55 g",
+            "Tomate fresco 5 g"
+          ],
+          "pendientes": []
+        },
+        "Comida": {
+          "almu": "Cuscús con pollo al curry 250 g (Cuscús con pollo, plato preparado 250 g)",
+          "fran": "Cuscús con pollo al curry 350 g (Cuscús con pollo, plato preparado 350 g)",
+          "interpretacion": [
+            "Cuscús seco · receta completa (rendimiento por confirmar)",
+            "Receta completa: 1 pechuga de pollo, 1 cebolla, ½ pimiento verde, ½ rojo, 1 zanahoria grande y 1 ajo. Pesos y rendimiento por verificar."
+          ],
+          "total_de_los_dos": [
+            "Cuscús seco · receta completa (rendimiento por confirmar) 125 g"
+          ],
+          "pendientes": [
+            "Receta completa: 1 pechuga de pollo, 1 cebolla, ½ pimiento verde, ½ rojo, 1 zanahoria grande y 1 ajo. Pesos y rendimiento por verificar."
+          ]
+        },
+        "Merienda": {
+          "almu": "Fruta de temporada 150 g (Fruta de temporada 150 g)",
+          "fran": "Tortas de maíz 30 g (Tortas de maíz 30 g) + Fruta de temporada 100 g (Fruta de temporada 100 g)",
+          "interpretacion": [
+            "Fruta de temporada",
+            "Tortas de maíz"
+          ],
+          "total_de_los_dos": [
+            "Fruta de temporada 250 g",
+            "Tortas de maíz 30 g"
+          ],
+          "pendientes": []
+        },
+        "Cena": {
+          "almu": "Puré de verduras 200 g (Patata 70 g; Calabacín 45 g; Zanahoria 45 g; Tomate 35 g; Aceite de oliva 1 g) + Bacalao fresco 200 g (Bacalao fresco 200 g)",
+          "fran": "Puré de verduras 300 g (Patata 105 g; Calabacín 65 g; Zanahoria 65 g; Tomate 55 g; Aceite de oliva 2 g) + Bacalao fresco 200 g (Bacalao fresco 200 g) + Yogur natural desnatado 125 g (Yogur natural desnatado 125 g)",
+          "interpretacion": [
+            "Patata",
+            "Calabacín",
+            "Zanahoria",
+            "Tomate fresco",
+            "Bacalao",
+            "Yogur natural desnatado"
+          ],
+          "total_de_los_dos": [
+            "Bacalao 400 g",
+            "Calabacín 110 g",
+            "Patata 175 g",
+            "Tomate fresco 90 g",
+            "Yogur natural desnatado 125 g",
+            "Zanahoria 110 g"
+          ],
+          "pendientes": []
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-19",
+      "dia": "Jueves",
+      "estado": "PENDIENTE_VALIDACION_USUARIO",
+      "tomas": {
+        "Desayuno": {
+          "almu": "Corn Flakes y leche de soja 230 g (Leche de soja 200 g; Corn Flakes 30 g) + Copos de avena 20 g (Copos de avena 20 g) + Kiwi 60 g (Kiwi 60 g)",
+          "fran": "Tostadas integrales con lomo curado 60 g (Tostadas integrales 30 g; Lomo curado 30 g) + Café cortado descremado 100 g (Café natural 85 g; Leche descremada 15 g) + Ciruelas 30 g (Ciruelas 30 g)",
+          "interpretacion": [
+            "Cereales Corn Flakes",
+            "Copos de avena",
+            "Kiwi",
+            "Pan integral",
+            "Lomo curado",
+            "Ciruelas"
+          ],
+          "total_de_los_dos": [
+            "Cereales Corn Flakes 30 g",
+            "Ciruelas 30 g",
+            "Copos de avena 20 g",
+            "Kiwi 60 g",
+            "Lomo curado 30 g",
+            "Pan integral 30 g"
+          ],
+          "pendientes": []
+        },
+        "Media mañana": {
+          "almu": "Pan tostado con aceite y tomate 50 g (Pan 40 g; Aceite de oliva 6 g; Tomate 5 g) + Queso de Burgos 40 g (Queso de Burgos 40 g)",
+          "fran": "Bocadillo con jamón serrano 130 g (Pan baguette 70 g; Jamón serrano 60 g) + Fruta de temporada 100 g (Fruta de temporada 100 g)",
+          "interpretacion": [
+            "Pan integral",
+            "Tomate fresco",
+            "Queso de Burgos",
+            "Jamón serrano",
+            "Fruta de temporada"
+          ],
+          "total_de_los_dos": [
+            "Fruta de temporada 100 g",
+            "Jamón serrano 60 g",
+            "Pan integral 110 g",
+            "Queso de Burgos 40 g",
+            "Tomate fresco 5 g"
+          ],
+          "pendientes": []
+        },
+        "Comida": {
+          "almu": "Arroz a la cubana con huevo 350 g (Arroz 180 g; Huevo 90 g; Tomate 75 g; Aceite de oliva 4 g)",
+          "fran": "Arroz a la cubana con huevo 400 g (Arroz 210 g; Huevo 105 g; Tomate 85 g; Aceite de oliva 4 g)",
+          "interpretacion": [
+            "Arroz",
+            "Huevo",
+            "Tomate para salsa (formato por confirmar)"
+          ],
+          "total_de_los_dos": [
+            "Arroz 390 g",
+            "Huevo 195 g",
+            "Tomate para salsa (formato por confirmar) 160 g"
+          ],
+          "pendientes": []
+        },
+        "Merienda": {
+          "almu": "Fruta de temporada 150 g (Fruta de temporada 150 g)",
+          "fran": "Tortas de maíz 30 g (Tortas de maíz 30 g) + Fruta de temporada 100 g (Fruta de temporada 100 g)",
+          "interpretacion": [
+            "Fruta de temporada",
+            "Tortas de maíz"
+          ],
+          "total_de_los_dos": [
+            "Fruta de temporada 250 g",
+            "Tortas de maíz 30 g"
+          ],
+          "pendientes": []
+        },
+        "Cena": {
+          "almu": "Ensalada de remolacha 200 g (Remolacha 125 g; Yogur natural desnatado 40 g; Rábanos 10 g; Zumo de limón 10 g; Pepino a la vinagreta 10 g) + Salmón a la plancha 150 g (Salmón 145 g; Aceite de oliva 3 g)",
+          "fran": "Ensalada de remolacha 250 g (Remolacha 155 g; Yogur natural desnatado 45 g; Rábanos 15 g; Zumo de limón 15 g; Pepino a la vinagreta 15 g) + Salmón a la plancha 200 g (Salmón 195 g; Aceite de oliva 4 g) + Yogur natural desnatado 125 g (Yogur natural desnatado 125 g)",
+          "interpretacion": [
+            "Remolacha",
+            "Yogur natural desnatado",
+            "Rábanos",
+            "Zumo de limón",
+            "Pepino a la vinagreta",
+            "Salmón"
+          ],
+          "total_de_los_dos": [
+            "Pepino a la vinagreta 25 g",
+            "Rábanos 25 g",
+            "Remolacha 280 g",
+            "Salmón 340 g",
+            "Yogur natural desnatado 210 g",
+            "Zumo de limón 25 g"
+          ],
+          "pendientes": []
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-20",
+      "dia": "Viernes",
+      "estado": "PENDIENTE_VALIDACION_USUARIO",
+      "tomas": {
+        "Desayuno": {
+          "almu": "Corn Flakes y leche de soja 230 g (Leche de soja 200 g; Corn Flakes 30 g) + Copos de avena 20 g (Copos de avena 20 g) + Kiwi 60 g (Kiwi 60 g)",
+          "fran": "Corn Flakes con leche de soja 230 g (Leche de soja 200 g; Corn Flakes 30 g) + Café cortado descremado 100 g (Café natural 85 g; Leche descremada 15 g) + Ciruelas 30 g (Ciruelas 30 g)",
+          "interpretacion": [
+            "Cereales Corn Flakes",
+            "Copos de avena",
+            "Kiwi",
+            "Ciruelas"
+          ],
+          "total_de_los_dos": [
+            "Cereales Corn Flakes 60 g",
+            "Ciruelas 30 g",
+            "Copos de avena 20 g",
+            "Kiwi 60 g"
+          ],
+          "pendientes": []
+        },
+        "Media mañana": {
+          "almu": "Pan tostado con aceite y tomate 50 g (Pan 40 g; Aceite de oliva 6 g; Tomate 5 g) + Jamón serrano 30 g (Jamón serrano 30 g)",
+          "fran": "Bocadillo de jamón York y tomate 150 g (Pan baguette 85 g; Jamón York 35 g; Tomate 35 g) + Fruta de temporada 100 g (Fruta de temporada 100 g)",
+          "interpretacion": [
+            "Pan integral",
+            "Tomate fresco",
+            "Jamón serrano",
+            "Jamón York",
+            "Fruta de temporada"
+          ],
+          "total_de_los_dos": [
+            "Fruta de temporada 100 g",
+            "Jamón serrano 30 g",
+            "Jamón York 35 g",
+            "Pan integral 125 g",
+            "Tomate fresco 40 g"
+          ],
+          "pendientes": []
+        },
+        "Comida": {
+          "almu": "Patatas guisadas 250 g (Patata 115 g; Tomate 55 g; Cebolla 55 g; Pimiento 25 g) + Huevo escalfado 60 g (Huevo 60 g)",
+          "fran": "Patatas guisadas 400 g (Patatas 180 g; Tomate 90 g; Cebolla 90 g; Pimiento 35 g) + Huevo escalfado 60 g (Huevo 60 g)",
+          "interpretacion": [
+            "Patata",
+            "Tomate fresco",
+            "Cebolla",
+            "Pimiento",
+            "Huevo"
+          ],
+          "total_de_los_dos": [
+            "Cebolla 145 g",
+            "Huevo 120 g",
+            "Patata 295 g",
+            "Pimiento 60 g",
+            "Tomate fresco 145 g"
+          ],
+          "pendientes": []
+        },
+        "Merienda": {
+          "almu": "Fruta de temporada 150 g (Fruta de temporada 150 g)",
+          "fran": "Tortas de maíz 30 g (Tortas de maíz 30 g) + Fruta de temporada 100 g (Fruta de temporada 100 g)",
+          "interpretacion": [
+            "Fruta de temporada",
+            "Tortas de maíz"
+          ],
+          "total_de_los_dos": [
+            "Fruta de temporada 250 g",
+            "Tortas de maíz 30 g"
+          ],
+          "pendientes": []
+        },
+        "Cena": {
+          "almu": "Crema de champiñones y patata 200 g (Champiñones 65 g; Leche descremada 65 g; Patata 45 g; Cebolla 15 g; Aceite de oliva 3 g) + Merluza a la plancha 200 g (Merluza 195 g; Aceite de oliva 6 g)",
+          "fran": "Crema de champiñones y patata 300 g (Champiñones 100 g; Leche descremada 100 g; Patata 70 g; Cebolla 25 g; Aceite de oliva 5 g) + Merluza a la plancha 200 g (Merluza 195 g; Aceite de oliva 6 g) + Yogur natural desnatado 125 g (Yogur natural desnatado 125 g)",
+          "interpretacion": [
+            "Champiñones",
+            "Patata",
+            "Cebolla",
+            "Merluza",
+            "Yogur natural desnatado"
+          ],
+          "total_de_los_dos": [
+            "Cebolla 40 g",
+            "Champiñones 165 g",
+            "Merluza 390 g",
+            "Patata 115 g",
+            "Yogur natural desnatado 125 g"
+          ],
+          "pendientes": []
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-21",
+      "dia": "Sábado",
+      "estado": "PENDIENTE_VALIDACION_USUARIO",
+      "tomas": {
+        "Desayuno": {
+          "almu": "Corn Flakes y leche de soja 230 g (Leche de soja 200 g; Corn Flakes 30 g) + Copos de avena 20 g (Copos de avena 20 g) + Kiwi 60 g (Kiwi 60 g)",
+          "fran": "Corn Flakes con leche de soja 230 g (Leche de soja 200 g; Corn Flakes 30 g) + Copos de avena 50 g (Copos de avena 50 g) + Café cortado descremado 100 g (Café natural 85 g; Leche descremada 15 g) + Ciruelas 30 g (Ciruelas 30 g)",
+          "interpretacion": [
+            "Cereales Corn Flakes",
+            "Copos de avena",
+            "Kiwi",
+            "Ciruelas"
+          ],
+          "total_de_los_dos": [
+            "Cereales Corn Flakes 60 g",
+            "Ciruelas 30 g",
+            "Copos de avena 70 g",
+            "Kiwi 60 g"
+          ],
+          "pendientes": []
+        },
+        "Media mañana": {
+          "almu": "Tostadas integrales con jamón York 60 g (Tostadas integrales 30 g; Jamón York 30 g)",
+          "fran": "Tortas de maíz 30 g (Tortas de maíz 30 g) + Fruta de temporada 200 g (Fruta de temporada 200 g)",
+          "interpretacion": [
+            "Pan integral",
+            "Jamón York",
+            "Tortas de maíz",
+            "Fruta de temporada"
+          ],
+          "total_de_los_dos": [
+            "Fruta de temporada 200 g",
+            "Jamón York 30 g",
+            "Pan integral 30 g",
+            "Tortas de maíz 30 g"
+          ],
+          "pendientes": []
+        },
+        "Comida": {
+          "almu": "Lentejas estofadas 300 g (Lentejas 150 g; Tomate 40 g; Cebolla 40 g; Zanahoria 40 g; Pimiento 30 g; Harina de trigo 10 g)",
+          "fran": "Lentejas estofadas 400 g (Lentejas 200 g; Tomate 50 g; Cebolla 50 g; Zanahoria 50 g; Pimiento 40 g; Harina de trigo 10 g)",
+          "interpretacion": [
+            "Lentejas",
+            "Tomate fresco",
+            "Cebolla",
+            "Zanahoria",
+            "Pimiento",
+            "Harina de trigo"
+          ],
+          "total_de_los_dos": [
+            "Cebolla 90 g",
+            "Harina de trigo 20 g",
+            "Lentejas 350 g",
+            "Pimiento 70 g",
+            "Tomate fresco 90 g",
+            "Zanahoria 90 g"
+          ],
+          "pendientes": []
+        },
+        "Merienda": {
+          "almu": "Fruta de temporada 150 g (Fruta de temporada 150 g)",
+          "fran": "Queso de Burgos 60 g (Queso de Burgos 60 g) + Fruta de temporada 100 g (Fruta de temporada 100 g)",
+          "interpretacion": [
+            "Fruta de temporada",
+            "Queso de Burgos"
+          ],
+          "total_de_los_dos": [
+            "Fruta de temporada 250 g",
+            "Queso de Burgos 60 g"
+          ],
+          "pendientes": []
+        },
+        "Cena": {
+          "almu": "Tacos de pollo 250 g (Tacos de pollo (preparado) 125 g; Pan sin gluten 50 g; Pechuga de pollo 30 g; Pimiento 30 g; Cebolla 10 g)",
+          "fran": "Tacos de pollo 350 g (Pechuga de pollo fresca 217 g; Pan integral 70 g; Pimiento 42 g; Cebolla 14 g) + Yogur natural desnatado 125 g (Yogur natural desnatado 125 g)",
+          "interpretacion": [
+            "Pechuga de pollo fresca",
+            "Pan sin gluten",
+            "Pimiento",
+            "Cebolla",
+            "Pan integral",
+            "Yogur natural desnatado",
+            "Preparado de tacos de 125 g de Almu: producto distinto de los 30 g de pechuga, composición desconocida."
+          ],
+          "total_de_los_dos": [
+            "Cebolla 24 g",
+            "Pan integral 70 g",
+            "Pan sin gluten 50 g",
+            "Pechuga de pollo fresca 247 g",
+            "Pimiento 72 g",
+            "Preparado de tacos de pollo (composición sin especificar) 125 g",
+            "Yogur natural desnatado 125 g"
+          ],
+          "pendientes": [
+            "Comprobar qué contiene el preparado de 125 g de Almu",
+            "Fran: ingredientes calculados suman 343 g, ración de tacos aprobada 350 g."
+          ]
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-22",
+      "dia": "Domingo",
+      "estado": "PENDIENTE_VALIDACION_USUARIO",
+      "tomas": {
+        "Desayuno": {
+          "almu": "Corn Flakes y leche de soja 230 g (Leche de soja 200 g; Corn Flakes 30 g) + Copos de avena 20 g (Copos de avena 20 g) + Kiwi 60 g (Kiwi 60 g)",
+          "fran": "Tostadas integrales con tomate y aceite 50 g (Tostadas integrales 40 g; Tomate 5 g; Aceite de oliva 6 g) + Café cortado descremado 100 g (Café natural 85 g; Leche descremada 15 g) + Ciruelas 30 g (Ciruelas 30 g)",
+          "interpretacion": [
+            "Cereales Corn Flakes",
+            "Copos de avena",
+            "Kiwi",
+            "Pan integral",
+            "Tomate fresco",
+            "Ciruelas"
+          ],
+          "total_de_los_dos": [
+            "Cereales Corn Flakes 30 g",
+            "Ciruelas 30 g",
+            "Copos de avena 20 g",
+            "Kiwi 60 g",
+            "Pan integral 40 g",
+            "Tomate fresco 5 g"
+          ],
+          "pendientes": []
+        },
+        "Media mañana": {
+          "almu": "Tostadas integrales con jamón York 60 g (Tostadas integrales 30 g; Jamón York 30 g)",
+          "fran": "Tortas de maíz 30 g (Tortas de maíz 30 g) + Fruta de temporada 200 g (Fruta de temporada 200 g)",
+          "interpretacion": [
+            "Pan integral",
+            "Jamón York",
+            "Tortas de maíz",
+            "Fruta de temporada"
+          ],
+          "total_de_los_dos": [
+            "Fruta de temporada 200 g",
+            "Jamón York 30 g",
+            "Pan integral 30 g",
+            "Tortas de maíz 30 g"
+          ],
+          "pendientes": []
+        },
+        "Comida": {
+          "almu": "Patatas al horno 200 g (Patata 190 g; Aceite de oliva 10 g) + Pollo con curry 150 g (Pechuga de pollo 105 g; Cebolla 45 g; Curry sin cantidad prescrita)",
+          "fran": "Patatas al horno 200 g (Patatas 190 g; Aceite de oliva 10 g) + Pollo con curry 200 g (Pechuga de pollo 145 g; Cebolla 55 g; Curry sin gramos)",
+          "interpretacion": [
+            "Patata",
+            "Pechuga de pollo fresca",
+            "Cebolla",
+            "Curry sin cantidad prescrita",
+            "Curry sin gramos"
+          ],
+          "total_de_los_dos": [
+            "Cebolla 100 g",
+            "Patata 380 g",
+            "Pechuga de pollo fresca 250 g"
+          ],
+          "pendientes": [
+            "Curry sin cantidad prescrita",
+            "Curry sin gramos"
+          ]
+        },
+        "Merienda": {
+          "almu": "Fruta de temporada 150 g (Fruta de temporada 150 g)",
+          "fran": "Queso de Burgos 60 g (Queso de Burgos 60 g) + Fruta de temporada 100 g (Fruta de temporada 100 g)",
+          "interpretacion": [
+            "Fruta de temporada",
+            "Queso de Burgos"
+          ],
+          "total_de_los_dos": [
+            "Fruta de temporada 250 g",
+            "Queso de Burgos 60 g"
+          ],
+          "pendientes": []
+        },
+        "Cena": {
+          "almu": "Espinacas salteadas con huevo 300 g (Espinacas 195 g; Huevo 105 g)",
+          "fran": "Espinacas salteadas con huevo 400 g (Espinacas 260 g; Huevo 140 g) + Yogur natural desnatado 125 g (Yogur natural desnatado 125 g)",
+          "interpretacion": [
+            "Espinacas",
+            "Huevo",
+            "Yogur natural desnatado"
+          ],
+          "total_de_los_dos": [
+            "Espinacas 455 g",
+            "Huevo 245 g",
+            "Yogur natural desnatado 125 g"
+          ],
+          "pendientes": []
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-23",
+      "dia": "Lunes",
+      "estado": "PENDIENTE_VALIDACION_USUARIO",
+      "tomas": {
+        "Desayuno": {
+          "almu": "Corn Flakes y leche de soja 230 g (Leche de soja 200 g; Corn Flakes 30 g) + Copos de avena 20 g (Copos de avena 20 g) + Kiwi 60 g (Kiwi 60 g)",
+          "fran": "Corn Flakes con leche de soja 230 g (Leche de soja 200 g; Corn Flakes 30 g) + Copos de avena 50 g (Copos de avena 50 g) + Café cortado descremado 100 g (Café natural 85 g; Leche descremada 15 g) + Ciruelas 30 g (Ciruelas 30 g)",
+          "interpretacion": [
+            "Cereales Corn Flakes",
+            "Copos de avena",
+            "Kiwi",
+            "Ciruelas"
+          ],
+          "total_de_los_dos": [
+            "Cereales Corn Flakes 60 g",
+            "Ciruelas 30 g",
+            "Copos de avena 70 g",
+            "Kiwi 60 g"
+          ],
+          "pendientes": []
+        },
+        "Media mañana": {
+          "almu": "Pan tostado con aceite y tomate 50 g (Pan 40 g; Aceite de oliva 6 g; Tomate 5 g) + Jamón serrano 30 g (Jamón serrano 30 g)",
+          "fran": "Bocadillo de jamón York y tomate 150 g (Pan baguette 85 g; Jamón York 35 g; Tomate 35 g) + Fruta de temporada 100 g (Fruta de temporada 100 g)",
+          "interpretacion": [
+            "Pan integral",
+            "Tomate fresco",
+            "Jamón serrano",
+            "Jamón York",
+            "Fruta de temporada"
+          ],
+          "total_de_los_dos": [
+            "Fruta de temporada 100 g",
+            "Jamón serrano 30 g",
+            "Jamón York 35 g",
+            "Pan integral 125 g",
+            "Tomate fresco 40 g"
+          ],
+          "pendientes": []
+        },
+        "Comida": {
+          "almu": "Macarrones con atún 300 g (Macarrones 160 g; Tomate 80 g; Atún en aceite 55 g)",
+          "fran": "Macarrones con atún 400 g (Macarrones 215 g; Tomate 110 g; Atún en aceite 75 g)",
+          "interpretacion": [
+            "Macarrones",
+            "Tomate para salsa (formato por confirmar)",
+            "Atún en conserva"
+          ],
+          "total_de_los_dos": [
+            "Atún en conserva 130 g",
+            "Macarrones 375 g",
+            "Tomate para salsa (formato por confirmar) 190 g"
+          ],
+          "pendientes": []
+        },
+        "Merienda": {
+          "almu": "Fruta de temporada 150 g (Fruta de temporada 150 g)",
+          "fran": "Tortas de maíz 30 g (Tortas de maíz 30 g) + Fruta de temporada 100 g (Fruta de temporada 100 g)",
+          "interpretacion": [
+            "Fruta de temporada",
+            "Tortas de maíz"
+          ],
+          "total_de_los_dos": [
+            "Fruta de temporada 250 g",
+            "Tortas de maíz 30 g"
+          ],
+          "pendientes": []
+        },
+        "Cena": {
+          "almu": "Picadillo de patatas con atún 250 g (Patata hervida 85 g; Tomate 55 g; Huevo 50 g; Atún en aceite 30 g; Pimiento 25 g)",
+          "fran": "Picadillo de patatas con atún 400 g (Patata hervida 140 g; Tomate 85 g; Huevo 80 g; Atún en aceite 50 g; Pimiento 45 g) + Yogur natural desnatado 125 g (Yogur natural desnatado 125 g)",
+          "interpretacion": [
+            "Patata",
+            "Tomate fresco",
+            "Huevo",
+            "Atún en conserva",
+            "Pimiento",
+            "Yogur natural desnatado"
+          ],
+          "total_de_los_dos": [
+            "Atún en conserva 80 g",
+            "Huevo 130 g",
+            "Patata 225 g",
+            "Pimiento 70 g",
+            "Tomate fresco 140 g",
+            "Yogur natural desnatado 125 g"
+          ],
+          "pendientes": []
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-24",
+      "dia": "Martes",
+      "estado": "PENDIENTE_VALIDACION_USUARIO",
+      "tomas": {
+        "Desayuno": {
+          "almu": "Corn Flakes y leche de soja 230 g (Leche de soja 200 g; Corn Flakes 30 g) + Copos de avena 20 g (Copos de avena 20 g) + Kiwi 60 g (Kiwi 60 g)",
+          "fran": "Tostadas integrales con jamón York 80 g (Tostadas integrales 45 g; Jamón York 35 g) + Café cortado descremado 100 g (Café natural 85 g; Leche descremada 15 g) + Ciruelas 30 g (Ciruelas 30 g)",
+          "interpretacion": [
+            "Cereales Corn Flakes",
+            "Copos de avena",
+            "Kiwi",
+            "Pan integral",
+            "Jamón York",
+            "Ciruelas"
+          ],
+          "total_de_los_dos": [
+            "Cereales Corn Flakes 30 g",
+            "Ciruelas 30 g",
+            "Copos de avena 20 g",
+            "Jamón York 35 g",
+            "Kiwi 60 g",
+            "Pan integral 45 g"
+          ],
+          "pendientes": []
+        },
+        "Media mañana": {
+          "almu": "Pan tostado con aceite y tomate 50 g (Pan 40 g; Aceite de oliva 6 g; Tomate 5 g) + Queso de Burgos 40 g (Queso de Burgos 40 g)",
+          "fran": "Bocadillo con jamón serrano 130 g (Pan baguette 70 g; Jamón serrano 60 g) + Fruta de temporada 100 g (Fruta de temporada 100 g)",
+          "interpretacion": [
+            "Pan integral",
+            "Tomate fresco",
+            "Queso de Burgos",
+            "Jamón serrano",
+            "Fruta de temporada"
+          ],
+          "total_de_los_dos": [
+            "Fruta de temporada 100 g",
+            "Jamón serrano 60 g",
+            "Pan integral 110 g",
+            "Queso de Burgos 40 g",
+            "Tomate fresco 5 g"
+          ],
+          "pendientes": []
+        },
+        "Comida": {
+          "almu": "Arroz a la marinera 350 g (Arroz 115 g; Almejas frescas 70 g; Gambas 70 g; Sepia 70 g; Cebolla 35 g; Ajo sin cantidad prescrita)",
+          "fran": "Arroz a la marinera 450 g (Arroz 145 g; Almejas frescas 85 g; Gambas 85 g; Sepia 85 g; Cebolla 45 g; Ajo sin cantidad indicada)",
+          "interpretacion": [
+            "Arroz",
+            "Almejas frescas",
+            "Gambas",
+            "Sepia",
+            "Cebolla",
+            "Ajo sin cantidad prescrita",
+            "Ajo sin cantidad indicada"
+          ],
+          "total_de_los_dos": [
+            "Almejas frescas 155 g",
+            "Arroz 260 g",
+            "Cebolla 80 g",
+            "Gambas 155 g",
+            "Sepia 155 g"
+          ],
+          "pendientes": [
+            "Ajo sin cantidad prescrita",
+            "Ajo sin cantidad indicada"
+          ]
+        },
+        "Merienda": {
+          "almu": "Fruta de temporada 150 g (Fruta de temporada 150 g)",
+          "fran": "Tortas de maíz 30 g (Tortas de maíz 30 g) + Fruta de temporada 100 g (Fruta de temporada 100 g)",
+          "interpretacion": [
+            "Fruta de temporada",
+            "Tortas de maíz"
+          ],
+          "total_de_los_dos": [
+            "Fruta de temporada 250 g",
+            "Tortas de maíz 30 g"
+          ],
+          "pendientes": []
+        },
+        "Cena": {
+          "almu": "Judías verdes salteadas 150 g (Judías verdes 65 g; Zanahoria 40 g; Patata 35 g; Jamón serrano 10 g; Aceite de oliva 3 g) + Tortilla francesa 120 g (Huevo 115 g; Aceite de oliva 4 g)",
+          "fran": "Judías verdes salteadas 240 g (Judías verdes 105 g; Zanahoria 65 g; Patata 55 g; Jamón serrano 10 g; Aceite de oliva 4 g) + Tortilla francesa 120 g (Huevo 115 g; Aceite de oliva 4 g) + Yogur natural desnatado 125 g (Yogur natural desnatado 125 g)",
+          "interpretacion": [
+            "Judías verdes",
+            "Zanahoria",
+            "Patata",
+            "Jamón serrano",
+            "Huevo",
+            "Yogur natural desnatado"
+          ],
+          "total_de_los_dos": [
+            "Huevo 230 g",
+            "Jamón serrano 20 g",
+            "Judías verdes 170 g",
+            "Patata 90 g",
+            "Yogur natural desnatado 125 g",
+            "Zanahoria 105 g"
+          ],
+          "pendientes": []
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-25",
+      "dia": "Miércoles",
+      "estado": "PENDIENTE_VALIDACION_USUARIO",
+      "tomas": {
+        "Desayuno": {
+          "almu": "Corn Flakes y leche de soja 230 g (Leche de soja 200 g; Corn Flakes 30 g) + Copos de avena 20 g (Copos de avena 20 g) + Kiwi 60 g (Kiwi 60 g)",
+          "fran": "Tostadas integrales con tomate y aceite 30 g (Tostadas integrales 25 g; Tomate 5 g; Aceite de oliva 3 g) + Café cortado descremado 100 g (Café natural 85 g; Leche descremada 15 g) + Café cortado descremado 100 g (Café natural 85 g; Leche descremada 15 g) + Ciruelas 30 g (Ciruelas 30 g)",
+          "interpretacion": [
+            "Cereales Corn Flakes",
+            "Copos de avena",
+            "Kiwi",
+            "Pan integral",
+            "Tomate fresco",
+            "Ciruelas"
+          ],
+          "total_de_los_dos": [
+            "Cereales Corn Flakes 30 g",
+            "Ciruelas 30 g",
+            "Copos de avena 20 g",
+            "Kiwi 60 g",
+            "Pan integral 25 g",
+            "Tomate fresco 5 g"
+          ],
+          "pendientes": []
+        },
+        "Media mañana": {
+          "almu": "Pan tostado con aceite y tomate 50 g (Pan 40 g; Aceite de oliva 6 g; Tomate 5 g) + Jamón serrano 30 g (Jamón serrano 30 g)",
+          "fran": "Bocadillo de pollo 150 g (Pan baguette 80 g; Pechuga de pollo 55 g; Lechuga 15 g) + Fruta de temporada 100 g (Fruta de temporada 100 g)",
+          "interpretacion": [
+            "Pan integral",
+            "Tomate fresco",
+            "Jamón serrano",
+            "Pechuga de pollo fresca",
+            "Lechuga",
+            "Fruta de temporada"
+          ],
+          "total_de_los_dos": [
+            "Fruta de temporada 100 g",
+            "Jamón serrano 30 g",
+            "Lechuga 15 g",
+            "Pan integral 120 g",
+            "Pechuga de pollo fresca 55 g",
+            "Tomate fresco 5 g"
+          ],
+          "pendientes": []
+        },
+        "Comida": {
+          "almu": "Cuscús con pollo al curry 250 g (Cuscús con pollo, plato preparado 250 g)",
+          "fran": "Cuscús con pollo al curry 350 g (Cuscús con pollo, plato preparado 350 g)",
+          "interpretacion": [
+            "Cuscús seco · receta completa (rendimiento por confirmar)",
+            "Receta completa: 1 pechuga de pollo, 1 cebolla, ½ pimiento verde, ½ rojo, 1 zanahoria grande y 1 ajo. Pesos y rendimiento por verificar."
+          ],
+          "total_de_los_dos": [
+            "Cuscús seco · receta completa (rendimiento por confirmar) 125 g"
+          ],
+          "pendientes": [
+            "Receta completa: 1 pechuga de pollo, 1 cebolla, ½ pimiento verde, ½ rojo, 1 zanahoria grande y 1 ajo. Pesos y rendimiento por verificar."
+          ]
+        }
+      }
+    }
+  ],
+  "dudas": [
+    "2026-11-11: cuscús, cantidades de receta completa no atribuibles directamente a cada ración.",
+    "2026-11-18: cuscús, cantidades de receta completa no atribuibles directamente a cada ración.",
+    "2026-11-25: cuscús, cantidades de receta completa no atribuibles directamente a cada ración.",
+    "Tacos 7 y 21: preparado 125 g de Almu no identificado como pollo fresco; 30 g de pechuga separados.",
+    "Tacos 7 y 21: ración 350 g de Fran aprobada; ingredientes estimados suman 343 g."
+  ]
+}
