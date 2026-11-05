@@ -1,6 +1,6 @@
 {
   "schema_version": 4,
-  "generated_at": "2026-11-05T06:28:42+01:00",
+  "generated_at": "2026-11-05T14:39:51.849Z",
   "timezone": "Europe/Madrid",
   "window": {
     "inicio": "2026-11-02",
@@ -569,11 +569,11 @@
     "archivo": "data/plan_21_dias_20261105_065042.json",
     "desde": "2026-11-04",
     "hasta": "2026-11-25",
-    "estado": "CUADRO01_Y_CUADRO02_APROBADOS_COMPRA_SIN_VALIDAR",
+    "estado": "CUADROS01_02_APROBADOS_PUBLICAR_MENU_COMPRA_PENDIENTE",
     "compra": "PENDIENTE_REVISION_DIARIA",
     "revision_compra": "data/revision_compra_21_dias_20261105_064248.json",
     "aprobacion_cuadro02": "2026-11-05",
-    "nota": "El café opcional del miércoles de Fran se muestra una sola vez; compra aún pendiente de revisión día a día."
+    "nota": "Compra separada y pendiente de revisión; platos y gramos del PDF se muestran individualmente, salvo adaptación de tacos Fran aprobada."
   },
   "recetas_vinculadas": {
     "2026-11-04": {
@@ -768,6 +768,586 @@
         "fran": [
           "202611_espinacas_huevo"
         ]
+      }
+    }
+  },
+  "recetas_por_racion": {
+    "2026-11-04": {
+      "Cena": {
+        "almu": {
+          "202611_pure_verduras": {
+            "nombre": "Puré de verduras",
+            "racion_g": 200,
+            "ingredientes": [
+              "Patata 70 g",
+              "Calabacín 45 g",
+              "Zanahoria 45 g",
+              "Tomate 35 g",
+              "Aceite de oliva 1 g"
+            ]
+          }
+        },
+        "fran": {
+          "202611_pure_verduras": {
+            "nombre": "Puré de verduras",
+            "racion_g": 300,
+            "ingredientes": [
+              "Patata 105 g",
+              "Calabacín 65 g",
+              "Zanahoria 65 g",
+              "Tomate 55 g",
+              "Aceite de oliva 2 g"
+            ]
+          }
+        }
+      }
+    },
+    "2026-11-05": {
+      "Comida": {
+        "almu": {
+          "202611_arroz_cubana": {
+            "nombre": "Arroz a la cubana con huevo",
+            "racion_g": 350,
+            "ingredientes": [
+              "Arroz 180 g",
+              "Huevo 90 g",
+              "Tomate 75 g",
+              "Aceite de oliva 4 g"
+            ]
+          }
+        },
+        "fran": {
+          "202611_arroz_cubana": {
+            "nombre": "Arroz a la cubana con huevo",
+            "racion_g": 400,
+            "ingredientes": [
+              "Arroz 210 g",
+              "Huevo 105 g",
+              "Tomate 85 g",
+              "Aceite de oliva 4 g"
+            ]
+          }
+        }
+      },
+      "Cena": {
+        "almu": {
+          "202611_ensalada_remolacha": {
+            "nombre": "Ensalada de remolacha",
+            "racion_g": 200,
+            "ingredientes": [
+              "Remolacha 125 g",
+              "Yogur natural desnatado 40 g",
+              "Rábanos 10 g",
+              "Zumo de limón 10 g",
+              "Pepino a la vinagreta 10 g"
+            ]
+          },
+          "202611_salmon_plancha": {
+            "nombre": "Salmón a la plancha",
+            "racion_g": 150,
+            "ingredientes": [
+              "Salmón 145 g",
+              "Aceite de oliva 3 g"
+            ]
+          }
+        },
+        "fran": {
+          "202611_ensalada_remolacha": {
+            "nombre": "Ensalada de remolacha",
+            "racion_g": 250,
+            "ingredientes": [
+              "Remolacha 155 g",
+              "Yogur natural desnatado 45 g",
+              "Rábanos 15 g",
+              "Zumo de limón 15 g",
+              "Pepino a la vinagreta 15 g"
+            ],
+            "nota": "Comino y clavo en polvo al gusto"
+          },
+          "202611_salmon_plancha": {
+            "nombre": "Salmón a la plancha",
+            "racion_g": 200,
+            "ingredientes": [
+              "Salmón 195 g",
+              "Aceite de oliva 4 g"
+            ]
+          }
+        }
+      }
+    },
+    "2026-11-06": {
+      "Comida": {
+        "almu": {
+          "202611_patatas_guisadas": {
+            "nombre": "Patatas guisadas",
+            "racion_g": 250,
+            "ingredientes": [
+              "Patata 115 g",
+              "Tomate 55 g",
+              "Cebolla 55 g",
+              "Pimiento 25 g"
+            ]
+          },
+          "202611_huevo_escalfado": {
+            "nombre": "Huevo escalfado",
+            "racion_g": 60,
+            "ingredientes": [
+              "Huevo 60 g"
+            ]
+          }
+        },
+        "fran": {
+          "202611_patatas_guisadas": {
+            "nombre": "Patatas guisadas",
+            "racion_g": 400,
+            "ingredientes": [
+              "Patatas 180 g",
+              "Tomate 90 g",
+              "Cebolla 90 g",
+              "Pimiento 35 g"
+            ],
+            "nota": "Ajo y hierbas aromáticas mencionados en la elaboración, sin gramos"
+          },
+          "202611_huevo_escalfado": {
+            "nombre": "Huevo escalfado",
+            "racion_g": 60,
+            "ingredientes": [
+              "Huevo 60 g"
+            ]
+          }
+        }
+      },
+      "Cena": {
+        "almu": {
+          "202611_crema_champinones": {
+            "nombre": "Crema de champiñones y patata",
+            "racion_g": 200,
+            "ingredientes": [
+              "Champiñones 65 g",
+              "Leche descremada 65 g",
+              "Patata 45 g",
+              "Cebolla 15 g",
+              "Aceite de oliva 3 g"
+            ]
+          }
+        },
+        "fran": {
+          "202611_crema_champinones": {
+            "nombre": "Crema de champiñones y patata",
+            "racion_g": 300,
+            "ingredientes": [
+              "Champiñones 100 g",
+              "Leche descremada 100 g",
+              "Patata 70 g",
+              "Cebolla 25 g",
+              "Aceite de oliva 5 g"
+            ]
+          }
+        }
+      }
+    },
+    "2026-11-07": {
+      "Comida": {
+        "almu": {
+          "202611_patatas_horno": {
+            "nombre": "Patatas al horno",
+            "racion_g": 200,
+            "ingredientes": [
+              "Patata 190 g",
+              "Aceite de oliva 10 g"
+            ]
+          },
+          "202611_pollo_curry": {
+            "nombre": "Pollo con curry",
+            "racion_g": 150,
+            "ingredientes": [
+              "Pechuga de pollo 105 g",
+              "Cebolla 45 g",
+              "Curry sin cantidad prescrita"
+            ]
+          }
+        },
+        "fran": {
+          "202611_patatas_horno": {
+            "nombre": "Patatas al horno",
+            "racion_g": 200,
+            "ingredientes": [
+              "Patatas 190 g",
+              "Aceite de oliva 10 g"
+            ],
+            "nota": "Con romero"
+          },
+          "202611_pollo_curry": {
+            "nombre": "Pollo con curry",
+            "racion_g": 200,
+            "ingredientes": [
+              "Pechuga de pollo 145 g",
+              "Cebolla 55 g",
+              "Curry sin gramos"
+            ]
+          }
+        }
+      },
+      "Cena": {
+        "almu": {
+          "tacos_pollo": {
+            "nombre": "Tacos de pollo",
+            "racion_g": 250,
+            "ingredientes": [
+              "Tacos de pollo (preparado) 125 g",
+              "Pan sin gluten 50 g",
+              "Pechuga de pollo 30 g",
+              "Pimiento 30 g",
+              "Cebolla 10 g"
+            ],
+            "nota": "Preparado de tacos 125 g de composición no documentada, separado de pechuga de pollo 30 g; no se suman como pollo fresco."
+          }
+        },
+        "fran": {
+          "tacos_pollo": {
+            "nombre": "Tacos de pollo",
+            "racion_g": 350,
+            "ingredientes": [
+              "Pechuga de pollo fresca 217 g",
+              "Pan integral 70 g",
+              "Pimiento 42 g",
+              "Cebolla 14 g"
+            ],
+            "nota": "Ración de tacos 350 g aprobada por el usuario; ingredientes orientativos de 217 g pollo + 70 g pan + 42 g pimiento + 14 g cebolla suman 343 g. Diferencia de 7 g pendiente."
+          }
+        }
+      }
+    },
+    "2026-11-08": {
+      "Comida": {
+        "almu": {},
+        "fran": {}
+      },
+      "Cena": {
+        "almu": {
+          "202611_espinacas_huevo": {
+            "nombre": "Espinacas salteadas con huevo",
+            "racion_g": 300,
+            "ingredientes": [
+              "Espinacas 195 g",
+              "Huevo 105 g"
+            ]
+          }
+        },
+        "fran": {
+          "202611_espinacas_huevo": {
+            "nombre": "Espinacas salteadas con huevo",
+            "racion_g": 400,
+            "ingredientes": [
+              "Espinacas 260 g",
+              "Huevo 140 g"
+            ]
+          }
+        }
+      }
+    },
+    "2026-11-09": {
+      "Comida": {
+        "almu": {
+          "202611_macarrones_atun": {
+            "nombre": "Macarrones con atún",
+            "racion_g": 300,
+            "ingredientes": [
+              "Macarrones 160 g",
+              "Tomate 80 g",
+              "Atún en aceite 55 g"
+            ]
+          }
+        },
+        "fran": {
+          "202611_macarrones_atun": {
+            "nombre": "Macarrones con atún",
+            "racion_g": 400,
+            "ingredientes": [
+              "Macarrones 215 g",
+              "Tomate 110 g",
+              "Atún en aceite 75 g"
+            ]
+          }
+        }
+      },
+      "Cena": {
+        "almu": {
+          "202611_picadillo_patatas_atun": {
+            "nombre": "Picadillo de patatas con atún",
+            "racion_g": 250,
+            "ingredientes": [
+              "Patata hervida 85 g",
+              "Tomate 55 g",
+              "Huevo 50 g",
+              "Atún en aceite 30 g",
+              "Pimiento 25 g"
+            ]
+          }
+        },
+        "fran": {
+          "202611_picadillo_patatas_atun": {
+            "nombre": "Picadillo de patatas con atún",
+            "racion_g": 400,
+            "ingredientes": [
+              "Patata hervida 140 g",
+              "Tomate 85 g",
+              "Huevo 80 g",
+              "Atún en aceite 50 g",
+              "Pimiento 45 g"
+            ]
+          }
+        }
+      }
+    },
+    "2026-11-10": {
+      "Comida": {
+        "almu": {
+          "202611_arroz_marinera": {
+            "nombre": "Arroz a la marinera",
+            "racion_g": 350,
+            "ingredientes": [
+              "Arroz 115 g",
+              "Almejas frescas 70 g",
+              "Gambas 70 g",
+              "Sepia 70 g",
+              "Cebolla 35 g",
+              "Ajo sin cantidad prescrita"
+            ]
+          }
+        },
+        "fran": {
+          "202611_arroz_marinera": {
+            "nombre": "Arroz a la marinera",
+            "racion_g": 450,
+            "ingredientes": [
+              "Arroz 145 g",
+              "Almejas frescas 85 g",
+              "Gambas 85 g",
+              "Sepia 85 g",
+              "Cebolla 45 g",
+              "Ajo sin cantidad indicada"
+            ],
+            "nota": "Arroz cocinado con el doble de agua (volumen) y reposo de 5 minutos"
+          }
+        }
+      },
+      "Cena": {
+        "almu": {
+          "202611_judias_verdes": {
+            "nombre": "Judías verdes salteadas",
+            "racion_g": 150,
+            "ingredientes": [
+              "Judías verdes 65 g",
+              "Zanahoria 40 g",
+              "Patata 35 g",
+              "Jamón serrano 10 g",
+              "Aceite de oliva 3 g"
+            ]
+          },
+          "tortilla_francesa": {
+            "nombre": "Tortilla francesa",
+            "racion_g": 120,
+            "ingredientes": [
+              "Huevo 115 g",
+              "Aceite de oliva 4 g"
+            ]
+          }
+        },
+        "fran": {
+          "202611_judias_verdes": {
+            "nombre": "Judías verdes salteadas",
+            "racion_g": 240,
+            "ingredientes": [
+              "Judías verdes 105 g",
+              "Zanahoria 65 g",
+              "Patata 55 g",
+              "Jamón serrano 10 g",
+              "Aceite de oliva 4 g"
+            ]
+          },
+          "tortilla_francesa": {
+            "nombre": "Tortilla francesa",
+            "racion_g": 120,
+            "ingredientes": [
+              "Huevo 115 g",
+              "Aceite de oliva 4 g"
+            ]
+          }
+        }
+      }
+    },
+    "2026-11-11": {
+      "Comida": {
+        "almu": {
+          "202611_cuscus_pollo_curry": {
+            "nombre": "Cuscús con pollo al curry",
+            "racion_g": 250,
+            "ingredientes": [
+              "Cuscús con pollo, plato preparado 250 g"
+            ],
+            "nota": "La receta completa con 125 g de cuscús no equivale a una ración individual."
+          }
+        },
+        "fran": {
+          "202611_cuscus_pollo_curry": {
+            "nombre": "Cuscús con pollo al curry",
+            "racion_g": 350,
+            "ingredientes": [
+              "Cuscús con pollo, plato preparado 350 g"
+            ],
+            "nota": "Receta completa, NO ración individual: pechuga de pollo 1 ud.; cebolla 1 ud.; medio pimiento rojo y medio verde; zanahoria grande 1 ud.; ajo 1 diente; cuscús 125 g; mantequilla; curry; AOVE; sal y pimienta"
+          }
+        }
+      },
+      "Cena": {
+        "almu": {
+          "202611_pure_verduras": {
+            "nombre": "Puré de verduras",
+            "racion_g": 200,
+            "ingredientes": [
+              "Patata 70 g",
+              "Calabacín 45 g",
+              "Zanahoria 45 g",
+              "Tomate 35 g",
+              "Aceite de oliva 1 g"
+            ]
+          }
+        },
+        "fran": {
+          "202611_pure_verduras": {
+            "nombre": "Puré de verduras",
+            "racion_g": 300,
+            "ingredientes": [
+              "Patata 105 g",
+              "Calabacín 65 g",
+              "Zanahoria 65 g",
+              "Tomate 55 g",
+              "Aceite de oliva 2 g"
+            ]
+          }
+        }
+      }
+    },
+    "2026-11-12": {
+      "Comida": {
+        "almu": {
+          "202611_arroz_cubana": {
+            "nombre": "Arroz a la cubana con huevo",
+            "racion_g": 350,
+            "ingredientes": [
+              "Arroz 180 g",
+              "Huevo 90 g",
+              "Tomate 75 g",
+              "Aceite de oliva 4 g"
+            ]
+          }
+        },
+        "fran": {
+          "202611_arroz_cubana": {
+            "nombre": "Arroz a la cubana con huevo",
+            "racion_g": 400,
+            "ingredientes": [
+              "Arroz 210 g",
+              "Huevo 105 g",
+              "Tomate 85 g",
+              "Aceite de oliva 4 g"
+            ]
+          }
+        }
+      },
+      "Cena": {
+        "almu": {
+          "202611_ensalada_remolacha": {
+            "nombre": "Ensalada de remolacha",
+            "racion_g": 200,
+            "ingredientes": [
+              "Remolacha 125 g",
+              "Yogur natural desnatado 40 g",
+              "Rábanos 10 g",
+              "Zumo de limón 10 g",
+              "Pepino a la vinagreta 10 g"
+            ]
+          },
+          "202611_salmon_plancha": {
+            "nombre": "Salmón a la plancha",
+            "racion_g": 150,
+            "ingredientes": [
+              "Salmón 145 g",
+              "Aceite de oliva 3 g"
+            ]
+          }
+        },
+        "fran": {
+          "202611_ensalada_remolacha": {
+            "nombre": "Ensalada de remolacha",
+            "racion_g": 250,
+            "ingredientes": [
+              "Remolacha 155 g",
+              "Yogur natural desnatado 45 g",
+              "Rábanos 15 g",
+              "Zumo de limón 15 g",
+              "Pepino a la vinagreta 15 g"
+            ],
+            "nota": "Comino y clavo en polvo al gusto"
+          },
+          "202611_salmon_plancha": {
+            "nombre": "Salmón a la plancha",
+            "racion_g": 200,
+            "ingredientes": [
+              "Salmón 195 g",
+              "Aceite de oliva 4 g"
+            ]
+          }
+        }
+      }
+    },
+    "2026-11-13": {
+      "Comida": {
+        "almu": {},
+        "fran": {}
+      },
+      "Cena": {
+        "almu": {},
+        "fran": {}
+      }
+    },
+    "2026-11-14": {
+      "Comida": {
+        "almu": {},
+        "fran": {}
+      },
+      "Cena": {
+        "almu": {},
+        "fran": {}
+      }
+    },
+    "2026-11-15": {
+      "Comida": {
+        "almu": {},
+        "fran": {}
+      },
+      "Cena": {
+        "almu": {
+          "202611_espinacas_huevo": {
+            "nombre": "Espinacas salteadas con huevo",
+            "racion_g": 300,
+            "ingredientes": [
+              "Espinacas 195 g",
+              "Huevo 105 g"
+            ]
+          }
+        },
+        "fran": {
+          "202611_espinacas_huevo": {
+            "nombre": "Espinacas salteadas con huevo",
+            "racion_g": 400,
+            "ingredientes": [
+              "Espinacas 260 g",
+              "Huevo 140 g"
+            ]
+          }
+        }
       }
     }
   }
