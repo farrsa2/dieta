@@ -566,7 +566,7 @@
     }
   },
   "calendario_21_dias": {
-    "archivo": "data/plan_21_dias_20261105_070000.json",
+    "archivo": "data/plan_21_dias_20261105_064512.json",
     "desde": "2026-11-04",
     "hasta": "2026-11-25",
     "estado": "CUADRO01_APROBADO_CUADRO02_PENDIENTE",
