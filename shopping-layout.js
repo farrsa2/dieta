@@ -66,6 +66,8 @@
   ]);
 
   function cleanUseLine(use) {
+    // Para las tres tomas sin receta, conservar las etiquetas abreviadas.
+    if (typeof use === 'string' && /^(D|MM|ME)$/i.test(use.trim())) return use.trim().toUpperCase();
     if (use && typeof use === 'object' && !Array.isArray(use)) {
       const day = /^[LMXJVSD]$/i.test(String(use.day || '').trim()) ? String(use.day).trim().toUpperCase() : '';
       const dish = String(use.dish || '').trim();
