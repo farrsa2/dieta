@@ -1,0 +1,5209 @@
+{
+  "schema_version": 1,
+  "tipo": "planificacion_21_dias_no_operativa",
+  "timezone": "Europe/Madrid",
+  "periodo": {
+    "desde": "2026-11-04",
+    "primera_toma": "Cena",
+    "hasta": "2026-11-25",
+    "ultima_toma": "Comida",
+    "duracion": "21 días de diferencia entre extremos; 22 fechas con días extremos parciales"
+  },
+  "estado": "CUADRO01_Y_CUADRO02_APROBADOS_COMPRA_PENDIENTE",
+  "fuente_fran": "Fran Arroyo - Dieta Personalizada -- 04-11-2026.PDF · pauta 02–08/11/2026, repetida por encargo del usuario",
+  "prioridad": "Calendario de los dos aprobado. 7 y 21: tacos Almu 250 g prescritos; tacos Fran 350 g + yogur 125 g, adaptación aprobada por el usuario.",
+  "restricciones": "Cuadros 01 y 02 aprobados. Mantener compra sin consolidar hasta validar día a día. No publicar en producción hasta revisar recetas emergentes y cuatro vistas.",
+  "excepciones": [
+    "07/11 comida: patatas al horno + pollo al curry en ambos; sábados 7 y 21 cena: tacos de pollo en ambos, para Fran sustitución y cantidad solo provisional.",
+    "08/11 comida: Aluche · cumpleaños de Almu · libre",
+    "13/11 y 14/11: comida y cena Cartagena · libres; desayuno, media mañana y merienda habituales",
+    "15/11 comida: Cartagena · libre; cena: espinacas salteadas con huevo + yogur (domingo habitual)"
+  ],
+  "dias": [
+    {
+      "fecha": "2026-11-04",
+      "dia": "Miércoles",
+      "tomas": {
+        "Cena": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Puré de verduras",
+                "racion_g": 200,
+                "ingredientes": [
+                  "Patata 70 g",
+                  "Calabacín 45 g",
+                  "Zanahoria 45 g",
+                  "Tomate 35 g",
+                  "Aceite de oliva 1 g"
+                ]
+              },
+              {
+                "nombre": "Bacalao fresco",
+                "racion_g": 200,
+                "ingredientes": [
+                  "Bacalao fresco 200 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Puré de verduras",
+                "racion_g": 300,
+                "ingredientes": [
+                  "Patata 105 g",
+                  "Calabacín 65 g",
+                  "Zanahoria 65 g",
+                  "Tomate 55 g",
+                  "Aceite de oliva 2 g"
+                ]
+              },
+              {
+                "nombre": "Bacalao fresco",
+                "racion_g": 200,
+                "ingredientes": [
+                  "Bacalao fresco 200 g"
+                ]
+              },
+              {
+                "nombre": "Yogur natural desnatado",
+                "racion_g": 125,
+                "ingredientes": [
+                  "Yogur natural desnatado 125 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-05",
+      "dia": "Jueves",
+      "tomas": {
+        "Desayuno": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Corn Flakes y leche de soja",
+                "racion_g": 230,
+                "ingredientes": [
+                  "Leche de soja 200 g",
+                  "Corn Flakes 30 g"
+                ]
+              },
+              {
+                "nombre": "Copos de avena",
+                "racion_g": 20,
+                "ingredientes": [
+                  "Copos de avena 20 g"
+                ]
+              },
+              {
+                "nombre": "Kiwi",
+                "racion_g": 60,
+                "ingredientes": [
+                  "Kiwi 60 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tostadas integrales con lomo curado",
+                "racion_g": 60,
+                "ingredientes": [
+                  "Tostadas integrales 30 g",
+                  "Lomo curado 30 g"
+                ]
+              },
+              {
+                "nombre": "Café cortado descremado",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Café natural 85 g",
+                  "Leche descremada 15 g"
+                ],
+                "nota": "Opcional"
+              },
+              {
+                "nombre": "Ciruelas",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Ciruelas 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Media mañana": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Pan tostado con aceite y tomate",
+                "racion_g": 50,
+                "ingredientes": [
+                  "Pan 40 g",
+                  "Aceite de oliva 6 g",
+                  "Tomate 5 g"
+                ]
+              },
+              {
+                "nombre": "Queso de Burgos",
+                "racion_g": 40,
+                "ingredientes": [
+                  "Queso de Burgos 40 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Bocadillo con jamón serrano",
+                "racion_g": 130,
+                "ingredientes": [
+                  "Pan baguette 70 g",
+                  "Jamón serrano 60 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Comida": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Arroz a la cubana con huevo",
+                "racion_g": 350,
+                "ingredientes": [
+                  "Arroz 180 g",
+                  "Huevo 90 g",
+                  "Tomate 75 g",
+                  "Aceite de oliva 4 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Arroz a la cubana con huevo",
+                "racion_g": 400,
+                "ingredientes": [
+                  "Arroz 210 g",
+                  "Huevo 105 g",
+                  "Tomate 85 g",
+                  "Aceite de oliva 4 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        },
+        "Merienda": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 150,
+                "ingredientes": [
+                  "Fruta de temporada 150 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tortas de maíz",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Tortas de maíz 30 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Cena": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Ensalada de remolacha",
+                "racion_g": 200,
+                "ingredientes": [
+                  "Remolacha 125 g",
+                  "Yogur natural desnatado 40 g",
+                  "Rábanos 10 g",
+                  "Zumo de limón 10 g",
+                  "Pepino a la vinagreta 10 g"
+                ]
+              },
+              {
+                "nombre": "Salmón a la plancha",
+                "racion_g": 150,
+                "ingredientes": [
+                  "Salmón 145 g",
+                  "Aceite de oliva 3 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Ensalada de remolacha",
+                "racion_g": 250,
+                "ingredientes": [
+                  "Remolacha 155 g",
+                  "Yogur natural desnatado 45 g",
+                  "Rábanos 15 g",
+                  "Zumo de limón 15 g",
+                  "Pepino a la vinagreta 15 g"
+                ],
+                "nota": "Comino y clavo en polvo al gusto"
+              },
+              {
+                "nombre": "Salmón a la plancha",
+                "racion_g": 200,
+                "ingredientes": [
+                  "Salmón 195 g",
+                  "Aceite de oliva 4 g"
+                ]
+              },
+              {
+                "nombre": "Yogur natural desnatado",
+                "racion_g": 125,
+                "ingredientes": [
+                  "Yogur natural desnatado 125 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-06",
+      "dia": "Viernes",
+      "tomas": {
+        "Desayuno": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Corn Flakes y leche de soja",
+                "racion_g": 230,
+                "ingredientes": [
+                  "Leche de soja 200 g",
+                  "Corn Flakes 30 g"
+                ]
+              },
+              {
+                "nombre": "Copos de avena",
+                "racion_g": 20,
+                "ingredientes": [
+                  "Copos de avena 20 g"
+                ]
+              },
+              {
+                "nombre": "Kiwi",
+                "racion_g": 60,
+                "ingredientes": [
+                  "Kiwi 60 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Corn Flakes con leche de soja",
+                "racion_g": 230,
+                "ingredientes": [
+                  "Leche de soja 200 g",
+                  "Corn Flakes 30 g"
+                ]
+              },
+              {
+                "nombre": "Café cortado descremado",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Café natural 85 g",
+                  "Leche descremada 15 g"
+                ],
+                "nota": "Opcional"
+              },
+              {
+                "nombre": "Ciruelas",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Ciruelas 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Media mañana": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Pan tostado con aceite y tomate",
+                "racion_g": 50,
+                "ingredientes": [
+                  "Pan 40 g",
+                  "Aceite de oliva 6 g",
+                  "Tomate 5 g"
+                ]
+              },
+              {
+                "nombre": "Jamón serrano",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Jamón serrano 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Bocadillo de jamón York y tomate",
+                "racion_g": 150,
+                "ingredientes": [
+                  "Pan baguette 85 g",
+                  "Jamón York 35 g",
+                  "Tomate 35 g"
+                ],
+                "nota": "La ración indica 150 g; ingredientes suman 155 g"
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Comida": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Patatas guisadas",
+                "racion_g": 250,
+                "ingredientes": [
+                  "Patata 115 g",
+                  "Tomate 55 g",
+                  "Cebolla 55 g",
+                  "Pimiento 25 g"
+                ]
+              },
+              {
+                "nombre": "Huevo escalfado",
+                "racion_g": 60,
+                "ingredientes": [
+                  "Huevo 60 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Patatas guisadas",
+                "racion_g": 400,
+                "ingredientes": [
+                  "Patatas 180 g",
+                  "Tomate 90 g",
+                  "Cebolla 90 g",
+                  "Pimiento 35 g"
+                ],
+                "nota": "Ajo y hierbas aromáticas mencionados en la elaboración, sin gramos"
+              },
+              {
+                "nombre": "Huevo escalfado",
+                "racion_g": 60,
+                "ingredientes": [
+                  "Huevo 60 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        },
+        "Merienda": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 150,
+                "ingredientes": [
+                  "Fruta de temporada 150 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tortas de maíz",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Tortas de maíz 30 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Cena": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Crema de champiñones y patata",
+                "racion_g": 200,
+                "ingredientes": [
+                  "Champiñones 65 g",
+                  "Leche descremada 65 g",
+                  "Patata 45 g",
+                  "Cebolla 15 g",
+                  "Aceite de oliva 3 g"
+                ]
+              },
+              {
+                "nombre": "Merluza a la plancha",
+                "racion_g": 200,
+                "ingredientes": [
+                  "Merluza 195 g",
+                  "Aceite de oliva 6 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Crema de champiñones y patata",
+                "racion_g": 300,
+                "ingredientes": [
+                  "Champiñones 100 g",
+                  "Leche descremada 100 g",
+                  "Patata 70 g",
+                  "Cebolla 25 g",
+                  "Aceite de oliva 5 g"
+                ]
+              },
+              {
+                "nombre": "Merluza a la plancha",
+                "racion_g": 200,
+                "ingredientes": [
+                  "Merluza 195 g",
+                  "Aceite de oliva 6 g"
+                ]
+              },
+              {
+                "nombre": "Yogur natural desnatado",
+                "racion_g": 125,
+                "ingredientes": [
+                  "Yogur natural desnatado 125 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-07",
+      "dia": "Sábado",
+      "tomas": {
+        "Desayuno": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Corn Flakes y leche de soja",
+                "racion_g": 230,
+                "ingredientes": [
+                  "Leche de soja 200 g",
+                  "Corn Flakes 30 g"
+                ]
+              },
+              {
+                "nombre": "Copos de avena",
+                "racion_g": 20,
+                "ingredientes": [
+                  "Copos de avena 20 g"
+                ]
+              },
+              {
+                "nombre": "Kiwi",
+                "racion_g": 60,
+                "ingredientes": [
+                  "Kiwi 60 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Corn Flakes con leche de soja",
+                "racion_g": 230,
+                "ingredientes": [
+                  "Leche de soja 200 g",
+                  "Corn Flakes 30 g"
+                ]
+              },
+              {
+                "nombre": "Copos de avena",
+                "racion_g": 50,
+                "ingredientes": [
+                  "Copos de avena 50 g"
+                ]
+              },
+              {
+                "nombre": "Café cortado descremado",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Café natural 85 g",
+                  "Leche descremada 15 g"
+                ],
+                "nota": "Opcional"
+              },
+              {
+                "nombre": "Ciruelas",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Ciruelas 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Media mañana": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tostadas integrales con jamón York",
+                "racion_g": 60,
+                "ingredientes": [
+                  "Tostadas integrales 30 g",
+                  "Jamón York 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tortas de maíz",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Tortas de maíz 30 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 200,
+                "ingredientes": [
+                  "Fruta de temporada 200 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Comida": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Patatas al horno",
+                "racion_g": 200,
+                "ingredientes": [
+                  "Patata 190 g",
+                  "Aceite de oliva 10 g"
+                ]
+              },
+              {
+                "nombre": "Pollo con curry",
+                "racion_g": 150,
+                "ingredientes": [
+                  "Pechuga de pollo 105 g",
+                  "Cebolla 45 g",
+                  "Curry sin cantidad prescrita"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario",
+            "origen_fecha": "2026-11-08"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Patatas al horno",
+                "racion_g": 200,
+                "ingredientes": [
+                  "Patatas 190 g",
+                  "Aceite de oliva 10 g"
+                ],
+                "nota": "Con romero"
+              },
+              {
+                "nombre": "Pollo con curry",
+                "racion_g": 200,
+                "ingredientes": [
+                  "Pechuga de pollo 145 g",
+                  "Cebolla 55 g",
+                  "Curry sin gramos"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario",
+            "origen_fecha": "2026-11-08"
+          },
+          "calendario_fijado": true,
+          "nota": "Sábado 7: sustituye lentejas por patatas al horno y pollo al curry (plato original domingo 8)."
+        },
+        "Merienda": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 150,
+                "ingredientes": [
+                  "Fruta de temporada 150 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Queso de Burgos",
+                "racion_g": 60,
+                "ingredientes": [
+                  "Queso de Burgos 60 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Cena": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tacos de pollo",
+                "racion_g": 250,
+                "ingredientes": [
+                  "Tacos de pollo (preparado) 125 g",
+                  "Pan sin gluten 50 g",
+                  "Pechuga de pollo 30 g",
+                  "Pimiento 30 g",
+                  "Cebolla 10 g"
+                ],
+                "nota": "Preparado de tacos 125 g de composición no documentada, separado de pechuga de pollo 30 g; no se suman como pollo fresco."
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "adaptacion_usuario_aprobada",
+            "platos": [
+              {
+                "nombre": "Tacos de pollo",
+                "racion_g": 350,
+                "ingredientes": [
+                  "Pechuga de pollo fresca 217 g",
+                  "Pan integral 70 g",
+                  "Pimiento 42 g",
+                  "Cebolla 14 g"
+                ],
+                "nota": "Ración de tacos 350 g aprobada por el usuario; ingredientes orientativos de 217 g pollo + 70 g pan + 42 g pimiento + 14 g cebolla suman 343 g. Diferencia de 7 g pendiente."
+              },
+              {
+                "nombre": "Yogur natural desnatado",
+                "racion_g": 125,
+                "ingredientes": [
+                  "Yogur natural desnatado 125 g"
+                ],
+                "nota": "Se conserva el yogur de la cena original de Fran."
+              }
+            ],
+            "origen": "Cambio solicitado y ración aprobada por el usuario; no prescripción del nutricionista."
+          },
+          "calendario_fijado": true,
+          "nota": "Tacos para ambos aprobados; Fran 350 g y yogur 125 g; 125 g de preparado de Almu mantenidos separados de 30 g de pechuga."
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-08",
+      "dia": "Domingo",
+      "tomas": {
+        "Desayuno": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Corn Flakes y leche de soja",
+                "racion_g": 230,
+                "ingredientes": [
+                  "Leche de soja 200 g",
+                  "Corn Flakes 30 g"
+                ]
+              },
+              {
+                "nombre": "Copos de avena",
+                "racion_g": 20,
+                "ingredientes": [
+                  "Copos de avena 20 g"
+                ]
+              },
+              {
+                "nombre": "Kiwi",
+                "racion_g": 60,
+                "ingredientes": [
+                  "Kiwi 60 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tostadas integrales con tomate y aceite",
+                "racion_g": 50,
+                "ingredientes": [
+                  "Tostadas integrales 40 g",
+                  "Tomate 5 g",
+                  "Aceite de oliva 6 g"
+                ]
+              },
+              {
+                "nombre": "Café cortado descremado",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Café natural 85 g",
+                  "Leche descremada 15 g"
+                ],
+                "nota": "Opcional"
+              },
+              {
+                "nombre": "Ciruelas",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Ciruelas 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Media mañana": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tostadas integrales con jamón York",
+                "racion_g": 60,
+                "ingredientes": [
+                  "Tostadas integrales 30 g",
+                  "Jamón York 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tortas de maíz",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Tortas de maíz 30 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 200,
+                "ingredientes": [
+                  "Fruta de temporada 200 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Comida": {
+          "almu": {
+            "estado": "libre",
+            "lugar": "Aluche",
+            "motivo": "Cumpleaños de Almu"
+          },
+          "fran": {
+            "estado": "libre",
+            "lugar": "Aluche",
+            "motivo": "Cumpleaños de Almu"
+          },
+          "calendario_fijado": true
+        },
+        "Merienda": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 150,
+                "ingredientes": [
+                  "Fruta de temporada 150 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Queso de Burgos",
+                "racion_g": 60,
+                "ingredientes": [
+                  "Queso de Burgos 60 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Cena": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Espinacas salteadas con huevo",
+                "racion_g": 300,
+                "ingredientes": [
+                  "Espinacas 195 g",
+                  "Huevo 105 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Espinacas salteadas con huevo",
+                "racion_g": 400,
+                "ingredientes": [
+                  "Espinacas 260 g",
+                  "Huevo 140 g"
+                ]
+              },
+              {
+                "nombre": "Yogur natural desnatado",
+                "racion_g": 125,
+                "ingredientes": [
+                  "Yogur natural desnatado 125 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-09",
+      "dia": "Lunes",
+      "tomas": {
+        "Desayuno": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Corn Flakes y leche de soja",
+                "racion_g": 230,
+                "ingredientes": [
+                  "Leche de soja 200 g",
+                  "Corn Flakes 30 g"
+                ]
+              },
+              {
+                "nombre": "Copos de avena",
+                "racion_g": 20,
+                "ingredientes": [
+                  "Copos de avena 20 g"
+                ]
+              },
+              {
+                "nombre": "Kiwi",
+                "racion_g": 60,
+                "ingredientes": [
+                  "Kiwi 60 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Corn Flakes con leche de soja",
+                "racion_g": 230,
+                "ingredientes": [
+                  "Leche de soja 200 g",
+                  "Corn Flakes 30 g"
+                ]
+              },
+              {
+                "nombre": "Copos de avena",
+                "racion_g": 50,
+                "ingredientes": [
+                  "Copos de avena 50 g"
+                ]
+              },
+              {
+                "nombre": "Café cortado descremado",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Café natural 85 g",
+                  "Leche descremada 15 g"
+                ],
+                "nota": "Opcional"
+              },
+              {
+                "nombre": "Ciruelas",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Ciruelas 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Media mañana": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Pan tostado con aceite y tomate",
+                "racion_g": 50,
+                "ingredientes": [
+                  "Pan 40 g",
+                  "Aceite de oliva 6 g",
+                  "Tomate 5 g"
+                ]
+              },
+              {
+                "nombre": "Jamón serrano",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Jamón serrano 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Bocadillo de jamón York y tomate",
+                "racion_g": 150,
+                "ingredientes": [
+                  "Pan baguette 85 g",
+                  "Jamón York 35 g",
+                  "Tomate 35 g"
+                ],
+                "nota": "La ración indica 150 g; ingredientes suman 155 g"
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Comida": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Macarrones con atún",
+                "racion_g": 300,
+                "ingredientes": [
+                  "Macarrones 160 g",
+                  "Tomate 80 g",
+                  "Atún en aceite 55 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Macarrones con atún",
+                "racion_g": 400,
+                "ingredientes": [
+                  "Macarrones 215 g",
+                  "Tomate 110 g",
+                  "Atún en aceite 75 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        },
+        "Merienda": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 150,
+                "ingredientes": [
+                  "Fruta de temporada 150 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tortas de maíz",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Tortas de maíz 30 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Cena": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Picadillo de patatas con atún",
+                "racion_g": 250,
+                "ingredientes": [
+                  "Patata hervida 85 g",
+                  "Tomate 55 g",
+                  "Huevo 50 g",
+                  "Atún en aceite 30 g",
+                  "Pimiento 25 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Picadillo de patatas con atún",
+                "racion_g": 400,
+                "ingredientes": [
+                  "Patata hervida 140 g",
+                  "Tomate 85 g",
+                  "Huevo 80 g",
+                  "Atún en aceite 50 g",
+                  "Pimiento 45 g"
+                ]
+              },
+              {
+                "nombre": "Yogur natural desnatado",
+                "racion_g": 125,
+                "ingredientes": [
+                  "Yogur natural desnatado 125 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-10",
+      "dia": "Martes",
+      "tomas": {
+        "Desayuno": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Corn Flakes y leche de soja",
+                "racion_g": 230,
+                "ingredientes": [
+                  "Leche de soja 200 g",
+                  "Corn Flakes 30 g"
+                ]
+              },
+              {
+                "nombre": "Copos de avena",
+                "racion_g": 20,
+                "ingredientes": [
+                  "Copos de avena 20 g"
+                ]
+              },
+              {
+                "nombre": "Kiwi",
+                "racion_g": 60,
+                "ingredientes": [
+                  "Kiwi 60 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tostadas integrales con jamón York",
+                "racion_g": 80,
+                "ingredientes": [
+                  "Tostadas integrales 45 g",
+                  "Jamón York 35 g"
+                ]
+              },
+              {
+                "nombre": "Café cortado descremado",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Café natural 85 g",
+                  "Leche descremada 15 g"
+                ],
+                "nota": "Opcional"
+              },
+              {
+                "nombre": "Ciruelas",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Ciruelas 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Media mañana": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Pan tostado con aceite y tomate",
+                "racion_g": 50,
+                "ingredientes": [
+                  "Pan 40 g",
+                  "Aceite de oliva 6 g",
+                  "Tomate 5 g"
+                ]
+              },
+              {
+                "nombre": "Queso de Burgos",
+                "racion_g": 40,
+                "ingredientes": [
+                  "Queso de Burgos 40 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Bocadillo con jamón serrano",
+                "racion_g": 130,
+                "ingredientes": [
+                  "Pan baguette 70 g",
+                  "Jamón serrano 60 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Comida": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Arroz a la marinera",
+                "racion_g": 350,
+                "ingredientes": [
+                  "Arroz 115 g",
+                  "Almejas frescas 70 g",
+                  "Gambas 70 g",
+                  "Sepia 70 g",
+                  "Cebolla 35 g",
+                  "Ajo sin cantidad prescrita"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Arroz a la marinera",
+                "racion_g": 450,
+                "ingredientes": [
+                  "Arroz 145 g",
+                  "Almejas frescas 85 g",
+                  "Gambas 85 g",
+                  "Sepia 85 g",
+                  "Cebolla 45 g",
+                  "Ajo sin cantidad indicada"
+                ],
+                "nota": "Arroz cocinado con el doble de agua (volumen) y reposo de 5 minutos"
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        },
+        "Merienda": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 150,
+                "ingredientes": [
+                  "Fruta de temporada 150 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tortas de maíz",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Tortas de maíz 30 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Cena": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Judías verdes salteadas",
+                "racion_g": 150,
+                "ingredientes": [
+                  "Judías verdes 65 g",
+                  "Zanahoria 40 g",
+                  "Patata 35 g",
+                  "Jamón serrano 10 g",
+                  "Aceite de oliva 3 g"
+                ]
+              },
+              {
+                "nombre": "Tortilla francesa",
+                "racion_g": 120,
+                "ingredientes": [
+                  "Huevo 115 g",
+                  "Aceite de oliva 4 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Judías verdes salteadas",
+                "racion_g": 240,
+                "ingredientes": [
+                  "Judías verdes 105 g",
+                  "Zanahoria 65 g",
+                  "Patata 55 g",
+                  "Jamón serrano 10 g",
+                  "Aceite de oliva 4 g"
+                ]
+              },
+              {
+                "nombre": "Tortilla francesa",
+                "racion_g": 120,
+                "ingredientes": [
+                  "Huevo 115 g",
+                  "Aceite de oliva 4 g"
+                ]
+              },
+              {
+                "nombre": "Yogur natural desnatado",
+                "racion_g": 125,
+                "ingredientes": [
+                  "Yogur natural desnatado 125 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-11",
+      "dia": "Miércoles",
+      "tomas": {
+        "Desayuno": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Corn Flakes y leche de soja",
+                "racion_g": 230,
+                "ingredientes": [
+                  "Leche de soja 200 g",
+                  "Corn Flakes 30 g"
+                ]
+              },
+              {
+                "nombre": "Copos de avena",
+                "racion_g": 20,
+                "ingredientes": [
+                  "Copos de avena 20 g"
+                ]
+              },
+              {
+                "nombre": "Kiwi",
+                "racion_g": 60,
+                "ingredientes": [
+                  "Kiwi 60 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tostadas integrales con tomate y aceite",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Tostadas integrales 25 g",
+                  "Tomate 5 g",
+                  "Aceite de oliva 3 g"
+                ]
+              },
+              {
+                "nombre": "Café cortado descremado",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Café natural 85 g",
+                  "Leche descremada 15 g"
+                ],
+                "nota": "Opcional"
+              },
+              {
+                "nombre": "Ciruelas",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Ciruelas 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Media mañana": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Pan tostado con aceite y tomate",
+                "racion_g": 50,
+                "ingredientes": [
+                  "Pan 40 g",
+                  "Aceite de oliva 6 g",
+                  "Tomate 5 g"
+                ]
+              },
+              {
+                "nombre": "Jamón serrano",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Jamón serrano 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Bocadillo de pollo",
+                "racion_g": 150,
+                "ingredientes": [
+                  "Pan baguette 80 g",
+                  "Pechuga de pollo 55 g",
+                  "Lechuga 15 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Comida": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Cuscús con pollo al curry",
+                "racion_g": 250,
+                "ingredientes": [
+                  "Cuscús con pollo, plato preparado 250 g"
+                ],
+                "nota": "La receta completa con 125 g de cuscús no equivale a una ración individual."
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Cuscús con pollo al curry",
+                "racion_g": 350,
+                "ingredientes": [
+                  "Cuscús con pollo, plato preparado 350 g"
+                ],
+                "nota": "Receta completa, NO ración individual: pechuga de pollo 1 ud.; cebolla 1 ud.; medio pimiento rojo y medio verde; zanahoria grande 1 ud.; ajo 1 diente; cuscús 125 g; mantequilla; curry; AOVE; sal y pimienta"
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        },
+        "Merienda": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 150,
+                "ingredientes": [
+                  "Fruta de temporada 150 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tortas de maíz",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Tortas de maíz 30 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Cena": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Puré de verduras",
+                "racion_g": 200,
+                "ingredientes": [
+                  "Patata 70 g",
+                  "Calabacín 45 g",
+                  "Zanahoria 45 g",
+                  "Tomate 35 g",
+                  "Aceite de oliva 1 g"
+                ]
+              },
+              {
+                "nombre": "Bacalao fresco",
+                "racion_g": 200,
+                "ingredientes": [
+                  "Bacalao fresco 200 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Puré de verduras",
+                "racion_g": 300,
+                "ingredientes": [
+                  "Patata 105 g",
+                  "Calabacín 65 g",
+                  "Zanahoria 65 g",
+                  "Tomate 55 g",
+                  "Aceite de oliva 2 g"
+                ]
+              },
+              {
+                "nombre": "Bacalao fresco",
+                "racion_g": 200,
+                "ingredientes": [
+                  "Bacalao fresco 200 g"
+                ]
+              },
+              {
+                "nombre": "Yogur natural desnatado",
+                "racion_g": 125,
+                "ingredientes": [
+                  "Yogur natural desnatado 125 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-12",
+      "dia": "Jueves",
+      "tomas": {
+        "Desayuno": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Corn Flakes y leche de soja",
+                "racion_g": 230,
+                "ingredientes": [
+                  "Leche de soja 200 g",
+                  "Corn Flakes 30 g"
+                ]
+              },
+              {
+                "nombre": "Copos de avena",
+                "racion_g": 20,
+                "ingredientes": [
+                  "Copos de avena 20 g"
+                ]
+              },
+              {
+                "nombre": "Kiwi",
+                "racion_g": 60,
+                "ingredientes": [
+                  "Kiwi 60 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tostadas integrales con lomo curado",
+                "racion_g": 60,
+                "ingredientes": [
+                  "Tostadas integrales 30 g",
+                  "Lomo curado 30 g"
+                ]
+              },
+              {
+                "nombre": "Café cortado descremado",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Café natural 85 g",
+                  "Leche descremada 15 g"
+                ],
+                "nota": "Opcional"
+              },
+              {
+                "nombre": "Ciruelas",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Ciruelas 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Media mañana": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Pan tostado con aceite y tomate",
+                "racion_g": 50,
+                "ingredientes": [
+                  "Pan 40 g",
+                  "Aceite de oliva 6 g",
+                  "Tomate 5 g"
+                ]
+              },
+              {
+                "nombre": "Queso de Burgos",
+                "racion_g": 40,
+                "ingredientes": [
+                  "Queso de Burgos 40 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Bocadillo con jamón serrano",
+                "racion_g": 130,
+                "ingredientes": [
+                  "Pan baguette 70 g",
+                  "Jamón serrano 60 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Comida": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Arroz a la cubana con huevo",
+                "racion_g": 350,
+                "ingredientes": [
+                  "Arroz 180 g",
+                  "Huevo 90 g",
+                  "Tomate 75 g",
+                  "Aceite de oliva 4 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Arroz a la cubana con huevo",
+                "racion_g": 400,
+                "ingredientes": [
+                  "Arroz 210 g",
+                  "Huevo 105 g",
+                  "Tomate 85 g",
+                  "Aceite de oliva 4 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        },
+        "Merienda": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 150,
+                "ingredientes": [
+                  "Fruta de temporada 150 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tortas de maíz",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Tortas de maíz 30 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Cena": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Ensalada de remolacha",
+                "racion_g": 200,
+                "ingredientes": [
+                  "Remolacha 125 g",
+                  "Yogur natural desnatado 40 g",
+                  "Rábanos 10 g",
+                  "Zumo de limón 10 g",
+                  "Pepino a la vinagreta 10 g"
+                ]
+              },
+              {
+                "nombre": "Salmón a la plancha",
+                "racion_g": 150,
+                "ingredientes": [
+                  "Salmón 145 g",
+                  "Aceite de oliva 3 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Ensalada de remolacha",
+                "racion_g": 250,
+                "ingredientes": [
+                  "Remolacha 155 g",
+                  "Yogur natural desnatado 45 g",
+                  "Rábanos 15 g",
+                  "Zumo de limón 15 g",
+                  "Pepino a la vinagreta 15 g"
+                ],
+                "nota": "Comino y clavo en polvo al gusto"
+              },
+              {
+                "nombre": "Salmón a la plancha",
+                "racion_g": 200,
+                "ingredientes": [
+                  "Salmón 195 g",
+                  "Aceite de oliva 4 g"
+                ]
+              },
+              {
+                "nombre": "Yogur natural desnatado",
+                "racion_g": 125,
+                "ingredientes": [
+                  "Yogur natural desnatado 125 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-13",
+      "dia": "Viernes",
+      "tomas": {
+        "Desayuno": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Corn Flakes y leche de soja",
+                "racion_g": 230,
+                "ingredientes": [
+                  "Leche de soja 200 g",
+                  "Corn Flakes 30 g"
+                ]
+              },
+              {
+                "nombre": "Copos de avena",
+                "racion_g": 20,
+                "ingredientes": [
+                  "Copos de avena 20 g"
+                ]
+              },
+              {
+                "nombre": "Kiwi",
+                "racion_g": 60,
+                "ingredientes": [
+                  "Kiwi 60 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Corn Flakes con leche de soja",
+                "racion_g": 230,
+                "ingredientes": [
+                  "Leche de soja 200 g",
+                  "Corn Flakes 30 g"
+                ]
+              },
+              {
+                "nombre": "Café cortado descremado",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Café natural 85 g",
+                  "Leche descremada 15 g"
+                ],
+                "nota": "Opcional"
+              },
+              {
+                "nombre": "Ciruelas",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Ciruelas 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Media mañana": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Pan tostado con aceite y tomate",
+                "racion_g": 50,
+                "ingredientes": [
+                  "Pan 40 g",
+                  "Aceite de oliva 6 g",
+                  "Tomate 5 g"
+                ]
+              },
+              {
+                "nombre": "Jamón serrano",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Jamón serrano 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Bocadillo de jamón York y tomate",
+                "racion_g": 150,
+                "ingredientes": [
+                  "Pan baguette 85 g",
+                  "Jamón York 35 g",
+                  "Tomate 35 g"
+                ],
+                "nota": "La ración indica 150 g; ingredientes suman 155 g"
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Comida": {
+          "almu": {
+            "estado": "libre",
+            "lugar": "Cartagena",
+            "motivo": "Viaje"
+          },
+          "fran": {
+            "estado": "libre",
+            "lugar": "Cartagena",
+            "motivo": "Viaje"
+          },
+          "calendario_fijado": true
+        },
+        "Merienda": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 150,
+                "ingredientes": [
+                  "Fruta de temporada 150 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tortas de maíz",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Tortas de maíz 30 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Cena": {
+          "almu": {
+            "estado": "libre",
+            "lugar": "Cartagena",
+            "motivo": "Viaje"
+          },
+          "fran": {
+            "estado": "libre",
+            "lugar": "Cartagena",
+            "motivo": "Viaje"
+          },
+          "calendario_fijado": true
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-14",
+      "dia": "Sábado",
+      "tomas": {
+        "Desayuno": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Corn Flakes y leche de soja",
+                "racion_g": 230,
+                "ingredientes": [
+                  "Leche de soja 200 g",
+                  "Corn Flakes 30 g"
+                ]
+              },
+              {
+                "nombre": "Copos de avena",
+                "racion_g": 20,
+                "ingredientes": [
+                  "Copos de avena 20 g"
+                ]
+              },
+              {
+                "nombre": "Kiwi",
+                "racion_g": 60,
+                "ingredientes": [
+                  "Kiwi 60 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Corn Flakes con leche de soja",
+                "racion_g": 230,
+                "ingredientes": [
+                  "Leche de soja 200 g",
+                  "Corn Flakes 30 g"
+                ]
+              },
+              {
+                "nombre": "Copos de avena",
+                "racion_g": 50,
+                "ingredientes": [
+                  "Copos de avena 50 g"
+                ]
+              },
+              {
+                "nombre": "Café cortado descremado",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Café natural 85 g",
+                  "Leche descremada 15 g"
+                ],
+                "nota": "Opcional"
+              },
+              {
+                "nombre": "Ciruelas",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Ciruelas 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Media mañana": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tostadas integrales con jamón York",
+                "racion_g": 60,
+                "ingredientes": [
+                  "Tostadas integrales 30 g",
+                  "Jamón York 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tortas de maíz",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Tortas de maíz 30 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 200,
+                "ingredientes": [
+                  "Fruta de temporada 200 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Comida": {
+          "almu": {
+            "estado": "libre",
+            "lugar": "Cartagena",
+            "motivo": "Viaje"
+          },
+          "fran": {
+            "estado": "libre",
+            "lugar": "Cartagena",
+            "motivo": "Viaje"
+          },
+          "calendario_fijado": true
+        },
+        "Merienda": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 150,
+                "ingredientes": [
+                  "Fruta de temporada 150 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Queso de Burgos",
+                "racion_g": 60,
+                "ingredientes": [
+                  "Queso de Burgos 60 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Cena": {
+          "almu": {
+            "estado": "libre",
+            "lugar": "Cartagena",
+            "motivo": "Viaje"
+          },
+          "fran": {
+            "estado": "libre",
+            "lugar": "Cartagena",
+            "motivo": "Viaje"
+          },
+          "calendario_fijado": true
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-15",
+      "dia": "Domingo",
+      "tomas": {
+        "Desayuno": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Corn Flakes y leche de soja",
+                "racion_g": 230,
+                "ingredientes": [
+                  "Leche de soja 200 g",
+                  "Corn Flakes 30 g"
+                ]
+              },
+              {
+                "nombre": "Copos de avena",
+                "racion_g": 20,
+                "ingredientes": [
+                  "Copos de avena 20 g"
+                ]
+              },
+              {
+                "nombre": "Kiwi",
+                "racion_g": 60,
+                "ingredientes": [
+                  "Kiwi 60 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tostadas integrales con tomate y aceite",
+                "racion_g": 50,
+                "ingredientes": [
+                  "Tostadas integrales 40 g",
+                  "Tomate 5 g",
+                  "Aceite de oliva 6 g"
+                ]
+              },
+              {
+                "nombre": "Café cortado descremado",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Café natural 85 g",
+                  "Leche descremada 15 g"
+                ],
+                "nota": "Opcional"
+              },
+              {
+                "nombre": "Ciruelas",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Ciruelas 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Media mañana": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tostadas integrales con jamón York",
+                "racion_g": 60,
+                "ingredientes": [
+                  "Tostadas integrales 30 g",
+                  "Jamón York 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tortas de maíz",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Tortas de maíz 30 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 200,
+                "ingredientes": [
+                  "Fruta de temporada 200 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Comida": {
+          "almu": {
+            "estado": "libre",
+            "lugar": "Cartagena",
+            "motivo": "Viaje"
+          },
+          "fran": {
+            "estado": "libre",
+            "lugar": "Cartagena",
+            "motivo": "Viaje"
+          },
+          "calendario_fijado": true
+        },
+        "Merienda": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 150,
+                "ingredientes": [
+                  "Fruta de temporada 150 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Queso de Burgos",
+                "racion_g": 60,
+                "ingredientes": [
+                  "Queso de Burgos 60 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Cena": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Espinacas salteadas con huevo",
+                "racion_g": 300,
+                "ingredientes": [
+                  "Espinacas 195 g",
+                  "Huevo 105 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Espinacas salteadas con huevo",
+                "racion_g": 400,
+                "ingredientes": [
+                  "Espinacas 260 g",
+                  "Huevo 140 g"
+                ]
+              },
+              {
+                "nombre": "Yogur natural desnatado",
+                "racion_g": 125,
+                "ingredientes": [
+                  "Yogur natural desnatado 125 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true,
+          "nota": "Cena normal del domingo, no Cartagena."
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-16",
+      "dia": "Lunes",
+      "tomas": {
+        "Desayuno": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Corn Flakes y leche de soja",
+                "racion_g": 230,
+                "ingredientes": [
+                  "Leche de soja 200 g",
+                  "Corn Flakes 30 g"
+                ]
+              },
+              {
+                "nombre": "Copos de avena",
+                "racion_g": 20,
+                "ingredientes": [
+                  "Copos de avena 20 g"
+                ]
+              },
+              {
+                "nombre": "Kiwi",
+                "racion_g": 60,
+                "ingredientes": [
+                  "Kiwi 60 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Corn Flakes con leche de soja",
+                "racion_g": 230,
+                "ingredientes": [
+                  "Leche de soja 200 g",
+                  "Corn Flakes 30 g"
+                ]
+              },
+              {
+                "nombre": "Copos de avena",
+                "racion_g": 50,
+                "ingredientes": [
+                  "Copos de avena 50 g"
+                ]
+              },
+              {
+                "nombre": "Café cortado descremado",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Café natural 85 g",
+                  "Leche descremada 15 g"
+                ],
+                "nota": "Opcional"
+              },
+              {
+                "nombre": "Ciruelas",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Ciruelas 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Media mañana": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Pan tostado con aceite y tomate",
+                "racion_g": 50,
+                "ingredientes": [
+                  "Pan 40 g",
+                  "Aceite de oliva 6 g",
+                  "Tomate 5 g"
+                ]
+              },
+              {
+                "nombre": "Jamón serrano",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Jamón serrano 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Bocadillo de jamón York y tomate",
+                "racion_g": 150,
+                "ingredientes": [
+                  "Pan baguette 85 g",
+                  "Jamón York 35 g",
+                  "Tomate 35 g"
+                ],
+                "nota": "La ración indica 150 g; ingredientes suman 155 g"
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Comida": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Macarrones con atún",
+                "racion_g": 300,
+                "ingredientes": [
+                  "Macarrones 160 g",
+                  "Tomate 80 g",
+                  "Atún en aceite 55 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Macarrones con atún",
+                "racion_g": 400,
+                "ingredientes": [
+                  "Macarrones 215 g",
+                  "Tomate 110 g",
+                  "Atún en aceite 75 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        },
+        "Merienda": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 150,
+                "ingredientes": [
+                  "Fruta de temporada 150 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tortas de maíz",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Tortas de maíz 30 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Cena": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Picadillo de patatas con atún",
+                "racion_g": 250,
+                "ingredientes": [
+                  "Patata hervida 85 g",
+                  "Tomate 55 g",
+                  "Huevo 50 g",
+                  "Atún en aceite 30 g",
+                  "Pimiento 25 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Picadillo de patatas con atún",
+                "racion_g": 400,
+                "ingredientes": [
+                  "Patata hervida 140 g",
+                  "Tomate 85 g",
+                  "Huevo 80 g",
+                  "Atún en aceite 50 g",
+                  "Pimiento 45 g"
+                ]
+              },
+              {
+                "nombre": "Yogur natural desnatado",
+                "racion_g": 125,
+                "ingredientes": [
+                  "Yogur natural desnatado 125 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-17",
+      "dia": "Martes",
+      "tomas": {
+        "Desayuno": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Corn Flakes y leche de soja",
+                "racion_g": 230,
+                "ingredientes": [
+                  "Leche de soja 200 g",
+                  "Corn Flakes 30 g"
+                ]
+              },
+              {
+                "nombre": "Copos de avena",
+                "racion_g": 20,
+                "ingredientes": [
+                  "Copos de avena 20 g"
+                ]
+              },
+              {
+                "nombre": "Kiwi",
+                "racion_g": 60,
+                "ingredientes": [
+                  "Kiwi 60 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tostadas integrales con jamón York",
+                "racion_g": 80,
+                "ingredientes": [
+                  "Tostadas integrales 45 g",
+                  "Jamón York 35 g"
+                ]
+              },
+              {
+                "nombre": "Café cortado descremado",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Café natural 85 g",
+                  "Leche descremada 15 g"
+                ],
+                "nota": "Opcional"
+              },
+              {
+                "nombre": "Ciruelas",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Ciruelas 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Media mañana": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Pan tostado con aceite y tomate",
+                "racion_g": 50,
+                "ingredientes": [
+                  "Pan 40 g",
+                  "Aceite de oliva 6 g",
+                  "Tomate 5 g"
+                ]
+              },
+              {
+                "nombre": "Queso de Burgos",
+                "racion_g": 40,
+                "ingredientes": [
+                  "Queso de Burgos 40 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Bocadillo con jamón serrano",
+                "racion_g": 130,
+                "ingredientes": [
+                  "Pan baguette 70 g",
+                  "Jamón serrano 60 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Comida": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Arroz a la marinera",
+                "racion_g": 350,
+                "ingredientes": [
+                  "Arroz 115 g",
+                  "Almejas frescas 70 g",
+                  "Gambas 70 g",
+                  "Sepia 70 g",
+                  "Cebolla 35 g",
+                  "Ajo sin cantidad prescrita"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Arroz a la marinera",
+                "racion_g": 450,
+                "ingredientes": [
+                  "Arroz 145 g",
+                  "Almejas frescas 85 g",
+                  "Gambas 85 g",
+                  "Sepia 85 g",
+                  "Cebolla 45 g",
+                  "Ajo sin cantidad indicada"
+                ],
+                "nota": "Arroz cocinado con el doble de agua (volumen) y reposo de 5 minutos"
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        },
+        "Merienda": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 150,
+                "ingredientes": [
+                  "Fruta de temporada 150 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tortas de maíz",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Tortas de maíz 30 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Cena": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Judías verdes salteadas",
+                "racion_g": 150,
+                "ingredientes": [
+                  "Judías verdes 65 g",
+                  "Zanahoria 40 g",
+                  "Patata 35 g",
+                  "Jamón serrano 10 g",
+                  "Aceite de oliva 3 g"
+                ]
+              },
+              {
+                "nombre": "Tortilla francesa",
+                "racion_g": 120,
+                "ingredientes": [
+                  "Huevo 115 g",
+                  "Aceite de oliva 4 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Judías verdes salteadas",
+                "racion_g": 240,
+                "ingredientes": [
+                  "Judías verdes 105 g",
+                  "Zanahoria 65 g",
+                  "Patata 55 g",
+                  "Jamón serrano 10 g",
+                  "Aceite de oliva 4 g"
+                ]
+              },
+              {
+                "nombre": "Tortilla francesa",
+                "racion_g": 120,
+                "ingredientes": [
+                  "Huevo 115 g",
+                  "Aceite de oliva 4 g"
+                ]
+              },
+              {
+                "nombre": "Yogur natural desnatado",
+                "racion_g": 125,
+                "ingredientes": [
+                  "Yogur natural desnatado 125 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-18",
+      "dia": "Miércoles",
+      "tomas": {
+        "Desayuno": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Corn Flakes y leche de soja",
+                "racion_g": 230,
+                "ingredientes": [
+                  "Leche de soja 200 g",
+                  "Corn Flakes 30 g"
+                ]
+              },
+              {
+                "nombre": "Copos de avena",
+                "racion_g": 20,
+                "ingredientes": [
+                  "Copos de avena 20 g"
+                ]
+              },
+              {
+                "nombre": "Kiwi",
+                "racion_g": 60,
+                "ingredientes": [
+                  "Kiwi 60 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tostadas integrales con tomate y aceite",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Tostadas integrales 25 g",
+                  "Tomate 5 g",
+                  "Aceite de oliva 3 g"
+                ]
+              },
+              {
+                "nombre": "Café cortado descremado",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Café natural 85 g",
+                  "Leche descremada 15 g"
+                ],
+                "nota": "Opcional"
+              },
+              {
+                "nombre": "Ciruelas",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Ciruelas 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Media mañana": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Pan tostado con aceite y tomate",
+                "racion_g": 50,
+                "ingredientes": [
+                  "Pan 40 g",
+                  "Aceite de oliva 6 g",
+                  "Tomate 5 g"
+                ]
+              },
+              {
+                "nombre": "Jamón serrano",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Jamón serrano 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Bocadillo de pollo",
+                "racion_g": 150,
+                "ingredientes": [
+                  "Pan baguette 80 g",
+                  "Pechuga de pollo 55 g",
+                  "Lechuga 15 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Comida": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Cuscús con pollo al curry",
+                "racion_g": 250,
+                "ingredientes": [
+                  "Cuscús con pollo, plato preparado 250 g"
+                ],
+                "nota": "La receta completa con 125 g de cuscús no equivale a una ración individual."
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Cuscús con pollo al curry",
+                "racion_g": 350,
+                "ingredientes": [
+                  "Cuscús con pollo, plato preparado 350 g"
+                ],
+                "nota": "Receta completa, NO ración individual: pechuga de pollo 1 ud.; cebolla 1 ud.; medio pimiento rojo y medio verde; zanahoria grande 1 ud.; ajo 1 diente; cuscús 125 g; mantequilla; curry; AOVE; sal y pimienta"
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        },
+        "Merienda": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 150,
+                "ingredientes": [
+                  "Fruta de temporada 150 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tortas de maíz",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Tortas de maíz 30 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Cena": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Puré de verduras",
+                "racion_g": 200,
+                "ingredientes": [
+                  "Patata 70 g",
+                  "Calabacín 45 g",
+                  "Zanahoria 45 g",
+                  "Tomate 35 g",
+                  "Aceite de oliva 1 g"
+                ]
+              },
+              {
+                "nombre": "Bacalao fresco",
+                "racion_g": 200,
+                "ingredientes": [
+                  "Bacalao fresco 200 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Puré de verduras",
+                "racion_g": 300,
+                "ingredientes": [
+                  "Patata 105 g",
+                  "Calabacín 65 g",
+                  "Zanahoria 65 g",
+                  "Tomate 55 g",
+                  "Aceite de oliva 2 g"
+                ]
+              },
+              {
+                "nombre": "Bacalao fresco",
+                "racion_g": 200,
+                "ingredientes": [
+                  "Bacalao fresco 200 g"
+                ]
+              },
+              {
+                "nombre": "Yogur natural desnatado",
+                "racion_g": 125,
+                "ingredientes": [
+                  "Yogur natural desnatado 125 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-19",
+      "dia": "Jueves",
+      "tomas": {
+        "Desayuno": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Corn Flakes y leche de soja",
+                "racion_g": 230,
+                "ingredientes": [
+                  "Leche de soja 200 g",
+                  "Corn Flakes 30 g"
+                ]
+              },
+              {
+                "nombre": "Copos de avena",
+                "racion_g": 20,
+                "ingredientes": [
+                  "Copos de avena 20 g"
+                ]
+              },
+              {
+                "nombre": "Kiwi",
+                "racion_g": 60,
+                "ingredientes": [
+                  "Kiwi 60 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tostadas integrales con lomo curado",
+                "racion_g": 60,
+                "ingredientes": [
+                  "Tostadas integrales 30 g",
+                  "Lomo curado 30 g"
+                ]
+              },
+              {
+                "nombre": "Café cortado descremado",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Café natural 85 g",
+                  "Leche descremada 15 g"
+                ],
+                "nota": "Opcional"
+              },
+              {
+                "nombre": "Ciruelas",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Ciruelas 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Media mañana": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Pan tostado con aceite y tomate",
+                "racion_g": 50,
+                "ingredientes": [
+                  "Pan 40 g",
+                  "Aceite de oliva 6 g",
+                  "Tomate 5 g"
+                ]
+              },
+              {
+                "nombre": "Queso de Burgos",
+                "racion_g": 40,
+                "ingredientes": [
+                  "Queso de Burgos 40 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Bocadillo con jamón serrano",
+                "racion_g": 130,
+                "ingredientes": [
+                  "Pan baguette 70 g",
+                  "Jamón serrano 60 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Comida": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Arroz a la cubana con huevo",
+                "racion_g": 350,
+                "ingredientes": [
+                  "Arroz 180 g",
+                  "Huevo 90 g",
+                  "Tomate 75 g",
+                  "Aceite de oliva 4 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Arroz a la cubana con huevo",
+                "racion_g": 400,
+                "ingredientes": [
+                  "Arroz 210 g",
+                  "Huevo 105 g",
+                  "Tomate 85 g",
+                  "Aceite de oliva 4 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        },
+        "Merienda": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 150,
+                "ingredientes": [
+                  "Fruta de temporada 150 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tortas de maíz",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Tortas de maíz 30 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Cena": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Ensalada de remolacha",
+                "racion_g": 200,
+                "ingredientes": [
+                  "Remolacha 125 g",
+                  "Yogur natural desnatado 40 g",
+                  "Rábanos 10 g",
+                  "Zumo de limón 10 g",
+                  "Pepino a la vinagreta 10 g"
+                ]
+              },
+              {
+                "nombre": "Salmón a la plancha",
+                "racion_g": 150,
+                "ingredientes": [
+                  "Salmón 145 g",
+                  "Aceite de oliva 3 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Ensalada de remolacha",
+                "racion_g": 250,
+                "ingredientes": [
+                  "Remolacha 155 g",
+                  "Yogur natural desnatado 45 g",
+                  "Rábanos 15 g",
+                  "Zumo de limón 15 g",
+                  "Pepino a la vinagreta 15 g"
+                ],
+                "nota": "Comino y clavo en polvo al gusto"
+              },
+              {
+                "nombre": "Salmón a la plancha",
+                "racion_g": 200,
+                "ingredientes": [
+                  "Salmón 195 g",
+                  "Aceite de oliva 4 g"
+                ]
+              },
+              {
+                "nombre": "Yogur natural desnatado",
+                "racion_g": 125,
+                "ingredientes": [
+                  "Yogur natural desnatado 125 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-20",
+      "dia": "Viernes",
+      "tomas": {
+        "Desayuno": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Corn Flakes y leche de soja",
+                "racion_g": 230,
+                "ingredientes": [
+                  "Leche de soja 200 g",
+                  "Corn Flakes 30 g"
+                ]
+              },
+              {
+                "nombre": "Copos de avena",
+                "racion_g": 20,
+                "ingredientes": [
+                  "Copos de avena 20 g"
+                ]
+              },
+              {
+                "nombre": "Kiwi",
+                "racion_g": 60,
+                "ingredientes": [
+                  "Kiwi 60 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Corn Flakes con leche de soja",
+                "racion_g": 230,
+                "ingredientes": [
+                  "Leche de soja 200 g",
+                  "Corn Flakes 30 g"
+                ]
+              },
+              {
+                "nombre": "Café cortado descremado",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Café natural 85 g",
+                  "Leche descremada 15 g"
+                ],
+                "nota": "Opcional"
+              },
+              {
+                "nombre": "Ciruelas",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Ciruelas 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Media mañana": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Pan tostado con aceite y tomate",
+                "racion_g": 50,
+                "ingredientes": [
+                  "Pan 40 g",
+                  "Aceite de oliva 6 g",
+                  "Tomate 5 g"
+                ]
+              },
+              {
+                "nombre": "Jamón serrano",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Jamón serrano 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Bocadillo de jamón York y tomate",
+                "racion_g": 150,
+                "ingredientes": [
+                  "Pan baguette 85 g",
+                  "Jamón York 35 g",
+                  "Tomate 35 g"
+                ],
+                "nota": "La ración indica 150 g; ingredientes suman 155 g"
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Comida": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Patatas guisadas",
+                "racion_g": 250,
+                "ingredientes": [
+                  "Patata 115 g",
+                  "Tomate 55 g",
+                  "Cebolla 55 g",
+                  "Pimiento 25 g"
+                ]
+              },
+              {
+                "nombre": "Huevo escalfado",
+                "racion_g": 60,
+                "ingredientes": [
+                  "Huevo 60 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Patatas guisadas",
+                "racion_g": 400,
+                "ingredientes": [
+                  "Patatas 180 g",
+                  "Tomate 90 g",
+                  "Cebolla 90 g",
+                  "Pimiento 35 g"
+                ],
+                "nota": "Ajo y hierbas aromáticas mencionados en la elaboración, sin gramos"
+              },
+              {
+                "nombre": "Huevo escalfado",
+                "racion_g": 60,
+                "ingredientes": [
+                  "Huevo 60 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        },
+        "Merienda": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 150,
+                "ingredientes": [
+                  "Fruta de temporada 150 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tortas de maíz",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Tortas de maíz 30 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Cena": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Crema de champiñones y patata",
+                "racion_g": 200,
+                "ingredientes": [
+                  "Champiñones 65 g",
+                  "Leche descremada 65 g",
+                  "Patata 45 g",
+                  "Cebolla 15 g",
+                  "Aceite de oliva 3 g"
+                ]
+              },
+              {
+                "nombre": "Merluza a la plancha",
+                "racion_g": 200,
+                "ingredientes": [
+                  "Merluza 195 g",
+                  "Aceite de oliva 6 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Crema de champiñones y patata",
+                "racion_g": 300,
+                "ingredientes": [
+                  "Champiñones 100 g",
+                  "Leche descremada 100 g",
+                  "Patata 70 g",
+                  "Cebolla 25 g",
+                  "Aceite de oliva 5 g"
+                ]
+              },
+              {
+                "nombre": "Merluza a la plancha",
+                "racion_g": 200,
+                "ingredientes": [
+                  "Merluza 195 g",
+                  "Aceite de oliva 6 g"
+                ]
+              },
+              {
+                "nombre": "Yogur natural desnatado",
+                "racion_g": 125,
+                "ingredientes": [
+                  "Yogur natural desnatado 125 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-21",
+      "dia": "Sábado",
+      "tomas": {
+        "Desayuno": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Corn Flakes y leche de soja",
+                "racion_g": 230,
+                "ingredientes": [
+                  "Leche de soja 200 g",
+                  "Corn Flakes 30 g"
+                ]
+              },
+              {
+                "nombre": "Copos de avena",
+                "racion_g": 20,
+                "ingredientes": [
+                  "Copos de avena 20 g"
+                ]
+              },
+              {
+                "nombre": "Kiwi",
+                "racion_g": 60,
+                "ingredientes": [
+                  "Kiwi 60 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Corn Flakes con leche de soja",
+                "racion_g": 230,
+                "ingredientes": [
+                  "Leche de soja 200 g",
+                  "Corn Flakes 30 g"
+                ]
+              },
+              {
+                "nombre": "Copos de avena",
+                "racion_g": 50,
+                "ingredientes": [
+                  "Copos de avena 50 g"
+                ]
+              },
+              {
+                "nombre": "Café cortado descremado",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Café natural 85 g",
+                  "Leche descremada 15 g"
+                ],
+                "nota": "Opcional"
+              },
+              {
+                "nombre": "Ciruelas",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Ciruelas 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Media mañana": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tostadas integrales con jamón York",
+                "racion_g": 60,
+                "ingredientes": [
+                  "Tostadas integrales 30 g",
+                  "Jamón York 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tortas de maíz",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Tortas de maíz 30 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 200,
+                "ingredientes": [
+                  "Fruta de temporada 200 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Comida": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Lentejas estofadas",
+                "racion_g": 300,
+                "ingredientes": [
+                  "Lentejas 150 g",
+                  "Tomate 40 g",
+                  "Cebolla 40 g",
+                  "Zanahoria 40 g",
+                  "Pimiento 30 g",
+                  "Harina de trigo 10 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Lentejas estofadas",
+                "racion_g": 400,
+                "ingredientes": [
+                  "Lentejas 200 g",
+                  "Tomate 50 g",
+                  "Cebolla 50 g",
+                  "Zanahoria 50 g",
+                  "Pimiento 40 g",
+                  "Harina de trigo 10 g"
+                ],
+                "nota": "Ajo mencionado en elaboración, sin gramos"
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        },
+        "Merienda": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 150,
+                "ingredientes": [
+                  "Fruta de temporada 150 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Queso de Burgos",
+                "racion_g": 60,
+                "ingredientes": [
+                  "Queso de Burgos 60 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Cena": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tacos de pollo",
+                "racion_g": 250,
+                "ingredientes": [
+                  "Tacos de pollo (preparado) 125 g",
+                  "Pan sin gluten 50 g",
+                  "Pechuga de pollo 30 g",
+                  "Pimiento 30 g",
+                  "Cebolla 10 g"
+                ],
+                "nota": "Preparado de tacos 125 g de composición no documentada, separado de pechuga de pollo 30 g; no se suman como pollo fresco."
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "adaptacion_usuario_aprobada",
+            "platos": [
+              {
+                "nombre": "Tacos de pollo",
+                "racion_g": 350,
+                "ingredientes": [
+                  "Pechuga de pollo fresca 217 g",
+                  "Pan integral 70 g",
+                  "Pimiento 42 g",
+                  "Cebolla 14 g"
+                ],
+                "nota": "Ración de tacos 350 g aprobada por el usuario; ingredientes orientativos de 217 g pollo + 70 g pan + 42 g pimiento + 14 g cebolla suman 343 g. Diferencia de 7 g pendiente."
+              },
+              {
+                "nombre": "Yogur natural desnatado",
+                "racion_g": 125,
+                "ingredientes": [
+                  "Yogur natural desnatado 125 g"
+                ],
+                "nota": "Se conserva el yogur de la cena original de Fran."
+              }
+            ],
+            "origen": "Cambio solicitado y ración aprobada por el usuario; no prescripción del nutricionista."
+          },
+          "calendario_fijado": true,
+          "nota": "Tacos para ambos aprobados; Fran 350 g y yogur 125 g; 125 g de preparado de Almu mantenidos separados de 30 g de pechuga."
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-22",
+      "dia": "Domingo",
+      "tomas": {
+        "Desayuno": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Corn Flakes y leche de soja",
+                "racion_g": 230,
+                "ingredientes": [
+                  "Leche de soja 200 g",
+                  "Corn Flakes 30 g"
+                ]
+              },
+              {
+                "nombre": "Copos de avena",
+                "racion_g": 20,
+                "ingredientes": [
+                  "Copos de avena 20 g"
+                ]
+              },
+              {
+                "nombre": "Kiwi",
+                "racion_g": 60,
+                "ingredientes": [
+                  "Kiwi 60 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tostadas integrales con tomate y aceite",
+                "racion_g": 50,
+                "ingredientes": [
+                  "Tostadas integrales 40 g",
+                  "Tomate 5 g",
+                  "Aceite de oliva 6 g"
+                ]
+              },
+              {
+                "nombre": "Café cortado descremado",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Café natural 85 g",
+                  "Leche descremada 15 g"
+                ],
+                "nota": "Opcional"
+              },
+              {
+                "nombre": "Ciruelas",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Ciruelas 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Media mañana": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tostadas integrales con jamón York",
+                "racion_g": 60,
+                "ingredientes": [
+                  "Tostadas integrales 30 g",
+                  "Jamón York 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tortas de maíz",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Tortas de maíz 30 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 200,
+                "ingredientes": [
+                  "Fruta de temporada 200 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Comida": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Patatas al horno",
+                "racion_g": 200,
+                "ingredientes": [
+                  "Patata 190 g",
+                  "Aceite de oliva 10 g"
+                ]
+              },
+              {
+                "nombre": "Pollo con curry",
+                "racion_g": 150,
+                "ingredientes": [
+                  "Pechuga de pollo 105 g",
+                  "Cebolla 45 g",
+                  "Curry sin cantidad prescrita"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Patatas al horno",
+                "racion_g": 200,
+                "ingredientes": [
+                  "Patatas 190 g",
+                  "Aceite de oliva 10 g"
+                ],
+                "nota": "Con romero"
+              },
+              {
+                "nombre": "Pollo con curry",
+                "racion_g": 200,
+                "ingredientes": [
+                  "Pechuga de pollo 145 g",
+                  "Cebolla 55 g",
+                  "Curry sin gramos"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        },
+        "Merienda": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 150,
+                "ingredientes": [
+                  "Fruta de temporada 150 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Queso de Burgos",
+                "racion_g": 60,
+                "ingredientes": [
+                  "Queso de Burgos 60 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Cena": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Espinacas salteadas con huevo",
+                "racion_g": 300,
+                "ingredientes": [
+                  "Espinacas 195 g",
+                  "Huevo 105 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Espinacas salteadas con huevo",
+                "racion_g": 400,
+                "ingredientes": [
+                  "Espinacas 260 g",
+                  "Huevo 140 g"
+                ]
+              },
+              {
+                "nombre": "Yogur natural desnatado",
+                "racion_g": 125,
+                "ingredientes": [
+                  "Yogur natural desnatado 125 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-23",
+      "dia": "Lunes",
+      "tomas": {
+        "Desayuno": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Corn Flakes y leche de soja",
+                "racion_g": 230,
+                "ingredientes": [
+                  "Leche de soja 200 g",
+                  "Corn Flakes 30 g"
+                ]
+              },
+              {
+                "nombre": "Copos de avena",
+                "racion_g": 20,
+                "ingredientes": [
+                  "Copos de avena 20 g"
+                ]
+              },
+              {
+                "nombre": "Kiwi",
+                "racion_g": 60,
+                "ingredientes": [
+                  "Kiwi 60 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Corn Flakes con leche de soja",
+                "racion_g": 230,
+                "ingredientes": [
+                  "Leche de soja 200 g",
+                  "Corn Flakes 30 g"
+                ]
+              },
+              {
+                "nombre": "Copos de avena",
+                "racion_g": 50,
+                "ingredientes": [
+                  "Copos de avena 50 g"
+                ]
+              },
+              {
+                "nombre": "Café cortado descremado",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Café natural 85 g",
+                  "Leche descremada 15 g"
+                ],
+                "nota": "Opcional"
+              },
+              {
+                "nombre": "Ciruelas",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Ciruelas 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Media mañana": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Pan tostado con aceite y tomate",
+                "racion_g": 50,
+                "ingredientes": [
+                  "Pan 40 g",
+                  "Aceite de oliva 6 g",
+                  "Tomate 5 g"
+                ]
+              },
+              {
+                "nombre": "Jamón serrano",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Jamón serrano 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Bocadillo de jamón York y tomate",
+                "racion_g": 150,
+                "ingredientes": [
+                  "Pan baguette 85 g",
+                  "Jamón York 35 g",
+                  "Tomate 35 g"
+                ],
+                "nota": "La ración indica 150 g; ingredientes suman 155 g"
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Comida": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Macarrones con atún",
+                "racion_g": 300,
+                "ingredientes": [
+                  "Macarrones 160 g",
+                  "Tomate 80 g",
+                  "Atún en aceite 55 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Macarrones con atún",
+                "racion_g": 400,
+                "ingredientes": [
+                  "Macarrones 215 g",
+                  "Tomate 110 g",
+                  "Atún en aceite 75 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        },
+        "Merienda": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 150,
+                "ingredientes": [
+                  "Fruta de temporada 150 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tortas de maíz",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Tortas de maíz 30 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Cena": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Picadillo de patatas con atún",
+                "racion_g": 250,
+                "ingredientes": [
+                  "Patata hervida 85 g",
+                  "Tomate 55 g",
+                  "Huevo 50 g",
+                  "Atún en aceite 30 g",
+                  "Pimiento 25 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Picadillo de patatas con atún",
+                "racion_g": 400,
+                "ingredientes": [
+                  "Patata hervida 140 g",
+                  "Tomate 85 g",
+                  "Huevo 80 g",
+                  "Atún en aceite 50 g",
+                  "Pimiento 45 g"
+                ]
+              },
+              {
+                "nombre": "Yogur natural desnatado",
+                "racion_g": 125,
+                "ingredientes": [
+                  "Yogur natural desnatado 125 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-24",
+      "dia": "Martes",
+      "tomas": {
+        "Desayuno": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Corn Flakes y leche de soja",
+                "racion_g": 230,
+                "ingredientes": [
+                  "Leche de soja 200 g",
+                  "Corn Flakes 30 g"
+                ]
+              },
+              {
+                "nombre": "Copos de avena",
+                "racion_g": 20,
+                "ingredientes": [
+                  "Copos de avena 20 g"
+                ]
+              },
+              {
+                "nombre": "Kiwi",
+                "racion_g": 60,
+                "ingredientes": [
+                  "Kiwi 60 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tostadas integrales con jamón York",
+                "racion_g": 80,
+                "ingredientes": [
+                  "Tostadas integrales 45 g",
+                  "Jamón York 35 g"
+                ]
+              },
+              {
+                "nombre": "Café cortado descremado",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Café natural 85 g",
+                  "Leche descremada 15 g"
+                ],
+                "nota": "Opcional"
+              },
+              {
+                "nombre": "Ciruelas",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Ciruelas 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Media mañana": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Pan tostado con aceite y tomate",
+                "racion_g": 50,
+                "ingredientes": [
+                  "Pan 40 g",
+                  "Aceite de oliva 6 g",
+                  "Tomate 5 g"
+                ]
+              },
+              {
+                "nombre": "Queso de Burgos",
+                "racion_g": 40,
+                "ingredientes": [
+                  "Queso de Burgos 40 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Bocadillo con jamón serrano",
+                "racion_g": 130,
+                "ingredientes": [
+                  "Pan baguette 70 g",
+                  "Jamón serrano 60 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Comida": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Arroz a la marinera",
+                "racion_g": 350,
+                "ingredientes": [
+                  "Arroz 115 g",
+                  "Almejas frescas 70 g",
+                  "Gambas 70 g",
+                  "Sepia 70 g",
+                  "Cebolla 35 g",
+                  "Ajo sin cantidad prescrita"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Arroz a la marinera",
+                "racion_g": 450,
+                "ingredientes": [
+                  "Arroz 145 g",
+                  "Almejas frescas 85 g",
+                  "Gambas 85 g",
+                  "Sepia 85 g",
+                  "Cebolla 45 g",
+                  "Ajo sin cantidad indicada"
+                ],
+                "nota": "Arroz cocinado con el doble de agua (volumen) y reposo de 5 minutos"
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        },
+        "Merienda": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 150,
+                "ingredientes": [
+                  "Fruta de temporada 150 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tortas de maíz",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Tortas de maíz 30 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Cena": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Judías verdes salteadas",
+                "racion_g": 150,
+                "ingredientes": [
+                  "Judías verdes 65 g",
+                  "Zanahoria 40 g",
+                  "Patata 35 g",
+                  "Jamón serrano 10 g",
+                  "Aceite de oliva 3 g"
+                ]
+              },
+              {
+                "nombre": "Tortilla francesa",
+                "racion_g": 120,
+                "ingredientes": [
+                  "Huevo 115 g",
+                  "Aceite de oliva 4 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Judías verdes salteadas",
+                "racion_g": 240,
+                "ingredientes": [
+                  "Judías verdes 105 g",
+                  "Zanahoria 65 g",
+                  "Patata 55 g",
+                  "Jamón serrano 10 g",
+                  "Aceite de oliva 4 g"
+                ]
+              },
+              {
+                "nombre": "Tortilla francesa",
+                "racion_g": 120,
+                "ingredientes": [
+                  "Huevo 115 g",
+                  "Aceite de oliva 4 g"
+                ]
+              },
+              {
+                "nombre": "Yogur natural desnatado",
+                "racion_g": 125,
+                "ingredientes": [
+                  "Yogur natural desnatado 125 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        }
+      }
+    },
+    {
+      "fecha": "2026-11-25",
+      "dia": "Miércoles",
+      "tomas": {
+        "Desayuno": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Corn Flakes y leche de soja",
+                "racion_g": 230,
+                "ingredientes": [
+                  "Leche de soja 200 g",
+                  "Corn Flakes 30 g"
+                ]
+              },
+              {
+                "nombre": "Copos de avena",
+                "racion_g": 20,
+                "ingredientes": [
+                  "Copos de avena 20 g"
+                ]
+              },
+              {
+                "nombre": "Kiwi",
+                "racion_g": 60,
+                "ingredientes": [
+                  "Kiwi 60 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Tostadas integrales con tomate y aceite",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Tostadas integrales 25 g",
+                  "Tomate 5 g",
+                  "Aceite de oliva 3 g"
+                ]
+              },
+              {
+                "nombre": "Café cortado descremado",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Café natural 85 g",
+                  "Leche descremada 15 g"
+                ],
+                "nota": "Opcional"
+              },
+              {
+                "nombre": "Ciruelas",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Ciruelas 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Media mañana": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Pan tostado con aceite y tomate",
+                "racion_g": 50,
+                "ingredientes": [
+                  "Pan 40 g",
+                  "Aceite de oliva 6 g",
+                  "Tomate 5 g"
+                ]
+              },
+              {
+                "nombre": "Jamón serrano",
+                "racion_g": 30,
+                "ingredientes": [
+                  "Jamón serrano 30 g"
+                ]
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Bocadillo de pollo",
+                "racion_g": 150,
+                "ingredientes": [
+                  "Pan baguette 80 g",
+                  "Pechuga de pollo 55 g",
+                  "Lechuga 15 g"
+                ]
+              },
+              {
+                "nombre": "Fruta de temporada",
+                "racion_g": 100,
+                "ingredientes": [
+                  "Fruta de temporada 100 g"
+                ]
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          }
+        },
+        "Comida": {
+          "almu": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Cuscús con pollo al curry",
+                "racion_g": 250,
+                "ingredientes": [
+                  "Cuscús con pollo, plato preparado 250 g"
+                ],
+                "nota": "La receta completa con 125 g de cuscús no equivale a una ración individual."
+              }
+            ],
+            "origen": "PDF Almudena Canseco - 04/11/2026, pauta 02–08/11 repetida por decisión del usuario"
+          },
+          "fran": {
+            "estado": "prescrito",
+            "platos": [
+              {
+                "nombre": "Cuscús con pollo al curry",
+                "racion_g": 350,
+                "ingredientes": [
+                  "Cuscús con pollo, plato preparado 350 g"
+                ],
+                "nota": "Receta completa, NO ración individual: pechuga de pollo 1 ud.; cebolla 1 ud.; medio pimiento rojo y medio verde; zanahoria grande 1 ud.; ajo 1 diente; cuscús 125 g; mantequilla; curry; AOVE; sal y pimienta"
+              }
+            ],
+            "origen": "PDF Fran Arroyo (semana 02–08 noviembre 2026) repetido por indicación del usuario"
+          },
+          "calendario_fijado": true
+        }
+      }
+    }
+  ],
+  "recetas_vinculadas": {
+    "2026-11-04": {
+      "Cena": {
+        "almu": [
+          "202611_pure_verduras"
+        ],
+        "fran": [
+          "202611_pure_verduras"
+        ]
+      }
+    },
+    "2026-11-05": {
+      "Comida": {
+        "almu": [
+          "202611_arroz_cubana"
+        ],
+        "fran": [
+          "202611_arroz_cubana"
+        ]
+      },
+      "Cena": {
+        "almu": [
+          "202611_ensalada_remolacha",
+          "202611_salmon_plancha"
+        ],
+        "fran": [
+          "202611_ensalada_remolacha",
+          "202611_salmon_plancha"
+        ]
+      }
+    },
+    "2026-11-06": {
+      "Comida": {
+        "almu": [
+          "202611_patatas_guisadas",
+          "202611_huevo_escalfado"
+        ],
+        "fran": [
+          "202611_patatas_guisadas",
+          "202611_huevo_escalfado"
+        ]
+      },
+      "Cena": {
+        "almu": [
+          "202611_crema_champinones"
+        ],
+        "fran": [
+          "202611_crema_champinones"
+        ]
+      }
+    },
+    "2026-11-07": {
+      "Comida": {
+        "almu": [
+          "202611_patatas_horno",
+          "202611_pollo_curry"
+        ],
+        "fran": [
+          "202611_patatas_horno",
+          "202611_pollo_curry"
+        ]
+      },
+      "Cena": {
+        "almu": [
+          "tacos_pollo"
+        ],
+        "fran": [
+          "tacos_pollo"
+        ]
+      }
+    },
+    "2026-11-08": {
+      "Comida": {
+        "almu": [],
+        "fran": []
+      },
+      "Cena": {
+        "almu": [
+          "202611_espinacas_huevo"
+        ],
+        "fran": [
+          "202611_espinacas_huevo"
+        ]
+      }
+    },
+    "2026-11-09": {
+      "Comida": {
+        "almu": [
+          "202611_macarrones_atun"
+        ],
+        "fran": [
+          "202611_macarrones_atun"
+        ]
+      },
+      "Cena": {
+        "almu": [
+          "202611_picadillo_patatas_atun"
+        ],
+        "fran": [
+          "202611_picadillo_patatas_atun"
+        ]
+      }
+    },
+    "2026-11-10": {
+      "Comida": {
+        "almu": [
+          "202611_arroz_marinera"
+        ],
+        "fran": [
+          "202611_arroz_marinera"
+        ]
+      },
+      "Cena": {
+        "almu": [
+          "202611_judias_verdes",
+          "tortilla_francesa"
+        ],
+        "fran": [
+          "202611_judias_verdes",
+          "tortilla_francesa"
+        ]
+      }
+    },
+    "2026-11-11": {
+      "Comida": {
+        "almu": [
+          "202611_cuscus_pollo_curry"
+        ],
+        "fran": [
+          "202611_cuscus_pollo_curry"
+        ]
+      },
+      "Cena": {
+        "almu": [
+          "202611_pure_verduras"
+        ],
+        "fran": [
+          "202611_pure_verduras"
+        ]
+      }
+    },
+    "2026-11-12": {
+      "Comida": {
+        "almu": [
+          "202611_arroz_cubana"
+        ],
+        "fran": [
+          "202611_arroz_cubana"
+        ]
+      },
+      "Cena": {
+        "almu": [
+          "202611_ensalada_remolacha",
+          "202611_salmon_plancha"
+        ],
+        "fran": [
+          "202611_ensalada_remolacha",
+          "202611_salmon_plancha"
+        ]
+      }
+    },
+    "2026-11-13": {
+      "Comida": {
+        "almu": [],
+        "fran": []
+      },
+      "Cena": {
+        "almu": [],
+        "fran": []
+      }
+    },
+    "2026-11-14": {
+      "Comida": {
+        "almu": [],
+        "fran": []
+      },
+      "Cena": {
+        "almu": [],
+        "fran": []
+      }
+    },
+    "2026-11-15": {
+      "Comida": {
+        "almu": [],
+        "fran": []
+      },
+      "Cena": {
+        "almu": [
+          "202611_espinacas_huevo"
+        ],
+        "fran": [
+          "202611_espinacas_huevo"
+        ]
+      }
+    },
+    "2026-11-16": {
+      "Comida": {
+        "almu": [
+          "202611_macarrones_atun"
+        ],
+        "fran": [
+          "202611_macarrones_atun"
+        ]
+      },
+      "Cena": {
+        "almu": [
+          "202611_picadillo_patatas_atun"
+        ],
+        "fran": [
+          "202611_picadillo_patatas_atun"
+        ]
+      }
+    },
+    "2026-11-17": {
+      "Comida": {
+        "almu": [
+          "202611_arroz_marinera"
+        ],
+        "fran": [
+          "202611_arroz_marinera"
+        ]
+      },
+      "Cena": {
+        "almu": [
+          "202611_judias_verdes",
+          "tortilla_francesa"
+        ],
+        "fran": [
+          "202611_judias_verdes",
+          "tortilla_francesa"
+        ]
+      }
+    },
+    "2026-11-18": {
+      "Comida": {
+        "almu": [
+          "202611_cuscus_pollo_curry"
+        ],
+        "fran": [
+          "202611_cuscus_pollo_curry"
+        ]
+      },
+      "Cena": {
+        "almu": [
+          "202611_pure_verduras"
+        ],
+        "fran": [
+          "202611_pure_verduras"
+        ]
+      }
+    },
+    "2026-11-19": {
+      "Comida": {
+        "almu": [
+          "202611_arroz_cubana"
+        ],
+        "fran": [
+          "202611_arroz_cubana"
+        ]
+      },
+      "Cena": {
+        "almu": [
+          "202611_ensalada_remolacha",
+          "202611_salmon_plancha"
+        ],
+        "fran": [
+          "202611_ensalada_remolacha",
+          "202611_salmon_plancha"
+        ]
+      }
+    },
+    "2026-11-20": {
+      "Comida": {
+        "almu": [
+          "202611_patatas_guisadas",
+          "202611_huevo_escalfado"
+        ],
+        "fran": [
+          "202611_patatas_guisadas",
+          "202611_huevo_escalfado"
+        ]
+      },
+      "Cena": {
+        "almu": [
+          "202611_crema_champinones"
+        ],
+        "fran": [
+          "202611_crema_champinones"
+        ]
+      }
+    },
+    "2026-11-21": {
+      "Comida": {
+        "almu": [
+          "202611_lentejas_estofadas"
+        ],
+        "fran": [
+          "202611_lentejas_estofadas"
+        ]
+      },
+      "Cena": {
+        "almu": [
+          "tacos_pollo"
+        ],
+        "fran": [
+          "tacos_pollo"
+        ]
+      }
+    },
+    "2026-11-22": {
+      "Comida": {
+        "almu": [
+          "202611_patatas_horno",
+          "202611_pollo_curry"
+        ],
+        "fran": [
+          "202611_patatas_horno",
+          "202611_pollo_curry"
+        ]
+      },
+      "Cena": {
+        "almu": [
+          "202611_espinacas_huevo"
+        ],
+        "fran": [
+          "202611_espinacas_huevo"
+        ]
+      }
+    },
+    "2026-11-23": {
+      "Comida": {
+        "almu": [
+          "202611_macarrones_atun"
+        ],
+        "fran": [
+          "202611_macarrones_atun"
+        ]
+      },
+      "Cena": {
+        "almu": [
+          "202611_picadillo_patatas_atun"
+        ],
+        "fran": [
+          "202611_picadillo_patatas_atun"
+        ]
+      }
+    },
+    "2026-11-24": {
+      "Comida": {
+        "almu": [
+          "202611_arroz_marinera"
+        ],
+        "fran": [
+          "202611_arroz_marinera"
+        ]
+      },
+      "Cena": {
+        "almu": [
+          "202611_judias_verdes",
+          "tortilla_francesa"
+        ],
+        "fran": [
+          "202611_judias_verdes",
+          "tortilla_francesa"
+        ]
+      }
+    },
+    "2026-11-25": {
+      "Comida": {
+        "almu": [
+          "202611_cuscus_pollo_curry"
+        ],
+        "fran": [
+          "202611_cuscus_pollo_curry"
+        ]
+      }
+    }
+  },
+  "archivo_recetas": "data/menu_14_dias.json:recipes",
+  "validacion_recetas": "Vinculación explícita por fecha/toma/persona desde el PDF de Fran; no aplicar coincidencias aproximadas.",
+  "fuente_almu": "Almudena Canseco - Dieta Personalizada - 04-11-2026.pdf (17 páginas)",
+  "fuentes": {
+    "almu": "PDF 04-11-2026, 17 páginas",
+    "fran": "PDF 04-11-2026, 20 páginas"
+  },
+  "validaciones_pendientes": [
+    "Compra día a día",
+    "Composición del preparado de tacos de 125 g",
+    "Desglose de 7 g no atribuidos en tacos de Fran",
+    "Rendimiento de la receta de cuscús",
+    "Prueba visual de la web y sus recetas"
+  ],
+  "aprobacion_cuadro01": {
+    "fecha": "2026-11-05",
+    "estado": "aprobado",
+    "alcance": "Calendario y raciones, tacos sábado 7 y 21: Almu 250 g; Fran 350 g de tacos y 125 g yogur."
+  },
+  "revision_compra": "data/revision_compra_21_dias_20261105_064248.json",
+  "aprobacion_cuadro02": {
+    "estado": "APROBADO_POR_USUARIO",
+    "fecha": "2026-11-05",
+    "alcance": "Cinco tomas individuales respetadas, comidas/cenas según Cuadro 01, Cartagena y Aluche tal como se acordó; un solo café opcional en miércoles para Fran."
+  }
+}
