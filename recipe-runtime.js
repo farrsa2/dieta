@@ -184,8 +184,12 @@
     modal.querySelector('#operational-recipe-title').textContent = entry.recipes.length === 1 ? entry.recipes[0].name : 'Recetas de esta comida';
     const kicker = modal.querySelector('.recipe-modal-kicker');
     if (kicker) {
-      const userRecipe = entry.recipes.length === 1 && entry.recipes[0].recipe?.fuente === 'Receta añadida por el usuario';
-      kicker.textContent = userRecipe ? '👩‍🍳 RECETA GUARDADA' : '👩‍🍳 RECETA DEL NUTRICIONISTA';
+      const fuentes = entry.recipes.map(item => item.recipe?.fuente || '');
+      const archivada = fuentes.some(fuente => /archivad|adaptaci[oó]n propuesta/i.test(fuente));
+      const userRecipe = fuentes.length === 1 && fuentes[0] === 'Receta añadida por el usuario';
+      kicker.textContent = archivada ? '👩‍🍳 RECETA ARCHIVADA · ADAPTACIÓN A REVISAR'
+        : userRecipe ? '👩‍🍳 RECETA GUARDADA'
+        : '👩‍🍳 RECETA DEL NUTRICIONISTA';
     }
     modal.querySelector('#operational-recipe-context').textContent = entry.context || '';
     modal.querySelector('#operational-recipe-body').innerHTML = entry.recipes.map(item => `
