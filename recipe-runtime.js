@@ -96,7 +96,26 @@
     if(!raw||typeof raw!=='object'||Array.isArray(raw))continue;
     const hasDetails=(typeof raw.elaboracion==='string'&&raw.elaboracion.trim())||(Array.isArray(raw.pasos)&&raw.pasos.length);
     if(!hasDetails)continue;
-    result.push({id,name:raw.nombre||id.replace(/_/g,' '),recipe:raw});
+    const portion=data.recetas_por_racion?.[date]?.[meal]?.[person]?.[id];
+    if(!portion||!Array.isArray(portion.ingredientes))continue;
+    const sourceIsArchived=/archivad/i.test(String(raw.fuente||''));
+    const fuente=sourceIsArchived ? raw.fuente
+      : person==='almu' ? 'PDF de Almudena · 02–08/11/2026'
+      : 'PDF de Fran · 02–08/11/2026';
+    const userAdapted=person==='fran'&&id==='tacos_pollo';
+    const originalNote=String(raw.nota||'');
+    const sharedNote=/^(?!.*\bFran\b)(?!.*raci[oó]n prescrita).*$/i.test(originalNote) ? originalNote : '';
+    const special=/(?:cusc[uú]s|couss*cous)/i.test(portion.nombre)
+      ? 'Los 125 g de cuscús seco pertenecen a la receta completa, no a la ración individual.'
+      : '';
+    const note=[portion.nota||'',special,sharedNote].filter(Boolean).join(' ');
+    const recipe={...raw,
+      fuente:userAdapted?'Adaptación aprobada por el usuario':fuente,
+      raciones:`${person==='almu'?'Almu':'Fran'} · ${portion.racion_g} g${userAdapted?' (adaptación aprobada, no prescripción nutricional)':''}`,
+      ingredientes:[...portion.ingredientes],
+      nota:note
+    };
+    result.push({id,name:raw.nombre||id.replace(/_/g,' '),recipe});
   }
   return result;
 }
@@ -184,8 +203,12 @@
     modal.querySelector('#operational-recipe-title').textContent = entry.recipes.length === 1 ? entry.recipes[0].name : 'Recetas de esta comida';
     const kicker = modal.querySelector('.recipe-modal-kicker');
     if (kicker) {
-      const userRecipe = entry.recipes.length === 1 && entry.recipes[0].recipe?.fuente === 'Receta añadida por el usuario';
-      kicker.textContent = userRecipe ? '👩‍🍳 RECETA GUARDADA' : '👩‍🍳 RECETA DEL NUTRICIONISTA';
+      const fuentes = entry.recipes.map(item => item.recipe?.fuente || '');
+      const archivada = fuentes.some(fuente => /archivad|adaptaci[oó]n/i.test(fuente));
+      const userRecipe = fuentes.length === 1 && fuentes[0] === 'Receta añadida por el usuario';
+      kicker.textContent = archivada ? '👩‍🍳 RECETA ARCHIVADA · ADAPTACIÓN A REVISAR'
+        : userRecipe ? '👩‍🍳 RECETA GUARDADA'
+        : '👩‍🍳 RECETA DEL NUTRICIONISTA';
     }
     modal.querySelector('#operational-recipe-context').textContent = entry.context || '';
     modal.querySelector('#operational-recipe-body').innerHTML = entry.recipes.map(item => `
@@ -302,7 +325,10 @@
   const detail=info?.detail||'';
   const a=explicitRecipesFor(current.date,meal,'almu');
   const f=explicitRecipesFor(current.date,meal,'fran');
-  const all=[...new Map([...a,...f].map(x=>[x.id,x])).values()];
+  const all=[
+    ...a.map(x=>({...x,id:'almu-'+x.id,name:x.name+' · Almu'})),
+    ...f.map(x=>({...x,id:'fran-'+x.id,name:x.name+' · Fran'}))
+  ];
   const src=a.length ? 'Almu y Fran' : 'Fran (Almu pendiente)';
   const allowed=!/libre/i.test(String(title));
   const recipeBtn=allowed?recipeButton(all,`${current.date} · ${meal} · Receta de ${src}`):'';
