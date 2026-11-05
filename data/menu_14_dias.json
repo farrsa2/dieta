@@ -1,6 +1,6 @@
 {
   "schema_version": 4,
-  "generated_at": "2026-11-05T14:39:51.849Z",
+  "generated_at": "2026-11-05T15:15:37.342Z",
   "timezone": "Europe/Madrid",
   "window": {
     "inicio": "2026-11-02",
@@ -31,16 +31,282 @@
     }
   },
   "shopping": {
-    "titulo": "Lista de compra sin consolidar · pendiente de revisión diaria",
-    "list_id": "PENDIENTE_REVISION_20261105",
-    "dias": [],
-    "csv": "",
-    "uses": {},
+    "titulo": "Almu + Fran · viernes 6 cena a viernes 13 merienda · noviembre 2026",
+    "list_id": "COMPRA_20261106_CENA_20261113_MERIENDA",
+    "dias": [
+      "V6",
+      "S7",
+      "D8",
+      "L9",
+      "M10",
+      "X11",
+      "J12",
+      "V13"
+    ],
+    "csv": "Ajo | 1 diente para cuscús y un poco para arroz a la marinera | Sin gramos fijados;M10 X11\nAlmejas frescas | Cantidad conjunta de dieta: 155 g | 155 g;M10\nArroz | Cantidad conjunta de dieta: 650 g | 650 g;M10 J12\nAtún en conserva | Cantidad conjunta de dieta: 210 g | 210 g;L9\nBacalao | Cantidad conjunta de dieta: 400 g | 400 g;X11\nCalabacín | Cantidad conjunta de dieta: 110 g | 110 g;X11\nCebolla | 244 g cuantificados + 1 cebolla adicional para cuscús del miércoles | 244 g;V6 S7 M10\nCereales Corn Flakes | Cantidad conjunta de dieta: 300 g | 300 g;S7 D8 L9 M10 X11 J12 V13\nChampiñones | Cantidad conjunta de dieta: 165 g | 165 g;V6\nCiruelas | Cantidad conjunta de dieta: 210 g | 210 g;S7 D8 L9 M10 X11 J12 V13\nClavo molido | Ensalada de remolacha del jueves, al gusto | Sin gramos fijados;J12\nComino molido | Ensalada de remolacha del jueves, al gusto | Sin gramos fijados;J12\nCopos de avena | Cantidad conjunta de dieta: 240 g | 240 g;S7 D8 L9 M10 X11 J12 V13\nCurry en polvo | Pollo al curry del sábado y cuscús del miércoles, sin gramos prescritos | Sin gramos fijados;S7 X11\nCuscús seco | 125 g según receta completa, comprobar que alcance para las raciones conjuntas de 600 g preparados | 125 g;X11\nEspinacas | Cantidad conjunta de dieta: 455 g | 455 g;D8\nFruta de temporada | 2,65 kg, aparte de kiwi y ciruelas | 2650 g;S7 D8 L9 M10 X11 J12 V13\nGambas | Cantidad conjunta de dieta: 155 g | 155 g;M10\nHuevo | 800 g de huevo útil, aproximadamente 15–17 huevos medianos | 800 g;D8 L9 M10 J12\nJamón serrano | Cantidad conjunta de dieta: 230 g | 230 g;L9 M10 X11 J12 V13\nJamón York | Cantidad conjunta de dieta: 165 g | 165 g;S7 D8 L9 M10 V13\nJudías verdes | Cantidad conjunta de dieta: 170 g | 170 g;M10\nKiwi | Cantidad conjunta de dieta: 420 g | 420 g;S7 D8 L9 M10 X11 J12 V13\nLechuga | Cantidad conjunta de dieta: 15 g | 15 g;X11\nLomo curado | Cantidad conjunta de dieta: 30 g | 30 g;J12\nMacarrones | Cantidad conjunta de dieta: 375 g | 375 g;L9\nMantequilla | Cuscús del miércoles, cantidad de la receta no especificada | Sin gramos fijados;X11\nMerluza | Cantidad conjunta de dieta: 390 g | 390 g;V6\nPan integral | 860 g, pan sin gluten separado | 860 g;S7 D8 L9 M10 X11 J12 V13\nPan sin gluten | Cantidad conjunta de dieta: 50 g | 50 g;S7\nPatata | Cantidad conjunta de dieta: 985 g | 985 g;V6 S7 L9 M10 X11\nPechuga de pollo fresca | 552 g de las tomas cuantificadas + 1 pechuga adicional para cuscús del miércoles (sin peso indicado) | 552 g;S7 X11\nPepino a la vinagreta | Cantidad conjunta de dieta: 25 g | 25 g;J12\nPimienta negra | Cuscús del miércoles, cantidad no especificada | Sin gramos fijados;X11\nPimiento | 142 g cuantificados + 1/2 pimiento verde y 1/2 rojo adicionales para cuscús | 142 g;S7 L9\nPreparado de tacos de pollo (composición sin confirmar) | 125 g para Almu, producto distinto de sus 30 g de pechuga fresca, composición por aclarar | 125 g;S7\nQueso de Burgos | Cantidad conjunta de dieta: 200 g | 200 g;S7 D8 M10 J12\nRábanos | Cantidad conjunta de dieta: 25 g | 25 g;J12\nRemolacha | Cantidad conjunta de dieta: 280 g | 280 g;J12\nRomero | Patatas al horno del sábado, al gusto | Sin gramos fijados;S7\nSalmón | Cantidad conjunta de dieta: 340 g | 340 g;J12\nSepia | Cantidad conjunta de dieta: 155 g | 155 g;M10\nTomate fresco | Cantidad conjunta de dieta: 335 g | 335 g;D8 L9 M10 X11 J12 V13\nTomate para salsa (formato por confirmar) | 350 g para macarrones y arroz a la cubana, no mezclar con tomate fresco | 350 g;L9 J12\nTortas de maíz | Cantidad conjunta de dieta: 210 g | 210 g;S7 D8 L9 M10 X11 J12 V13\nYogur natural desnatado | 960 g en total, incluye salsa de remolacha y postres | 960 g;V6 S7 D8 L9 M10 X11 J12\nZanahoria | 215 g cuantificados + 1 zanahoria grande adicional para cuscús | 215 g;M10 X11\nZumo de limón | 25 g de zumo, aproximadamente 1 limón | 25 g;J12\n",
+    "uses": {
+      "Ajo": [
+        "1 diente para cuscús y un poco para arroz a la marinera"
+      ],
+      "Almejas frescas": [
+        "M10 · Comida: Arroz a la marinera"
+      ],
+      "Arroz": [
+        "M10 · Comida: Arroz a la marinera",
+        "J12 · Comida: Arroz a la cubana con huevo"
+      ],
+      "Atún en conserva": [
+        "L9 · Comida: Macarrones con atún",
+        "L9 · Cena: Picadillo de patatas con atún y Picadillo de patatas con atún, Yogur natural desnatado"
+      ],
+      "Bacalao": [
+        "X11 · Cena: Puré de verduras, Bacalao fresco y Puré de verduras, Bacalao fresco, Yogur natural desnatado"
+      ],
+      "Calabacín": [
+        "X11 · Cena: Puré de verduras, Bacalao fresco y Puré de verduras, Bacalao fresco, Yogur natural desnatado"
+      ],
+      "Cebolla": [
+        "V6 · Cena: Crema de champiñones y patata, Merluza a la plancha y Crema de champiñones y patata, Merluza a la plancha, Yogur natural desnatado",
+        "S7 · Comida: Patatas al horno, Pollo con curry",
+        "S7 · Cena: Tacos de pollo y Tacos de pollo, Yogur natural desnatado",
+        "M10 · Comida: Arroz a la marinera"
+      ],
+      "Cereales Corn Flakes": [
+        "S7 · Desayuno: Corn Flakes y leche de soja, Copos de avena, Kiwi y Corn Flakes con leche de soja, Copos de avena, Café cortado descremado, Ciruelas",
+        "D8 · Desayuno: Corn Flakes y leche de soja, Copos de avena, Kiwi y Tostadas integrales con tomate y aceite, Café cortado descremado, Ciruelas",
+        "L9 · Desayuno: Corn Flakes y leche de soja, Copos de avena, Kiwi y Corn Flakes con leche de soja, Copos de avena, Café cortado descremado, Ciruelas",
+        "M10 · Desayuno: Corn Flakes y leche de soja, Copos de avena, Kiwi y Tostadas integrales con jamón York, Café cortado descremado, Ciruelas",
+        "X11 · Desayuno: Corn Flakes y leche de soja, Copos de avena, Kiwi y Tostadas integrales con tomate y aceite, Café cortado descremado, Ciruelas",
+        "J12 · Desayuno: Corn Flakes y leche de soja, Copos de avena, Kiwi y Tostadas integrales con lomo curado, Café cortado descremado, Ciruelas",
+        "V13 · Desayuno: Corn Flakes y leche de soja, Copos de avena, Kiwi y Corn Flakes con leche de soja, Café cortado descremado, Ciruelas"
+      ],
+      "Champiñones": [
+        "V6 · Cena: Crema de champiñones y patata, Merluza a la plancha y Crema de champiñones y patata, Merluza a la plancha, Yogur natural desnatado"
+      ],
+      "Ciruelas": [
+        "S7 · Desayuno: Corn Flakes y leche de soja, Copos de avena, Kiwi y Corn Flakes con leche de soja, Copos de avena, Café cortado descremado, Ciruelas",
+        "D8 · Desayuno: Corn Flakes y leche de soja, Copos de avena, Kiwi y Tostadas integrales con tomate y aceite, Café cortado descremado, Ciruelas",
+        "L9 · Desayuno: Corn Flakes y leche de soja, Copos de avena, Kiwi y Corn Flakes con leche de soja, Copos de avena, Café cortado descremado, Ciruelas",
+        "M10 · Desayuno: Corn Flakes y leche de soja, Copos de avena, Kiwi y Tostadas integrales con jamón York, Café cortado descremado, Ciruelas",
+        "X11 · Desayuno: Corn Flakes y leche de soja, Copos de avena, Kiwi y Tostadas integrales con tomate y aceite, Café cortado descremado, Ciruelas",
+        "J12 · Desayuno: Corn Flakes y leche de soja, Copos de avena, Kiwi y Tostadas integrales con lomo curado, Café cortado descremado, Ciruelas",
+        "V13 · Desayuno: Corn Flakes y leche de soja, Copos de avena, Kiwi y Corn Flakes con leche de soja, Café cortado descremado, Ciruelas"
+      ],
+      "Clavo molido": [
+        "Ensalada de remolacha del jueves, al gusto"
+      ],
+      "Comino molido": [
+        "Ensalada de remolacha del jueves, al gusto"
+      ],
+      "Copos de avena": [
+        "S7 · Desayuno: Corn Flakes y leche de soja, Copos de avena, Kiwi y Corn Flakes con leche de soja, Copos de avena, Café cortado descremado, Ciruelas",
+        "D8 · Desayuno: Corn Flakes y leche de soja, Copos de avena, Kiwi y Tostadas integrales con tomate y aceite, Café cortado descremado, Ciruelas",
+        "L9 · Desayuno: Corn Flakes y leche de soja, Copos de avena, Kiwi y Corn Flakes con leche de soja, Copos de avena, Café cortado descremado, Ciruelas",
+        "M10 · Desayuno: Corn Flakes y leche de soja, Copos de avena, Kiwi y Tostadas integrales con jamón York, Café cortado descremado, Ciruelas",
+        "X11 · Desayuno: Corn Flakes y leche de soja, Copos de avena, Kiwi y Tostadas integrales con tomate y aceite, Café cortado descremado, Ciruelas",
+        "J12 · Desayuno: Corn Flakes y leche de soja, Copos de avena, Kiwi y Tostadas integrales con lomo curado, Café cortado descremado, Ciruelas",
+        "V13 · Desayuno: Corn Flakes y leche de soja, Copos de avena, Kiwi y Corn Flakes con leche de soja, Café cortado descremado, Ciruelas"
+      ],
+      "Curry en polvo": [
+        "Pollo al curry del sábado y cuscús del miércoles, sin gramos prescritos"
+      ],
+      "Cuscús seco": [
+        "X11 · Comida: Cuscús con pollo al curry"
+      ],
+      "Espinacas": [
+        "D8 · Cena: Espinacas salteadas con huevo y Espinacas salteadas con huevo, Yogur natural desnatado"
+      ],
+      "Fruta de temporada": [
+        "S7 · Media mañana: Tostadas integrales con jamón York y Tortas de maíz, Fruta de temporada",
+        "S7 · Merienda: Fruta de temporada y Queso de Burgos, Fruta de temporada",
+        "D8 · Media mañana: Tostadas integrales con jamón York y Tortas de maíz, Fruta de temporada",
+        "D8 · Merienda: Fruta de temporada y Queso de Burgos, Fruta de temporada",
+        "L9 · Media mañana: Pan tostado con aceite y tomate, Jamón serrano y Bocadillo de jamón York y tomate, Fruta de temporada",
+        "L9 · Merienda: Fruta de temporada y Tortas de maíz, Fruta de temporada",
+        "M10 · Media mañana: Pan tostado con aceite y tomate, Queso de Burgos y Bocadillo con jamón serrano, Fruta de temporada",
+        "M10 · Merienda: Fruta de temporada y Tortas de maíz, Fruta de temporada",
+        "X11 · Media mañana: Pan tostado con aceite y tomate, Jamón serrano y Bocadillo de pollo, Fruta de temporada",
+        "X11 · Merienda: Fruta de temporada y Tortas de maíz, Fruta de temporada",
+        "J12 · Media mañana: Pan tostado con aceite y tomate, Queso de Burgos y Bocadillo con jamón serrano, Fruta de temporada",
+        "J12 · Merienda: Fruta de temporada y Tortas de maíz, Fruta de temporada",
+        "V13 · Media mañana: Pan tostado con aceite y tomate, Jamón serrano y Bocadillo de jamón York y tomate, Fruta de temporada",
+        "V13 · Merienda: Fruta de temporada y Tortas de maíz, Fruta de temporada"
+      ],
+      "Gambas": [
+        "M10 · Comida: Arroz a la marinera"
+      ],
+      "Huevo": [
+        "D8 · Cena: Espinacas salteadas con huevo y Espinacas salteadas con huevo, Yogur natural desnatado",
+        "L9 · Cena: Picadillo de patatas con atún y Picadillo de patatas con atún, Yogur natural desnatado",
+        "M10 · Cena: Judías verdes salteadas, Tortilla francesa y Judías verdes salteadas, Tortilla francesa, Yogur natural desnatado",
+        "J12 · Comida: Arroz a la cubana con huevo"
+      ],
+      "Jamón serrano": [
+        "L9 · Media mañana: Pan tostado con aceite y tomate, Jamón serrano y Bocadillo de jamón York y tomate, Fruta de temporada",
+        "M10 · Media mañana: Pan tostado con aceite y tomate, Queso de Burgos y Bocadillo con jamón serrano, Fruta de temporada",
+        "M10 · Cena: Judías verdes salteadas, Tortilla francesa y Judías verdes salteadas, Tortilla francesa, Yogur natural desnatado",
+        "X11 · Media mañana: Pan tostado con aceite y tomate, Jamón serrano y Bocadillo de pollo, Fruta de temporada",
+        "J12 · Media mañana: Pan tostado con aceite y tomate, Queso de Burgos y Bocadillo con jamón serrano, Fruta de temporada",
+        "V13 · Media mañana: Pan tostado con aceite y tomate, Jamón serrano y Bocadillo de jamón York y tomate, Fruta de temporada"
+      ],
+      "Jamón York": [
+        "S7 · Media mañana: Tostadas integrales con jamón York y Tortas de maíz, Fruta de temporada",
+        "D8 · Media mañana: Tostadas integrales con jamón York y Tortas de maíz, Fruta de temporada",
+        "L9 · Media mañana: Pan tostado con aceite y tomate, Jamón serrano y Bocadillo de jamón York y tomate, Fruta de temporada",
+        "M10 · Desayuno: Corn Flakes y leche de soja, Copos de avena, Kiwi y Tostadas integrales con jamón York, Café cortado descremado, Ciruelas",
+        "V13 · Media mañana: Pan tostado con aceite y tomate, Jamón serrano y Bocadillo de jamón York y tomate, Fruta de temporada"
+      ],
+      "Judías verdes": [
+        "M10 · Cena: Judías verdes salteadas, Tortilla francesa y Judías verdes salteadas, Tortilla francesa, Yogur natural desnatado"
+      ],
+      "Kiwi": [
+        "S7 · Desayuno: Corn Flakes y leche de soja, Copos de avena, Kiwi y Corn Flakes con leche de soja, Copos de avena, Café cortado descremado, Ciruelas",
+        "D8 · Desayuno: Corn Flakes y leche de soja, Copos de avena, Kiwi y Tostadas integrales con tomate y aceite, Café cortado descremado, Ciruelas",
+        "L9 · Desayuno: Corn Flakes y leche de soja, Copos de avena, Kiwi y Corn Flakes con leche de soja, Copos de avena, Café cortado descremado, Ciruelas",
+        "M10 · Desayuno: Corn Flakes y leche de soja, Copos de avena, Kiwi y Tostadas integrales con jamón York, Café cortado descremado, Ciruelas",
+        "X11 · Desayuno: Corn Flakes y leche de soja, Copos de avena, Kiwi y Tostadas integrales con tomate y aceite, Café cortado descremado, Ciruelas",
+        "J12 · Desayuno: Corn Flakes y leche de soja, Copos de avena, Kiwi y Tostadas integrales con lomo curado, Café cortado descremado, Ciruelas",
+        "V13 · Desayuno: Corn Flakes y leche de soja, Copos de avena, Kiwi y Corn Flakes con leche de soja, Café cortado descremado, Ciruelas"
+      ],
+      "Lechuga": [
+        "X11 · Media mañana: Pan tostado con aceite y tomate, Jamón serrano y Bocadillo de pollo, Fruta de temporada"
+      ],
+      "Lomo curado": [
+        "J12 · Desayuno: Corn Flakes y leche de soja, Copos de avena, Kiwi y Tostadas integrales con lomo curado, Café cortado descremado, Ciruelas"
+      ],
+      "Macarrones": [
+        "L9 · Comida: Macarrones con atún"
+      ],
+      "Mantequilla": [
+        "Cuscús del miércoles, cantidad de la receta no especificada"
+      ],
+      "Merluza": [
+        "V6 · Cena: Crema de champiñones y patata, Merluza a la plancha y Crema de champiñones y patata, Merluza a la plancha, Yogur natural desnatado"
+      ],
+      "Pan integral": [
+        "S7 · Media mañana: Tostadas integrales con jamón York y Tortas de maíz, Fruta de temporada",
+        "S7 · Cena: Tacos de pollo y Tacos de pollo, Yogur natural desnatado",
+        "D8 · Desayuno: Corn Flakes y leche de soja, Copos de avena, Kiwi y Tostadas integrales con tomate y aceite, Café cortado descremado, Ciruelas",
+        "D8 · Media mañana: Tostadas integrales con jamón York y Tortas de maíz, Fruta de temporada",
+        "L9 · Media mañana: Pan tostado con aceite y tomate, Jamón serrano y Bocadillo de jamón York y tomate, Fruta de temporada",
+        "M10 · Desayuno: Corn Flakes y leche de soja, Copos de avena, Kiwi y Tostadas integrales con jamón York, Café cortado descremado, Ciruelas",
+        "M10 · Media mañana: Pan tostado con aceite y tomate, Queso de Burgos y Bocadillo con jamón serrano, Fruta de temporada",
+        "X11 · Desayuno: Corn Flakes y leche de soja, Copos de avena, Kiwi y Tostadas integrales con tomate y aceite, Café cortado descremado, Ciruelas",
+        "X11 · Media mañana: Pan tostado con aceite y tomate, Jamón serrano y Bocadillo de pollo, Fruta de temporada",
+        "J12 · Desayuno: Corn Flakes y leche de soja, Copos de avena, Kiwi y Tostadas integrales con lomo curado, Café cortado descremado, Ciruelas",
+        "J12 · Media mañana: Pan tostado con aceite y tomate, Queso de Burgos y Bocadillo con jamón serrano, Fruta de temporada",
+        "V13 · Media mañana: Pan tostado con aceite y tomate, Jamón serrano y Bocadillo de jamón York y tomate, Fruta de temporada"
+      ],
+      "Pan sin gluten": [
+        "S7 · Cena: Tacos de pollo y Tacos de pollo, Yogur natural desnatado"
+      ],
+      "Patata": [
+        "V6 · Cena: Crema de champiñones y patata, Merluza a la plancha y Crema de champiñones y patata, Merluza a la plancha, Yogur natural desnatado",
+        "S7 · Comida: Patatas al horno, Pollo con curry",
+        "L9 · Cena: Picadillo de patatas con atún y Picadillo de patatas con atún, Yogur natural desnatado",
+        "M10 · Cena: Judías verdes salteadas, Tortilla francesa y Judías verdes salteadas, Tortilla francesa, Yogur natural desnatado",
+        "X11 · Cena: Puré de verduras, Bacalao fresco y Puré de verduras, Bacalao fresco, Yogur natural desnatado"
+      ],
+      "Pechuga de pollo fresca": [
+        "S7 · Comida: Patatas al horno, Pollo con curry",
+        "S7 · Cena: Tacos de pollo y Tacos de pollo, Yogur natural desnatado",
+        "X11 · Media mañana: Pan tostado con aceite y tomate, Jamón serrano y Bocadillo de pollo, Fruta de temporada"
+      ],
+      "Pepino a la vinagreta": [
+        "J12 · Cena: Ensalada de remolacha, Salmón a la plancha y Ensalada de remolacha, Salmón a la plancha, Yogur natural desnatado"
+      ],
+      "Pimienta negra": [
+        "Cuscús del miércoles, cantidad no especificada"
+      ],
+      "Pimiento": [
+        "S7 · Cena: Tacos de pollo y Tacos de pollo, Yogur natural desnatado",
+        "L9 · Cena: Picadillo de patatas con atún y Picadillo de patatas con atún, Yogur natural desnatado"
+      ],
+      "Preparado de tacos de pollo (composición sin confirmar)": [
+        "S7 · Cena: Tacos de pollo y Tacos de pollo, Yogur natural desnatado"
+      ],
+      "Queso de Burgos": [
+        "S7 · Merienda: Fruta de temporada y Queso de Burgos, Fruta de temporada",
+        "D8 · Merienda: Fruta de temporada y Queso de Burgos, Fruta de temporada",
+        "M10 · Media mañana: Pan tostado con aceite y tomate, Queso de Burgos y Bocadillo con jamón serrano, Fruta de temporada",
+        "J12 · Media mañana: Pan tostado con aceite y tomate, Queso de Burgos y Bocadillo con jamón serrano, Fruta de temporada"
+      ],
+      "Rábanos": [
+        "J12 · Cena: Ensalada de remolacha, Salmón a la plancha y Ensalada de remolacha, Salmón a la plancha, Yogur natural desnatado"
+      ],
+      "Remolacha": [
+        "J12 · Cena: Ensalada de remolacha, Salmón a la plancha y Ensalada de remolacha, Salmón a la plancha, Yogur natural desnatado"
+      ],
+      "Romero": [
+        "Patatas al horno del sábado, al gusto"
+      ],
+      "Salmón": [
+        "J12 · Cena: Ensalada de remolacha, Salmón a la plancha y Ensalada de remolacha, Salmón a la plancha, Yogur natural desnatado"
+      ],
+      "Sepia": [
+        "M10 · Comida: Arroz a la marinera"
+      ],
+      "Tomate fresco": [
+        "D8 · Desayuno: Corn Flakes y leche de soja, Copos de avena, Kiwi y Tostadas integrales con tomate y aceite, Café cortado descremado, Ciruelas",
+        "L9 · Media mañana: Pan tostado con aceite y tomate, Jamón serrano y Bocadillo de jamón York y tomate, Fruta de temporada",
+        "L9 · Cena: Picadillo de patatas con atún y Picadillo de patatas con atún, Yogur natural desnatado",
+        "M10 · Media mañana: Pan tostado con aceite y tomate, Queso de Burgos y Bocadillo con jamón serrano, Fruta de temporada",
+        "X11 · Desayuno: Corn Flakes y leche de soja, Copos de avena, Kiwi y Tostadas integrales con tomate y aceite, Café cortado descremado, Ciruelas",
+        "X11 · Media mañana: Pan tostado con aceite y tomate, Jamón serrano y Bocadillo de pollo, Fruta de temporada",
+        "X11 · Cena: Puré de verduras, Bacalao fresco y Puré de verduras, Bacalao fresco, Yogur natural desnatado",
+        "J12 · Media mañana: Pan tostado con aceite y tomate, Queso de Burgos y Bocadillo con jamón serrano, Fruta de temporada",
+        "V13 · Media mañana: Pan tostado con aceite y tomate, Jamón serrano y Bocadillo de jamón York y tomate, Fruta de temporada"
+      ],
+      "Tomate para salsa (formato por confirmar)": [
+        "L9 · Comida: Macarrones con atún",
+        "J12 · Comida: Arroz a la cubana con huevo"
+      ],
+      "Tortas de maíz": [
+        "S7 · Media mañana: Tostadas integrales con jamón York y Tortas de maíz, Fruta de temporada",
+        "D8 · Media mañana: Tostadas integrales con jamón York y Tortas de maíz, Fruta de temporada",
+        "L9 · Merienda: Fruta de temporada y Tortas de maíz, Fruta de temporada",
+        "M10 · Merienda: Fruta de temporada y Tortas de maíz, Fruta de temporada",
+        "X11 · Merienda: Fruta de temporada y Tortas de maíz, Fruta de temporada",
+        "J12 · Merienda: Fruta de temporada y Tortas de maíz, Fruta de temporada",
+        "V13 · Merienda: Fruta de temporada y Tortas de maíz, Fruta de temporada"
+      ],
+      "Yogur natural desnatado": [
+        "V6 · Cena: Crema de champiñones y patata, Merluza a la plancha y Crema de champiñones y patata, Merluza a la plancha, Yogur natural desnatado",
+        "S7 · Cena: Tacos de pollo y Tacos de pollo, Yogur natural desnatado",
+        "D8 · Cena: Espinacas salteadas con huevo y Espinacas salteadas con huevo, Yogur natural desnatado",
+        "L9 · Cena: Picadillo de patatas con atún y Picadillo de patatas con atún, Yogur natural desnatado",
+        "M10 · Cena: Judías verdes salteadas, Tortilla francesa y Judías verdes salteadas, Tortilla francesa, Yogur natural desnatado",
+        "X11 · Cena: Puré de verduras, Bacalao fresco y Puré de verduras, Bacalao fresco, Yogur natural desnatado",
+        "J12 · Cena: Ensalada de remolacha, Salmón a la plancha y Ensalada de remolacha, Salmón a la plancha, Yogur natural desnatado"
+      ],
+      "Zanahoria": [
+        "M10 · Cena: Judías verdes salteadas, Tortilla francesa y Judías verdes salteadas, Tortilla francesa, Yogur natural desnatado",
+        "X11 · Cena: Puré de verduras, Bacalao fresco y Puré de verduras, Bacalao fresco, Yogur natural desnatado"
+      ],
+      "Zumo de limón": [
+        "J12 · Cena: Ensalada de remolacha, Salmón a la plancha y Ensalada de remolacha, Salmón a la plancha, Yogur natural desnatado"
+      ]
+    },
     "retailer_plan": {
       "status": "pendiente",
       "items": {}
     },
-    "revision_diaria": "data/revision_compra_21_dias_20261105_064248.json"
+    "estado": "PUBLICADA_POR_SOLICITUD_DEL_USUARIO",
+    "periodo": {
+      "inicio": "2026-11-06",
+      "inicio_toma": "Cena",
+      "fin": "2026-11-13",
+      "fin_toma": "Merienda"
+    },
+    "notas": [
+      "Comida del domingo 8 libre en Aluche",
+      "Viernes 13 comida y cena libres en Cartagena",
+      "No comprar café, ninguna leche, AOVE/aceite o sal",
+      "Cuscús: 125 g en la receta completa, el rendimiento para 600 g preparados entre ambos sigue pendiente",
+      "125 g de preparado de tacos de Almu separados de pechuga fresca",
+      "Tacos Fran aprobados en 350 g de plato, desglose orientativo de 343 g y diferencia de 7 g"
+    ],
+    "referencia_compra": "data/revision_compra_21_dias_20261105_064248.json"
   },
   "recipes": {
     "ensalada_patatas_atun": {
