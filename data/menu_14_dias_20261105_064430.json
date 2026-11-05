@@ -1,0 +1,772 @@
+{
+  "schema_version": 4,
+  "generated_at": "2026-11-05T06:28:42+01:00",
+  "timezone": "Europe/Madrid",
+  "window": {
+    "inicio": "2026-11-02",
+    "fin": "2026-11-15"
+  },
+  "weeks": [
+    {
+      "id": "20261102_SEMANA09_ALMU_FRAN_BORRADOR",
+      "inicio": "2026-11-02",
+      "fin": "2026-11-08",
+      "document": "semana09_conjunta_borrador"
+    },
+    {
+      "id": "20261109_SEMANA10_ALMU_FRAN_BORRADOR",
+      "inicio": "2026-11-09",
+      "fin": "2026-11-15",
+      "document": "semana10_conjunta_borrador"
+    }
+  ],
+  "documents": {
+    "semana09_conjunta_borrador": {
+      "main_markdown": "# CUADRO 01 · APROBADO · 2026-11-02 a 2026-11-08\n\n**Estado: APROBADO el calendario y las raciones de comidas/cenas por el usuario el 05/11/2026.** Tacos de Fran: 350 g + yogur de 125 g; la composición del preparado de Almu y los 7 g sin atribuir en el despiece de Fran siguen pendientes para la compra.\n\n| Día | Comida Almu | Comida Fran | Comida total | Cena Almu | Cena Fran | Cena total |\n|---|---|---|---|---|---|---|\n| **Lunes 2** | **Fuera del periodo de 21 días** | **Fuera del periodo de 21 días** | Fuera del periodo | **Fuera del periodo de 21 días** | **Fuera del periodo de 21 días** | Fuera del periodo |\n| **Martes 3** | **Fuera del periodo de 21 días** | **Fuera del periodo de 21 días** | Fuera del periodo | **Fuera del periodo de 21 días** | **Fuera del periodo de 21 días** | Fuera del periodo |\n| **Miércoles 4** | **Fuera del periodo de 21 días** | **Fuera del periodo de 21 días** | Fuera del periodo | **Puré de verduras · 200 g** + **Bacalao fresco · 200 g** | **Puré de verduras · 300 g** + **Bacalao fresco · 200 g** + **Yogur natural desnatado · 125 g** | **Patata 175 g · Calabacín 110 g · Zanahoria 110 g · Tomate 90 g · Aceite de oliva 3 g · Bacalao 400 g** |\n| **Jueves 5** | **Arroz a la cubana con huevo · 350 g** | **Arroz a la cubana con huevo · 400 g** | **Arroz 390 g · Huevo 195 g · Tomate 160 g · Aceite de oliva 8 g** | **Ensalada de remolacha · 200 g** + **Salmón a la plancha · 150 g** | **Ensalada de remolacha · 250 g** + **Salmón a la plancha · 200 g** + **Yogur natural desnatado · 125 g** | **Remolacha 280 g · Yogur 85 g · Rábanos 25 g · Zumo de limón 25 g · Pepino a la vinagreta 25 g · Salmón 340 g · Aceite de oliva 7 g** |\n| **Viernes 6** | **Patatas guisadas · 250 g** + **Huevo escalfado · 60 g** | **Patatas guisadas · 400 g** + **Huevo escalfado · 60 g** | **Patata 295 g · Tomate 145 g · Cebolla 145 g · Pimiento 60 g · Huevo 120 g** | **Crema de champiñones y patata · 200 g** + **Merluza a la plancha · 200 g** | **Crema de champiñones y patata · 300 g** + **Merluza a la plancha · 200 g** + **Yogur natural desnatado · 125 g** | **Champiñones 165 g · Leche descremada 165 g · Patata 115 g · Cebolla 40 g · Aceite de oliva 20 g · Merluza 390 g** |\n| **Sábado 7** | **Patatas al horno · 200 g** + **Pollo con curry · 150 g** | **Patatas al horno · 200 g** + **Pollo con curry · 200 g** | **Patata 380 g · Aceite de oliva 20 g · Pechuga de pollo 250 g · Cebolla 100 g** | **Tacos de pollo · 250 g** | **Tacos de pollo · 350 g** + **Yogur natural desnatado · 125 g** · adaptación aprobada por el usuario | **Tacos de pollo · Almu 250 g + Fran 350 g aprobados**<br>Preparado de tacos de Almu (composición desconocida) 125 g · Pechuga fresca 247 g · Pimiento 72 g · Cebolla 24 g · Pan sin gluten 50 g · Pan integral 70 g. **Compra por validar; faltan 7 g en desglose de Fran.** |\n| **Domingo 8** | **Aluche · LIBRE · Cumpleaños de Almu** | **Aluche · LIBRE · Cumpleaños de Almu** | **Aluche · LIBRE** | **Espinacas salteadas con huevo · 300 g** | **Espinacas salteadas con huevo · 400 g** + **Yogur natural desnatado · 125 g** | **Espinacas 455 g · Huevo 245 g** |\n",
+      "menu_markdown": "# CUADRO 02 · PROPUESTA PARA VILEDA · 2026-11-02 a 2026-11-08\n\n**Cuadro 02 pendiente de aprobación; Cuadro 01 y raciones de tacos aprobados.** Las cantidades de tacos de Fran son orientativas. Días libres señalados; desayuno, media mañana y merienda se mantienen en Cartagena.\n\n|  | Lunes Almu | Lunes Fran | Martes Almu | Martes Fran | Miércoles Almu | Miércoles Fran | Jueves Almu | Jueves Fran | Viernes Almu | Viernes Fran | Sábado Almu | Sábado Fran | Domingo Almu | Domingo Fran |\n|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|\n| **Desayuno** | **Fuera del periodo de 21 días** | **Fuera del periodo de 21 días** | **Fuera del periodo de 21 días** | **Fuera del periodo de 21 días** | **Fuera del periodo de 21 días** | **Fuera del periodo de 21 días** | **Corn Flakes y leche de soja · 230 g**<br>Leche de soja 200 g · Corn Flakes 30 g<br>**Copos de avena · 20 g**<br>Copos de avena 20 g<br>**Kiwi · 60 g**<br>Kiwi 60 g | **Tostadas integrales con lomo curado · 60 g**<br>Tostadas integrales 30 g · Lomo curado 30 g<br>**Café cortado descremado · 100 g**<br>Café natural 85 g · Leche descremada 15 g<br>Nota: Opcional<br>**Ciruelas · 30 g**<br>Ciruelas 30 g | **Corn Flakes y leche de soja · 230 g**<br>Leche de soja 200 g · Corn Flakes 30 g<br>**Copos de avena · 20 g**<br>Copos de avena 20 g<br>**Kiwi · 60 g**<br>Kiwi 60 g | **Corn Flakes con leche de soja · 230 g**<br>Leche de soja 200 g · Corn Flakes 30 g<br>**Café cortado descremado · 100 g**<br>Café natural 85 g · Leche descremada 15 g<br>Nota: Opcional<br>**Ciruelas · 30 g**<br>Ciruelas 30 g | **Corn Flakes y leche de soja · 230 g**<br>Leche de soja 200 g · Corn Flakes 30 g<br>**Copos de avena · 20 g**<br>Copos de avena 20 g<br>**Kiwi · 60 g**<br>Kiwi 60 g | **Corn Flakes con leche de soja · 230 g**<br>Leche de soja 200 g · Corn Flakes 30 g<br>**Copos de avena · 50 g**<br>Copos de avena 50 g<br>**Café cortado descremado · 100 g**<br>Café natural 85 g · Leche descremada 15 g<br>Nota: Opcional<br>**Ciruelas · 30 g**<br>Ciruelas 30 g | **Corn Flakes y leche de soja · 230 g**<br>Leche de soja 200 g · Corn Flakes 30 g<br>**Copos de avena · 20 g**<br>Copos de avena 20 g<br>**Kiwi · 60 g**<br>Kiwi 60 g | **Tostadas integrales con tomate y aceite · 50 g**<br>Tostadas integrales 40 g · Tomate 5 g · Aceite de oliva 6 g<br>**Café cortado descremado · 100 g**<br>Café natural 85 g · Leche descremada 15 g<br>Nota: Opcional<br>**Ciruelas · 30 g**<br>Ciruelas 30 g |\n| **Media mañana** | **Fuera del periodo de 21 días** | **Fuera del periodo de 21 días** | **Fuera del periodo de 21 días** | **Fuera del periodo de 21 días** | **Fuera del periodo de 21 días** | **Fuera del periodo de 21 días** | **Pan tostado con aceite y tomate · 50 g**<br>Pan 40 g · Aceite de oliva 6 g · Tomate 5 g<br>**Queso de Burgos · 40 g**<br>Queso de Burgos 40 g | **Bocadillo con jamón serrano · 130 g**<br>Pan baguette 70 g · Jamón serrano 60 g<br>**Fruta de temporada · 100 g**<br>Fruta de temporada 100 g | **Pan tostado con aceite y tomate · 50 g**<br>Pan 40 g · Aceite de oliva 6 g · Tomate 5 g<br>**Jamón serrano · 30 g**<br>Jamón serrano 30 g | **Bocadillo de jamón York y tomate · 150 g**<br>Pan baguette 85 g · Jamón York 35 g · Tomate 35 g<br>Nota: La ración indica 150 g; ingredientes suman 155 g<br>**Fruta de temporada · 100 g**<br>Fruta de temporada 100 g | **Tostadas integrales con jamón York · 60 g**<br>Tostadas integrales 30 g · Jamón York 30 g | **Tortas de maíz · 30 g**<br>Tortas de maíz 30 g<br>**Fruta de temporada · 200 g**<br>Fruta de temporada 200 g | **Tostadas integrales con jamón York · 60 g**<br>Tostadas integrales 30 g · Jamón York 30 g | **Tortas de maíz · 30 g**<br>Tortas de maíz 30 g<br>**Fruta de temporada · 200 g**<br>Fruta de temporada 200 g |\n| **Comida** | **Fuera del periodo de 21 días** | **Fuera del periodo de 21 días** | **Fuera del periodo de 21 días** | **Fuera del periodo de 21 días** | **Fuera del periodo de 21 días** | **Fuera del periodo de 21 días** | **Arroz a la cubana con huevo · 350 g**<br>Arroz 180 g · Huevo 90 g · Tomate 75 g · Aceite de oliva 4 g | **Arroz a la cubana con huevo · 400 g**<br>Arroz 210 g · Huevo 105 g · Tomate 85 g · Aceite de oliva 4 g | **Patatas guisadas · 250 g**<br>Patata 115 g · Tomate 55 g · Cebolla 55 g · Pimiento 25 g<br>**Huevo escalfado · 60 g**<br>Huevo 60 g | **Patatas guisadas · 400 g**<br>Patatas 180 g · Tomate 90 g · Cebolla 90 g · Pimiento 35 g<br>Nota: Ajo y hierbas aromáticas mencionados en la elaboración, sin gramos<br>**Huevo escalfado · 60 g**<br>Huevo 60 g | **Patatas al horno · 200 g**<br>Patata 190 g · Aceite de oliva 10 g<br>**Pollo con curry · 150 g**<br>Pechuga de pollo 105 g · Cebolla 45 g · Curry sin cantidad prescrita | **Patatas al horno · 200 g**<br>Patatas 190 g · Aceite de oliva 10 g<br>Nota: Con romero<br>**Pollo con curry · 200 g**<br>Pechuga de pollo 145 g · Cebolla 55 g · Curry sin gramos | **Aluche · LIBRE · Cumpleaños de Almu** | **Aluche · LIBRE · Cumpleaños de Almu** |\n| **Merienda** | **Fuera del periodo de 21 días** | **Fuera del periodo de 21 días** | **Fuera del periodo de 21 días** | **Fuera del periodo de 21 días** | **Fuera del periodo de 21 días** | **Fuera del periodo de 21 días** | **Fruta de temporada · 150 g**<br>Fruta de temporada 150 g | **Tortas de maíz · 30 g**<br>Tortas de maíz 30 g<br>**Fruta de temporada · 100 g**<br>Fruta de temporada 100 g | **Fruta de temporada · 150 g**<br>Fruta de temporada 150 g | **Tortas de maíz · 30 g**<br>Tortas de maíz 30 g<br>**Fruta de temporada · 100 g**<br>Fruta de temporada 100 g | **Fruta de temporada · 150 g**<br>Fruta de temporada 150 g | **Queso de Burgos · 60 g**<br>Queso de Burgos 60 g<br>**Fruta de temporada · 100 g**<br>Fruta de temporada 100 g | **Fruta de temporada · 150 g**<br>Fruta de temporada 150 g | **Queso de Burgos · 60 g**<br>Queso de Burgos 60 g<br>**Fruta de temporada · 100 g**<br>Fruta de temporada 100 g |\n| **Cena** | **Fuera del periodo de 21 días** | **Fuera del periodo de 21 días** | **Fuera del periodo de 21 días** | **Fuera del periodo de 21 días** | **Puré de verduras · 200 g**<br>Patata 70 g · Calabacín 45 g · Zanahoria 45 g · Tomate 35 g · Aceite de oliva 1 g<br>**Bacalao fresco · 200 g**<br>Bacalao fresco 200 g | **Puré de verduras · 300 g**<br>Patata 105 g · Calabacín 65 g · Zanahoria 65 g · Tomate 55 g · Aceite de oliva 2 g<br>**Bacalao fresco · 200 g**<br>Bacalao fresco 200 g<br>**Yogur natural desnatado · 125 g**<br>Yogur natural desnatado 125 g | **Ensalada de remolacha · 200 g**<br>Remolacha 125 g · Yogur natural desnatado 40 g · Rábanos 10 g · Zumo de limón 10 g · Pepino a la vinagreta 10 g<br>**Salmón a la plancha · 150 g**<br>Salmón 145 g · Aceite de oliva 3 g | **Ensalada de remolacha · 250 g**<br>Remolacha 155 g · Yogur natural desnatado 45 g · Rábanos 15 g · Zumo de limón 15 g · Pepino a la vinagreta 15 g<br>Nota: Comino y clavo en polvo al gusto<br>**Salmón a la plancha · 200 g**<br>Salmón 195 g · Aceite de oliva 4 g<br>**Yogur natural desnatado · 125 g**<br>Yogur natural desnatado 125 g | **Crema de champiñones y patata · 200 g**<br>Champiñones 65 g · Leche descremada 65 g · Patata 45 g · Cebolla 15 g · Aceite de oliva 3 g<br>**Merluza a la plancha · 200 g**<br>Merluza 195 g · Aceite de oliva 6 g | **Crema de champiñones y patata · 300 g**<br>Champiñones 100 g · Leche descremada 100 g · Patata 70 g · Cebolla 25 g · Aceite de oliva 5 g<br>**Merluza a la plancha · 200 g**<br>Merluza 195 g · Aceite de oliva 6 g<br>**Yogur natural desnatado · 125 g**<br>Yogur natural desnatado 125 g | **Tacos de pollo · 250 g**<br>Tacos de pollo (preparado) 125 g · Pan sin gluten 50 g · Pechuga de pollo 30 g · Pimiento 30 g · Cebolla 10 g<br>Nota: Interpretación de compra: 125 g de tacos de pollo + 30 g de pechuga = 155 g de pechuga fresca troceada (criterio del proyecto); confirmar que no exista doble cómputo. | **Tacos de pollo · 350 g**<br>Pechuga de pollo fresca 217 g · Pan integral 70 g · Pimiento 42 g · Cebolla 14 g<br>Nota: Ración orientativa de 350 g (ingredientes suman 343 g). Basada en la receta de Almu ampliada 1,4 veces; NO procede del PDF de Fran ni se ha validado equivalencia nutricional.<br>**Yogur natural desnatado · 125 g**<br>Yogur natural desnatado 125 g<br>Nota: Se conserva el yogur de la cena original de Fran. Adaptación de Fran aprobada (350 g tacos); desglose pendiente | **Espinacas salteadas con huevo · 300 g**<br>Espinacas 195 g · Huevo 105 g | **Espinacas salteadas con huevo · 400 g**<br>Espinacas 260 g · Huevo 140 g<br>**Yogur natural desnatado · 125 g**<br>Yogur natural desnatado 125 g |\n"
+    },
+    "semana10_conjunta_borrador": {
+      "main_markdown": "# CUADRO 01 · APROBADO · 2026-11-09 a 2026-11-15\n\n**Estado: APROBADO el calendario y las raciones de comidas/cenas por el usuario el 05/11/2026.** Tacos de Fran: 350 g + yogur de 125 g; la composición del preparado de Almu y los 7 g sin atribuir en el despiece de Fran siguen pendientes para la compra.\n\n| Día | Comida Almu | Comida Fran | Comida total | Cena Almu | Cena Fran | Cena total |\n|---|---|---|---|---|---|---|\n| **Lunes 9** | **Macarrones con atún · 300 g** | **Macarrones con atún · 400 g** | **Macarrones 375 g · Tomate 190 g · Atún 130 g** | **Picadillo de patatas con atún · 250 g** | **Picadillo de patatas con atún · 400 g** + **Yogur natural desnatado · 125 g** | **Patata 225 g · Tomate 140 g · Huevo 130 g · Atún 80 g · Pimiento 70 g** |\n| **Martes 10** | **Arroz a la marinera · 350 g** | **Arroz a la marinera · 450 g** | **Arroz 260 g · Almejas 155 g · Gambas 155 g · Sepia 155 g · Cebolla 80 g** | **Judías verdes salteadas · 150 g** + **Tortilla francesa · 120 g** | **Judías verdes salteadas · 240 g** + **Tortilla francesa · 120 g** + **Yogur natural desnatado · 125 g** | **Judías verdes 170 g · Zanahoria 105 g · Patata 90 g · Jamón serrano 20 g · Aceite de oliva 15 g · Huevo 230 g** |\n| **Miércoles 11** | **Cuscús con pollo al curry · 250 g** | **Cuscús con pollo al curry · 350 g** | **Cuscús con pollo al curry: 600 g preparados entre ambos. Ingredientes de receta completa sin reparto en crudo; pendiente de comprobar rendimiento.** | **Puré de verduras · 200 g** + **Bacalao fresco · 200 g** | **Puré de verduras · 300 g** + **Bacalao fresco · 200 g** + **Yogur natural desnatado · 125 g** | **Patata 175 g · Calabacín 110 g · Zanahoria 110 g · Tomate 90 g · Aceite de oliva 3 g · Bacalao 400 g** |\n| **Jueves 12** | **Arroz a la cubana con huevo · 350 g** | **Arroz a la cubana con huevo · 400 g** | **Arroz 390 g · Huevo 195 g · Tomate 160 g · Aceite de oliva 8 g** | **Ensalada de remolacha · 200 g** + **Salmón a la plancha · 150 g** | **Ensalada de remolacha · 250 g** + **Salmón a la plancha · 200 g** + **Yogur natural desnatado · 125 g** | **Remolacha 280 g · Yogur 85 g · Rábanos 25 g · Zumo de limón 25 g · Pepino a la vinagreta 25 g · Salmón 340 g · Aceite de oliva 7 g** |\n| **Viernes 13** | **Cartagena · LIBRE** | **Cartagena · LIBRE** | **Cartagena · LIBRE** | **Cartagena · LIBRE** | **Cartagena · LIBRE** | **Cartagena · LIBRE** |\n| **Sábado 14** | **Cartagena · LIBRE** | **Cartagena · LIBRE** | **Cartagena · LIBRE** | **Cartagena · LIBRE** | **Cartagena · LIBRE** | **Cartagena · LIBRE** |\n| **Domingo 15** | **Cartagena · LIBRE** | **Cartagena · LIBRE** | **Cartagena · LIBRE** | **Espinacas salteadas con huevo · 300 g** | **Espinacas salteadas con huevo · 400 g** + **Yogur natural desnatado · 125 g** | **Espinacas 455 g · Huevo 245 g** |\n",
+      "menu_markdown": "# CUADRO 02 · PROPUESTA PARA VILEDA · 2026-11-09 a 2026-11-15\n\n**Cuadro 02 pendiente de aprobación; Cuadro 01 y raciones de tacos aprobados.** Las cantidades de tacos de Fran son orientativas. Días libres señalados; desayuno, media mañana y merienda se mantienen en Cartagena.\n\n|  | Lunes Almu | Lunes Fran | Martes Almu | Martes Fran | Miércoles Almu | Miércoles Fran | Jueves Almu | Jueves Fran | Viernes Almu | Viernes Fran | Sábado Almu | Sábado Fran | Domingo Almu | Domingo Fran |\n|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|\n| **Desayuno** | **Corn Flakes y leche de soja · 230 g**<br>Leche de soja 200 g · Corn Flakes 30 g<br>**Copos de avena · 20 g**<br>Copos de avena 20 g<br>**Kiwi · 60 g**<br>Kiwi 60 g | **Corn Flakes con leche de soja · 230 g**<br>Leche de soja 200 g · Corn Flakes 30 g<br>**Copos de avena · 50 g**<br>Copos de avena 50 g<br>**Café cortado descremado · 100 g**<br>Café natural 85 g · Leche descremada 15 g<br>Nota: Opcional<br>**Ciruelas · 30 g**<br>Ciruelas 30 g | **Corn Flakes y leche de soja · 230 g**<br>Leche de soja 200 g · Corn Flakes 30 g<br>**Copos de avena · 20 g**<br>Copos de avena 20 g<br>**Kiwi · 60 g**<br>Kiwi 60 g | **Tostadas integrales con jamón York · 80 g**<br>Tostadas integrales 45 g · Jamón York 35 g<br>**Café cortado descremado · 100 g**<br>Café natural 85 g · Leche descremada 15 g<br>Nota: Opcional<br>**Ciruelas · 30 g**<br>Ciruelas 30 g | **Corn Flakes y leche de soja · 230 g**<br>Leche de soja 200 g · Corn Flakes 30 g<br>**Copos de avena · 20 g**<br>Copos de avena 20 g<br>**Kiwi · 60 g**<br>Kiwi 60 g | **Tostadas integrales con tomate y aceite · 30 g**<br>Tostadas integrales 25 g · Tomate 5 g · Aceite de oliva 3 g<br>**Café cortado descremado · 100 g**<br>Café natural 85 g · Leche descremada 15 g<br>Nota: Opcional<br>**Café cortado descremado · 100 g**<br>Café natural 85 g · Leche descremada 15 g<br>Nota: Opcional<br>**Ciruelas · 30 g**<br>Ciruelas 30 g | **Corn Flakes y leche de soja · 230 g**<br>Leche de soja 200 g · Corn Flakes 30 g<br>**Copos de avena · 20 g**<br>Copos de avena 20 g<br>**Kiwi · 60 g**<br>Kiwi 60 g | **Tostadas integrales con lomo curado · 60 g**<br>Tostadas integrales 30 g · Lomo curado 30 g<br>**Café cortado descremado · 100 g**<br>Café natural 85 g · Leche descremada 15 g<br>Nota: Opcional<br>**Ciruelas · 30 g**<br>Ciruelas 30 g | **Corn Flakes y leche de soja · 230 g**<br>Leche de soja 200 g · Corn Flakes 30 g<br>**Copos de avena · 20 g**<br>Copos de avena 20 g<br>**Kiwi · 60 g**<br>Kiwi 60 g | **Corn Flakes con leche de soja · 230 g**<br>Leche de soja 200 g · Corn Flakes 30 g<br>**Café cortado descremado · 100 g**<br>Café natural 85 g · Leche descremada 15 g<br>Nota: Opcional<br>**Ciruelas · 30 g**<br>Ciruelas 30 g | **Corn Flakes y leche de soja · 230 g**<br>Leche de soja 200 g · Corn Flakes 30 g<br>**Copos de avena · 20 g**<br>Copos de avena 20 g<br>**Kiwi · 60 g**<br>Kiwi 60 g | **Corn Flakes con leche de soja · 230 g**<br>Leche de soja 200 g · Corn Flakes 30 g<br>**Copos de avena · 50 g**<br>Copos de avena 50 g<br>**Café cortado descremado · 100 g**<br>Café natural 85 g · Leche descremada 15 g<br>Nota: Opcional<br>**Ciruelas · 30 g**<br>Ciruelas 30 g | **Corn Flakes y leche de soja · 230 g**<br>Leche de soja 200 g · Corn Flakes 30 g<br>**Copos de avena · 20 g**<br>Copos de avena 20 g<br>**Kiwi · 60 g**<br>Kiwi 60 g | **Tostadas integrales con tomate y aceite · 50 g**<br>Tostadas integrales 40 g · Tomate 5 g · Aceite de oliva 6 g<br>**Café cortado descremado · 100 g**<br>Café natural 85 g · Leche descremada 15 g<br>Nota: Opcional<br>**Ciruelas · 30 g**<br>Ciruelas 30 g |\n| **Media mañana** | **Pan tostado con aceite y tomate · 50 g**<br>Pan 40 g · Aceite de oliva 6 g · Tomate 5 g<br>**Jamón serrano · 30 g**<br>Jamón serrano 30 g | **Bocadillo de jamón York y tomate · 150 g**<br>Pan baguette 85 g · Jamón York 35 g · Tomate 35 g<br>Nota: La ración indica 150 g; ingredientes suman 155 g<br>**Fruta de temporada · 100 g**<br>Fruta de temporada 100 g | **Pan tostado con aceite y tomate · 50 g**<br>Pan 40 g · Aceite de oliva 6 g · Tomate 5 g<br>**Queso de Burgos · 40 g**<br>Queso de Burgos 40 g | **Bocadillo con jamón serrano · 130 g**<br>Pan baguette 70 g · Jamón serrano 60 g<br>**Fruta de temporada · 100 g**<br>Fruta de temporada 100 g | **Pan tostado con aceite y tomate · 50 g**<br>Pan 40 g · Aceite de oliva 6 g · Tomate 5 g<br>**Jamón serrano · 30 g**<br>Jamón serrano 30 g | **Bocadillo de pollo · 150 g**<br>Pan baguette 80 g · Pechuga de pollo 55 g · Lechuga 15 g<br>**Fruta de temporada · 100 g**<br>Fruta de temporada 100 g | **Pan tostado con aceite y tomate · 50 g**<br>Pan 40 g · Aceite de oliva 6 g · Tomate 5 g<br>**Queso de Burgos · 40 g**<br>Queso de Burgos 40 g | **Bocadillo con jamón serrano · 130 g**<br>Pan baguette 70 g · Jamón serrano 60 g<br>**Fruta de temporada · 100 g**<br>Fruta de temporada 100 g | **Pan tostado con aceite y tomate · 50 g**<br>Pan 40 g · Aceite de oliva 6 g · Tomate 5 g<br>**Jamón serrano · 30 g**<br>Jamón serrano 30 g | **Bocadillo de jamón York y tomate · 150 g**<br>Pan baguette 85 g · Jamón York 35 g · Tomate 35 g<br>Nota: La ración indica 150 g; ingredientes suman 155 g<br>**Fruta de temporada · 100 g**<br>Fruta de temporada 100 g | **Tostadas integrales con jamón York · 60 g**<br>Tostadas integrales 30 g · Jamón York 30 g | **Tortas de maíz · 30 g**<br>Tortas de maíz 30 g<br>**Fruta de temporada · 200 g**<br>Fruta de temporada 200 g | **Tostadas integrales con jamón York · 60 g**<br>Tostadas integrales 30 g · Jamón York 30 g | **Tortas de maíz · 30 g**<br>Tortas de maíz 30 g<br>**Fruta de temporada · 200 g**<br>Fruta de temporada 200 g |\n| **Comida** | **Macarrones con atún · 300 g**<br>Macarrones 160 g · Tomate 80 g · Atún en aceite 55 g | **Macarrones con atún · 400 g**<br>Macarrones 215 g · Tomate 110 g · Atún en aceite 75 g | **Arroz a la marinera · 350 g**<br>Arroz 115 g · Almejas frescas 70 g · Gambas 70 g · Sepia 70 g · Cebolla 35 g · Ajo sin cantidad prescrita | **Arroz a la marinera · 450 g**<br>Arroz 145 g · Almejas frescas 85 g · Gambas 85 g · Sepia 85 g · Cebolla 45 g · Ajo sin cantidad indicada<br>Nota: Arroz cocinado con el doble de agua (volumen) y reposo de 5 minutos | **Cuscús con pollo al curry · 250 g**<br>Cuscús con pollo, plato preparado 250 g<br>Nota: La receta completa con 125 g de cuscús no equivale a una ración individual. | **Cuscús con pollo al curry · 350 g**<br>Cuscús con pollo, plato preparado 350 g<br>Nota: Receta completa, NO ración individual: pechuga de pollo 1 ud.; cebolla 1 ud.; medio pimiento rojo y medio verde; zanahoria grande 1 ud.; ajo 1 diente; cuscús 125 g; mantequilla; curry; AOVE; sal y pimienta | **Arroz a la cubana con huevo · 350 g**<br>Arroz 180 g · Huevo 90 g · Tomate 75 g · Aceite de oliva 4 g | **Arroz a la cubana con huevo · 400 g**<br>Arroz 210 g · Huevo 105 g · Tomate 85 g · Aceite de oliva 4 g | **Cartagena · LIBRE** | **Cartagena · LIBRE** | **Cartagena · LIBRE** | **Cartagena · LIBRE** | **Cartagena · LIBRE** | **Cartagena · LIBRE** |\n| **Merienda** | **Fruta de temporada · 150 g**<br>Fruta de temporada 150 g | **Tortas de maíz · 30 g**<br>Tortas de maíz 30 g<br>**Fruta de temporada · 100 g**<br>Fruta de temporada 100 g | **Fruta de temporada · 150 g**<br>Fruta de temporada 150 g | **Tortas de maíz · 30 g**<br>Tortas de maíz 30 g<br>**Fruta de temporada · 100 g**<br>Fruta de temporada 100 g | **Fruta de temporada · 150 g**<br>Fruta de temporada 150 g | **Tortas de maíz · 30 g**<br>Tortas de maíz 30 g<br>**Fruta de temporada · 100 g**<br>Fruta de temporada 100 g | **Fruta de temporada · 150 g**<br>Fruta de temporada 150 g | **Tortas de maíz · 30 g**<br>Tortas de maíz 30 g<br>**Fruta de temporada · 100 g**<br>Fruta de temporada 100 g | **Fruta de temporada · 150 g**<br>Fruta de temporada 150 g | **Tortas de maíz · 30 g**<br>Tortas de maíz 30 g<br>**Fruta de temporada · 100 g**<br>Fruta de temporada 100 g | **Fruta de temporada · 150 g**<br>Fruta de temporada 150 g | **Queso de Burgos · 60 g**<br>Queso de Burgos 60 g<br>**Fruta de temporada · 100 g**<br>Fruta de temporada 100 g | **Fruta de temporada · 150 g**<br>Fruta de temporada 150 g | **Queso de Burgos · 60 g**<br>Queso de Burgos 60 g<br>**Fruta de temporada · 100 g**<br>Fruta de temporada 100 g |\n| **Cena** | **Picadillo de patatas con atún · 250 g**<br>Patata hervida 85 g · Tomate 55 g · Huevo 50 g · Atún en aceite 30 g · Pimiento 25 g | **Picadillo de patatas con atún · 400 g**<br>Patata hervida 140 g · Tomate 85 g · Huevo 80 g · Atún en aceite 50 g · Pimiento 45 g<br>**Yogur natural desnatado · 125 g**<br>Yogur natural desnatado 125 g | **Judías verdes salteadas · 150 g**<br>Judías verdes 65 g · Zanahoria 40 g · Patata 35 g · Jamón serrano 10 g · Aceite de oliva 3 g<br>**Tortilla francesa · 120 g**<br>Huevo 115 g · Aceite de oliva 4 g | **Judías verdes salteadas · 240 g**<br>Judías verdes 105 g · Zanahoria 65 g · Patata 55 g · Jamón serrano 10 g · Aceite de oliva 4 g<br>**Tortilla francesa · 120 g**<br>Huevo 115 g · Aceite de oliva 4 g<br>**Yogur natural desnatado · 125 g**<br>Yogur natural desnatado 125 g | **Puré de verduras · 200 g**<br>Patata 70 g · Calabacín 45 g · Zanahoria 45 g · Tomate 35 g · Aceite de oliva 1 g<br>**Bacalao fresco · 200 g**<br>Bacalao fresco 200 g | **Puré de verduras · 300 g**<br>Patata 105 g · Calabacín 65 g · Zanahoria 65 g · Tomate 55 g · Aceite de oliva 2 g<br>**Bacalao fresco · 200 g**<br>Bacalao fresco 200 g<br>**Yogur natural desnatado · 125 g**<br>Yogur natural desnatado 125 g | **Ensalada de remolacha · 200 g**<br>Remolacha 125 g · Yogur natural desnatado 40 g · Rábanos 10 g · Zumo de limón 10 g · Pepino a la vinagreta 10 g<br>**Salmón a la plancha · 150 g**<br>Salmón 145 g · Aceite de oliva 3 g | **Ensalada de remolacha · 250 g**<br>Remolacha 155 g · Yogur natural desnatado 45 g · Rábanos 15 g · Zumo de limón 15 g · Pepino a la vinagreta 15 g<br>Nota: Comino y clavo en polvo al gusto<br>**Salmón a la plancha · 200 g**<br>Salmón 195 g · Aceite de oliva 4 g<br>**Yogur natural desnatado · 125 g**<br>Yogur natural desnatado 125 g | **Cartagena · LIBRE** | **Cartagena · LIBRE** | **Cartagena · LIBRE** | **Cartagena · LIBRE** | **Espinacas salteadas con huevo · 300 g**<br>Espinacas 195 g · Huevo 105 g | **Espinacas salteadas con huevo · 400 g**<br>Espinacas 260 g · Huevo 140 g<br>**Yogur natural desnatado · 125 g**<br>Yogur natural desnatado 125 g |\n"
+    }
+  },
+  "shopping": {
+    "titulo": "Lista de compra sin consolidar · pendiente de revisión diaria",
+    "list_id": "PENDIENTE_REVISION_20261105",
+    "dias": [],
+    "csv": "",
+    "uses": {},
+    "retailer_plan": {
+      "status": "pendiente",
+      "items": {}
+    },
+    "revision_diaria": "data/revision_compra_21_dias_20261105_064248.json"
+  },
+  "recipes": {
+    "ensalada_patatas_atun": {
+      "nombre": "Ensalada de patatas y atún",
+      "elaboracion": "Añadir el huevo duro a la ensalada."
+    },
+    "cous_cous_pollo_curry": {
+      "nombre": "Cous cous con pollo al curry",
+      "ingredientes": [
+        "1 pechuga de pollo (preferiblemente sin piel)",
+        "1 cebolla",
+        "½ pimiento verde",
+        "½ pimiento rojo",
+        "1 zanahoria grande",
+        "1 diente de ajo",
+        "125 g de cuscús de grano medio",
+        "Mantequilla",
+        "Curry en polvo",
+        "AOVE, sal y pimienta al gusto"
+      ],
+      "elaboracion": "Picar ajo, cebolla, zanahoria y pimientos. Dorar las verduras, añadir el pollo troceado y cocinar. Preparar el cuscús con curry y mezclar con las verduras y el pollo."
+    },
+    "ensalada_nicoise": {
+      "nombre": "Ensalada niçoise",
+      "elaboracion": "Colocar la lechuga en una fuente. Trocear los huevos duros, cocer las patatas con piel y las judías verdes, añadir el resto de ingredientes y aliñar."
+    },
+    "crema_naranja": {
+      "nombre": "Crema naranja",
+      "elaboracion": "Picar la verdura, cocerla cubierta de agua durante unos 20 minutos y triturar."
+    },
+    "ensalada_hortalizas": {
+      "nombre": "Ensalada de hortalizas",
+      "elaboracion": "Cortar y lavar la lechuga, añadir tomate y el resto de hortalizas, incorporar el huevo rallado y aliñar."
+    },
+    "guisantes_champinones": {
+      "nombre": "Guisantes con champiñones",
+      "elaboracion": "Cocer los guisantes. Sofreír el ajo, saltear los champiñones, añadir los guisantes y cocinar unos minutos a fuego lento."
+    },
+    "tortilla_paisana": {
+      "nombre": "Tortilla paisana",
+      "elaboracion": "Se pueden usar las verduras ya cocidas. Añadir el huevo en una sartén, incorporar las verduras y cocinar al gusto."
+    },
+    "patatas_horno": {
+      "nombre": "Patatas al horno",
+      "elaboracion": "Cortar las patatas en rodajas finas, disponerlas en una fuente, aromatizar y hornear hasta que estén doradas."
+    },
+    "pure_verduras": {
+      "nombre": "Puré de verduras",
+      "elaboracion": "Cocer todos los ingredientes y pasar por el pasapurés o la batidora antes de que se enfríen."
+    },
+    "cogollos_anchoas": {
+      "nombre": "Cogollos y anchoas",
+      "elaboracion": "Lavar los cogollos, dividirlos en cuatro trozos, colocarlos en una fuente y añadir las anchoas por encima."
+    },
+    "lomo_cerdo_horno": {
+      "nombre": "Lomo de cerdo",
+      "elaboracion": "Disponer la carne en una fuente con el resto de ingredientes y hornear. Alternativa indicada: plancha."
+    },
+    "carne_cerdo_guisada": {
+      "nombre": "Carne de cerdo guisada",
+      "elaboracion": "Cocer patata y zanahoria en caldo. Dorar ligeramente el cerdo y añadirlo al guiso hasta que quede tierno.",
+      "aliases": [
+        "Carne cerdo guisada"
+      ]
+    },
+    "crema_verde": {
+      "nombre": "Crema verde",
+      "elaboracion": "Cocer calabacín, espinacas y brécol unos 20 minutos y triturar.",
+      "aliases": [
+        "Crema verde"
+      ]
+    },
+    "garbanzos_arroz": {
+      "nombre": "Garbanzos con arroz",
+      "elaboracion": "Cocer los garbanzos, añadir el arroz y terminar con un sofrito de cebolla y ajo."
+    },
+    "ensalada_mixta_ii": {
+      "nombre": "Ensalada mixta II",
+      "elaboracion": "Mezclar tomate, lechuga, apio, pimiento y pepino y aliñar.",
+      "aliases": [
+        "Ensalada mixta II"
+      ]
+    },
+    "salmon_plancha": {
+      "nombre": "Salmón a la plancha",
+      "elaboracion": "Cocinar el salmón en la plancha bien caliente."
+    },
+    "judias_almendras": {
+      "nombre": "Judías verdes con almendras",
+      "elaboracion": "Cocer las judías. Saltear las almendras, añadir la nata y verter sobre las judías.",
+      "aliases": [
+        "Judías"
+      ]
+    },
+    "ensalada_mar_montana": {
+      "nombre": "Ensalada mar y montaña",
+      "elaboracion": "Mezclar lechuga, manzana, champiñones, atún, jamón serrano, limón, tomate y piñones.",
+      "aliases": [
+        "Ensalada mar y montaña"
+      ]
+    },
+    "lentejas_estofadas": {
+      "nombre": "Lentejas estofadas",
+      "elaboracion": "Cocer las lentejas y añadir un sofrito de tomate, cebolla, zanahoria y pimiento; ligar con un poco de harina.",
+      "aliases": [
+        "Lentejas"
+      ]
+    },
+    "verduras_asadas": {
+      "nombre": "Verduras asadas",
+      "elaboracion": "Asar pimiento, tomate y cebolla al horno y condimentar al servir.",
+      "aliases": [
+        "Verduras asadas"
+      ]
+    },
+    "macarrones_atun": {
+      "nombre": "Macarrones con atún",
+      "elaboracion": "Hervir la pasta, mezclar con tomate y atún y servir.",
+      "aliases": [
+        "Macarrones"
+      ]
+    },
+    "crepes_vegetarianos": {
+      "nombre": "Crepes vegetarianos",
+      "elaboracion": "Preparar la masa de crepes y rellenar con calabacín y pimiento cocinados.",
+      "aliases": [
+        "Crepes"
+      ]
+    },
+    "picadillo_patatas_atun": {
+      "nombre": "Picadillo de patatas con atún",
+      "elaboracion": "Mezclar patata hervida con tomate, huevo duro, atún y pimiento.",
+      "aliases": [
+        "Picadillo"
+      ]
+    },
+    "tacos_pollo": {
+      "nombre": "Tacos de pollo",
+      "elaboracion": "Preparar los tacos con pollo, pan sin gluten, pimiento y cebolla según la pauta.",
+      "aliases": [
+        "Tacos pollo"
+      ],
+      "fuente": "Receta archivada con adaptación aprobada por el usuario",
+      "raciones": "Almu 250 g prescritos · Fran 350 g de tacos aprobados por el usuario + yogur 125 g",
+      "ingredientes": [
+        "Almu, según PDF: preparado denominado «tacos de pollo» 125 g (composición desconocida, comprar por separado)",
+        "Almu, según PDF: pan sin gluten 50 g, pechuga de pollo 30 g, pimiento 30 g, cebolla 10 g",
+        "Fran, adaptación aprobada: 350 g de tacos + 125 g de yogur",
+        "Fran, desglose preliminar: pechuga 217 g, pan integral 70 g, pimiento 42 g, cebolla 14 g (subtotal 343 g; faltan 7 g por asignar)"
+      ],
+      "nota": "El usuario aprobó los platos y la ración de Fran, no una equivalencia nutricional del nutricionista. Los 125 g del preparado de Almu no deben computarse como pechuga fresca."
+    },
+    "espagueti_carbonara": {
+      "nombre": "Espagueti carbonara",
+      "elaboracion": "Cocinar cebolla y bacón, mezclar con los espaguetis, huevo batido y queso.",
+      "aliases": [
+        "Carbonara"
+      ]
+    },
+    "tostadas_atun": {
+      "nombre": "Tostadas integrales con atún",
+      "elaboracion": "Servir las tostadas integrales con el atún.",
+      "aliases": [
+        "Tostadas integrales"
+      ]
+    },
+    "tortilla_francesa": {
+      "nombre": "Tortilla francesa",
+      "elaboracion": "Batir el huevo y cuajar en sartén al gusto."
+    },
+    "tabouleh_quinoa": {
+      "nombre": "Tabouleh de quinoa",
+      "ingredientes": [
+        "1 vaso de quinoa",
+        "2 vasos de caldo de verduras + 2 o 3 cucharadas para el aliño",
+        "1 pimiento rojo",
+        "1 pimiento verde",
+        "1 zanahoria",
+        "1 cebolleta no muy grande",
+        "1 o 2 cucharadas de vinagre blanco",
+        "4 cucharadas de AOVE",
+        "1 puñadito de pasas",
+        "Unas hojas de menta fresca o 1 cucharadita de salsa de menta",
+        "Sal, solo si es necesaria al final"
+      ],
+      "elaboracion": "Lavar bien la quinoa para eliminar la saponina. Tostarla brevemente, añadir 2 vasos de caldo y cocer a hervor ligero unos 15 minutos. Saltear las verduras unos 5 minutos. Preparar el aliño con el resto del caldo, vinagre, menta y pasas. Refrescar la quinoa y mezclar con las verduras y el aliño.",
+      "aliases": [
+        "Tabouleh de quinoa"
+      ]
+    },
+    "palmera_hojaldre_chocolate": {
+      "nombre": "Palmeras grandes de hojaldre con chocolate",
+      "fuente": "Receta añadida por el usuario, ajustada para 2 palmeras grandes",
+      "raciones": "2 palmeras grandes",
+      "ingredientes": [
+        "1 lámina de masa de hojaldre con mantequilla Carrefour (230 g)",
+        "40-50 g de chocolate negro (mínimo 85 % cacao, sin azúcar)",
+        "3-4 cucharadas de eritritol granulado",
+        "1 cucharadita de aceite de coco (opcional)"
+      ],
+      "pasos": [
+        "Sacar la masa de la nevera unos 5 minutos antes. Desenrollarla sobre su propio papel vegetal.",
+        "Espolvorear 2 cucharadas de eritritol de forma uniforme y pasar suavemente un rodillo para fijarlo.",
+        "Doblar los dos lados largos hacia el centro. Repetir el doblez hacia el centro y cerrar un lado sobre el otro como un libro. Espolvorear un poco más de eritritol por fuera.",
+        "Cortar el rulo en 2 piezas iguales. Colocar cada pieza con el corte hacia arriba y aplanarla suavemente hasta dejarla de unos 2-2,5 cm de grosor. Abrir ligeramente las dos puntas superiores para dar forma de corazón. Este aplanado es importante para que el centro se cocine bien.",
+        "Precalentar la airfryer si el modelo lo recomienda. Colocar papel vegetal perforado o bien sujeto por el peso de las palmeras. Cocinar a 175 °C durante 10-12 minutos.",
+        "Dar la vuelta con cuidado y cocinar 2-4 minutos más, vigilando el dorado. El tiempo total orientativo es de 12-16 minutos, según la airfryer y el grosor final.",
+        "Dejar enfriar sobre una rejilla. Derretir 40-50 g de chocolate en tandas de 20-30 segundos. Añadir 1 cucharadita de aceite de coco solo si se desea una cobertura más fluida.",
+        "Cubrir las dos palmeras con el chocolate y dejar solidificar. Se pueden meter unos 10 minutos en la nevera cuando ya estén templadas."
+      ],
+      "nota": "Una lámina de 230 g da aproximadamente 115 g de masa cruda por palmera antes de añadir la cobertura. La compra está dimensionada para esta receta: se usa 1 lámina completa, 40-50 g de chocolate, 3-4 cucharadas de eritritol y 1 cucharadita opcional de aceite de coco."
+    },
+    "tortellini_champinones": {
+      "nombre": "Tortellini con champiñones",
+      "ingredientes": [
+        "Tortellini frescos",
+        "Champiñones",
+        "Jamón de York",
+        "Cebolla",
+        "Queso rallado",
+        "Ajo (mencionado en la elaboración, sin cantidad indicada)"
+      ],
+      "elaboracion": "Dorar el ajo y la cebolla. Añadir los champiñones troceados, sazonar y tapar unos 15 minutos. Añadir el jamón en tiras y cubrir los tortellini hervidos con la salsa.",
+      "aliases": [
+        "Tortellini",
+        "Tortellini con champiñones"
+      ]
+    },
+    "gnocchi_atun": {
+      "nombre": "Gnocchi con atún",
+      "ingredientes": [
+        "Gnocchi",
+        "Atún en aceite",
+        "Tomate",
+        "Orégano seco"
+      ],
+      "elaboracion": "El PDF del nutricionista no incluye una elaboración específica para este plato.",
+      "aliases": [
+        "Gnocchi",
+        "Gnocchi con atún"
+      ]
+    },
+    "jardinera": {
+      "nombre": "Verduras a la jardinera",
+      "ingredientes": [
+        "Patata",
+        "Guisantes",
+        "Zanahoria",
+        "Cebolla"
+      ],
+      "elaboracion": "Pelar y trocear las patatas y las zanahorias. Cocer al vapor junto con los guisantes y las cebollas.",
+      "aliases": [
+        "Jardinera",
+        "Verduras a la jardinera"
+      ]
+    },
+    "lentejas_arroz": {
+      "nombre": "Lentejas con arroz",
+      "ingredientes": [
+        "Lentejas",
+        "Arroz",
+        "Cebolla",
+        "Zanahoria",
+        "Perejil, puerro y apio (mencionados en la elaboración sin cantidad indicada)"
+      ],
+      "elaboracion": "Cocer las lentejas con perejil, puerro y apio. Cuando estén blandas, añadir el arroz y dejar cocer a fuego lento. Sofreír cebolla y zanahoria con las hierbas y añadir el sofrito a las lentejas.",
+      "aliases": [
+        "Lentejas con arroz"
+      ]
+    },
+    "tacos_salmon": {
+      "nombre": "Tacos de salmón",
+      "ingredientes": [
+        "Tortillas de trigo",
+        "Salmón ahumado",
+        "Pimiento",
+        "Lechuga",
+        "Cebolla"
+      ],
+      "elaboracion": "El PDF del nutricionista indica los ingredientes, pero no aporta pasos de elaboración específicos.",
+      "aliases": [
+        "Tacos de salmón",
+        "Tacos salmón"
+      ]
+    },
+    "garbanzos_espinacas_huevo": {
+      "nombre": "Garbanzos, espinacas y huevo duro",
+      "ingredientes": [
+        "Garbanzos",
+        "Espinacas",
+        "Huevo"
+      ],
+      "elaboracion": "Cocer los garbanzos y escurrirlos. Hervir las espinacas, escurrirlas y rehogarlas. Añadirlas a los garbanzos y terminar con el huevo duro cortado en gajos.",
+      "aliases": [
+        "Garbanzos, espinacas y huevo duro",
+        "Garbanzos espinacas huevo"
+      ]
+    },
+    "202611_macarrones_atun": {
+      "nombre": "Macarrones con atún",
+      "fuente": "PDF Fran Arroyo · 02–08/11/2026",
+      "raciones": "Cantidades de Fran, salvo indicación contraria",
+      "ingredientes": [
+        "Macarrones 215 g",
+        "Tomate 110 g",
+        "Atún en aceite 75 g"
+      ],
+      "elaboracion": "Freír el tomate. Hervir los macarrones en abundante agua, incorporándolos cuando el agua hierva; preferentemente dejarlos al dente. Mezclar los macarrones con el tomate y el atún y servir."
+    },
+    "202611_picadillo_patatas_atun": {
+      "nombre": "Picadillo de patatas con atún",
+      "fuente": "PDF Fran Arroyo · 02–08/11/2026",
+      "raciones": "Cantidades de Fran, salvo indicación contraria",
+      "ingredientes": [
+        "Patata hervida 140 g",
+        "Tomate 85 g",
+        "Huevo 80 g",
+        "Atún en aceite 50 g",
+        "Pimiento 45 g"
+      ],
+      "elaboracion": "Poner la patata hervida y cortada en un recipiente. Añadir pimiento troceado muy pequeño, tomate, huevo duro y atún. Mezclar y servir con una pizca de aceite, según la indicación de elaboración del PDF.",
+      "nota": "El aceite se menciona en la elaboración, pero no tiene cantidad prescrita en la lista de ingredientes."
+    },
+    "202611_arroz_marinera": {
+      "nombre": "Arroz a la marinera",
+      "fuente": "PDF Fran Arroyo · 02–08/11/2026",
+      "raciones": "Cantidades de Fran, salvo indicación contraria",
+      "ingredientes": [
+        "Arroz 145 g",
+        "Almejas frescas 85 g",
+        "Gambas 85 g",
+        "Sepia 85 g",
+        "Cebolla 45 g",
+        "Ajo: una pizca (sin cantidad indicada)"
+      ],
+      "elaboracion": "Triturar una pizca de ajo con la cebolla y sofreírlos en una cazuela. Añadir las almejas, gambas y sepia; rehogar y dejar cocer unos minutos. Incorporar el arroz y cubrir con el doble de agua que de arroz. Cocer hasta que absorba el agua, dejar reposar 5 minutos y servir.",
+      "nota": "El PDF prescribe 450 g de plato. El ajo no tiene gramos indicados."
+    },
+    "202611_judias_verdes": {
+      "nombre": "Judías verdes salteadas",
+      "fuente": "PDF Fran Arroyo · 02–08/11/2026",
+      "raciones": "Cantidades de Fran, salvo indicación contraria",
+      "ingredientes": [
+        "Judías verdes 105 g",
+        "Zanahorias 65 g",
+        "Patatas 55 g",
+        "Jamón serrano 10 g",
+        "Aceite de oliva 4 g"
+      ],
+      "elaboracion": "Hervir las verduras y saltearlas con el jamón serrano."
+    },
+    "202611_cuscus_pollo_curry": {
+      "nombre": "Cuscús con pollo al curry",
+      "fuente": "PDF Fran Arroyo · 02–08/11/2026",
+      "raciones": "Cantidades de Fran, salvo indicación contraria",
+      "ingredientes": [
+        "Receta completa: 1 pechuga de pollo, preferentemente sin piel",
+        "1 cebolla",
+        "½ pimiento verde",
+        "½ pimiento rojo",
+        "1 zanahoria grande",
+        "1 diente de ajo",
+        "125 g de cuscús de grano medio",
+        "Mantequilla",
+        "Curry en polvo",
+        "Aceite de oliva virgen extra",
+        "Sal y pimienta negra al gusto"
+      ],
+      "elaboracion": "1. Pelar ajo, cebolla y zanahoria; lavar y picar también los pimientos. Sofreír las verduras en una sartén con un chorro de AOVE, con sal y pimienta al gusto.\n\n2. Limpiar la pechuga de piel y grasa, trocearla en dados pequeños y añadirla a las verduras. Remover hasta que el pollo tome color, sin dorarlo en exceso. Retirar y conservar caliente.\n\n3. En la misma sartén, fundir una nuez de mantequilla a fuego medio, añadir un vaso de agua, una cucharadita de curry y una pizca de sal. Cuando hierva, añadir el cuscús. Apagar el fuego y dejar que absorba el líquido durante unos 5 minutos o según el fabricante.\n\n4. Incorporar las verduras y el pollo al cuscús, mezclar y servir.",
+      "nota": "La ración prescrita a Fran es 350 g de plato preparado. Los 125 g de cuscús pertenecen a la receta completa y NO se pueden interpretar como cantidad individual de Fran."
+    },
+    "202611_pure_verduras": {
+      "nombre": "Puré de verduras",
+      "fuente": "PDF Fran Arroyo · 02–08/11/2026",
+      "raciones": "Cantidades de Fran, salvo indicación contraria",
+      "ingredientes": [
+        "Patatas 105 g",
+        "Calabacín 65 g",
+        "Zanahorias 65 g",
+        "Tomate 55 g",
+        "Aceite de oliva 2 g"
+      ],
+      "elaboracion": "Cocer todos los ingredientes. Pasarlos por el pasapurés o la batidora antes de que se enfríen."
+    },
+    "202611_arroz_cubana": {
+      "nombre": "Arroz a la cubana con huevo",
+      "fuente": "PDF Fran Arroyo · 02–08/11/2026",
+      "raciones": "Cantidades de Fran, salvo indicación contraria",
+      "ingredientes": [
+        "Arroz 210 g",
+        "Huevo 105 g",
+        "Tomate 85 g",
+        "Aceite de oliva 4 g"
+      ],
+      "elaboracion": "Hervir el arroz. Preparar una salsa casera de tomate. Escurrir el arroz, cubrirlo con la salsa y colocar encima un huevo frito."
+    },
+    "202611_ensalada_remolacha": {
+      "nombre": "Ensalada de remolacha",
+      "fuente": "PDF Fran Arroyo · 02–08/11/2026",
+      "raciones": "Cantidades de Fran, salvo indicación contraria",
+      "ingredientes": [
+        "Remolacha 155 g",
+        "Yogur natural desnatado 45 g",
+        "Rábanos 15 g",
+        "Zumo de limón 15 g",
+        "Pepino a la vinagreta 15 g"
+      ],
+      "elaboracion": "Preparar una salsa con los condimentos, añadiendo comino y clavo en polvo al gusto. Hervir la remolacha, dejarla enfriar y añadir después la salsa.",
+      "nota": "Ración de ensalada prescrita: 250 g."
+    },
+    "202611_salmon_plancha": {
+      "nombre": "Salmón a la plancha",
+      "fuente": "PDF Fran Arroyo · 02–08/11/2026",
+      "raciones": "Cantidades de Fran, salvo indicación contraria",
+      "ingredientes": [
+        "Salmón 195 g",
+        "Aceite de oliva 4 g"
+      ],
+      "elaboracion": "Poner el salmón sobre una plancha bien caliente."
+    },
+    "202611_patatas_guisadas": {
+      "nombre": "Patatas guisadas",
+      "fuente": "PDF Fran Arroyo · 02–08/11/2026",
+      "raciones": "Cantidades de Fran, salvo indicación contraria",
+      "ingredientes": [
+        "Patatas 180 g",
+        "Tomate 90 g",
+        "Cebollas 90 g",
+        "Pimiento 35 g",
+        "Ajo, hierbas aromáticas, sal y pimienta: mencionados en elaboración sin cantidades"
+      ],
+      "elaboracion": "Pelar las patatas y las cebollas; retirar las semillas del pimiento. Cortar las hortalizas y el tomate en trozos. Ponerlas en una cacerola con las hierbas aromáticas, el ajo, sal, pimienta y un vaso de agua. Tapar y cocinar a fuego lento unos 45 minutos.",
+      "nota": "Ración indicada: 400 g; los ingredientes con cantidades expresas no suman exactamente ese peso."
+    },
+    "202611_huevo_escalfado": {
+      "nombre": "Huevo escalfado",
+      "fuente": "PDF Fran Arroyo · 02–08/11/2026",
+      "raciones": "Cantidades de Fran, salvo indicación contraria",
+      "ingredientes": [
+        "Huevo 60 g"
+      ],
+      "elaboracion": "Poner agua a hervir en una cacerola grande. Cascar el huevo en una taza e introducirlo en el agua cuando hierva. Cuando la clara comience a cuajar, recogerla con cuidado sobre la yema. Escurrir con una espumadera y dejar que suelte el agua restante."
+    },
+    "202611_crema_champinones": {
+      "nombre": "Crema de champiñones y patata",
+      "fuente": "PDF Fran Arroyo · 02–08/11/2026",
+      "raciones": "Cantidades de Fran, salvo indicación contraria",
+      "ingredientes": [
+        "Champiñones 100 g",
+        "Leche descremada 100 g",
+        "Patatas 70 g",
+        "Cebolla 25 g",
+        "Aceite de oliva 5 g"
+      ],
+      "elaboracion": "Cocer lentamente los champiñones, la patata y la cebolla, bien limpios, en caldo vegetal o agua. Triturar cuando estén blandos. Añadir la leche descremada para obtener la consistencia deseada."
+    },
+    "202611_patatas_horno": {
+      "nombre": "Patatas al horno",
+      "fuente": "PDF Fran Arroyo · 02–08/11/2026",
+      "raciones": "Cantidades de Fran, salvo indicación contraria",
+      "ingredientes": [
+        "Patatas 190 g",
+        "Aceite de oliva 10 g",
+        "Romero (mencionado sin cantidad)"
+      ],
+      "elaboracion": "Cortar las patatas en rodajas finas. Ponerlas en una fuente, aromatizarlas con romero y hornearlas hasta que estén doradas."
+    },
+    "202611_pollo_curry": {
+      "nombre": "Pollo con curry",
+      "fuente": "PDF Fran Arroyo · 02–08/11/2026",
+      "raciones": "Cantidades de Fran, salvo indicación contraria",
+      "ingredientes": [
+        "Pechuga de pollo 145 g",
+        "Cebolla 55 g",
+        "Curry, sin gramos indicados"
+      ],
+      "elaboracion": "Cocer la cebolla en un poco de agua. Añadir el pollo troceado. Incorporar el curry a mitad de la cocción."
+    },
+    "202611_ensalada_nicoise": {
+      "nombre": "Ensalada niçoise",
+      "fuente": "PDF Fran Arroyo · 02–08/11/2026",
+      "raciones": "Cantidades de Fran, salvo indicación contraria",
+      "ingredientes": [
+        "Huevo 90 g",
+        "Tomate 80 g",
+        "Patata asada 70 g",
+        "Atún en aceite 50 g",
+        "Judías verdes 50 g",
+        "Pimiento 30 g",
+        "Lechuga 30 g",
+        "Aceitunas negras 25 g",
+        "Anchoas en aceite 20 g",
+        "Aceite de oliva 3 g"
+      ],
+      "elaboracion": "Colocar la lechuga en una fuente. Trocear los huevos duros. Cocer las patatas con piel y cocer también las judías verdes. Añadir todos los ingredientes y aliñar con aceite mezclado con vinagre y una pizca de sal.",
+      "nota": "El PDF indica 'patata asada' en ingredientes, pero dice cocerla con piel en la elaboración; ambas menciones se conservan."
+    },
+    "202611_espinacas_huevo": {
+      "nombre": "Espinacas salteadas con huevo",
+      "fuente": "PDF Fran Arroyo · 02–08/11/2026",
+      "raciones": "Cantidades de Fran, salvo indicación contraria",
+      "ingredientes": [
+        "Espinacas 260 g",
+        "Huevo 140 g"
+      ],
+      "elaboracion": "Condimentar al gusto. Utilizar con moderación la sal y las especias.",
+      "nota": "El PDF no proporciona pasos adicionales de cocinado; no se inventa un procedimiento como receta del nutricionista."
+    },
+    "202611_lentejas_estofadas": {
+      "nombre": "Lentejas estofadas",
+      "fuente": "PDF Fran Arroyo · 02–08/11/2026",
+      "raciones": "Cantidades de Fran, salvo indicación contraria",
+      "ingredientes": [
+        "Lentejas 200 g",
+        "Tomate 50 g",
+        "Cebollas 50 g",
+        "Zanahorias 50 g",
+        "Pimiento 40 g",
+        "Harina de trigo 10 g",
+        "Ajo, sin cantidad indicada en los ingredientes"
+      ],
+      "elaboracion": "Cocer las lentejas en agua con una pizca de sal hasta que estén tiernas. Preparar un sofrito con pimiento, zanahoria, ajo y cebolla picados muy pequeños. Añadir el tomate troceado. Retirar el sofrito del fuego, incorporar una pizca de harina, verterlo sobre las lentejas y cocer a fuego lento unos 10 minutos."
+    }
+  },
+  "calendario_21_dias": {
+    "archivo": "data/plan_21_dias_20261105_070000.json",
+    "desde": "2026-11-04",
+    "hasta": "2026-11-25",
+    "estado": "CUADRO01_APROBADO_CUADRO02_PENDIENTE",
+    "compra": "PENDIENTE_REVISION_DIARIA",
+    "revision_compra": "data/revision_compra_21_dias_20261105_064248.json"
+  },
+  "recetas_vinculadas": {
+    "2026-11-04": {
+      "Cena": {
+        "almu": [
+          "202611_pure_verduras"
+        ],
+        "fran": [
+          "202611_pure_verduras"
+        ]
+      }
+    },
+    "2026-11-05": {
+      "Comida": {
+        "almu": [
+          "202611_arroz_cubana"
+        ],
+        "fran": [
+          "202611_arroz_cubana"
+        ]
+      },
+      "Cena": {
+        "almu": [
+          "202611_ensalada_remolacha",
+          "202611_salmon_plancha"
+        ],
+        "fran": [
+          "202611_ensalada_remolacha",
+          "202611_salmon_plancha"
+        ]
+      }
+    },
+    "2026-11-06": {
+      "Comida": {
+        "almu": [
+          "202611_patatas_guisadas",
+          "202611_huevo_escalfado"
+        ],
+        "fran": [
+          "202611_patatas_guisadas",
+          "202611_huevo_escalfado"
+        ]
+      },
+      "Cena": {
+        "almu": [
+          "202611_crema_champinones"
+        ],
+        "fran": [
+          "202611_crema_champinones"
+        ]
+      }
+    },
+    "2026-11-07": {
+      "Comida": {
+        "almu": [
+          "202611_patatas_horno",
+          "202611_pollo_curry"
+        ],
+        "fran": [
+          "202611_patatas_horno",
+          "202611_pollo_curry"
+        ]
+      },
+      "Cena": {
+        "almu": [
+          "tacos_pollo"
+        ],
+        "fran": [
+          "tacos_pollo"
+        ]
+      }
+    },
+    "2026-11-08": {
+      "Comida": {
+        "almu": [],
+        "fran": []
+      },
+      "Cena": {
+        "almu": [
+          "202611_espinacas_huevo"
+        ],
+        "fran": [
+          "202611_espinacas_huevo"
+        ]
+      }
+    },
+    "2026-11-09": {
+      "Comida": {
+        "almu": [
+          "202611_macarrones_atun"
+        ],
+        "fran": [
+          "202611_macarrones_atun"
+        ]
+      },
+      "Cena": {
+        "almu": [
+          "202611_picadillo_patatas_atun"
+        ],
+        "fran": [
+          "202611_picadillo_patatas_atun"
+        ]
+      }
+    },
+    "2026-11-10": {
+      "Comida": {
+        "almu": [
+          "202611_arroz_marinera"
+        ],
+        "fran": [
+          "202611_arroz_marinera"
+        ]
+      },
+      "Cena": {
+        "almu": [
+          "202611_judias_verdes",
+          "tortilla_francesa"
+        ],
+        "fran": [
+          "202611_judias_verdes",
+          "tortilla_francesa"
+        ]
+      }
+    },
+    "2026-11-11": {
+      "Comida": {
+        "almu": [
+          "202611_cuscus_pollo_curry"
+        ],
+        "fran": [
+          "202611_cuscus_pollo_curry"
+        ]
+      },
+      "Cena": {
+        "almu": [
+          "202611_pure_verduras"
+        ],
+        "fran": [
+          "202611_pure_verduras"
+        ]
+      }
+    },
+    "2026-11-12": {
+      "Comida": {
+        "almu": [
+          "202611_arroz_cubana"
+        ],
+        "fran": [
+          "202611_arroz_cubana"
+        ]
+      },
+      "Cena": {
+        "almu": [
+          "202611_ensalada_remolacha",
+          "202611_salmon_plancha"
+        ],
+        "fran": [
+          "202611_ensalada_remolacha",
+          "202611_salmon_plancha"
+        ]
+      }
+    },
+    "2026-11-13": {
+      "Comida": {
+        "almu": [],
+        "fran": []
+      },
+      "Cena": {
+        "almu": [],
+        "fran": []
+      }
+    },
+    "2026-11-14": {
+      "Comida": {
+        "almu": [],
+        "fran": []
+      },
+      "Cena": {
+        "almu": [],
+        "fran": []
+      }
+    },
+    "2026-11-15": {
+      "Comida": {
+        "almu": [],
+        "fran": []
+      },
+      "Cena": {
+        "almu": [
+          "202611_espinacas_huevo"
+        ],
+        "fran": [
+          "202611_espinacas_huevo"
+        ]
+      }
+    }
+  }
+}
