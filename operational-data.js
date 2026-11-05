@@ -77,9 +77,18 @@
     return menuCache.get(week.id);
   }
 
-  function splitMeal(value = '') {
-    const parts = String(value).split(/<br\s*\/?\s*>/i).map(v => v.trim()).filter(Boolean);
-    return { title: parts[0] || '', detail: parts.slice(1).join('<br>') };
+  // Una toma puede contener varios platos. Cada cabecera en negrita con
+  // gramos inicia un plato independiente; sus ingredientes se pliegan solo
+  // dentro de ese plato, nunca junto a los siguientes.
+  function splitMealDishes(value = '') {
+    const lines = String(value).split(/<br\s*\/?\s*>/i).map(v => v.trim()).filter(Boolean);
+    const dishes = [];
+    for (const line of lines) {
+      const beginsDish = /^\*\*[^*]*\b\d+(?:[.,]\d+)?\s*g\*\*/i.test(line);
+      if (!dishes.length || beginsDish) dishes.push({ title: line, ingredients: [] });
+      else dishes[dishes.length - 1].ingredients.push(line);
+    }
+    return dishes;
   }
 
   const rich = value => value
@@ -90,12 +99,20 @@
     ? `<details class="cuadro-ingredients"><summary>Ver ingredientes</summary><div class="cuadro-detail">${rich(value)}</div></details>`
     : '';
 
+  function mealPerson(label, value) {
+    const dishes = splitMealDishes(value);
+    return `<article><span class="cuadro-person-label">${label}</span>
+      ${dishes.length ? dishes.map(dish => `<div class="cuadro-dish">
+        <div class="cuadro-title">${rich(dish.title)}</div>
+        ${details(dish.ingredients.join('<br>'))}
+      </div>`).join('') : `<div class="cuadro-title">${rich('')}</div>`}
+    </article>`;
+  }
+
   function mealCard(meal, entry) {
-    const almu = splitMeal(entry?.almu || '');
-    const fran = splitMeal(entry?.fran || '');
     return `<section class="cuadro02-meal-card"><h2>${meal}</h2><div class="cuadro-two-cols">
-      <article><span class="cuadro-person-label">ALMU</span><div class="cuadro-title">${rich(almu.title)}</div>${details(almu.detail)}</article>
-      <article><span class="cuadro-person-label">FRAN</span><div class="cuadro-title">${rich(fran.title)}</div>${details(fran.detail)}</article>
+      ${mealPerson('ALMU', entry?.almu || '')}
+      ${mealPerson('FRAN', entry?.fran || '')}
     </div></section>`;
   }
 
