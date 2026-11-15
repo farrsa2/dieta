@@ -9,6 +9,7 @@
   const DAYS = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'];
   const MEALS = ['Desayuno', 'Media mañana', 'Comida', 'Merienda', 'Cena'];
   let cuadro01Day = null;
+  let cuadro01WeekId = null;
   let cuadro02Day = null;
   let recipeSeq = 0;
   const recipeRegistry = new Map();
@@ -18,6 +19,20 @@
   function defaultDay() {
     const today = typeof madridNowParts === 'function' ? madridNowParts().weekday : '';
     return DAYS.includes(today) ? today : 'Lunes';
+  }
+
+  // Permite consultar la semana siguiente sin alterar el día vigente ni la ventana de 8 días.
+  function cuadro01Week() {
+    return config?.semanas?.find(week => week.id === cuadro01WeekId) || activeWeek();
+  }
+
+  function cuadro01WeekSelector(selected) {
+    const weeks = [...(config?.semanas || [])].sort((a, b) => a.inicio.localeCompare(b.inicio));
+    if (weeks.length < 2) return '';
+    const text = week => `${Number(week.inicio.slice(8))}–${Number(week.fin.slice(8))} nov`;
+    return `<nav class="cuadro-day-selector cuadro-week-selector" aria-label="Seleccionar semana">
+      ${weeks.map(week => `<button type="button" class="cuadro-day-chip ${week.id === selected.id ? 'active' : ''}" onclick="selectCuadro01Week('${week.id}')">${text(week)}</button>`).join('')}
+    </nav>`;
   }
 
   function daySelector(selected, handlerName) {
@@ -215,7 +230,7 @@
   }
 
   async function renderCuadro01Mobile() {
-    const week = activeWeek();
+    const week = cuadro01Week();
     if (!week) return void (app.innerHTML = pageHeader('Cuadro 01') + '<div class="status">No hay una semana configurada.</div>');
     cuadro01Day ||= defaultDay();
     recipeRegistry.clear();
@@ -226,7 +241,8 @@
       const d = data[cuadro01Day];
       app.innerHTML = `
         <section class="cuadro-mobile-view">
-          <div class="cuadro-mobile-top"><span>🍽️ CUADRO 01</span><h1>${cuadro01Day}</h1><p>Comidas, cenas y preparación total</p></div>
+          <div class="cuadro-mobile-top"><span>🍽️ CUADRO 01</span><h1>${cuadro01Day}</h1><p>Comidas, cenas y preparación total · ${week.inicio} a ${week.fin}</p></div>
+          ${cuadro01WeekSelector(week)}
           ${daySelector(cuadro01Day, 'selectCuadro01Day')}
           ${meal01('Comida', d.comida, cuadro01Day)}
           ${meal01('Cena', d.cena, cuadro01Day)}
@@ -291,7 +307,28 @@
     }
   }
 
-  routes.cuadro01 = () => isMobile() ? renderCuadro01Mobile() : renderMarkdownPage('Cuadro 01', 'cuadro01');
+  async function renderCuadro01Desktop() {
+    const week = cuadro01Week();
+    if (!week) return void (app.innerHTML = pageHeader('Cuadro 01') + '<div class="status">No hay una semana configurada.</div>');
+    app.innerHTML = pageHeader('Cuadro 01', week.id) + '<div class="status">Cargando…</div>';
+    try {
+      const md = await fetchText(week.archivos.cuadro01);
+      if (!window.marked) throw new Error('No se ha cargado el renderizador Markdown');
+      app.innerHTML = pageHeader('Cuadro 01', `${week.inicio} a ${week.fin}`) + cuadro01WeekSelector(week) + `<section class="card md-view"><div class="table-scroll">${marked.parse(md)}</div></section>`;
+    } catch (error) {
+      console.error(error);
+      app.innerHTML = pageHeader('Cuadro 01', week.id) + missingFileMessage(week.archivos.cuadro01);
+    }
+  }
+
+  routes.cuadro01 = () => isMobile() ? renderCuadro01Mobile() : renderCuadro01Desktop();
+  window.selectCuadro01Week = id => {
+    if (!config?.semanas?.some(week => week.id === id)) return;
+    cuadro01WeekId = id;
+    cuadro01Day = 'Lunes';
+    closeDietRecipe();
+    routes.cuadro01();
+  };
   routes.cuadro02 = () => isMobile() ? renderCuadro02Mobile() : renderMarkdownPage('Cuadro 02', 'cuadro02');
 
   window.selectCuadro01Day = day => { cuadro01Day = day; closeDietRecipe(); renderCuadro01Mobile(); };
