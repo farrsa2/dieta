@@ -255,7 +255,11 @@
       const dayLabel = cleanMarkdownText(row[0]).replace(/\*\*/g, '').trim();
       const day = days.find(candidate => dayLabel === candidate || dayLabel.startsWith(`${candidate} `));
       if (!day) continue;
-      const detail = lines[i + 1]?.startsWith('|') ? splitMd(lines[i + 1]) : [];
+      // Una fila que empieza por otro día es otra comida, no un desglose de ingredientes.
+      const nextRow = lines[i + 1]?.startsWith('|') ? splitMd(lines[i + 1]) : [];
+      const nextLabel = cleanMarkdownText(nextRow[0] || '').replace(/\\*\\*/g, '').trim();
+      const nextIsDay = days.some(candidate => nextLabel === candidate || nextLabel.startsWith(`${candidate} `));
+      const detail = nextRow.length >= 7 && !nextIsDay ? nextRow : [];
       data[day] = {
         Comida: { title: row[3] || '', detail: detail[3] || '' },
         Cena: { title: row[6] || '', detail: detail[6] || '' }
