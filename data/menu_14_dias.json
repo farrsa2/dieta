@@ -1,6 +1,6 @@
 {
   "schema_version": 4,
-  "generated_at": "2026-11-15T06:59:36.536Z",
+  "generated_at": "2026-11-15T15:58:58.975Z",
   "timezone": "Europe/Madrid",
   "window": {
     "inicio": "2026-11-09",
@@ -31,226 +31,261 @@
     }
   },
   "shopping": {
-    "titulo": "Almu + Fran · viernes 6 cena a viernes 13 merienda · noviembre 2026",
-    "list_id": "COMPRA_20261106_CENA_20261113_MERIENDA",
+    "titulo": "Almu + Fran · domingo 15 cena a viernes 20 cena · noviembre 2026",
+    "list_id": "COMPRA_20261115_CENA_20261120_CENA",
     "dias": [
-      "V6",
-      "S7",
-      "D8",
-      "L9",
-      "M10",
-      "X11",
-      "J12",
-      "V13"
+      "D15",
+      "L16",
+      "M17",
+      "X18",
+      "J19",
+      "V20"
     ],
-    "csv": "Ajo | 1 diente para cuscús y un poco para arroz a la marinera | Sin gramos fijados;M10 X11\nAlmejas frescas | Cantidad conjunta de dieta: 155 g | 155 g;M10\nArroz | Cantidad conjunta de dieta: 650 g | 650 g;M10 J12\nAtún en conserva | Cantidad conjunta de dieta: 210 g | 210 g;L9\nBacalao | Cantidad conjunta de dieta: 400 g | 400 g;X11\nCalabacín | Cantidad conjunta de dieta: 110 g | 110 g;X11\nCebolla | 244 g cuantificados + 1 cebolla adicional para cuscús del miércoles | 244 g;V6 S7 M10 X11\nCereales Corn Flakes | Cantidad conjunta de dieta: 300 g | 300 g;S7 D8 L9 M10 X11 J12 V13\nChampiñones | Cantidad conjunta de dieta: 165 g | 165 g;V6\nCiruelas | Cantidad conjunta de dieta: 210 g | 210 g;S7 D8 L9 M10 X11 J12 V13\nClavo molido | Ensalada de remolacha del jueves, al gusto | Sin gramos fijados;J12\nComino molido | Ensalada de remolacha del jueves, al gusto | Sin gramos fijados;J12\nCopos de avena | Cantidad conjunta de dieta: 240 g | 240 g;S7 D8 L9 M10 X11 J12 V13\nCurry en polvo | Pollo al curry del sábado y cuscús del miércoles, sin gramos prescritos | Sin gramos fijados;S7 X11\nCuscús seco | 125 g según receta completa, comprobar que alcance para las raciones conjuntas de 600 g preparados | 125 g;X11\nEspinacas | Cantidad conjunta de dieta: 455 g | 455 g;D8\nFruta de temporada | 2,65 kg, aparte de kiwi y ciruelas | 2650 g;S7 D8 L9 M10 X11 J12 V13\nGambas | Cantidad conjunta de dieta: 155 g | 155 g;M10\nHuevo | 800 g de huevo útil, aproximadamente 15–17 huevos medianos | 800 g;D8 L9 M10 J12\nJamón serrano | Cantidad conjunta de dieta: 230 g | 230 g;L9 M10 X11 J12 V13\nJamón York | Cantidad conjunta de dieta: 165 g | 165 g;S7 D8 L9 M10 V13\nJudías verdes | Cantidad conjunta de dieta: 170 g | 170 g;M10\nKiwi | Cantidad conjunta de dieta: 420 g | 420 g;S7 D8 L9 M10 X11 J12 V13\nLechuga | Cantidad conjunta de dieta: 15 g | 15 g;X11\nLomo curado | Cantidad conjunta de dieta: 30 g | 30 g;J12\nMacarrones | Cantidad conjunta de dieta: 375 g | 375 g;L9\nMantequilla | Cuscús del miércoles, cantidad de la receta no especificada | Sin gramos fijados;X11\nMerluza | Cantidad conjunta de dieta: 390 g | 390 g;V6\nPan integral | 860 g, pan sin gluten separado | 860 g;S7 D8 L9 M10 X11 J12 V13\nPan sin gluten | Cantidad conjunta de dieta: 50 g | 50 g;S7\nPatata | Cantidad conjunta de dieta: 985 g | 985 g;V6 S7 L9 M10 X11\nPechuga de pollo fresca | 552 g de las tomas cuantificadas + 1 pechuga adicional para cuscús del miércoles (sin peso indicado) | 552 g;S7 X11\nPepino a la vinagreta | Cantidad conjunta de dieta: 25 g | 25 g;J12\nPimienta negra | Cuscús del miércoles, cantidad no especificada | Sin gramos fijados;X11\nPimiento | 142 g cuantificados + 1/2 pimiento verde y 1/2 rojo adicionales para cuscús | 142 g;S7 L9 X11\nPreparado de tacos de pollo (composición sin confirmar) | 125 g para Almu, producto distinto de sus 30 g de pechuga fresca, composición por aclarar | 125 g;S7\nQueso de Burgos | Cantidad conjunta de dieta: 200 g | 200 g;S7 D8 M10 J12\nRábanos | Cantidad conjunta de dieta: 25 g | 25 g;J12\nRemolacha | Cantidad conjunta de dieta: 280 g | 280 g;J12\nRomero | Patatas al horno del sábado, al gusto | Sin gramos fijados;S7\nSalmón | Cantidad conjunta de dieta: 340 g | 340 g;J12\nSepia | Cantidad conjunta de dieta: 155 g | 155 g;M10\nTomate fresco | Cantidad conjunta de dieta: 335 g | 335 g;D8 L9 M10 X11 J12 V13\nTomate para salsa (formato por confirmar) | 350 g para macarrones y arroz a la cubana, no mezclar con tomate fresco | 350 g;L9 J12\nTortas de maíz | Cantidad conjunta de dieta: 210 g | 210 g;S7 D8 L9 M10 X11 J12 V13\nYogur natural desnatado | 960 g en total, incluye salsa de remolacha y postres | 960 g;V6 S7 D8 L9 M10 X11 J12\nZanahoria | 215 g cuantificados + 1 zanahoria grande adicional para cuscús | 215 g;M10 X11\nZumo de limón | 25 g de zumo, aproximadamente 1 limón | 25 g;J12\n",
+    "csv": "Fruta de temporada | Comprar aproximadamente 2 kg | 1750 g;L16 M17 X18 J19 V20\nKiwi | Aproximadamente 4–5 unidades según tamaño | 300 g;L16 M17 X18 J19 V20\nCiruelas | Aproximadamente 2–4 unidades | 150 g;L16 M17 X18 J19 V20\nPatata | Comprar 1 kg | 900 g;L16 M17 X18 V20\nTomate fresco | Comprar aproximadamente 500 g | 475 g;L16 M17 X18 J19 V20\nTomate frito | Envase pequeño de al menos 190 g (macarrones del lunes) | 190 g;L16\nTomate para salsa (tipo no especificado) | Necesarios 160 g para arroz a la cubana, el PDF no precisa si frito, triturado o fresco | 160 g;J19\nCebolla | 265 g cuantificados más 1 cebolla para el cuscús | 265 g;M17 X18 V20\nZanahoria | 215 g cuantificados más 1 zanahoria grande para el cuscús | 215 g;M17 X18\nPimiento | 130 g cuantificados más ½ rojo y ½ verde para el cuscús | 130 g;L16 X18 V20\nEspinacas | Comprar aproximadamente 500 g | 455 g;D15\nCalabacín | Al menos 110 g (1 pieza pequeña suficiente) | 110 g;X18\nJudías verdes | Al menos 170 g | 170 g;M17\nChampiñones | Al menos 165 g (bandeja pequeña) | 165 g;V20\nLechuga | 15 g para bocadillo (unas hojas) | 15 g;X18\nRemolacha | Al menos 280 g (preferentemente cocida) | 280 g;J19\nRábanos | 25 g (manojo pequeño) | 25 g;J19\nPepino a la vinagreta | 25 g para ensalada de remolacha | 25 g;J19\nZumo de limón | 25 g de zumo (aproximadamente 1 limón) | 25 g;J19\nJamón serrano | Comprar 230 g aproximadamente | 230 g;L16 M17 X18 J19 V20\nJamón York | Comprar 105 g aproximadamente | 105 g;L16 M17 V20\nLomo curado | Comprar 30 g | 30 g;J19\nPechuga de pollo fresca | 55 g para bocadillo más 1 pechuga adicional para cuscús, peso no especificado | 55 g;X18\nAlmejas frescas | 155 g (comprar 200 g si no venden exacto) | 155 g;M17\nGambas | 155 g (comprar 200 g si no venden exacto) | 155 g;M17\nSepia | 155 g (comprar 200 g si no venden exacto) | 155 g;M17\nBacalao | 400 g para la cena del miércoles | 400 g;X18\nSalmón | 340 g para la cena del jueves | 340 g;J19\nMerluza | 390 g para la cena del viernes | 390 g;V20\nHuevo | 920 g de huevo útil en total, orientativo 18–20 huevos medianos, comprar 2 docenas para asegurar | 920 g;D15 L16 M17 J19 V20\nYogur natural desnatado | 835 g en total, al menos 7 yogures de 125 g (875 g) | 835 g;D15 L16 M17 X18 J19 V20\nQueso de Burgos | 80 g (tarrina pequeña) | 80 g;M17 J19\nMantequilla | Cantidad no indicada, solo si falta en casa | Cantidad no indicada;X18\nPan integral | 690 g entre pan, baguette y tostadas, comprar unos 750 g | 690 g;L16 M17 X18 J19 V20\nArroz | 650 g (paquete de 1 kg) | 650 g;M17 J19\nMacarrones | 375 g (paquete de 500 g) | 375 g;L16\nCereales Corn Flakes | 210 g (caja estándar) | 210 g;L16 M17 X18 J19 V20\nCopos de avena | 150 g | 150 g;L16 M17 X18 J19 V20\nTortas de maíz | 150 g | 150 g;L16 M17 X18 J19 V20\nCuscús seco | 125 g para la receta completa, rendimiento de 600 g de plato preparado no verificado | 125 g;X18\nAtún en conserva | 210 g escurridos aproximadamente (comprobar peso escurrido de latas) | 210 g;L16\nCurry (especias) | Cantidad no prescrita, solo si falta en casa | Cantidad no indicada;X18\nPimienta negra (especias) | Cantidad no prescrita, solo si falta en casa | Cantidad no indicada;X18 V20\nComino (especias) | Al gusto en ensalada de remolacha, solo si falta en casa | Cantidad no indicada;J19\nClavo molido (especias) | Al gusto en ensalada de remolacha, solo si falta en casa | Cantidad no indicada;J19\nHierbas aromáticas (especias) | Al gusto en patatas guisadas, solo si faltan en casa | Cantidad no indicada;V20\n",
     "uses": {
-      "Ajo": [
-        "M10 · Arroz a la marinera",
-        "X11 · Cuscús con pollo al curry"
-      ],
-      "Almejas frescas": [
-        "M10 · Arroz a la marinera"
-      ],
-      "Arroz": [
-        "M10 · Arroz a la marinera",
-        "J12 · Arroz a la cubana con huevo"
-      ],
-      "Atún en conserva": [
-        "L9 · Macarrones con atún",
-        "L9 · Picadillo de patatas con atún"
-      ],
-      "Bacalao": [
-        "X11 · Bacalao fresco"
-      ],
-      "Calabacín": [
-        "X11 · Puré de verduras"
-      ],
-      "Cebolla": [
-        "V6 · Crema de champiñones y patata",
-        "S7 · Pollo con curry",
-        "S7 · Tacos de pollo",
-        "M10 · Arroz a la marinera",
-        "X11 · Cuscús con pollo al curry"
-      ],
-      "Cereales Corn Flakes": [
-        "D"
-      ],
-      "Champiñones": [
-        "V6 · Crema de champiñones y patata"
-      ],
-      "Ciruelas": [
-        "D"
-      ],
-      "Clavo molido": [
-        "J12 · Ensalada de remolacha"
-      ],
-      "Comino molido": [
-        "J12 · Ensalada de remolacha"
-      ],
-      "Copos de avena": [
-        "D"
-      ],
-      "Curry en polvo": [
-        "S7 · Pollo con curry",
-        "X11 · Cuscús con pollo al curry"
-      ],
-      "Cuscús seco": [
-        "X11 · Cuscús con pollo al curry"
-      ],
-      "Espinacas": [
-        "D8 · Espinacas salteadas con huevo"
-      ],
       "Fruta de temporada": [
-        "MM",
-        "ME"
-      ],
-      "Gambas": [
-        "M10 · Arroz a la marinera"
-      ],
-      "Huevo": [
-        "D8 · Espinacas salteadas con huevo",
-        "L9 · Picadillo de patatas con atún",
-        "M10 · Tortilla francesa",
-        "J12 · Arroz a la cubana con huevo"
-      ],
-      "Jamón serrano": [
-        "MM",
-        "M10 · Judías verdes salteadas"
-      ],
-      "Jamón York": [
-        "MM",
-        "D"
-      ],
-      "Judías verdes": [
-        "M10 · Judías verdes salteadas"
+        "L16 · Fruta de temporada",
+        "M17 · Fruta de temporada",
+        "X18 · Fruta de temporada",
+        "J19 · Fruta de temporada",
+        "V20 · Fruta de temporada"
       ],
       "Kiwi": [
-        "D"
+        "L16 · Kiwi",
+        "M17 · Kiwi",
+        "X18 · Kiwi",
+        "J19 · Kiwi",
+        "V20 · Kiwi"
       ],
-      "Lechuga": [
-        "MM"
-      ],
-      "Lomo curado": [
-        "D"
-      ],
-      "Macarrones": [
-        "L9 · Macarrones con atún"
-      ],
-      "Mantequilla": [
-        "X11 · Cuscús con pollo al curry"
-      ],
-      "Merluza": [
-        "V6 · Merluza a la plancha"
-      ],
-      "Pan integral": [
-        "MM",
-        "S7 · Tacos de pollo",
-        "D"
-      ],
-      "Pan sin gluten": [
-        "S7 · Tacos de pollo"
+      "Ciruelas": [
+        "L16 · Ciruelas",
+        "M17 · Ciruelas",
+        "X18 · Ciruelas",
+        "J19 · Ciruelas",
+        "V20 · Ciruelas"
       ],
       "Patata": [
-        "V6 · Crema de champiñones y patata",
-        "S7 · Patatas al horno",
-        "L9 · Picadillo de patatas con atún",
-        "M10 · Judías verdes salteadas",
-        "X11 · Puré de verduras"
-      ],
-      "Pechuga de pollo fresca": [
-        "S7 · Pollo con curry",
-        "S7 · Tacos de pollo",
-        "MM",
-        "X11 · Cuscús con pollo al curry"
-      ],
-      "Pepino a la vinagreta": [
-        "J12 · Ensalada de remolacha"
-      ],
-      "Pimienta negra": [
-        "X11 · Cuscús con pollo al curry"
-      ],
-      "Pimiento": [
-        "S7 · Tacos de pollo",
-        "L9 · Picadillo de patatas con atún",
-        "X11 · Cuscús con pollo al curry"
-      ],
-      "Preparado de tacos de pollo (composición sin confirmar)": [
-        "S7 · Tacos de pollo"
-      ],
-      "Queso de Burgos": [
-        "ME",
-        "MM"
-      ],
-      "Rábanos": [
-        "J12 · Ensalada de remolacha"
-      ],
-      "Remolacha": [
-        "J12 · Ensalada de remolacha"
-      ],
-      "Romero": [
-        "S7 · Patatas al horno"
-      ],
-      "Salmón": [
-        "J12 · Salmón a la plancha"
-      ],
-      "Sepia": [
-        "M10 · Arroz a la marinera"
+        "L16 · Picadillo de patatas con atún",
+        "M17 · Judías verdes salteadas",
+        "X18 · Puré de verduras",
+        "V20 · Patatas guisadas",
+        "V20 · Crema de champiñones y patata"
       ],
       "Tomate fresco": [
-        "D",
-        "MM",
-        "L9 · Picadillo de patatas con atún",
-        "X11 · Puré de verduras"
+        "L16 · Pan tostado con aceite y tomate",
+        "L16 · Bocadillo de jamón York y tomate",
+        "L16 · Picadillo de patatas con atún",
+        "M17 · Pan tostado con aceite y tomate",
+        "X18 · Tostadas integrales con tomate y aceite",
+        "X18 · Pan tostado con aceite y tomate",
+        "X18 · Puré de verduras",
+        "J19 · Pan tostado con aceite y tomate",
+        "V20 · Pan tostado con aceite y tomate",
+        "V20 · Bocadillo de jamón York y tomate",
+        "V20 · Patatas guisadas"
       ],
-      "Tomate para salsa (formato por confirmar)": [
-        "L9 · Macarrones con atún",
-        "J12 · Arroz a la cubana con huevo"
+      "Tomate frito": [
+        "L16 · Macarrones con atún · producto y formato aprobados por el usuario"
       ],
-      "Tortas de maíz": [
-        "MM",
-        "ME"
+      "Tomate para salsa (tipo no especificado)": [
+        "J19 · Arroz a la cubana con huevo"
       ],
-      "Yogur natural desnatado": [
-        "V6 · Yogur natural desnatado",
-        "S7 · Yogur natural desnatado",
-        "D8 · Yogur natural desnatado",
-        "L9 · Yogur natural desnatado",
-        "M10 · Yogur natural desnatado",
-        "X11 · Yogur natural desnatado",
-        "J12 · Ensalada de remolacha",
-        "J12 · Yogur natural desnatado"
+      "Cebolla": [
+        "M17 · Arroz a la marinera",
+        "X18 · cuscús con pollo al curry",
+        "V20 · Patatas guisadas",
+        "V20 · Crema de champiñones y patata"
       ],
       "Zanahoria": [
-        "M10 · Judías verdes salteadas",
-        "X11 · Puré de verduras",
-        "X11 · Cuscús con pollo al curry"
+        "M17 · Judías verdes salteadas",
+        "X18 · Puré de verduras",
+        "X18 · cuscús con pollo al curry"
+      ],
+      "Pimiento": [
+        "L16 · Picadillo de patatas con atún",
+        "X18 · cuscús con pollo al curry",
+        "V20 · Patatas guisadas"
+      ],
+      "Espinacas": [
+        "D15 · Espinacas salteadas con huevo"
+      ],
+      "Calabacín": [
+        "X18 · Puré de verduras"
+      ],
+      "Judías verdes": [
+        "M17 · Judías verdes salteadas"
+      ],
+      "Champiñones": [
+        "V20 · Crema de champiñones y patata"
+      ],
+      "Lechuga": [
+        "X18 · Bocadillo de pollo"
+      ],
+      "Remolacha": [
+        "J19 · Ensalada de remolacha"
+      ],
+      "Rábanos": [
+        "J19 · Ensalada de remolacha"
+      ],
+      "Pepino a la vinagreta": [
+        "J19 · Ensalada de remolacha"
       ],
       "Zumo de limón": [
-        "J12 · Ensalada de remolacha"
+        "J19 · Ensalada de remolacha"
+      ],
+      "Jamón serrano": [
+        "L16 · Jamón serrano",
+        "M17 · Bocadillo con jamón serrano",
+        "M17 · Judías verdes salteadas",
+        "X18 · Jamón serrano",
+        "J19 · Bocadillo con jamón serrano",
+        "V20 · Jamón serrano"
+      ],
+      "Jamón York": [
+        "L16 · Bocadillo de jamón York y tomate",
+        "M17 · Tostadas integrales con jamón York",
+        "V20 · Bocadillo de jamón York y tomate"
+      ],
+      "Lomo curado": [
+        "J19 · Tostadas integrales con lomo curado"
+      ],
+      "Pechuga de pollo fresca": [
+        "X18 · Bocadillo de pollo",
+        "X18 · cuscús con pollo al curry"
+      ],
+      "Almejas frescas": [
+        "M17 · Arroz a la marinera"
+      ],
+      "Gambas": [
+        "M17 · Arroz a la marinera"
+      ],
+      "Sepia": [
+        "M17 · Arroz a la marinera"
+      ],
+      "Bacalao": [
+        "X18 · Bacalao fresco"
+      ],
+      "Salmón": [
+        "J19 · Salmón a la plancha"
+      ],
+      "Merluza": [
+        "V20 · Merluza a la plancha"
+      ],
+      "Huevo": [
+        "D15 · Espinacas salteadas con huevo",
+        "L16 · Picadillo de patatas con atún",
+        "M17 · Tortilla francesa",
+        "J19 · Arroz a la cubana con huevo",
+        "V20 · Huevo escalfado"
+      ],
+      "Yogur natural desnatado": [
+        "D15 · Yogur natural desnatado",
+        "L16 · Yogur natural desnatado",
+        "M17 · Yogur natural desnatado",
+        "X18 · Yogur natural desnatado",
+        "J19 · Ensalada de remolacha",
+        "J19 · Yogur natural desnatado",
+        "V20 · Yogur natural desnatado"
+      ],
+      "Queso de Burgos": [
+        "M17 · Queso de Burgos",
+        "J19 · Queso de Burgos"
+      ],
+      "Mantequilla": [
+        "X18 · cuscús con pollo al curry"
+      ],
+      "Pan integral": [
+        "L16 · Pan tostado con aceite y tomate",
+        "L16 · Bocadillo de jamón York y tomate",
+        "M17 · Tostadas integrales con jamón York",
+        "M17 · Pan tostado con aceite y tomate",
+        "M17 · Bocadillo con jamón serrano",
+        "X18 · Tostadas integrales con tomate y aceite",
+        "X18 · Pan tostado con aceite y tomate",
+        "X18 · Bocadillo de pollo",
+        "J19 · Tostadas integrales con lomo curado",
+        "J19 · Pan tostado con aceite y tomate",
+        "J19 · Bocadillo con jamón serrano",
+        "V20 · Pan tostado con aceite y tomate",
+        "V20 · Bocadillo de jamón York y tomate"
+      ],
+      "Arroz": [
+        "M17 · Arroz a la marinera",
+        "J19 · Arroz a la cubana con huevo"
+      ],
+      "Macarrones": [
+        "L16 · Macarrones con atún"
+      ],
+      "Cereales Corn Flakes": [
+        "L16 · Corn Flakes y leche de soja",
+        "L16 · Corn Flakes con leche de soja",
+        "M17 · Corn Flakes y leche de soja",
+        "X18 · Corn Flakes y leche de soja",
+        "J19 · Corn Flakes y leche de soja",
+        "V20 · Corn Flakes y leche de soja",
+        "V20 · Corn Flakes con leche de soja"
+      ],
+      "Copos de avena": [
+        "L16 · Copos de avena",
+        "M17 · Copos de avena",
+        "X18 · Copos de avena",
+        "J19 · Copos de avena",
+        "V20 · Copos de avena"
+      ],
+      "Tortas de maíz": [
+        "L16 · Tortas de maíz",
+        "M17 · Tortas de maíz",
+        "X18 · Tortas de maíz",
+        "J19 · Tortas de maíz",
+        "V20 · Tortas de maíz"
+      ],
+      "Cuscús seco": [
+        "X18 · cuscús con pollo al curry"
+      ],
+      "Atún en conserva": [
+        "L16 · Macarrones con atún",
+        "L16 · Picadillo de patatas con atún"
+      ],
+      "Curry (especias)": [
+        "X18 · cuscús con pollo al curry"
+      ],
+      "Pimienta negra (especias)": [
+        "X18 · cuscús con pollo al curry",
+        "V20 · patatas guisadas"
+      ],
+      "Comino (especias)": [
+        "J19 · ensalada de remolacha"
+      ],
+      "Clavo molido (especias)": [
+        "J19 · ensalada de remolacha"
+      ],
+      "Hierbas aromáticas (especias)": [
+        "V20 · patatas guisadas"
       ]
     },
     "retailer_plan": {
       "status": "pendiente",
       "items": {}
     },
-    "estado": "PUBLICADA_POR_SOLICITUD_DEL_USUARIO",
+    "estado": "PUBLICADA_POR_SOLICITUD_EXPRESA_SIN_REVISION_DIARIA_ADICIONAL",
     "periodo": {
-      "inicio": "2026-11-06",
+      "inicio": "2026-11-15",
       "inicio_toma": "Cena",
-      "fin": "2026-11-13",
-      "fin_toma": "Merienda"
+      "fin": "2026-11-20",
+      "fin_toma": "Cena"
     },
     "notas": [
-      "Comida del domingo 8 libre en Aluche",
-      "Viernes 13 comida y cena libres en Cartagena",
-      "No comprar café, ninguna leche, AOVE/aceite o sal",
-      "Cuscús: 125 g en la receta completa, el rendimiento para 600 g preparados entre ambos sigue pendiente",
-      "125 g de preparado de tacos de Almu separados de pechuga fresca",
-      "Tacos Fran aprobados en 350 g de plato, desglose orientativo de 343 g y diferencia de 7 g"
+      "Incluye domingo 15 solo cena y lunes 16 a viernes 20 las cinco tomas hasta cena incluida",
+      "Domingo 15, lunes 16 y martes 17 previamente validados; miércoles 18 a viernes 20 incluidos por petición expresa sin revisión adicional",
+      "Café, todas las leches, aceite/AOVE y sal excluidos",
+      "Ajo no comprar porque hay existencias en casa, confirmado el 15/11",
+      "Tomate frito del lunes: 190 g confirmado. Jueves arroz a la cubana: 160 g de tomate para salsa con tipo no especificado",
+      "Cuscús 125 g secos de receta completa para 600 g de plato preparado entre ambos, rendimiento por confirmar",
+      "Pechuga de pollo para cuscús: 1 unidad sin peso prescrito, además de 55 g para bocadillo",
+      "Equivalencias de envases y huevos son orientativas; se mantienen gramos prescritos."
     ],
-    "referencia_compra": "data/revision_compra_21_dias_20261105_064248.json",
-    "nota_usos": "Desayuno D, media mañana MM, merienda ME. En comidas/cenas, indicar solo la preparación que contiene el ingrediente; no toda la comida."
+    "referencia_compra": "SEMANA11_20261116_COMPRA_D15V20_20261115_165858.md",
+    "nota_usos": "Usos culinarios vinculados a cada día y plato; el identificador D15/L16/M17/X18/J19/V20 evita mezclar fechas."
   },
   "recipes": {
     "ensalada_patatas_atun": {
