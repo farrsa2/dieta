@@ -186,7 +186,7 @@
       if (!day) continue;
       // Una fila que empieza por otro día es otra comida, no un desglose de ingredientes.
       const nextRow = lines[i + 1]?.startsWith('|') ? splitMd(lines[i + 1]) : [];
-      const nextLabel = cleanMarkdownText(nextRow[0] || '').replace(/\\*\\*/g, '').trim();
+      const nextLabel = cleanMarkdownText(nextRow[0] || '').replace(/\*\*/g, '').trim();
       const nextIsDay = DAYS.some(candidate => nextLabel === candidate || nextLabel.startsWith(`${candidate} `));
       const detail = nextRow.length >= 7 && !nextIsDay ? nextRow : [];
       data[day] = {
