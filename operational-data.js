@@ -323,7 +323,7 @@
 
       const now = madridNowParts();
       const current = config.semanas.find(week => now.date >= week.inicio && now.date <= week.fin);
-      config.vigente = current?.id || config.semanas[config.semanas.length - 1]?.id || null;
+      config.vigente = current?.id || config.semanas.find(week => now.date < week.inicio)?.id || config.semanas[config.semanas.length - 1]?.id || null;
 
       routes.cuadro02 = renderRollingMenu;
       routes.proxima = renderNextMealOperational;
