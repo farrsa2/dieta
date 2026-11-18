@@ -1,6 +1,6 @@
 {
   "schema_version": 4,
-  "generated_at": "2026-11-16T17:13:08.517Z",
+  "generated_at": "2026-11-18T20:53:49.642Z",
   "timezone": "Europe/Madrid",
   "window": {
     "inicio": "2026-11-09",
@@ -31,261 +31,193 @@
     }
   },
   "shopping": {
-    "titulo": "Almu + Fran · domingo 15 cena a viernes 20 cena · noviembre 2026",
-    "list_id": "COMPRA_20261115_CENA_20261120_CENA",
+    "titulo": "Almu + Fran · jueves 19 cena a lunes 23 cena · noviembre 2026",
+    "list_id": "COMPRA_20261119_CENA_20261123_CENA",
     "dias": [
-      "D15",
-      "L16",
-      "M17",
-      "X18",
       "J19",
-      "V20"
+      "V20",
+      "S21",
+      "D22",
+      "L23"
     ],
-    "csv": "Fruta de temporada | Comprar aproximadamente 2 kg | 1750 g;L16 M17 X18 J19 V20\nKiwi | Aproximadamente 4–5 unidades según tamaño | 300 g;L16 M17 X18 J19 V20\nCiruelas | Aproximadamente 2–4 unidades | 150 g;L16 M17 X18 J19 V20\nPatata | Comprar 1 kg | 900 g;L16 M17 X18 V20\nTomate fresco | Comprar aproximadamente 500 g | 475 g;L16 M17 X18 J19 V20\nTomate frito | Envase pequeño de al menos 190 g (macarrones del lunes) | 190 g;L16\nTomate para salsa (tipo no especificado) | Necesarios 160 g para arroz a la cubana, el PDF no precisa si frito, triturado o fresco | 160 g;M17\nCebolla | 265 g cuantificados más 1 cebolla para el cuscús | 265 g;X18 J19 V20\nZanahoria | 215 g cuantificados más 1 zanahoria grande para el cuscús | 215 g;M17 X18\nPimiento | 130 g cuantificados más ½ rojo y ½ verde para el cuscús | 130 g;L16 X18 V20\nEspinacas | Comprar aproximadamente 500 g | 455 g;D15\nCalabacín | Al menos 110 g (1 pieza pequeña suficiente) | 110 g;X18\nJudías verdes | Al menos 170 g | 170 g;M17\nChampiñones | Al menos 165 g (bandeja pequeña) | 165 g;V20\nLechuga | 15 g para bocadillo (unas hojas) | 15 g;X18\nRemolacha | Al menos 280 g (preferentemente cocida) | 280 g;J19\nRábanos | 25 g (manojo pequeño) | 25 g;J19\nPepino a la vinagreta | 25 g para ensalada de remolacha | 25 g;J19\nZumo de limón | 25 g de zumo (aproximadamente 1 limón) | 25 g;J19\nJamón serrano | Comprar 230 g aproximadamente | 230 g;L16 M17 X18 J19 V20\nJamón York | Comprar 105 g aproximadamente | 105 g;L16 M17 V20\nLomo curado | Comprar 30 g | 30 g;J19\nPechuga de pollo fresca | 55 g para bocadillo más 1 pechuga adicional para cuscús, peso no especificado | 55 g;X18\nAlmejas frescas | 155 g (comprar 200 g si no venden exacto) | 155 g;J19\nGambas | 155 g (comprar 200 g si no venden exacto) | 155 g;J19\nSepia | 155 g (comprar 200 g si no venden exacto) | 155 g;J19\nBacalao | 400 g para la cena del miércoles | 400 g;X18\nSalmón | 340 g para la cena del jueves | 340 g;J19\nMerluza | 390 g para la cena del viernes | 390 g;V20\nHuevo | 920 g de huevo útil en total, orientativo 18–20 huevos medianos, comprar 2 docenas para asegurar | 920 g;D15 L16 M17 V20\nYogur natural desnatado | 835 g en total, al menos 7 yogures de 125 g (875 g) | 835 g;D15 L16 M17 X18 J19 V20\nQueso de Burgos | 80 g (tarrina pequeña) | 80 g;M17 J19\nMantequilla | Cantidad no indicada, solo si falta en casa | Cantidad no indicada;X18\nPan integral | 690 g entre pan, baguette y tostadas, comprar unos 750 g | 690 g;L16 M17 X18 J19 V20\nArroz | 650 g (paquete de 1 kg) | 650 g;M17 J19\nMacarrones | 375 g (paquete de 500 g) | 375 g;L16\nCereales Corn Flakes | 210 g (caja estándar) | 210 g;L16 M17 X18 J19 V20\nCopos de avena | 150 g | 150 g;L16 M17 X18 J19 V20\nTortas de maíz | 150 g | 150 g;L16 M17 X18 J19 V20\nCuscús seco | 125 g para la receta completa, rendimiento de 600 g de plato preparado no verificado | 125 g;X18\nAtún en conserva | 210 g escurridos aproximadamente (comprobar peso escurrido de latas) | 210 g;L16\nCurry (especias) | Cantidad no prescrita, solo si falta en casa | Cantidad no indicada;X18\nPimienta negra (especias) | Cantidad no prescrita, solo si falta en casa | Cantidad no indicada;X18 V20\nComino (especias) | Al gusto en ensalada de remolacha, solo si falta en casa | Cantidad no indicada;J19\nClavo molido (especias) | Al gusto en ensalada de remolacha, solo si falta en casa | Cantidad no indicada;J19\nHierbas aromáticas (especias) | Al gusto en patatas guisadas, solo si faltan en casa | Cantidad no indicada;V20\n",
+    "csv": "Fruta de temporada | Aproximadamente 2,5 kg | 2200 g;V20 S21 D22 L23\nKiwi | 4–6 piezas según tamaño | 240 g;V20 S21 D22 L23\nCiruelas | 2–4 piezas según tamaño | 120 g;V20 S21 D22 L23\nPatata | Comprar al menos 1,1 kg | 1060 g;V20 L23\nCalabaza | Una porción de unos 300 g | 260 g;J19\nZanahoria | 2 unidades pequeñas aproximadamente | 220 g;J19 L23\nTomate fresco | Unos 350 g | 305 g;V20 S21 D22 L23\nCebolla | 2 unidades medianas aproximadamente | 210 g;S21 D22 L23\nPimiento | Unos 200 g | 200 g;S21 D22\nLechuga | Unos 90 g | 90 g;S21\nCogollos | Comprar unos 320 g | 320 g;V20\nRábanos | Un manojo pequeño | 70 g;S21\nChampiñones | Una bandeja pequeña | 120 g;S21\nCalabacín | 1 pequeño | 110 g;D22\nGuisantes | Bolsa pequeña | 110 g;L23\nJamón serrano | Paquete pequeño | 60 g;V20 L23\nJamón York | Paquete al menos 205 g | 205 g;V20 S21 D22 L23\nHamburguesa de ternera | 180 g Almu + 80 g Fran | 260 g;J19\nLomo de cerdo | 100 g Almu + 145 g Fran | 245 g;L23\nSalmón | Aproximadamente 350 g para compra (340 g netos en desglose) | 340 g;V20\nSepia | Comprar unos 600 g | 555 g;S21 D22\nAlmejas frescas | Comprar unos 200 g | 155 g;D22\nGambas | Comprar unos 200 g | 155 g;D22\nAnchoas en conserva | Conserva, 80 g escurridos | 80 g;V20\nHuevo | Orientativo 12–14 huevos, según tamaño | 655 g;V20 D22 L23\nYogur natural desnatado | 5 unidades de 125 g | 625 g;V20 S21 L23\nQueso de Burgos | Un envase pequeño | 120 g;S21 D22\nQueso rallado | Un envase pequeño | 45 g;S21\nPan integral | Un envase de unos 500 g | 380 g;V20 S21 D22 L23\nCereales Corn Flakes | Caja estándar | 210 g;V20 S21 D22 L23\nCopos de avena | Al menos 180 g | 180 g;V20 S21 D22 L23\nTortas de maíz | Un paquete de 120 g o más | 120 g;V20 S21 D22 L23\nTortellini | Paquete de 300 g o más | 300 g;S21\nArroz | 250–500 g en envase | 260 g;D22\nHarina de trigo | 30 g (solo si no hay en casa) | 30 g;D22\nAtún en conserva | 150 g escurridos, comprobar peso neto | 150 g;L23\nAceitunas verdes | Un bote pequeño | 30 g;S21\n",
     "uses": {
       "Fruta de temporada": [
-        "L16 · Fruta de temporada",
-        "M17 · Fruta de temporada",
-        "X18 · Fruta de temporada",
-        "J19 · Fruta de temporada",
-        "V20 · Fruta de temporada"
+        "V20 · Fruta y postres individuales",
+        "S21 · Fruta y postres individuales",
+        "D22 · Fruta y postres individuales",
+        "L23 · Fruta y postres individuales"
       ],
       "Kiwi": [
-        "L16 · Kiwi",
-        "M17 · Kiwi",
-        "X18 · Kiwi",
-        "J19 · Kiwi",
-        "V20 · Kiwi"
+        "V20 · Kiwi del desayuno",
+        "S21 · Kiwi del desayuno",
+        "D22 · Kiwi del desayuno",
+        "L23 · Kiwi del desayuno"
       ],
       "Ciruelas": [
-        "L16 · Ciruelas",
-        "M17 · Ciruelas",
-        "X18 · Ciruelas",
-        "J19 · Ciruelas",
-        "V20 · Ciruelas"
+        "V20 · Ciruelas del desayuno",
+        "S21 · Ciruelas del desayuno",
+        "D22 · Ciruelas del desayuno",
+        "L23 · Ciruelas del desayuno"
       ],
       "Patata": [
-        "L16 · Picadillo de patatas con atún",
-        "M17 · Judías verdes salteadas",
-        "X18 · Puré de verduras",
-        "V20 · Patatas guisadas",
-        "V20 · Crema de champiñones y patata"
+        "V20 · Patatas al horno, ensalada con atún y jardinera",
+        "L23 · Patatas al horno, ensalada con atún y jardinera"
       ],
-      "Tomate fresco": [
-        "L16 · Pan tostado con aceite y tomate",
-        "L16 · Bocadillo de jamón York y tomate",
-        "L16 · Picadillo de patatas con atún",
-        "M17 · Pan tostado con aceite y tomate",
-        "X18 · Tostadas integrales con tomate y aceite",
-        "X18 · Pan tostado con aceite y tomate",
-        "X18 · Puré de verduras",
-        "J19 · Pan tostado con aceite y tomate",
-        "V20 · Pan tostado con aceite y tomate",
-        "V20 · Bocadillo de jamón York y tomate",
-        "V20 · Patatas guisadas"
-      ],
-      "Tomate frito": [
-        "L16 · Macarrones con atún · producto y formato aprobados por el usuario"
-      ],
-      "Tomate para salsa (tipo no especificado)": [
-        "M17 · Arroz a la cubana con huevo"
-      ],
-      "Cebolla": [
-        "J19 · Arroz a la marinera",
-        "X18 · cuscús con pollo al curry",
-        "V20 · Patatas guisadas",
-        "V20 · Crema de champiñones y patata"
+      "Calabaza": [
+        "J19 · Crema de calabaza y zanahoria"
       ],
       "Zanahoria": [
-        "M17 · Judías verdes salteadas",
-        "X18 · Puré de verduras",
-        "X18 · cuscús con pollo al curry"
+        "J19 · Crema de calabaza y zanahoria / jardinera",
+        "L23 · Crema de calabaza y zanahoria / jardinera"
+      ],
+      "Tomate fresco": [
+        "V20 · Tostadas, bocadillos y ensalada mixta",
+        "S21 · Tostadas, bocadillos y ensalada mixta",
+        "D22 · Tostadas, bocadillos y ensalada mixta",
+        "L23 · Tostadas, bocadillos y ensalada mixta"
+      ],
+      "Cebolla": [
+        "S21 · Tortellini, arroz a la marinera y jardinera",
+        "D22 · Tortellini, arroz a la marinera y jardinera",
+        "L23 · Tortellini, arroz a la marinera y jardinera"
       ],
       "Pimiento": [
-        "L16 · Picadillo de patatas con atún",
-        "X18 · cuscús con pollo al curry",
-        "V20 · Patatas guisadas"
-      ],
-      "Espinacas": [
-        "D15 · Espinacas salteadas con huevo"
-      ],
-      "Calabacín": [
-        "X18 · Puré de verduras"
-      ],
-      "Judías verdes": [
-        "M17 · Judías verdes salteadas"
-      ],
-      "Champiñones": [
-        "V20 · Crema de champiñones y patata"
+        "S21 · Ensalada mixta y crepes vegetarianos",
+        "D22 · Ensalada mixta y crepes vegetarianos"
       ],
       "Lechuga": [
-        "X18 · Bocadillo de pollo"
+        "S21 · Ensalada mixta con sepia"
       ],
-      "Remolacha": [
-        "J19 · Ensalada de remolacha"
+      "Cogollos": [
+        "V20 · Ensalada de cogollos y anchoas"
       ],
       "Rábanos": [
-        "J19 · Ensalada de remolacha"
+        "S21 · Ensalada mixta con sepia"
       ],
-      "Pepino a la vinagreta": [
-        "J19 · Ensalada de remolacha"
+      "Champiñones": [
+        "S21 · Tortellini con champiñones"
       ],
-      "Zumo de limón": [
-        "J19 · Ensalada de remolacha"
+      "Calabacín": [
+        "D22 · Crepes vegetarianos"
+      ],
+      "Guisantes": [
+        "L23 · Verduras a la jardinera"
       ],
       "Jamón serrano": [
-        "L16 · Jamón serrano",
-        "M17 · Bocadillo con jamón serrano",
-        "M17 · Judías verdes salteadas",
-        "X18 · Jamón serrano",
-        "J19 · Bocadillo con jamón serrano",
-        "V20 · Jamón serrano"
+        "V20 · Tostada con jamón serrano",
+        "L23 · Tostada con jamón serrano"
       ],
       "Jamón York": [
-        "L16 · Bocadillo de jamón York y tomate",
-        "M17 · Tostadas integrales con jamón York",
-        "V20 · Bocadillo de jamón York y tomate"
+        "V20 · Bocadillos, tostadas y tortellini",
+        "S21 · Bocadillos, tostadas y tortellini",
+        "D22 · Bocadillos, tostadas y tortellini",
+        "L23 · Bocadillos, tostadas y tortellini"
       ],
-      "Lomo curado": [
-        "J19 · Tostadas integrales con lomo curado"
+      "Hamburguesa de ternera": [
+        "J19 · Hamburguesa a la plancha"
       ],
-      "Pechuga de pollo fresca": [
-        "X18 · Bocadillo de pollo",
-        "X18 · cuscús con pollo al curry"
-      ],
-      "Almejas frescas": [
-        "J19 · Arroz a la marinera"
-      ],
-      "Gambas": [
-        "J19 · Arroz a la marinera"
-      ],
-      "Sepia": [
-        "J19 · Arroz a la marinera"
-      ],
-      "Bacalao": [
-        "X18 · Bacalao fresco"
+      "Lomo de cerdo": [
+        "L23 · Lomo a la plancha"
       ],
       "Salmón": [
-        "J19 · Salmón a la plancha"
+        "V20 · Salmón a la plancha"
       ],
-      "Merluza": [
-        "V20 · Merluza a la plancha"
+      "Sepia": [
+        "S21 · Ensalada mixta con sepia y arroz a la marinera",
+        "D22 · Ensalada mixta con sepia y arroz a la marinera"
+      ],
+      "Almejas frescas": [
+        "D22 · Arroz a la marinera"
+      ],
+      "Gambas": [
+        "D22 · Arroz a la marinera"
+      ],
+      "Anchoas en conserva": [
+        "V20 · Ensalada de cogollos y anchoas"
       ],
       "Huevo": [
-        "D15 · Espinacas salteadas con huevo",
-        "L16 · Picadillo de patatas con atún",
-        "M17 · Tortilla francesa",
-        "M17 · Arroz a la cubana con huevo",
-        "V20 · Huevo escalfado"
+        "V20 · Tortilla, crepes y ensalada de patatas",
+        "D22 · Tortilla, crepes y ensalada de patatas",
+        "L23 · Tortilla, crepes y ensalada de patatas"
       ],
       "Yogur natural desnatado": [
-        "D15 · Yogur natural desnatado",
-        "L16 · Yogur natural desnatado",
-        "M17 · Yogur natural desnatado",
-        "X18 · Yogur natural desnatado",
-        "J19 · Ensalada de remolacha",
-        "J19 · Yogur natural desnatado",
-        "V20 · Yogur natural desnatado"
+        "V20 · Yogur de cena",
+        "S21 · Yogur de cena",
+        "L23 · Yogur de cena"
       ],
       "Queso de Burgos": [
-        "M17 · Queso de Burgos",
-        "J19 · Queso de Burgos"
+        "S21 · Merienda de Fran",
+        "D22 · Merienda de Fran"
       ],
-      "Mantequilla": [
-        "X18 · cuscús con pollo al curry"
+      "Queso rallado": [
+        "S21 · Tortellini con champiñones"
       ],
       "Pan integral": [
-        "L16 · Pan tostado con aceite y tomate",
-        "L16 · Bocadillo de jamón York y tomate",
-        "M17 · Tostadas integrales con jamón York",
-        "M17 · Pan tostado con aceite y tomate",
-        "M17 · Bocadillo con jamón serrano",
-        "X18 · Tostadas integrales con tomate y aceite",
-        "X18 · Pan tostado con aceite y tomate",
-        "X18 · Bocadillo de pollo",
-        "J19 · Tostadas integrales con lomo curado",
-        "J19 · Pan tostado con aceite y tomate",
-        "J19 · Bocadillo con jamón serrano",
-        "V20 · Pan tostado con aceite y tomate",
-        "V20 · Bocadillo de jamón York y tomate"
-      ],
-      "Arroz": [
-        "J19 · Arroz a la marinera",
-        "M17 · Arroz a la cubana con huevo"
-      ],
-      "Macarrones": [
-        "L16 · Macarrones con atún"
+        "V20 · Tostadas, bocadillos y pan de la cena",
+        "S21 · Tostadas, bocadillos y pan de la cena",
+        "D22 · Tostadas, bocadillos y pan de la cena",
+        "L23 · Tostadas, bocadillos y pan de la cena"
       ],
       "Cereales Corn Flakes": [
-        "L16 · Corn Flakes y leche de soja",
-        "L16 · Corn Flakes con leche de soja",
-        "M17 · Corn Flakes y leche de soja",
-        "X18 · Corn Flakes y leche de soja",
-        "J19 · Corn Flakes y leche de soja",
-        "V20 · Corn Flakes y leche de soja",
-        "V20 · Corn Flakes con leche de soja"
+        "V20 · Cereales del desayuno",
+        "S21 · Cereales del desayuno",
+        "D22 · Cereales del desayuno",
+        "L23 · Cereales del desayuno"
       ],
       "Copos de avena": [
-        "L16 · Copos de avena",
-        "M17 · Copos de avena",
-        "X18 · Copos de avena",
-        "J19 · Copos de avena",
-        "V20 · Copos de avena"
+        "V20 · Avena del desayuno",
+        "S21 · Avena del desayuno",
+        "D22 · Avena del desayuno",
+        "L23 · Avena del desayuno"
       ],
       "Tortas de maíz": [
-        "L16 · Tortas de maíz",
-        "M17 · Tortas de maíz",
-        "X18 · Tortas de maíz",
-        "J19 · Tortas de maíz",
-        "V20 · Tortas de maíz"
+        "V20 · Media mañana y merienda de Fran",
+        "S21 · Media mañana y merienda de Fran",
+        "D22 · Media mañana y merienda de Fran",
+        "L23 · Media mañana y merienda de Fran"
       ],
-      "Cuscús seco": [
-        "X18 · cuscús con pollo al curry"
+      "Tortellini": [
+        "S21 · Tortellini con champiñones"
+      ],
+      "Arroz": [
+        "D22 · Arroz a la marinera"
+      ],
+      "Harina de trigo": [
+        "D22 · Crepes vegetarianos"
       ],
       "Atún en conserva": [
-        "L16 · Macarrones con atún",
-        "L16 · Picadillo de patatas con atún"
+        "L23 · Ensalada de patatas y atún"
       ],
-      "Curry (especias)": [
-        "X18 · cuscús con pollo al curry"
-      ],
-      "Pimienta negra (especias)": [
-        "X18 · cuscús con pollo al curry",
-        "V20 · patatas guisadas"
-      ],
-      "Comino (especias)": [
-        "J19 · ensalada de remolacha"
-      ],
-      "Clavo molido (especias)": [
-        "J19 · ensalada de remolacha"
-      ],
-      "Hierbas aromáticas (especias)": [
-        "V20 · patatas guisadas"
+      "Aceitunas verdes": [
+        "S21 · Ensalada mixta con sepia"
       ]
     },
     "retailer_plan": {
       "status": "pendiente",
       "items": {}
     },
-    "estado": "PUBLICADA_POR_SOLICITUD_EXPRESA_SIN_REVISION_DIARIA_ADICIONAL",
+    "estado": "CARGADA_A_DESARROLLO_POR_SOLICITUD_EXPRESA_CON_DUDAS_AGRUPADAS",
     "periodo": {
-      "inicio": "2026-11-15",
+      "inicio": "2026-11-19",
       "inicio_toma": "Cena",
-      "fin": "2026-11-20",
+      "fin": "2026-11-23",
       "fin_toma": "Cena"
     },
     "notas": [
-      "Incluye domingo 15 solo cena y lunes 16 a viernes 20 las cinco tomas hasta cena incluida",
-      "Domingo 15, lunes 16 y martes 17 previamente validados; miércoles 18 a viernes 20 incluidos por petición expresa sin revisión adicional",
-      "Café, todas las leches, aceite/AOVE y sal excluidos",
-      "Ajo no comprar porque hay existencias en casa, confirmado el 15/11",
-      "Cuscús 125 g secos de receta completa para 600 g de plato preparado entre ambos, rendimiento por confirmar",
-      "Pechuga de pollo para cuscús: 1 unidad sin peso prescrito, además de 55 g para bocadillo",
-      "Equivalencias de envases y huevos son orientativas; se mantienen gramos prescritos.",
-      "El 16/11/2026 el usuario intercambió las comidas del martes 17 y jueves 19. Las cantidades globales de compra no cambian; arroz a la cubana y tomate para salsa 160 g se usan el martes, arroz a la marinera y marisco el jueves."
+      "La lista se ha calculado con el menú y las raciones históricas de los cuadros de 19 de noviembre a 2 de diciembre aprobados.",
+      "J19 solo cena, V20–L23 cinco tomas; sin café, leche, aceites ni sal.",
+      "Por petición expresa se omite validación día a día y las dudas se presentan al final.",
+      "La lista anterior COMPRA_20261115_CENA_20261120_CENA permanece intacta, con sus marcas de compra en Supabase.",
+      "No se descuentan existencias físicas por desconocer cantidades restantes de una compra anterior marcada como completa.",
+      "Ajo del arroz a la marinera no añadido porque consta ya disponible en casa.",
+      "Salmón: ración 350 g total, ingrediente histórico neto 340 g.",
+      "Crepes vegetarianos: receta conjunta (huevo 290 g, pimiento 110 g, calabacín 110 g, harina 30 g), raciones individuales pendientes.",
+      "Fruta y yogures adicionales de pautas históricas, podrían requerir ajuste.",
+      "Equivalencias comerciales orientativas; conservar gramos como dato principal."
     ],
-    "referencia_compra": "SEMANA11_20261116_COMPRA_D15V20_20261116_181308.md",
-    "nota_usos": "Usos culinarios vinculados a cada día y plato; el identificador D15/L16/M17/X18/J19/V20 evita mezclar fechas."
+    "referencia_compra": "COMPRA_20261119_CENA_20261123_CENA_20261118_215349.md",
+    "nota_usos": "Cada entrada de uses identifica día y preparación sin modificar la dieta original."
   },
   "recipes": {
     "ensalada_patatas_atun": {
